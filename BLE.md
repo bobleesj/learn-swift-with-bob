@@ -1,4 +1,5 @@
 ## Learn BLE Jan, 20, 2017
+References: [Apple's Documentation](https://www.google.com)
 
 By default, your app is unable to perform Bluetooth low energy tasks while it is in the background or in a suspended state. That said, if your app needs to perform Bluetooth low energy tasks while in the background, you can declare it to support one or both of the Core Bluetooth background execution modes (there’s one for the central role, and one for the peripheral role). 
 
