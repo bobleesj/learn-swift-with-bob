@@ -88,6 +88,39 @@ func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
     }
 }
 ```
+## Discovering the Characteristics of a Service
+
+When you find a service that you are interested in, the next step in exploring what a peripheral has to offer is discovering all of the service's characteristics. Call, `didcoverCharacteristics:forService:` method:
+
+```swift
+func peripheral(_ peripheral: CBPeripheral,
+                didDiscoverCharacteristicsForservice: CBService,
+                error: Error?) {
+    for characteristic: CBCharacteristic in service.characteristics {
+
+    }
+}
+```
+
+## Receiving the Value of a Characteristic 
+
+A characteristic contains a single value that represents information about a peripheral's service. Ex) a temperature measurement characteristic of a health thermometer service may have a value that indicates a temperature in Celsius. 
+
+### Reading the Value of a Characteristic
+
+```swift
+peripheral.readValue(for: interestingCharacteristic)
+```
+When you attempt to read the value of a characteristic, the peripheral calls the `peripheral:didUpdateValueForCharacteristic:error:` method of its delegate object to retrieve the value. If the value is successfully retrieved, you can access it through the characteristic's value property. 
+
+```swift
+func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+    var data: Data? = characteristic.value
+    // parse the data as needed
+}
+```
+
+> **Note:** Not all characteristics are readable. You can determine whether a characteris is readable by checking if its `properties` attribute includes the `CBCharacteristicPropertyRead` constant. If you try to read a value of a characteristic that isn't readable, `peripheral:didUpdateValueForCharacteristic:error:` delegate method returns a suitable error
 
 
 
