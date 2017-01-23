@@ -14,7 +14,7 @@ I try to share what I learn and teach. Since this is more like a documentation r
  * Provisional Certificate Explanation & Keychain 
  * Functional Programming 
 
-> You may find some of my learning materials written in tutorials in my [YouTube](https://youtube.com/bobthedeveloper), [blog](https://medium.com/@bobleesj), and [Twitter](https://twitter.com/bobleesj)
+> You may find some of my learning materials written in tutorials on [YouTube](https://youtube.com/bobthedeveloper), [blog](https://medium.com/@bobleesj), and [Twitter](https://twitter.com/bobleesj)
 
 ## Course Materials 
 These study materials are used for my upcoming course, **The Fundamentals of UIKit with Bob**. on Udemy. If you're interested in learning these topics, feel free to send me an email to register your spot for free until the course is released publicly. About 190 developers have sent me emails so far, and I highly engage with my students. 
