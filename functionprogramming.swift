@@ -5,6 +5,7 @@
 Rx is all about anynchronous observable sequences. 
 
 ```swift
+                                                                         
 let urlString = "..."
 NSURLSession.sharedSession()
  .rx_JSON(urlRequest)
@@ -12,4 +13,7 @@ NSURLSession.sharedSession()
   let root = $0 as! [String: Anyobject]
   let main = root["main"] as! [String: AnyObject]
   return main["temp"] as! Float
+  
 ```
+
+### What did we just see?
