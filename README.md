@@ -18,6 +18,4 @@ I try to share what I learn and teach. Since this is more like a documentation r
 
 ## Course Materials 
 These study materials are used for my upcoming course, **The Fundamentals of UIKit with Bob**. on Udemy. If you're interested in learning these topics, feel free to send me an email to register your spot for free until the course is released publicly. About 190 developers have sent me emails so far, and I highly engage with my students. 
-
-## Dream 
-Before I turn 25, I dream to drive Tesla Model S P100D on the California highways. I attempt to provide value for the iOS community, and I believe in good karma.  
+ 
