@@ -164,5 +164,3 @@ func peripheral(_ peripheral: CBPeripheral, didWriteValueForCharacteristic chara
 
 If instead you specify the write type as `CBCharacteristicWriteWithoutResponse`, the write operation is performed as best-effort, and delivery is neither guarantteed nor reported. The peripheral does not call the delegate method. 
 
-
-
