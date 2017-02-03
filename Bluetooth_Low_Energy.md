@@ -1,4 +1,4 @@
-## Learn BLE Feb, 3, 2017
+## BLE Feb, 3, 2017
 References: [Apple's Documentation](https://www.google.com)
 
 By default, your app is unable to perform Bluetooth low energy tasks while it is in the background or in a suspended state. That said, if your app needs to perform Bluetooth low energy tasks while in the background, you can declare it to support one or both of the Core Bluetooth background execution modes (there’s one for the central role, and one for the peripheral role). 
@@ -164,3 +164,32 @@ func peripheral(_ peripheral: CBPeripheral, didWriteValueForCharacteristic chara
 
 If instead you specify the write type as `CBCharacteristicWriteWithoutResponse`, the write operation is performed as best-effort, and delivery is neither guarantteed nor reported. The peripheral does not call the delegate method. 
 
+
+# Core Bluetooth Background Processing for iOS Apps
+By default, Core Bluetooth tasks on both the central and peripheral side are disabled while your app is in the background or in a suspended state. But, you can declare your app to support the Core Bluetooth background execution modes. Of course, it can't run forever. The system may have to terminate to free up memory. 
+
+However, you can warn your user when you are about to go to the suspended state
+
+`CBConnectPeripheralOptionNotifyOnConnectionKey`—Include this key if you want the system to display an alert for a given peripheral if the app is suspended when a successful connection is made.
+
+`CBConnectPeripheralOptionNotifyOnDisconnectionKey`—Include this key if you want the system to display a disconnection alert for a given peripheral if the app is suspended at the time of the disconnection.
+
+`CBConnectPeripheralOptionNotifyOnNotificationKey`—Include this key if you want the system to display an alert for all notifications received from a given peripheral if the app is suspended at the time
+
+## Core Bluetooth Background Execution Modes
+If your app needs to run in background to perform certain Bluetooth-related tasks, you must declare in `Info.plist` You add `UIBackgroundModes` key and setting the key's value to an array containing one of the followings
+
+`bluetooth-central`—The app communicates with Bluetooth low energy peripherals using the Core Bluetooth framework.
+`bluetooth-peripheral`—The app shares data using the Core Bluetooth framework.
+
+### The bluetooth-central Background Execution Mode
+Now, the Core Bluetooth framework allows your app to run in the background to perfrom certain Bluetooth-related tasks. While you are in the background, you can still discover and connect to peripherals and explore and interact with peripheral data. The system also wakes up your app when any of `CBCentralManagerDelegate` or `CBPeripheralDelegate` delegate mthods are invoked. These are used for when a connection is made/lost, when your app receives updated characteristic values. 
+
+However, still you are performing many bluetooth related tasks, it's different from scanning for peripherals in the foreground. For example, in the back ground, The `CBCentralManagerScanOptionAllowDuplicatesKey` scan option key is ignored, multiple discoveries of an advertising peripheral are coalesced into a single discovery event. Second, if all apps are scanning for peripherals are in the background, ther interval at which your central devcie scans for advertising packets increases, thus slowing down discovering advertising peripherals. These changes help minimizing battery and radio usage. 
+
+## Use Background Execution Modes Wisely 
+ 1. App should be session based and provide an interface that allows the user to decide when to start and stop the delivery of Bluetooth-related events. 
+ 2. Upon being woken up, an app has around 10 seconds to complete a task. It should complete the task as fast as possible and allow itself to be suspended again. Apps that spend too much time executing in the background can be throttled back by the system or killed. 
+ 
+## Performing Long-Term Actions in the Background
+Imagine you are developing a home security app for an iOS device that communicates with a door lock. The app and the lock interact to automatically lock the door when the user leaves home and unlock the door when the user returns -- all while in the background. When the user leaves home, the out of range causes the lock to be locked. 
