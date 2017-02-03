@@ -1,4 +1,4 @@
-## Learn BLE Jan, 20, 2017
+## Learn BLE Feb, 3, 2017
 References: [Apple's Documentation](https://www.google.com)
 
 By default, your app is unable to perform Bluetooth low energy tasks while it is in the background or in a suspended state. That said, if your app needs to perform Bluetooth low energy tasks while in the background, you can declare it to support one or both of the Core Bluetooth background execution modes (there’s one for the central role, and one for the peripheral role). 
@@ -124,6 +124,45 @@ func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CB
 > **Note:** Not all characteristics are readable. You can determine whether a characteris is readable by checking if its `properties` attribute includes the `CBCharacteristicPropertyRead` constant. If you try to read a value of a characteristic that isn't readable, `peripheral:didUpdateValueForCharacteristic:error:` delegate method returns a suitable error
 
 
+### Subscribing to a Characteristic's Value
+Through reading the value of a characteristic using the `readValueForCharacter:` method can be effective for static values. But, it's not the best for dynamic value. For example, your heart rate monitor may change value. 
+
+```swift
+peripheral.setNotifyValue(true, for: interestingCharacteristic)
+```
+When you subscribe, the peripheral calls the `peripheral:didUpdateNotificationStateForCharacteristic:error:` method of its delegate object. 
+
+```swift
+func peripheral(_ peripheral: CBPeripheral, didUpdateNotificationStateForCharacteristic characteristic: CBCharacteristic, error: Error?) throws {
+    if error != nil {
+        print("Error changing notification state: \(error?.localizedDescription)")
+    }
+}
+```
+
+> Not all characteristics offer subscription. You can determine if a characteristic offers subscript by checking if its properties attribute include either of the `CBCharacteristicPropertyNotify` or `CBCharacteristicPropertyIndicate` constants. 
+
+After time the peripheral device notifies your app when the value has changed and it calls, `peripheral:didUpdateValueForCharacteristic:error:` method of its delegate object. 
+
+## Writing the Value of a Characteristic
+If you'd like to control your thermostat with your phone, you should be able to. If a characteristic's value is writeable, you can write by calling the peripheral's, `writeValue:forCharacteristic:type:` method. 
+
+```swift
+print("Writing value for characteristic \(interestingCharacteristic)")
+peripheral.writeValue(dataToWrite, forCharacteristic: interestingCharacteristic, type: CBCharacteristicWriteWithResponse)
+```
+
+When you write the value of a characteristic, you specify what type of write you want to perform. The type above is `CBCharacteristicWriteWithResponse` which instructs the peripheral to let your app know whether or not the write succeeds by calling the `peripheral:didWriteValueForCharacteristic:error:` method of its delegate object. You also implement this delegate method to the handle the error condition, as the following example shwos: 
+
+```swift
+func peripheral(_ peripheral: CBPeripheral, didWriteValueForCharacteristic characteristic: CBCharacteristic, error: Error?) throws {
+    if error != nil {
+        print("Error writing characteristic value: \(error?.localizedDescription)")
+    }
+}
+```
+
+If instead you specify the write type as `CBCharacteristicWriteWithoutResponse`, the write operation is performed as best-effort, and delivery is neither guarantteed nor reported. The peripheral does not call the delegate method. 
 
 
 
