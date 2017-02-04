@@ -19,6 +19,13 @@ I try to share what I learn and teach. Since this is more like a documentation r
 ## Course Materials
 These study materials are used for my upcoming course, **The Fundamentals of UIKit with Bob**. on Udemy. If you're interested in learning these topics, feel free to send me an email to register your spot for free until the course is released publicly. About 190 developers have sent me emails so far, and I highly engage with my students.
 
+## Last Update
+
+Updated Vision and Added POP
+
+{{ gitbook.time }}
+
+
 #### Stay Connected
 If you have any questions, or you want to check out other materials, feel free to check out!
 <p><a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bob_the_developer

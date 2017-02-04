@@ -32,6 +32,8 @@
   * [Online Presence]()
   * [Networking]()
 * [Language]()
+  * [Writing Fundamentals]()
   * [English]()
   * [Korean]()
   * [Mandarin]()
+* [Vision](/VISION.md)
