@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3F2D2E91DD255AC00B0C13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F2D2E71DD255AC00B0C13C /* LaunchScreen.storyboard */; };
+		F208E787198582510055AF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208E786198582510055AF03 /* AppDelegate.swift */; };
+		F208E789198582510055AF03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208E788198582510055AF03 /* ViewController.swift */; };
+		F208E78C198582510055AF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F208E78A198582510055AF03 /* Main.storyboard */; };
+		F208E78E198582510055AF03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F208E78D198582510055AF03 /* Images.xcassets */; };
+		F208E79A198582510055AF03 /* UIViewFadeExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208E799198582510055AF03 /* UIViewFadeExtensionsTests.swift */; };
+		F208E7A61985894A0055AF03 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208E7A51985894A0055AF03 /* UIViewExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F208E794198582510055AF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F208E779198582510055AF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F208E780198582510055AF03;
+			remoteInfo = UIViewFadeExtensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3F2D2E81DD255AC00B0C13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F208E781198582510055AF03 /* UIViewFadeExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewFadeExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F208E785198582510055AF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F208E786198582510055AF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F208E788198582510055AF03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F208E78B198582510055AF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F208E78D198582510055AF03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F208E793198582510055AF03 /* UIViewFadeExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewFadeExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F208E798198582510055AF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F208E799198582510055AF03 /* UIViewFadeExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewFadeExtensionsTests.swift; sourceTree = "<group>"; };
+		F208E7A51985894A0055AF03 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F208E77E198582510055AF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208E790198582510055AF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F208E778198582510055AF03 = {
+			isa = PBXGroup;
+			children = (
+				F208E783198582510055AF03 /* UIViewFadeExtensions */,
+				F208E796198582510055AF03 /* UIViewFadeExtensionsTests */,
+				F208E782198582510055AF03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F208E782198582510055AF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F208E781198582510055AF03 /* UIViewFadeExtensions.app */,
+				F208E793198582510055AF03 /* UIViewFadeExtensionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F208E783198582510055AF03 /* UIViewFadeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F208E7A51985894A0055AF03 /* UIViewExtensions.swift */,
+				F208E788198582510055AF03 /* ViewController.swift */,
+				F208E786198582510055AF03 /* AppDelegate.swift */,
+				F208E78A198582510055AF03 /* Main.storyboard */,
+				F208E78D198582510055AF03 /* Images.xcassets */,
+				F208E784198582510055AF03 /* Supporting Files */,
+			);
+			path = UIViewFadeExtensions;
+			sourceTree = "<group>";
+		};
+		F208E784198582510055AF03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2D2E71DD255AC00B0C13C /* LaunchScreen.storyboard */,
+				F208E785198582510055AF03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F208E796198582510055AF03 /* UIViewFadeExtensionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F208E799198582510055AF03 /* UIViewFadeExtensionsTests.swift */,
+				F208E797198582510055AF03 /* Supporting Files */,
+			);
+			path = UIViewFadeExtensionsTests;
+			sourceTree = "<group>";
+		};
+		F208E797198582510055AF03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F208E798198582510055AF03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F208E780198582510055AF03 /* UIViewFadeExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F208E79D198582510055AF03 /* Build configuration list for PBXNativeTarget "UIViewFadeExtensions" */;
+			buildPhases = (
+				F208E77D198582510055AF03 /* Sources */,
+				F208E77E198582510055AF03 /* Frameworks */,
+				F208E77F198582510055AF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIViewFadeExtensions;
+			productName = UIViewFadeExtensions;
+			productReference = F208E781198582510055AF03 /* UIViewFadeExtensions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F208E792198582510055AF03 /* UIViewFadeExtensionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F208E7A0198582510055AF03 /* Build configuration list for PBXNativeTarget "UIViewFadeExtensionsTests" */;
+			buildPhases = (
+				F208E78F198582510055AF03 /* Sources */,
+				F208E790198582510055AF03 /* Frameworks */,
+				F208E791198582510055AF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F208E795198582510055AF03 /* PBXTargetDependency */,
+			);
+			name = UIViewFadeExtensionsTests;
+			productName = UIViewFadeExtensionsTests;
+			productReference = F208E793198582510055AF03 /* UIViewFadeExtensionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F208E779198582510055AF03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Andrew Bancroft";
+				TargetAttributes = {
+					F208E780198582510055AF03 = {
+						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
+					};
+					F208E792198582510055AF03 = {
+						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
+						TestTargetID = F208E780198582510055AF03;
+					};
+				};
+			};
+			buildConfigurationList = F208E77C198582510055AF03 /* Build configuration list for PBXProject "UIViewFadeExtensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F208E778198582510055AF03;
+			productRefGroup = F208E782198582510055AF03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F208E780198582510055AF03 /* UIViewFadeExtensions */,
+				F208E792198582510055AF03 /* UIViewFadeExtensionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F208E77F198582510055AF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F2D2E91DD255AC00B0C13C /* LaunchScreen.storyboard in Resources */,
+				F208E78C198582510055AF03 /* Main.storyboard in Resources */,
+				F208E78E198582510055AF03 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208E791198582510055AF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F208E77D198582510055AF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F208E789198582510055AF03 /* ViewController.swift in Sources */,
+				F208E7A61985894A0055AF03 /* UIViewExtensions.swift in Sources */,
+				F208E787198582510055AF03 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208E78F198582510055AF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F208E79A198582510055AF03 /* UIViewFadeExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F208E795198582510055AF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F208E780198582510055AF03 /* UIViewFadeExtensions */;
+			targetProxy = F208E794198582510055AF03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3F2D2E71DD255AC00B0C13C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F2D2E81DD255AC00B0C13C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F208E78A198582510055AF03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F208E78B198582510055AF03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F208E79B198582510055AF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F208E79C198582510055AF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F208E79E198582510055AF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = UIViewFadeExtensions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F208E79F198582510055AF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = UIViewFadeExtensions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F208E7A1198582510055AF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UIViewFadeExtensions.app/UIViewFadeExtensions";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UIViewFadeExtensionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		F208E7A2198582510055AF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UIViewFadeExtensions.app/UIViewFadeExtensions";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UIViewFadeExtensionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F208E77C198582510055AF03 /* Build configuration list for PBXProject "UIViewFadeExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208E79B198582510055AF03 /* Debug */,
+				F208E79C198582510055AF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F208E79D198582510055AF03 /* Build configuration list for PBXNativeTarget "UIViewFadeExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208E79E198582510055AF03 /* Debug */,
+				F208E79F198582510055AF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F208E7A0198582510055AF03 /* Build configuration list for PBXNativeTarget "UIViewFadeExtensionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208E7A1198582510055AF03 /* Debug */,
+				F208E7A2198582510055AF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F208E779198582510055AF03 /* Project object */;
+}
