@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='Error Handling'/>
+        <page name='Closure'/>
+        <page name='Typealias'/>
+        <page name='Set'/>
+        <page name='Memory Management'/>
+        <page name='MarkUp'/>
+        <page name='Functional Programming'/>
+        <page name='Book'/>
+    </pages>
+</playground>
