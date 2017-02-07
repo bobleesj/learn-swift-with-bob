@@ -1,14 +1,13 @@
 # Vision
 My dream is to provide affordable education channels for all people regardless of gender, religion, sex, race, color, and wealth. Since Sept 17, 2016, I've left college in NYC to pursue this goal. Currently, I have started off with teaching how to make iOS apps and Swift programming language. In 2017, I attempt to raise as much as funds through teaching so that I can start a company and work with smart engineers to disrupt the current education system.
 
-I'm 20 years old, and I was born in Korea, raised in Malaysia, Vietnam, and the lived in the US. I'm currently in Seoul, Korea. Next year, I plan to go back to school to pursue a degree in Computer Science in the US. I'd like to study Machine Learning, AI, and VR technology. I speak both Korea and English.
+I'm 20 years old, and I was born in Korea, raised in Malaysia, Vietnam, and the lived in the US. I'm currently in Seoul, Korea. Next year, I plan to go back to school to pursue a degree in Computer Science in the US. I'd like to study Machine Learning, AI, and VR technology. I speak Korean and English.
 
 ## 5 Years Vision
- - Founder of an education startup in Silicon Valley that implements VR/AR for remote teaching experience even for the underprivileged.
+ Founder of an education startup in Silicon Valley that implements VR/AR for remote teaching experience even for the underprivileged.
 
 ## Current Focus
- - The #1 iOS Blogger on Medium
- - 4 books and 2 courses by June 1st, 2017
+ I have two goals before June 1st, 2017. The first is to become the #1 iOS Blogger on Medium. Second, I try to publish 4 books and 2 courses.
 
 | Start  |  End     |  Name | Type |
 |----------|-------|--------|-----|
@@ -69,10 +68,17 @@ I, Bob the Developer, can achieve anything if I show up every day, practice ever
 
 >  Those who have a 'why' to live, can bear with almost any 'how'. - Victor E. Frankl, Man's Search for Meaning.
 
-## Future Ideas
+## Ideas
 | Name | Level | Type |
 |---------|------------|----------|
 | How to brand yourself as an iOS Developer | Intermediate | eBook |
 | How to truly become an iOS Developer | Beginner | eBook |
 | iOS Interview Questions | Intermediate | eBook |
 | Test Driven App Development with no storyboard | Intermediate | Course |
+
+<br>
+<br>
+<p><a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bob_the_developer
+"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
+<a href="https://medium.com/@bobleesj"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"/></a>
+</p>

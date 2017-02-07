@@ -27,4 +27,12 @@ Writing a diary helps me with focusing, and just relax with my own. I also want 
 
 I met my cousin, Jae Hyun, and bought The Art of The Deal. I looked into AI, Machine Learning, and how jobs will be lost. I start realizing that's the path I'm going with. This is the future. People are too negative. Imagine what AI brings to us. You can use robots to introduce museum products. Imagine robots walking on the street and you may ask questions. It's thrilling. I want to be a part of the world in which I create those. I want to be the leader. Fuck, I'm pumped man. Gary, you are my hero. Gary tells me not to consume. Start doing. Stop discussing. Test and learn. Test and learn. Do it over and over. Stop taking meaningless theory based Udemy courses. Just do it. And, I'm doing it
 
-> **Reflection:** Get back to the reading habit and study more AI, Backend, iOS, and so on. Avoid negative people. Cut them out. 
+> **Reflection:** Get back to the reading habit and study more AI, Backend, iOS, and so on. Avoid negative people. Cut them out.
+
+
+<br>
+<br>
+<p><a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bob_the_developer
+"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
+<a href="https://medium.com/@bobleesj"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"/></a>
+</p>

@@ -144,7 +144,6 @@ November 14 2016
 “유아복점에서 근무하는 이은영 매니저는 전국적으로 매출 상위 1% 안에 드는 판매량을 기록해 ‘에이스 메니저’ 라는 명예의 전당에 오른 사람이다. 그녀는 임신한 여성이 초기에 매장에 와 충동구매를 하려고 하면 고객을 말린다. 앞으로 선물이 많이 들어올 테니 너무 성급하게 사지 말고 막달에 다시 오라고 조언한다. 그러면 판매자 진심을 알아본 고객은 나중에 반드시 다시 찾아오고 단골 고객이 된다는 것이다.
 
 
-## Sales Quotes and Facts
 
 ## 5 Science Based Sales Techniques
 - When you begin, great weather and favorite sports winning —> increase in 20%
