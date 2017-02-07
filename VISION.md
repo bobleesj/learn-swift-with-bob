@@ -1,59 +1,78 @@
+# Vision
+My dream is to provide affordable education channels for all people regardless of gender, religion, sex, race, color, and wealth. Since Sept 17, 2016, I've left college in NYC to pursue this goal. Currently, I have started off with teaching how to make iOS apps and Swift programming language. In 2017, I attempt to raise as much as funds through teaching so that I can start a company and work with smart engineers to disrupt the current education system.
 
-## Dream
-My dream is to provide affordable education channels for all people regardless of gender, religion, sex, race, color, and wealth. I'm trying my best ability starting off from Feb 1st, 2017.
+I'm 20 years old, and I was born in Korea, raised in Malaysia, Vietnam, and the lived in the US. I'm currently in Seoul, Korea. Next year, I plan to go back to school to pursue a degree in Computer Science in the US. I'd like to study Machine Learning, AI, and VR technology. I speak both Korea and English.
 
-Bucket list
-Goal in 2017: The Number One iOS Blogger on Medium
-Implement Virtual Reality to Education
+## 5 Years Vision
+ - Founder of an education startup in Silicon Valley that implements VR/AR for remote teaching experience even for the underprivileged.
 
+## Current Focus
+ - The #1 iOS Blogger on Medium
+ - 4 books and 2 courses by June 1st, 2017
+
+| Start  |  End     |  Name | Type |
+|----------|-------|--------|-----|
+| Feb 1st |  Unknown  |  The UIKit Fundamentals with Bob | Course |
+| Feb 1st | Unknown | Bob's Complete Guide to Swift 3: Beginners | eBook |
+| Unknown | Unknown | POP, MVVM, RxSwift | Course  |
+| Unknown | Unknown | Bob's Complete Guide to Swift 3: Intermediates | eBook |
+| Unknown| Unknown | Bob's Complete Guide to Swift 3: Advanced | eBook |
+| Unknown| Unknown | Make iOS 10 Apps Programmatically without Storyboard | eBook |
+
+> From Jan 1st to June 1st. I eat shit for 6 months. I hustle everyday.
 
 ## How to get there
-- Initiate. I reach out to people, ask questions, make recommendations, offer to help, and pitch my ideas
-- Compete with those way ahead of you: Devslopes, Rob Riches, Udemy, Udacity, T
-- Remember Patrick Bet David —> There is a formula to everything
+1. Initiate and reach out to people, ask questions, make recommendations, offer to help, and pitch my ideas
+2. Compete with those way ahead of me: `Devslopes`, `Rob Riches`, `Udemy`, `Udacity`, `Treehouse`, `CodeAcademy`, `RayWenderlich`, `AppCoda`.
+3. Hustle everyday. No basketball. No hangout more than once a week. No day off. No girlfriend. More Sacrifices. More Focused.
 
+## Mission Statement
+I, Bob the Developer, can achieve anything if I show up every day, practice everyday, and improve every day. I learn to contribute. I believe in good karma
 
-## Mission Statement Everyday
-- Bob the Develoepr, can achieve anything if I show up every day, practice everyday, and improve every day
-- Learn to Contribute
-- I believe in Good Karma
-
-| Starting Date  | End Date           | Plan                                                                  |
+## Long Term Schedule
+| Start  | End            | Plan                                                                  |
 |----------------|--------------------|-----------------------------------------------------------------------|
-| **Jan 1, 2016**| **May 31, 2016**| 4 Books, 2 Courses, Personal Website @Seoul, Korea |
-| June 1, 2016 | Jun 2, 2016     | SwiftAveiro](https://twitter.com/SwiftAveiro) @Aveiro, Portugal       |
-| June 3, 2016 | Aug 31, 2016  | Travel @Europe, SF, Boston, Japan, Singapore               |
-| Sept 1, 2016 | Aug 31,  2017 | Learn Mandarin and continue teaching and scaling @Beijing, China              |
-| Sept 1, 2017 | Unknown     | Back to college to learn AI, Machine Learning, Virtual Reality @USA|
+| Jan 1 | May 31 | 4 Books, 2 Courses, Personal Website @Seoul, Korea |
+| June 1 | June 2   | [SwiftAveiro](https://twitter.com/SwiftAveiro) @Aveiro, Portugal       |
+| June 3  | Aug 31  | Travel @Europe, SF, Boston, Japan, Singapore               |
+| Sept 1  | Aug 31 | Learn Mandarin and scale business @Beijing, China              |
+| Sept 1 | Unknown     | Back to college to learn AI, Machine Learning, Virtual Reality @USA|
 
 
-Course Material and Goals
-4 Books and 2 Courses by June 1st
-
-Book 1: Bob's Guide to Swift 3 (Part 1/3)
-Learn how to program for the first time with Bob
-Book 2: Bob's Guide to Swift 3 (Part 2/3)
-Book 3: Bob's Guide to Swift 3 (Part 3/3)
-Book 4: Make apps programmatically
-
-Course 1: The UIKIt Fundamentals with Bob
-Course 2: RxSwift, MVVM, POP
-
-Affiliate Links
-Personal Website
-Ideal Schedule
-
-6:00 - 9:00 Work I
-9:00 - 12:00 Work II
-12:00 - 13:00 Lunch
-13:00 - 15:00 Workout/Shower/Food
-15:00 - 24:00 Work III
-
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=bobleesj%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FSeoul" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+## Normal Daily Schedule
+| Time  | Activity |
+|---------|----------|
+| 6:00 - 9:00 | Shower, Work I, Writing |
+| 9:00 - 12:00 | work II, Udemy Course Prep |
+| 12:00 - 13:00 | Lunch, Social Media Routine |
+| 13:00 - 15:00 | Workout |
+| 15:00 - 22:00 | Work III Writing |
+| 22:00 - 24:00 | Work IV Video Editing, Prepping |
 
 
-<a href="http://www.accuweather.com/en/au/melbourne/26216/weather-forecast/26216" class="aw-widget-legal">
-<!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
--->
-</a><div id="awcc1486178309720" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1486178309720"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+## Calendar
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=bobleesj%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FSeoul" style="border-width:0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+## Favorite Quotes
+
+### Dream
+> Failure is an option here. If things are not failing, you are not innovating enough - Elon Musk
+
+> People who are crazy enough to think they can change the world are the one who do - Steve Jobs
+
+### Confidence
+> Two roads diverged in a wood, and I - I took the on less traveled by, and that has made all the difference. - Robert Frost
+
+### Mind
+> Everything can be taken from a man but one thing: the last of the human freedoms to choose one's attitude in any given set of circumstances, to choose one's own way - Victor E. Frankl, Man's Search for Meaning
+
+>  Those who have a 'why' to live, can bear with almost any 'how'. - Victor E. Frankl, Man's Search for Meaning.
+
+## Future Ideas
+| Name | Level | Type |
+|---------|------------|----------|
+| How to brand yourself as an iOS Developer | Intermediate | eBook |
+| How to truly become an iOS Developer | Beginner | eBook |
+| iOS Interview Questions | Intermediate | eBook |
+| Test Driven App Development with no storyboard | Intermediate | Course |
