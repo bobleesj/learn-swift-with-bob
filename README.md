@@ -44,10 +44,6 @@ If you have any questions, don't hesitate to contact me for any further explanat
 ## What's Inside
  `Vision`,  `Diary`, `Swift 3`,  `iOS 10`,  `Sales`,  `Language`, `History`, `POP`, `OOP`, `Bluetooth`, `Korean`, `English`, `Chinese`, `CS`, `Marketing`
 
-
-## Schedule
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=bobleesj%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FSeoul" style="border-width:0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
-
 ## Last Update
 Updated Vision and Added POP
 
