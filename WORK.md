@@ -1,5 +1,5 @@
 # Tutorials
-I try my best ability to stay consistent and provide as much as value for my fans and readers. I understand hard work with discipline will slowly take me to what I'm picturing in my head. 
+I try my best ability to stay consistent and provide as much as value for my fans and readers. I value discipline and hard work. 
 
 
 

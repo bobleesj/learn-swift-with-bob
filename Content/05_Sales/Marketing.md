@@ -19,7 +19,7 @@
 If someone cares enough to send me a descent email for showing gratitude for my work, I must show appreciation. Word of mouth is so much greater than sheer numbers. I rather have 50 people on my email list and engage with them rather than 1,000 people with no interaction.
 > Provide as much as value for free. Jab, Jab, and Hook - Gary
 
- 1.  Publish two articles on iOS per week
+ 1.  Publish one article on iOS per week
  2.  Post YouTube course preview videos
  3. Send a weekly email update
  4.  Offer help individually - Do the unscalable
@@ -27,7 +27,7 @@ If someone cares enough to send me a descent email for showing gratitude for my 
  6.  Follow up with VIP fans and LinkedIn connections - Do the unscalable
 
 ## Sales Routes
-Sales is all about hustle and being honest. It's okay to show vulnerability. 
+Sales is all about hustle and being honest. It's okay to show vulnerability.
 ### Personal Sales
  - Email
  - Facebook Page Message
