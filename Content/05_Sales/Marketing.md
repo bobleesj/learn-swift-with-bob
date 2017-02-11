@@ -1,6 +1,6 @@
 # Marketing
 
-> **Do the unscalable**. Reach out to people at an individual level even if you have send 1000 emails. It's all about providing value and making them feel special and cared.
+> **Do the unscalable**. Reach out to people at an individual level even if you have send 1000 emails. It's all about providing value and making them feel special and cared. Lastly, I do care about them.
 
  | Platform   | Purpose   |
  |------------|------------|
@@ -24,11 +24,10 @@ If someone cares enough to send me a descent email for showing gratitude for my 
  3. Send a weekly email update
  4.  Offer help individually - Do the unscalable
  5.  Reply all messages and emails - Do the unscalable.
- 6.  Follow up with VIP fans and LinkedIn connections
+ 6.  Follow up with VIP fans and LinkedIn connections - Do the unscalable
 
 ## Sales Routes
-
-
+Sales is all about hustle and being honest. It's okay to show vulnerability. 
 ### Personal Sales
  - Email
  - Facebook Page Message
@@ -48,6 +47,15 @@ If someone cares enough to send me a descent email for showing gratitude for my 
  - Gitbook Lecture Notes and Learning Journey
  - YouTube Video: weekly Vlog & Preview Tutorials
  - Medium Articles
+
+### Google Search
+ - Sales Page for distinct URL. This sales page should have comments on the bottom. Also possibly a share feature. I only need a one page. Quality > Quantity
+
+### Sales Page
+ - Sales page contains: pitch, YouTube videos, previews, Gitbook
+ - You can always tweak sales page from one year down the road. It's all about reusability.
+ - Include comments to show social proof.
+ - Integrate scrolling feature to improve user experience.
 
 ## Advertisement
 Theme: Personal story and document my journey.  `Facebook`, `LinkedIn`, `Twitter`, `YouTube`, `Google`

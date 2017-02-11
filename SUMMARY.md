@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Vision](VISION.md)
-* [Diary](DIARY.md)
 * [Work](WORK.md)
   * [Object Oriented Programming]()
   * [Functional Programming](Content/01_Swift_3/Functional_Swift.md)
@@ -15,6 +14,7 @@
     * [Memory Management]()
     * [Grand Central Dispatch]()
     * [Memory Management](Content/01_Swift_3/Memory_Management.md)
+    * [NSURLSession](Content/01_Swift_3/NSURLSession.md)
 * [Design Patterns]()
     * [MVVM](Content/01_Swift_3/MVVM.md)
     * [Delegate Pattern]()
@@ -33,6 +33,7 @@
 * [Sales]()
   * [Sales Principles](/Content/05_Sales/Sales_Principles.md)
   * [Marketing](/Content/05_Sales/Marketing.md)
+  * [Personal Website](/Content/05_Sales/Personal_Website.md)
 * [Language]()
   * [Writing Fundamentals](Content/06_Language/Writing_Fundamentals.md)
   * [English](Content/06_Language/English.md)

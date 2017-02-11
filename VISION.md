@@ -50,7 +50,7 @@ I, Bob the Developer, can achieve anything if I show up every day, practice ever
 
 
 ## Calendar
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=bobleesj%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FSeoul" style="border-width:0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=bobleesj%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FSeoul" style="border-width:0" height="600" frameborder="0" scrolling="no"></iframe>
 
 
 ## Favorite Quotes
