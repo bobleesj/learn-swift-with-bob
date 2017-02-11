@@ -11,7 +11,6 @@
 * [iOS APIs]()
     * [Bluetooth Low Energy](Content/01_Swift_3/Bluetooth_Low_Energy.md)
     * [Animation]()
-    * [Memory Management]()
     * [Grand Central Dispatch]()
     * [Memory Management](Content/01_Swift_3/Memory_Management.md)
     * [NSURLSession](Content/01_Swift_3/NSURLSession.md)
