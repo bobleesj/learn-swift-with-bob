@@ -48,7 +48,7 @@
 ## Navigation
   - Split Panes Horizontally: `cmd-k-left/right`
   - Find Open File: `cmd-b`
-  -
+  
 ## Bookmarks
   - Set Bookmarks: `cmd-f2`
   - Next Bookmarks: `f2`

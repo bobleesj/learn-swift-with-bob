@@ -1,7 +1,12 @@
 # Science of Persuasion
-We sell all the time. Marriage, hook ups, friends, interview, salary negotiation, trading. We no longer have to view sales as something evil. In fact, it's fun as long as you provide value to others.
+We sell all the time. Marriage, partners, friends, interview, salary negotiation, trading. We no longer have to view sales as evil. Many sales people have tainted its name. In fact, it's fun as long as one provides great value to others. Sales should never be forced. Sales should be organic to the point customers can't wait to brag with others.
 
-## 6 Pillars of Persuasion Tactics
+## Influence by Dr.Cialdini
+[The psychology of Persuasion]
+
+[The psychology of Persuasion]: https://www.amazon.com/gp/product/006124189X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=006124189X&linkCode=as2&tag=iosgeekcommun-20&linkId=f7232616b76a38fbcd1433f22163b84a
+
+
 ### Reciprocity
 - If one mint is given, then there is an 3% increase in tip
 - If one mint, but later said, “You nice people, here is it"
@@ -34,7 +39,7 @@ We sell all the time. Marriage, hook ups, friends, interview, salary negotiation
 - “Please reuse the towel to save the environment (35%) —>  75% of our guests reuse their towels (26% increase)
 - Rather relying on own ability, point out how others are doing already.
 
-## How to Share Products
+## Factors that increases shares
 ### Social Currency 
  People like looking smart in front of their friends. Create something that helps them do that and they will share it with others.
 
@@ -114,7 +119,7 @@ Always help others out first and “How can I help first". Ex) “I wanted to he
 
 
 ## Overcome Objections (5 Simples Steps) Persuasion
-“Too expensive"
+> “Too expensive"
 
 1. Neutralizes —> “Okay, is that only challenge with the product?"
 2. Confirm —> “What makes you think it is expensive?”  Find the reason
@@ -128,9 +133,7 @@ November 14 2016
 ### Anchoring or Focalism
 The human human tendency to rely too heavily on the first piece of information offered when making decisions
 
-```
-Ex) Buying a car and adding new features.
-```
+> Ex) Buying a car and adding new features.
 
 ### Automation Bias
 The propensity for humans to favor suggestions from automated decisions making systems and to ignore contradictory information made without automation, even if it is correct.
@@ -138,19 +141,15 @@ The propensity for humans to favor suggestions from automated decisions making s
 ## Best Methods to Build Rapports
 November 14 2016
 
-`Rapport`: Rapport is built through by feeling of commonality. We feel the spark. Too many people rely on words as to get rapport with each other. Only 7% is important. We mirror each other. People like people who are like themselves.
+**Rapport:** Rapport is built through by feeling of commonality. We feel the spark. Too many people rely on words as to get rapport with each other. Only 7% is important. We mirror each other. People like people who are like themselves.
 
 “고객은 내 지갑을 보는 세일즈맨을 원하지 않는다. 고객은 내 마음을 보는 세일즈맨을 원한다."
 “유아복점에서 근무하는 이은영 매니저는 전국적으로 매출 상위 1% 안에 드는 판매량을 기록해 ‘에이스 메니저’ 라는 명예의 전당에 오른 사람이다. 그녀는 임신한 여성이 초기에 매장에 와 충동구매를 하려고 하면 고객을 말린다. 앞으로 선물이 많이 들어올 테니 너무 성급하게 사지 말고 막달에 다시 오라고 조언한다. 그러면 판매자 진심을 알아본 고객은 나중에 반드시 다시 찾아오고 단골 고객이 된다는 것이다.
 
-
-
-## 5 Science Based Sales Techniques
+## Sales Techniques
 - When you begin, great weather and favorite sports winning —> increase in 20%
 - Don’t sabotage: when you say bad things about others, it rubs on you (Association)
 - “You are my one of my best customers" end on a high note
 - Top 20% make 80%
 
-> "The world revolves around me. Me, me, me. My favorite person: Me."
-
-> I don’t want email from you. I don’t want junk mail from you. I want me-mail. — Seth Godin
+> "The world revolves around me. Me, me, me. My favorite person: Me. I don’t want email from you. I don’t want junk mail from you. I want me-mail." — Seth Godin

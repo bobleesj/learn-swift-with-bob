@@ -38,7 +38,7 @@ I, Bob the Developer, can achieve anything if I show up every day, practice ever
 | Sept 1 | Unknown     | Back to college to learn AI, Machine Learning, Virtual Reality @USA|
 
 
-## Normal Daily Schedule
+## Daily Schedule
 | Time  | Activity |
 |---------|----------|
 | 6:00 - 9:00 | Shower, Work I, Writing |
@@ -48,6 +48,12 @@ I, Bob the Developer, can achieve anything if I show up every day, practice ever
 | 15:00 - 22:00 | Work III Writing |
 | 22:00 - 24:00 | Work IV Video Editing, Prepping |
 
+
+## Gym Goal 2017
+| Name  |  Current |  Goal  |
+|---------|----------|-------|
+| Deadlift | 275 x 5 | 315 x 5 |
+| Flat Bench | 165 x 4 | 225 x 5 |
 
 ## Calendar
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=bobleesj%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FSeoul" style="border-width:0" width="700" height="600" frameborder="0" scrolling="no"></iframe>

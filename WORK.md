@@ -1,5 +1,5 @@
 # Tutorials
-I try my best ability to stay consistent and provide as much as value for my fans and readers. I value discipline and hard work. 
+I try my best ability to stay consistent and provide as much as value for my fans and readers. I value discipline and hard work.
 
 
 
