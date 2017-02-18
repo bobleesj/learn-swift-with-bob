@@ -8,12 +8,18 @@
   * [Protocol Oriented Programming]()
   * [RxSwift]()
   * [iOS Interview Questions]()
+* [Swift 3]()
+  * [Generics](Content/01_Swift_3/Generics.md)
+
+
 * [iOS APIs]()
     * [Bluetooth Low Energy](Content/01_Swift_3/Bluetooth_Low_Energy.md)
     * [Animation]()
     * [Grand Central Dispatch]()
     * [Memory Management](Content/01_Swift_3/Memory_Management.md)
     * [NSURLSession](Content/01_Swift_3/NSURLSession.md)
+
+
 * [Design Patterns]()
     * [MVVM](Content/01_Swift_3/MVVM.md)
     * [Delegate Pattern]()
