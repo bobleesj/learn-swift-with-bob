@@ -1,6 +1,6 @@
 ## Affordable Education
 ### Features:
- - Books as well.
+ - Books and blog articles as well.
  - Interaction between students and teachers
  - Build relationships
  - Let the people have power and control.
@@ -26,4 +26,4 @@ Leveraged Asset: Blog Articles
 
 The biggest tutorials on the planet
 
-Virtual Reality 
+Virtual Reality

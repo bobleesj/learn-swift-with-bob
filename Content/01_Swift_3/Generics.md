@@ -1,7 +1,6 @@
 
 Full Tutorials: 
 
-
 ```swift
 // Useless shit
 let stringArray = ["1", "2", "3", "4"]
