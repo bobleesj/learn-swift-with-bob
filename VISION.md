@@ -3,9 +3,6 @@ My dream is to provide affordable education channels for all people regardless o
 
 I'm 20 years old, and I was born in Korea, raised in Malaysia, Vietnam, and the lived in the US. I'm currently in Seoul, Korea. Next year, I plan to go back to school to pursue a degree in Computer Science in the US. I'd like to study Machine Learning, AI, and VR technology. I speak Korean and English.
 
-## 5 Years Vision
- Founder of an education startup in Silicon Valley that implements VR/AR for remote teaching experience even for the underprivileged.
-
 ## Current Focus
  I have two goals before June 1st, 2017. The first is to become the #1 iOS Blogger on Medium. Second, I try to publish 4 books and 2 courses.
 

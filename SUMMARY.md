@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Vision](VISION.md)
-* [Log](LOG.md)
+
 
 
 * [Work](WORK.md)

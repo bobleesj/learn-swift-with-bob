@@ -14,6 +14,8 @@ I try to share what I learn and teach. This is more like a documentation rather 
 
 If you have any questions, don't hesitate to contact me for any further explanation. bobleesj@gmail.com
 
+If you want to know me at a personal level, you may read my [diary](https://www.bobthedeveloper.io/journey/) or follow me on [Instagram](https://instagram.com/bobthedev)
+
 ## Current Swift Study Materials
  * Protocol Oriented Programming
  * Functional Oriented Programming
@@ -29,7 +31,7 @@ If you have any questions, don't hesitate to contact me for any further explanat
 
 ## Current Work in Q1 2017
 - **eBook:** Part 1/3 Bob's Guide to Swift 3
-- **Blog:** Publish two weekly articles on [Medium]
+- **Blog:** Publish one weekly article on [Medium]
 - **Course:** Course UIKit Fundamentals with Bob. You can find lectures notes [here]
 
  [here]: https://www.gitbook.com/book/bobleesj/udemy_uikit_fundamentals_notes/details
@@ -51,9 +53,10 @@ Updated Vision and Added POP
 
 
 
-
 #### Stay Connected
-<p><a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bob_the_developer
+<p>
+<a href="https://bobthedeveloper.io"><img src="https://img.shields.io/badge/Personal-Website-00AB6C.svg"></a>
+<a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
 "><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
 <a href="https://medium.com/@bobleesj"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"/></a>
 </p>
