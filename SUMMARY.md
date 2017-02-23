@@ -4,6 +4,8 @@
 * [Vision](VISION.md)
 
 
+* [Work Log](LOG.md)
+
 
 * [Work](WORK.md)
   * [Object Oriented Programming]()

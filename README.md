@@ -51,8 +51,6 @@ Updated Vision and Added POP
 
 {{ gitbook.time }}
 
-
-
 #### Stay Connected
 <p>
 <a href="http://bobthedeveloper.io"><img src="https://img.shields.io/badge/Personal-Website-00AB6C.svg"></a>
