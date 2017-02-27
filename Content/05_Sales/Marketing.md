@@ -4,10 +4,11 @@
 
  | Platform   | Purpose   |
  |------------|------------|
- |  Website  | Personal diary |
+ |  Website  |  |
  |  Gitbook  | Personal journey, Update  |   
  |  LinkedIn | Online resume  |  
- |  Medium |   Article  |  
+ |  iOS Geek Community |   Article  |  
+ |  Bob the Developer |  Article  |  
  |  YouTube | Vlog, Course preview |   
  |  Twitter |  Engage, Gratitude |
  |  Facebook |  Update |  

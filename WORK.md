@@ -39,12 +39,18 @@ I try my best ability to stay consistent and provide as much as value for my fan
 ### Swift 3
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [The Complete Understanding of Access Control in Swift 3] |  Feb 25, 2017 | Medium |
+| [Intro to Functional Programming with Bob] | Feb 27, 2017 | Medium |
+| [Intro to Generics in Swift with Bob] | Feb 18, 2017 | Medium |
+| [The Complete Understanding of Access Control in Swift 3] |  Jan 25, 2017 | Medium |
 | [Intro to Error Handling in Swift 3] | Jan 22, 2017 | Medium |
 | [No Fear Closure in Swift 3 with Bob (Part 2)][Closure Part 2] | Jan 13, 2017 | Medium |
 | [No Fear Closure in Swift 3 with Bob][Closure Part 1] | Dec 31, 2016 | Medium |
 | [10 Tips to become a better Swift Ninja] | Nov 19, 2016 | Medium |
 | [10 Tips to become a better Swift Developer] | Nov 16, 2016 | Medium |
+
+[Intro to Functional Programming with Bob]: https://medium.com/ios-geek-community/intro-to-swift-functional-programming-with-bob-9c503ca14f13#.k65nrzgi0
+
+[Intro to Generics in Swift with Bob]: https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.ylx1w3ai4
 
 
 ### Perspective
