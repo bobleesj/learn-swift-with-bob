@@ -15,6 +15,7 @@
   * [iOS Interview Questions]()
 * [Swift 3]()
   * [Generics](Content/01_Swift_3/Generics.md)
+  * [Functional Programming](Content/01_Swift_3/Intro_to_Functional_Programming.md)
 
 
 * [iOS APIs]()
