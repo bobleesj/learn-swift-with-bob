@@ -7,10 +7,6 @@
 * [Resources](WORK.md)
 
 
-* [Intro to Functional Programming](Content/01_Swift_3/Intro_to_Functional_Programming.md)
-* [Generics](Content/01_Swift_3/Generics.md)
-
-
 * [iOS APIs]()
     * [Bluetooth Low Energy](Content/01_Swift_3/Bluetooth_Low_Energy.md)
     * [Memory Management](Content/01_Swift_3/Memory_Management.md)
@@ -42,4 +38,4 @@
 
 
 
-  #### Keep Learning!
+  #### I'm going to succeed - Bob
