@@ -14,7 +14,7 @@ I try to share what I learn and teach. This is more like a documentation rather 
 
 If you have any questions, don't hesitate to contact me for any further explanation. bobleesj@gmail.com
 
-If you want to know me at a personal level, you may read my [diary](https://www.bobthedeveloper.io/journey/) or follow me on [Instagram](https://instagram.com/bobthedev)
+If you want to know me at a personal level, you may read personal biased thought [here](https://medium.com/bob-the-developer) or follow me on [Instagram](https://instagram.com/bobthedev)
 
 ## Current Swift Study Materials
  * Protocol Oriented Programming
@@ -37,14 +37,6 @@ If you want to know me at a personal level, you may read my [diary](https://www.
  [here]: https://www.gitbook.com/book/bobleesj/udemy_uikit_fundamentals_notes/details
  [Medium]: https://medium.com/@bobleesj
 
-## Current Interest
- - Korean, The US, European History
- - Stock Market and Investment
- - Mandarin
- - Machine Learning
-
-## What's Inside
- `Vision`,  `Diary`, `Swift 3`,  `iOS 10`,  `Sales`,  `Language`, `History`, `POP`, `OOP`, `Bluetooth`, `Korean`, `English`, `Chinese`, `CS`, `Marketing`
 
 ## Last Update
 Updated Vision and Added POP

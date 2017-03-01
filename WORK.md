@@ -56,7 +56,7 @@ I try my best ability to stay consistent and provide as much as value for my fan
 ### Perspective
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [How to become an iOS Developer, Bob] | Feb 11, 2016 Medium |
+| [How to become an iOS Developer, Bob] | Feb 11, 2016 | Medium |
 | [Top 10 Ground Rules for iOS Developers] | Dec 14, 2016 | Medium |
 | [Love and hate relationship between Apple and iOS Developers] | Nov 6, 2016 | Medium |
 | [How it feels to learn iOS in 2016] | Nov 11, 2016 | Medium |
@@ -69,7 +69,6 @@ I try my best ability to stay consistent and provide as much as value for my fan
 | [What I Learned from Blogging for 10 Weeks] | Dec 8, 2016 | LinkedIn |
 | [How I Earned 10 Meaningful Connections on LinkedIn]  | Dec 1, 2016 | LinkedIn |
 | [5 Tips for Freelancers on LinkedIn] | Nov 24, 2016 | LinkedIn |
-
 
 
 [How to become an iOS Developer, Bob]: https://medium.com/ios-geek-community/how-to-become-an-ios-developer-bob-82944188ea7d
