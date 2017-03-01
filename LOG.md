@@ -58,11 +58,9 @@ Record Video for 1000 and 1100
 
 ## Feb 27th 2017
 ### Course
-Record Intro to Functional Programming <br>
-Record Intro to Protocol Oriented Programming <br>
+~~Record Intro to Functional Programming~~ <br>
+~~Record Intro to Protocol Oriented Programming~~ <br>
 Record Intro Videos
 
 ### Blog
-Upload Intro to Functional Programming <br>
-
-### Others
+~~Upload Intro to Functional Programming~~ <br>

@@ -35,6 +35,7 @@
  - Select All Matching Characters: `cmd-ctrl-g`
  - Delete Word from Front: `option-d`
  - Delete Letter from Front: `control-d`
+ - Delete on the right side: `control-k`
  - Move to Beginning of Word: `option-b`
  - Move to Beginning of Letter: `ctrl-b`
  - Move to Front of Word: `option-f`
@@ -62,10 +63,8 @@
  - Add New Folder: `shift-a`
  - Show Recursive Files: `option-arrow`
 
-
 ## Screen
  - Toggle Sidebar: `cmd-\`
-
 
  <p><a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bob_the_developer
  "><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
