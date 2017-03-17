@@ -7,35 +7,42 @@
 * [Resources](WORK.md)
 
 
-* [iOS APIs]()
-    * [Bluetooth Low Energy](Content/01_Swift_3/Bluetooth_Low_Energy.md)
-    * [Memory Management](Content/01_Swift_3/Memory_Management.md)
-    * [NSURLSession](Content/01_Swift_3/NSURLSession.md)
+ * [Swift]()
+   * [Learning Material](programming/swift/learning.md)
 
 
-* [Algorithm]()
+ * [iOS API]()
+   * [Bluetooth](programming/swift_api/ble.md)
+   * [Memory Management](programming/swift_api/memory_management.md)
+   * [NSURLSession](programming/swift_api/nsurlsessionmd)
 
 
-* [Productivity]()
-  * [Xcode Shortcuts]()
-  * [Atom Shortcuts](Content/04_Productivity/Shortcuts.md)
+ * [Algorithm](programming/algorithm/algorithm.md)
 
 
-
-* [Business]()
-  * [Business Execution](Content/08_Business/Business_Execution.md)
-  * [Entrepreneurship](Content/08_Business/Entrepreneurship.md)
-  * [Sales Principles](/Content/05_Sales/Sales_Principles.md)
-  * [Marketing](/Content/05_Sales/Marketing.md)
-  * [SEO](/Content/05_Sales/SEO.md)
-  * [Personal Website](/Content/05_Sales/Personal_Website.md)
+ * [Software Engineering]()
+   * [Coding Principles](programming/software_engineering/coding_principles.md)
 
 
-* [Language]()
-  * [Writing Fundamentals](Content/06_Language/Writing_Fundamentals.md)
-  * [English](Content/06_Language/English.md)
-  * [Korean](Content/06_Language/Korean.md)
+ * [Sales]()
+   * [Marketing](business/sales/marketing.md)
+   * [Sales Principle](business/sales/sales_principles.md)
+   * [SEO](business/sales/seo.md)
+   * [Personal Website](business/sales/personal_website.md)
 
 
+ * [Global Education](business/dream/global_education.md)
+   * [Execution](business/dream/execution.md)
+   * [Strategy](business/dream/strategy.md)
+   * [Exponential Organizations](business/dream/exponential_organizations.md)
+   * [Immigration](business/dream/immigration.md)
+   * [Heroes](business/dream/heroes.md)
 
-  #### I'm going to succeed - Bob
+
+## Productivity
+* [Xcode](productivity/keyboard_shortcuts.md)
+
+* [Social Issue]()
+  * [Social Issue](liberal_studies/controversial/social_issue.md)
+
+#### Patience met hustle
