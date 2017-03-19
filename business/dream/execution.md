@@ -4,11 +4,6 @@ I need to make enough money to a point where I build my social media followers a
 I might have to get an office in Seoul, Korea. Hire people for UX/UI designer. Video Editing and subtitle should be done outside. Front-end and backend developer who speak Korean.
 Hire an assistance, where he/she can learn about programming.
 
-## Current
-Keep making tutorials. I don't need to go to holiday. Keep working. Keep building and do the dirty work.
-
- > 점심/저녁 사준다, 차비도 준다, 책도 읽으라고 준다. 영화표도 준다.
-
 ## Work
 
 ### UX/UI Designer

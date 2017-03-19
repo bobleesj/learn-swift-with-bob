@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Algorithm · GitBook</title>
+        <title>Open Source Projects · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../software_engineering/coding_principles.html" />
+    <link rel="next" href="../algorithm/algorithm.html" />
     
     
-    <link rel="prev" href="../swift_api/open_source_project_list.html" />
+    <link rel="prev" href="nsurlsession.html" />
     
 
     </head>
@@ -162,9 +162,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../swift_api/ble.html">
+        <li class="chapter " data-level="4.1" data-path="ble.html">
             
-                <a href="../swift_api/ble.html">
+                <a href="ble.html">
             
                     
                     Bluetooth
@@ -175,9 +175,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../swift_api/nsurlsession.html">
+        <li class="chapter " data-level="4.2" data-path="nsurlsession.html">
             
-                <a href="../swift_api/nsurlsession.html">
+                <a href="nsurlsession.html">
             
                     
                     NSURLSession
@@ -188,9 +188,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../swift_api/open_source_project_list.html">
+        <li class="chapter active" data-level="4.3" data-path="open_source_project_list.html">
             
-                <a href="../swift_api/open_source_project_list.html">
+                <a href="open_source_project_list.html">
             
                     
                     Open Source Projects
@@ -208,9 +208,9 @@
         
         
     
-        <li class="chapter active" data-level="5.1" data-path="algorithm.html">
+        <li class="chapter " data-level="5.1" data-path="../algorithm/algorithm.html">
             
-                <a href="algorithm.html">
+                <a href="../algorithm/algorithm.html">
             
                     
                     Algorithm
@@ -644,7 +644,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Algorithm</a>
+        <a href="../.." >Open Source Projects</a>
     </h1>
 </div>
 
@@ -659,137 +659,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="search-algorithm">Search Algorithm</h1>
-<h2 id="a-note-on-big-o-notation">A note on Big-O notation</h2>
-<table>
-<thead>
-<tr>
-<th>Big-O</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>O(1)</td>
-<td>constant</td>
-<td>This is the best.</td>
-</tr>
-<tr>
-<td>O(log n)</td>
-<td>logarithmic</td>
-<td>Pretty great.</td>
-</tr>
-<tr>
-<td>O(n)</td>
-<td>linear</td>
-<td>Good performance.</td>
-</tr>
-<tr>
-<td>O(n log n)</td>
-<td>linearithmic</td>
-<td>Decent performance.</td>
-</tr>
-<tr>
-<td>O(n^2)</td>
-<td>quadratic</td>
-<td>Kinda slow.</td>
-</tr>
-<tr>
-<td>O(n^3)</td>
-<td>cubic</td>
-<td>Poor performance.</td>
-</tr>
-<tr>
-<td>O(2^n)</td>
-<td>exponential</td>
-<td>Very poor performance.</td>
-</tr>
-<tr>
-<td>O(n!)</td>
-<td>factorial</td>
-<td>Intolerably slow.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linear-search">Linear Search</h2>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">linearSearch</span>&lt;T: Equatable&gt;<span class="hljs-params">(<span class="hljs-number">_</span> array: [T], <span class="hljs-number">_</span> object: T)</span></span> -&gt; <span class="hljs-type">Int</span>? {
-  <span class="hljs-keyword">for</span> (index, obj) <span class="hljs-keyword">in</span> array.enumerated() <span class="hljs-keyword">where</span> obj == object {
-    <span class="hljs-keyword">return</span> index
-  }
-  <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
-}
-</code></pre>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> array = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
-linearSearch(array, <span class="hljs-number">2</span>)
-</code></pre>
-<h3 id="performance">Performance</h3>
-<p>0(n)</p>
-<blockquote>
-<p>Comparable: A type that can be compared using the relational operators &lt;, &lt;=, &gt;=, and &gt;.</p>
-<p>Equatable: Types that conform to the Equatable protocol can be compared for equality using the equal-to operator (==) or inequality using the not-equal-to operator (!=). Most basic types in the Swift standard library conform to Equatable.</p>
-</blockquote>
-<h2 id="binary-search">Binary Search</h2>
-<p>The Swift&apos;s built-in <code>indexOf()</code>function performs a linear search. But, it&apos;s slow since it  is O(n). Binary search is O(log n).</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">binarySearch</span>&lt;T: Comparable&gt;<span class="hljs-params">(<span class="hljs-number">_</span> a: [T], key: T)</span></span> -&gt; <span class="hljs-type">Int</span>? {
-  <span class="hljs-keyword">var</span> lowerBound = <span class="hljs-number">0</span>
-  <span class="hljs-keyword">var</span> upperBound = a.<span class="hljs-built_in">count</span>
-  <span class="hljs-keyword">while</span> lowerBound &lt; upperBound {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;loop&quot;</span>)
-    <span class="hljs-keyword">let</span> midIndex = lowerBound + (upperBound - lowerBound) / <span class="hljs-number">2</span>
-    <span class="hljs-keyword">if</span> a[midIndex] == key {
-      <span class="hljs-keyword">return</span> midIndex
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> a[midIndex] &lt; key {
-      lowerBound = midIndex + <span class="hljs-number">1</span>
-    } <span class="hljs-keyword">else</span> {
-      upperBound = midIndex
-    }
-  }
-  <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
-}
-</code></pre>
-<h3 id="performance">Performance</h3>
-<p>O(log n)</p>
-<h2 id="count-occurrences">Count Occurrences</h2>
-<p>Combine binary search</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">countOccurrencesOfKey</span><span class="hljs-params">(<span class="hljs-number">_</span> key: Int, inArray a: [Int])</span></span> -&gt; <span class="hljs-type">Int</span> {
-  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">leftBoundary</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Int</span> {
-    <span class="hljs-keyword">var</span> low = <span class="hljs-number">0</span>
-    <span class="hljs-keyword">var</span> high = a.<span class="hljs-built_in">count</span>
-    <span class="hljs-keyword">while</span> low &lt; high {
-      <span class="hljs-keyword">let</span> midIndex = low + (high - low)/<span class="hljs-number">2</span>
-      <span class="hljs-keyword">if</span> a[midIndex] &lt; key {
-        low = midIndex + <span class="hljs-number">1</span>
-      } <span class="hljs-keyword">else</span> {
-        high = midIndex
-      }
-    }
-    <span class="hljs-keyword">return</span> low
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">rightBoundary</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Int</span> {
-    <span class="hljs-keyword">var</span> low = <span class="hljs-number">0</span>
-    <span class="hljs-keyword">var</span> high = a.<span class="hljs-built_in">count</span>
-    <span class="hljs-keyword">while</span> low &lt; high {
-      <span class="hljs-keyword">let</span> midIndex = low + (high - low)/<span class="hljs-number">2</span>
-      <span class="hljs-keyword">if</span> a[midIndex] &gt; key {
-        high = midIndex
-      } <span class="hljs-keyword">else</span> {
-        low = midIndex + <span class="hljs-number">1</span>
-      }
-    }
-    <span class="hljs-keyword">return</span> low
-  }
-
-  <span class="hljs-keyword">return</span> rightBoundary() - leftBoundary()
-}
-</code></pre>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> a = [ <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">11</span> ]
-countOccurrencesOfKey(<span class="hljs-number">3</span>, inArray: a)  <span class="hljs-comment">// returns 4</span>
-</code></pre>
-<h2 id="select-minimummaximum">Select Minimum/Maximum</h2>
-<h3 id="resources">Resources</h3>
-<p><a href="https://github.com/raywenderlich/swift-algorithm-club" target="_blank">Ray Wenderlich Swift Algorithm Club</a></p>
+                                <h2 id="pop-over-controller">Pop Over Controller</h2>
+<p><a href="https://github.com/IcaliaLabs/Presentr?utm_source=mybridge&amp;utm_medium=blog&amp;utm_campaign=read_more" target="_blank">Presentr</a></p>
+<p>iOS let&apos;s you modally present any view controller, but if you want the presented view controller to not cover the whole screen or modify anything about its presentation or transition you have to use the Custom View Controller Presentation API&apos;s.</p>
+<h2 id="animatedcollectionviewlayout">AnimatedCollectionViewLayout</h2>
+<p><a href="https://github.com/KelvinJin/AnimatedCollectionViewLayout" target="_blank">Animated CollectionViewLayout</a></p>
+<h2 id="hero">Hero</h2>
+<p><a href="https://github.com/lkzhao/Hero" target="_blank">Hero</a></p>
 
                                 
                                 </section>
@@ -817,12 +693,12 @@ countOccurrencesOfKey(<span class="hljs-number">3</span>, inArray: a)  <span cla
 
             
                 
-                <a href="../swift_api/open_source_project_list.html" class="navigation navigation-prev " aria-label="Previous page: Open Source Projects">
+                <a href="nsurlsession.html" class="navigation navigation-prev " aria-label="Previous page: NSURLSession">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../software_engineering/coding_principles.html" class="navigation navigation-next " aria-label="Next page: Coding Principles">
+                <a href="../algorithm/algorithm.html" class="navigation navigation-next " aria-label="Next page: Algorithm">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -833,7 +709,7 @@ countOccurrencesOfKey(<span class="hljs-number">3</span>, inArray: a)  <span cla
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Algorithm","level":"5.1","depth":1,"next":{"title":"Coding Principles","level":"6.1","depth":1,"path":"programming/software_engineering/coding_principles.md","ref":"programming/software_engineering/coding_principles.md","articles":[]},"previous":{"title":"Open Source Projects","level":"4.3","depth":1,"path":"programming/swift_api/open_source_project_list.md","ref":"programming/swift_api/open_source_project_list.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"programming/algorithm/algorithm.md","mtime":"2017-03-13T14:53:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T23:07:39.703Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Open Source Projects","level":"4.3","depth":1,"next":{"title":"Algorithm","level":"5.1","depth":1,"path":"programming/algorithm/algorithm.md","ref":"programming/algorithm/algorithm.md","articles":[]},"previous":{"title":"NSURLSession","level":"4.2","depth":1,"path":"programming/swift_api/nsurlsession.md","ref":"programming/swift_api/nsurlsession.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"programming/swift_api/open_source_project_list.md","mtime":"2017-03-19T23:38:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T23:07:39.703Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,6 +1,5 @@
-# Tutorials
+# Resources
 I try my best ability to stay consistent and provide as much as value for my fans and readers. I value discipline and hard work.
-
 
 
 ### Complete Series
@@ -39,6 +38,8 @@ I try my best ability to stay consistent and provide as much as value for my fan
 ### Swift 3
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
+| [Swift Capture List in Closures] | Mar 18, 2017 | Medium |
+| [Completion Handlers in Swift with Bob] | March 4, 2017 | Medium |
 | [Intro to Functional Programming with Bob] | Feb 27, 2017 | Medium |
 | [Intro to Generics in Swift with Bob] | Feb 18, 2017 | Medium |
 | [The Complete Understanding of Access Control in Swift 3] |  Jan 25, 2017 | Medium |
@@ -48,6 +49,10 @@ I try my best ability to stay consistent and provide as much as value for my fan
 | [10 Tips to become a better Swift Ninja] | Nov 19, 2016 | Medium |
 | [10 Tips to become a better Swift Developer] | Nov 16, 2016 | Medium |
 
+[Completion Handlers in Swift with Bob]:(https://medium.com/ios-geek-community/completion-handlers-in-swift-with-bob-6a2a1a854dc4#.rwqvi0el5)
+
+[Swift Capture List in Closures]: https://medium.com/ios-geek-community/swift-capture-list-in-closures-e28282c71b95#.4w48m2v1u
+
 [Intro to Functional Programming with Bob]: https://medium.com/ios-geek-community/intro-to-swift-functional-programming-with-bob-9c503ca14f13#.k65nrzgi0
 
 [Intro to Generics in Swift with Bob]: https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.ylx1w3ai4
@@ -56,7 +61,8 @@ I try my best ability to stay consistent and provide as much as value for my fan
 ### Perspective
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [How to become an iOS Developer, Bob] | Feb 11, 2016 | Medium |
+| [Why I don't use Storyboard] | Mar 11, 2017  | Medium |
+| [How to become an iOS Developer, Bob] | Feb 11, 2017 | Medium |
 | [Top 10 Ground Rules for iOS Developers] | Dec 14, 2016 | Medium |
 | [Love and hate relationship between Apple and iOS Developers] | Nov 6, 2016 | Medium |
 | [How it feels to learn iOS in 2016] | Nov 11, 2016 | Medium |
@@ -69,6 +75,9 @@ I try my best ability to stay consistent and provide as much as value for my fan
 | [What I Learned from Blogging for 10 Weeks] | Dec 8, 2016 | LinkedIn |
 | [How I Earned 10 Meaningful Connections on LinkedIn]  | Dec 1, 2016 | LinkedIn |
 | [5 Tips for Freelancers on LinkedIn] | Nov 24, 2016 | LinkedIn |
+
+
+[Why I don't use Storyboard]: https://medium.com/ios-geek-community/why-i-dont-use-storyboard-fe14a1a99f58#.oj2hyo876
 
 
 [How to become an iOS Developer, Bob]: https://medium.com/ios-geek-community/how-to-become-an-ios-developer-bob-82944188ea7d
@@ -137,6 +146,54 @@ I try my best ability to stay consistent and provide as much as value for my fan
 [My Favorite Xcode 8 Shortcuts (Part 2)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-shortcuts-part-2-3-c076e506cd20#.aacnm6w6f
 
 [My Favorite Xcode 8 Shortcuts (Part 3)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-8-shortcuts-part-3-3-afd2bf590442#.m4icbmiza
+
+
+# Tools
+I use these tools to increase productivity. I'd never recommend items that I do not use.
+
+
+## Hardware
+Sending money between countries
+
+[Portable 15.6 Full HS Monitor](http://amzn.to/2nAkinW)
+
+[Xiaomi MI 10000mAH](http://amzn.to/2mhmCQz)
+
+
+## Books
+[Cracking the Code Interview: 189 Programming Questions and Solutions ](http://amzn.to/2nol338)
+
+[iOS Programming: The Big Nerd Ranch Guide](http://amzn.to/2nAlszX)
+
+[The Man's Search for Meaning by Viktor Frankl](http://amzn.to/2nFLkas)
+
+[Magic Mouse 2](http://amzn.to/2mh7537)
+
+$75.5 not refurbished. Usually cheaper.
+
+[Exponential Organizations: Why new organizations are ten times better, faster, and cheaper than yours - Salim Ismail ](http://amzn.to/2noiFtf)
+
+
+
+
+
+[Magic Keyboard 2](http://amzn.to/2mh8bfw)
+$99 and not refurbished
+
+[Acer 23.8 Inch Monitor](http://amzn.to/2mFk75V)
+
+
+[Apple's 15 inch](http://amzn.to/2n3uxQ6)
+
+
+SaaS
+[Cloud Computing by Digital Ocean](https://m.do.co/c/bb7f34dbec72)
+[Blue Host](https://www.bluehost.com/track/bobthedev/)
+
+## Learning
+[Team Treehouse](http://treehouse.7eer.net/c/350498/228915/3944)
+
+I used to learn alot. I like that it's a subscription service and you can sign up for free trials and then quit. If you like it, you can continue.
 
 
 #### Stay Connected

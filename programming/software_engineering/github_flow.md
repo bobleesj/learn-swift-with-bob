@@ -71,13 +71,3 @@ The git rebase command allows you to easily change a series of commits, modifyin
 
 ### Reference
 http://jaimeiniesta.github.io/learn.github.com/p/rebasing.html
-
-
-# Team Collaboration with Github
-https://code.tutsplus.com/articles/team-collaboration-with-github--net-29876
-
- 1. Jira combine with Github for Developers
- 2. Kanban for Designers and Helpers
- 3.
-
- Communication: Slack 사용

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Algorithm · GitBook</title>
+        <title>Github Flow · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../software_engineering/coding_principles.html" />
+    <link rel="next" href="../../productivity/keyboard_shortcuts.html" />
     
     
-    <link rel="prev" href="../swift_api/open_source_project_list.html" />
+    <link rel="prev" href="agile_development.html" />
     
 
     </head>
@@ -208,9 +208,9 @@
         
         
     
-        <li class="chapter active" data-level="5.1" data-path="algorithm.html">
+        <li class="chapter " data-level="5.1" data-path="../algorithm/algorithm.html">
             
-                <a href="algorithm.html">
+                <a href="../algorithm/algorithm.html">
             
                     
                     Algorithm
@@ -228,9 +228,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="../software_engineering/coding_principles.html">
+        <li class="chapter " data-level="6.1" data-path="coding_principles.html">
             
-                <a href="../software_engineering/coding_principles.html">
+                <a href="coding_principles.html">
             
                     
                     Coding Principles
@@ -241,9 +241,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="../software_engineering/agile_development.html">
+        <li class="chapter " data-level="6.2" data-path="agile_development.html">
             
-                <a href="../software_engineering/agile_development.html">
+                <a href="agile_development.html">
             
                     
                     Agile Development
@@ -254,9 +254,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.3" data-path="../software_engineering/github_flow.html">
+        <li class="chapter active" data-level="6.3" data-path="github_flow.html">
             
-                <a href="../software_engineering/github_flow.html">
+                <a href="github_flow.html">
             
                     
                     Github Flow
@@ -644,7 +644,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Algorithm</a>
+        <a href="../.." >Github Flow</a>
     </h1>
 </div>
 
@@ -659,137 +659,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="search-algorithm">Search Algorithm</h1>
-<h2 id="a-note-on-big-o-notation">A note on Big-O notation</h2>
-<table>
-<thead>
-<tr>
-<th>Big-O</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>O(1)</td>
-<td>constant</td>
-<td>This is the best.</td>
-</tr>
-<tr>
-<td>O(log n)</td>
-<td>logarithmic</td>
-<td>Pretty great.</td>
-</tr>
-<tr>
-<td>O(n)</td>
-<td>linear</td>
-<td>Good performance.</td>
-</tr>
-<tr>
-<td>O(n log n)</td>
-<td>linearithmic</td>
-<td>Decent performance.</td>
-</tr>
-<tr>
-<td>O(n^2)</td>
-<td>quadratic</td>
-<td>Kinda slow.</td>
-</tr>
-<tr>
-<td>O(n^3)</td>
-<td>cubic</td>
-<td>Poor performance.</td>
-</tr>
-<tr>
-<td>O(2^n)</td>
-<td>exponential</td>
-<td>Very poor performance.</td>
-</tr>
-<tr>
-<td>O(n!)</td>
-<td>factorial</td>
-<td>Intolerably slow.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linear-search">Linear Search</h2>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">linearSearch</span>&lt;T: Equatable&gt;<span class="hljs-params">(<span class="hljs-number">_</span> array: [T], <span class="hljs-number">_</span> object: T)</span></span> -&gt; <span class="hljs-type">Int</span>? {
-  <span class="hljs-keyword">for</span> (index, obj) <span class="hljs-keyword">in</span> array.enumerated() <span class="hljs-keyword">where</span> obj == object {
-    <span class="hljs-keyword">return</span> index
-  }
-  <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
-}
-</code></pre>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> array = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
-linearSearch(array, <span class="hljs-number">2</span>)
-</code></pre>
-<h3 id="performance">Performance</h3>
-<p>0(n)</p>
-<blockquote>
-<p>Comparable: A type that can be compared using the relational operators &lt;, &lt;=, &gt;=, and &gt;.</p>
-<p>Equatable: Types that conform to the Equatable protocol can be compared for equality using the equal-to operator (==) or inequality using the not-equal-to operator (!=). Most basic types in the Swift standard library conform to Equatable.</p>
-</blockquote>
-<h2 id="binary-search">Binary Search</h2>
-<p>The Swift&apos;s built-in <code>indexOf()</code>function performs a linear search. But, it&apos;s slow since it  is O(n). Binary search is O(log n).</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">binarySearch</span>&lt;T: Comparable&gt;<span class="hljs-params">(<span class="hljs-number">_</span> a: [T], key: T)</span></span> -&gt; <span class="hljs-type">Int</span>? {
-  <span class="hljs-keyword">var</span> lowerBound = <span class="hljs-number">0</span>
-  <span class="hljs-keyword">var</span> upperBound = a.<span class="hljs-built_in">count</span>
-  <span class="hljs-keyword">while</span> lowerBound &lt; upperBound {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;loop&quot;</span>)
-    <span class="hljs-keyword">let</span> midIndex = lowerBound + (upperBound - lowerBound) / <span class="hljs-number">2</span>
-    <span class="hljs-keyword">if</span> a[midIndex] == key {
-      <span class="hljs-keyword">return</span> midIndex
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> a[midIndex] &lt; key {
-      lowerBound = midIndex + <span class="hljs-number">1</span>
-    } <span class="hljs-keyword">else</span> {
-      upperBound = midIndex
-    }
-  }
-  <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
-}
-</code></pre>
-<h3 id="performance">Performance</h3>
-<p>O(log n)</p>
-<h2 id="count-occurrences">Count Occurrences</h2>
-<p>Combine binary search</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">countOccurrencesOfKey</span><span class="hljs-params">(<span class="hljs-number">_</span> key: Int, inArray a: [Int])</span></span> -&gt; <span class="hljs-type">Int</span> {
-  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">leftBoundary</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Int</span> {
-    <span class="hljs-keyword">var</span> low = <span class="hljs-number">0</span>
-    <span class="hljs-keyword">var</span> high = a.<span class="hljs-built_in">count</span>
-    <span class="hljs-keyword">while</span> low &lt; high {
-      <span class="hljs-keyword">let</span> midIndex = low + (high - low)/<span class="hljs-number">2</span>
-      <span class="hljs-keyword">if</span> a[midIndex] &lt; key {
-        low = midIndex + <span class="hljs-number">1</span>
-      } <span class="hljs-keyword">else</span> {
-        high = midIndex
-      }
-    }
-    <span class="hljs-keyword">return</span> low
-  }
+                                <h1 id="github-workflow">Github Workflow</h1>
+<h2 id="creating-a-fork">Creating a Fork</h2>
+<h1 id="clone-your-fork-to-your-local-machine">Clone your fork to your local machine</h1>
+<pre><code>git clone git@github.com:USERNAME/FORKED-PROJECT.git
+</code></pre><h2 id="keeping-your-fork-up-to-date">Keeping Your Fork Up to Date</h2>
+<pre><code># Add &apos;upstream&apos; repo to list of remotes
+git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
 
-  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">rightBoundary</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Int</span> {
-    <span class="hljs-keyword">var</span> low = <span class="hljs-number">0</span>
-    <span class="hljs-keyword">var</span> high = a.<span class="hljs-built_in">count</span>
-    <span class="hljs-keyword">while</span> low &lt; high {
-      <span class="hljs-keyword">let</span> midIndex = low + (high - low)/<span class="hljs-number">2</span>
-      <span class="hljs-keyword">if</span> a[midIndex] &gt; key {
-        high = midIndex
-      } <span class="hljs-keyword">else</span> {
-        low = midIndex + <span class="hljs-number">1</span>
-      }
-    }
-    <span class="hljs-keyword">return</span> low
-  }
+# Verify the new remote named &apos;upstream&apos;
+git remote -v
+</code></pre><p>Whenever you want to update your fork</p>
+<pre><code># Fetch from upstream remote
+git fetch upstream
+</code></pre><pre><code># View all branches, including those from upstream
+git branch -va
+</code></pre><p>Checkout your own master branch and merge the upstream repo&apos;s master branch:</p>
+<pre><code># Checkout your master branch and merge upstream
+git checkout master
+git merge upstream/master
+</code></pre><h2 id="work">Work</h2>
+<pre><code># Checkout the master branch - you want your new branch to come from master
+git checkout master
 
-  <span class="hljs-keyword">return</span> rightBoundary() - leftBoundary()
-}
-</code></pre>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> a = [ <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">11</span> ]
-countOccurrencesOfKey(<span class="hljs-number">3</span>, inArray: a)  <span class="hljs-comment">// returns 4</span>
-</code></pre>
-<h2 id="select-minimummaximum">Select Minimum/Maximum</h2>
-<h3 id="resources">Resources</h3>
-<p><a href="https://github.com/raywenderlich/swift-algorithm-club" target="_blank">Ray Wenderlich Swift Algorithm Club</a></p>
+# Create a new branch named newfeature (give your branch its own simple informative name)
+git branch newfeature
+
+# Switch to your new branch
+git checkout newfeature
+</code></pre><h2 id="pull-request">Pull Request</h2>
+<p>If any commits have been made to the upstream master branch,</p>
+<pre><code># Fetch upstream master and merge with your repo&apos;s master branch
+git fetch upstream
+git checkout master
+git merge upstream/master
+</code></pre><pre><code># If there were any new commits, rebase your development branch
+git checkout newfeature
+git rebase master
+</code></pre><p>The git rebase command allows you to easily change a series of commits, modifying the history of your repository. You can reorder, edit, or squash commits together.</p>
+<ul>
+<li>Edit previous commit messages</li>
+<li>Combine multiple commits into one</li>
+<li>Delete or revert commits that are no longer necessary</li>
+</ul>
+<h3 id="reference">Reference</h3>
+<p><a href="http://jaimeiniesta.github.io/learn.github.com/p/rebasing.html" target="_blank">http://jaimeiniesta.github.io/learn.github.com/p/rebasing.html</a></p>
 
                                 
                                 </section>
@@ -817,12 +731,12 @@ countOccurrencesOfKey(<span class="hljs-number">3</span>, inArray: a)  <span cla
 
             
                 
-                <a href="../swift_api/open_source_project_list.html" class="navigation navigation-prev " aria-label="Previous page: Open Source Projects">
+                <a href="agile_development.html" class="navigation navigation-prev " aria-label="Previous page: Agile Development">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../software_engineering/coding_principles.html" class="navigation navigation-next " aria-label="Next page: Coding Principles">
+                <a href="../../productivity/keyboard_shortcuts.html#shortcuts" class="navigation navigation-next " aria-label="Next page: Shortcuts">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -833,7 +747,7 @@ countOccurrencesOfKey(<span class="hljs-number">3</span>, inArray: a)  <span cla
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Algorithm","level":"5.1","depth":1,"next":{"title":"Coding Principles","level":"6.1","depth":1,"path":"programming/software_engineering/coding_principles.md","ref":"programming/software_engineering/coding_principles.md","articles":[]},"previous":{"title":"Open Source Projects","level":"4.3","depth":1,"path":"programming/swift_api/open_source_project_list.md","ref":"programming/swift_api/open_source_project_list.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"programming/algorithm/algorithm.md","mtime":"2017-03-13T14:53:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T23:07:39.703Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Github Flow","level":"6.3","depth":1,"next":{"title":"Shortcuts","level":"7.1","depth":1,"anchor":"#shortcuts","path":"productivity/keyboard_shortcuts.md","ref":"productivity/keyboard_shortcuts.md#shortcuts","articles":[{"title":"Atom","level":"7.1.1","depth":2,"anchor":"#atom","path":"productivity/keyboard_shortcuts.md","ref":"productivity/keyboard_shortcuts.md#atom","articles":[]},{"title":"Gmail","level":"7.1.2","depth":2,"anchor":"#gmail","path":"productivity/keyboard_shortcuts.md","ref":"productivity/keyboard_shortcuts.md#gmail","articles":[]},{"title":"Google Spreadsheet","level":"7.1.3","depth":2,"anchor":"#google_spreadsheet","path":"productivity/keyboard_shortcuts.md","ref":"productivity/keyboard_shortcuts.md#google_spreadsheet","articles":[]},{"title":"Google Chrome","level":"7.1.4","depth":2,"anchor":"#google_chrome","path":"productivity/keyboard_shortcuts.md","ref":"productivity/keyboard_shortcuts.md#google_chrome","articles":[]},{"title":"Xcode","level":"7.1.5","depth":2,"anchor":"#xcode","path":"productivity/keyboard_shortcuts.md","ref":"productivity/keyboard_shortcuts.md#xcode","articles":[]},{"title":"MacOS","level":"7.1.6","depth":2,"anchor":"#mac_os","path":"productivity/keyboard_shortcuts.md","ref":"productivity/keyboard_shortcuts.md#mac_os","articles":[]}]},"previous":{"title":"Agile Development","level":"6.2","depth":1,"path":"programming/software_engineering/agile_development.md","ref":"programming/software_engineering/agile_development.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"programming/software_engineering/github_flow.md","mtime":"2017-03-17T10:09:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T23:07:39.703Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
