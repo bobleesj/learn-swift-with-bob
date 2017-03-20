@@ -1,8 +1,10 @@
-# Resources
-I try my best ability to stay consistent and provide as much as value for my fans and readers. I value discipline and hard work.
+# iOS Development {#ios}
+I try to stay consistent and provide as much as value for my students and readers. I also focus on building long-term relationships over short-term sales. You may find all of my tutorials and articles I've written for you guys. Also, you may find [gadgets](Resources.md#gadgets) that I use to increase my productivity.
 
 
-### Complete Series
+### Swift Complete Series
+If you are new to Swift, I'd recommend you to get started with these tutorials first.
+
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [Xcode 8 Auto Layout] | Dec 4, 2016 | YouTube |
@@ -18,36 +20,40 @@ I try my best ability to stay consistent and provide as much as value for my fan
 
 
 ### iOS 10
+If you want to learn how to use certain APIs created provided by Apple
+
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [The Life Cycle of an App] |  Feb 6, 2017  | YouTube |
 | [Make Memory Management Great Again] |  Feb 2, 2017  | Medium |
-| [Protocol Oriented Programming View in Swift] | Jan 18, 2017 | Medium |
 | [Beginner's Guide to Core Data in Swift 3] | Dec 29, 2016 | Medium |
 | [Store UIColor with UserDefaults in Swift 3] | Dec 22, 2016 | Medium |
 | [Pass Data with NSNotification in Swift 3] | Dec 17, 2016 | Medium |
 | [UI & Networking Like a Boss in Swift 3] | Dec 10, 2016 | Medium |
-| [My Favorite Xcode 8 Shortcuts (Part 1)] | Dec 7, 2016 | Medium |
-| [My Favorite Xcode 8 Shortcuts (Part 2)] | Dec 7, 2016 | Medium |
-| [My Favorite Xcode 8 Shortcuts (Part 3)] | Dec 7, 2016 | Medium |
 | [Intro to Grand Central Dispatch in Swift 3 with Bob] | Dec 3, 2016 | Medium |
 | [The Meaning of tableView.delegate = self] | Nov 30, 2016 | Medium |
 | [Introduction to Delegate in Swift] | Nov 26, 2016 | Medium |
 
+### Protocol Oriented Programming
+If you want to write reusable and modular code with protocols.
 
-### Swift 3
+|      Name     |       Date      |     Source    |
+|---------------|---------------|---------------|
+| [Protocol Oriented Programming View in Swift] | Jan 18, 2017 | Medium |
+| [Introduction to Protocol Oriented Programming in Swift] | Nov 23 2016 | Medium |
+
+[Introduction to Protocol Oriented Programming in Swift]: https://medium.com/ios-geek-community/introduction-to-protocol-oriented-programming-in-swift-b358fe4974f#.u9hn50l5i
+
+### Functional Programming
+If you want to get your closure game strong and you are waiting for my RxSwift and MVVM course,
+
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [Swift Capture List in Closures] | Mar 18, 2017 | Medium |
-| [Completion Handlers in Swift with Bob] | March 4, 2017 | Medium |
 | [Intro to Functional Programming with Bob] | Feb 27, 2017 | Medium |
-| [Intro to Generics in Swift with Bob] | Feb 18, 2017 | Medium |
-| [The Complete Understanding of Access Control in Swift 3] |  Jan 25, 2017 | Medium |
-| [Intro to Error Handling in Swift 3] | Jan 22, 2017 | Medium |
+| [Completion Handlers in Swift with Bob] | March 4, 2017 | Medium |
 | [No Fear Closure in Swift 3 with Bob (Part 2)][Closure Part 2] | Jan 13, 2017 | Medium |
 | [No Fear Closure in Swift 3 with Bob][Closure Part 1] | Dec 31, 2016 | Medium |
-| [10 Tips to become a better Swift Ninja] | Nov 19, 2016 | Medium |
-| [10 Tips to become a better Swift Developer] | Nov 16, 2016 | Medium |
 
 [Completion Handlers in Swift with Bob]:(https://medium.com/ios-geek-community/completion-handlers-in-swift-with-bob-6a2a1a854dc4#.rwqvi0el5)
 
@@ -55,10 +61,36 @@ I try my best ability to stay consistent and provide as much as value for my fan
 
 [Intro to Functional Programming with Bob]: https://medium.com/ios-geek-community/intro-to-swift-functional-programming-with-bob-9c503ca14f13#.k65nrzgi0
 
+### Swift
+What makes Swift unique
+
+|      Name     |       Date      |     Source    |
+|---------------|---------------|---------------|
+| [Intro to Generics in Swift with Bob] | Feb 18, 2017 | Medium |
+| [The Complete Understanding of Access Control in Swift 3] |  Jan 25, 2017 | Medium |
+| [Intro to Error Handling in Swift 3] | Jan 22, 2017 | Medium |
+| [10 Tips to become a better Swift Ninja] | Nov 19, 2016 | Medium |
+| [10 Tips to become a better Swift Developer] | Nov 16, 2016 | Medium |
+
 [Intro to Generics in Swift with Bob]: https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.ylx1w3ai4
 
+### Productivity
+|      Name     |       Date      |     Source    |
+|---------------|---------------|---------------|
+| [My Favorite Xcode 8 Shortcuts (Part 1)] | Dec 7, 2016 | Medium |
+| [My Favorite Xcode 8 Shortcuts (Part 2)] | Dec 7, 2016 | Medium |
+| [My Favorite Xcode 8 Shortcuts (Part 3)] | Dec 7, 2016 | Medium |
 
-### Perspective
+[My Favorite Xcode 8 Shortcuts (Part 1)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-8-shortcuts-part-1-3-36381e07284d#.opbcbdae2
+
+[My Favorite Xcode 8 Shortcuts (Part 2)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-shortcuts-part-2-3-c076e506cd20#.aacnm6w6f
+
+[My Favorite Xcode 8 Shortcuts (Part 3)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-8-shortcuts-part-3-3-afd2bf590442#.m4icbmiza
+
+
+### Opinions
+I share my biased perspectives on the iOS ecosystem.
+
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [Why I don't use Storyboard] | Mar 11, 2017  | Medium |
@@ -69,6 +101,8 @@ I try my best ability to stay consistent and provide as much as value for my fan
 | [5 Reasons I Fell in Love with Swift] | Oc 22, 2016 | Medium |
 
 ### Soft Skills
+How I received a number of freelance jobs.
+
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [My 4 Step Formula to Goal Execution] | Dec 15, 2016 | LinkedIn |
@@ -141,63 +175,189 @@ I try my best ability to stay consistent and provide as much as value for my fan
 
 [Introduction to Delegate in Swift]: https://medium.com/ios-geek-community/the-meaning-of-delegate-in-swift-347eaa9674d#.hatglcuzg
 
-[My Favorite Xcode 8 Shortcuts (Part 1)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-8-shortcuts-part-1-3-36381e07284d#.opbcbdae2
-
-[My Favorite Xcode 8 Shortcuts (Part 2)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-shortcuts-part-2-3-c076e506cd20#.aacnm6w6f
-
-[My Favorite Xcode 8 Shortcuts (Part 3)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-8-shortcuts-part-3-3-afd2bf590442#.m4icbmiza
+<br>
+<br>
 
 
-# Tools
-I use these tools to increase productivity. I'd never recommend items that I do not use.
+# Gadgets {#gadgets}
+These are products that I use to increase my productivity along with [keyboard shortcuts](productivity/keyboard_shortcuts.md).
+
+| Gadget | My Usage | Category |
+| --- | --- | --- |
+| [Portable 15.6 Inch Full HD Monitor] | I use it to carry around when I travel. This monitor doesn't require a power cord. It needs a USB port | Monitor |
+| [Acer 23.8 Inch Monitor] | It's affordable, and I use it to record tutorials and any other activities. A dual screen is a must for anyone who is serious about programming | Monitor |
+| [MacBook Pro 15 Inch] | I don't think I have to explain. But, the link provides the cheapest offer for now | Laptop |
+| [Xiaomi 10000mAH] | I carry it everywhere because I blog and make tutorials with my phone. | Charger |
+| [Apple's Magic Keyboard] | When I have my mac and monitor, it feels more comfortable for me to type using a bluetooth keyboard instead reyling on my Mac because I often get a neck-ache | Keyboard |
+| [Apple's Magic Mouse 2] | I just how I can scroll between desktops without using the trackpad. It also looks aesthetic and I can carry it in my pocket otherwise I had to carry a small bag | Mouse |
 
 
-## Hardware
-Sending money between countries
+[Acer 23.8 Inch Monitor]:http://amzn.to/2mFk75V
 
-[Portable 15.6 Full HS Monitor](http://amzn.to/2nAkinW)
+[Portable 15.6 Inch Full HD Monitor]: http://amzn.to/2nAkinW
 
-[Xiaomi MI 10000mAH](http://amzn.to/2mhmCQz)
+[Xiaomi 10000mAH]: http://amzn.to/2mhmCQz
 
+[MacBook Pro 15 Inch]: http://amzn.to/2n3uxQ6
 
-## Books
-[Cracking the Code Interview: 189 Programming Questions and Solutions ](http://amzn.to/2nol338)
+[Apple's Magic Keyboard]: http://amzn.to/2mh8bfw
 
-[iOS Programming: The Big Nerd Ranch Guide](http://amzn.to/2nAlszX)
+[Apple's Magic Mouse 2]: http://amzn.to/2mh7537
 
-[The Man's Search for Meaning by Viktor Frankl](http://amzn.to/2nFLkas)
-
-[Magic Mouse 2](http://amzn.to/2mh7537)
-
-$75.5 not refurbished. Usually cheaper.
-
-[Exponential Organizations: Why new organizations are ten times better, faster, and cheaper than yours - Salim Ismail ](http://amzn.to/2noiFtf)
+<br>
+<br>
 
 
+# Software {#software}
+
+### Hosting and Cloud Computing
+
+| SaaS | Purpose |
+| --- | --- |
+| [Digital Ocean] | I use it to run virtual servers. It's more affordable than Google's |
+| [Bluehost] | I use it to host my website and purchase my domain name |  
+
+[Digital Ocean]: https://m.do.co/c/bb7f34dbec72
+[Bluehost]: https://www.bluehost.com/track/bobthedev
 
 
+### Learning
+| Platform | Purpose |
+| --- | --- |
+| [Treehouse] | If I need to devour information, I use Treehouse since it provides a free trial, and I can consume as much as information due to the subscription model. I started my first programming journey with Treehouse. |
 
-[Magic Keyboard 2](http://amzn.to/2mh8bfw)
-$99 and not refurbished
+[Treehouse]: http://treehouse.7eer.net/c/350498/228915/3944
 
-[Acer 23.8 Inch Monitor](http://amzn.to/2mFk75V)
+### Finance
+| Platform | Purpose |
+| --- | --- |
+| [TransferWise] | It disrupts the way banks send money. It's decentralized so the international wire transfer occurs within a day or two and it's cheap if you are dealing with money less than $10,000 |
+
+[TransferWise]: https://transferwise.com/u/217271
+
+### Schedule & Events
+| Platform | Purpose |
+| --- | --- |
+| [Calendly] | This is my favorite scheduling tool. You don't need to buy a premium account. It's free to use. It allows you to set date and time blocks when you are available, when you send your profile link to someone else, the person can choose the time based on their time zone. I use it all the time for scheduling. You can see my schedule [here](https://calendly.com/boblee).  
+| [Timo] | I've used Evenbrite to organize and schedule events. But, Tito provides a seamless experience for me. The landing page looks great. I recently purchased a ticket for the upcoming Swift conference. |
+
+[Timo]: https://ti.to/home
+[Calendly]: https://calendly.com
+
+### Documentation
+| Platform | Purpose |
+| --- | --- |
+| [Gitbook] | I'm currently using Gitbook to document. It allows me to allow Markdown seamlessly with my favorite Text Editor and Github. If you want to get started, feel free to watch this [tutorial](https://toolchain.gitbook.com). I also use it to share my lecture notes for [The UIKIt Fundamentals with Bob] |
+
+[Gitbook]: https://gitbook.com
+[The UIKIt Fundamentals with Bob]: https://bobleesj.gitbooks.io/udemy_uikit_fundamentals_notes/content/
+
+### Website
+| Template | Purpose |
+| --- | --- |
+| [Jupiter Wordpress Theme] | I recently bought this theme to create my own [personal website](http://bobthedeveloper.io) without having to write a single line of code because it provides pre-made and highly customizable drag and drop elements. You can find out what you could possibly create this theme [here](http://preview.themeforest.net/item/jupiter-multipurpose-responsive-theme/full_screen_preview/5177775).  |
+
+[Jupiter Wordpress Theme]: https://themeforest.net/item/jupiter-multipurpose-responsive-theme/5177775?s_rank=1&ref=bobthedeveloper
+
+### Communication
+| Apps | Purpose |
+| --- | --- |
+| [Inbox by Gmail] |  I love using this app instead of relying on iPhone's default mail or Gmail. The app automatically organizes items into separate groups through machine learning, and I cant archive or read the entire group with a single swipe. As a person who receives a number of comments on social media, this app is just perfect for me |
+| [Discord] | Although Slack is okay, I use Discord because it's free for unlimited users. It's heavily used by gamers since it provides channels for voice calls. But, it also provides syntax and markdown highlighting. In fact, I have a group for my students to interact with each other.
+
+[Inbox by Gmail]: https://www.google.com/inbox/
+[Discord]: https://discord.gg/
 
 
-[Apple's 15 inch](http://amzn.to/2n3uxQ6)
+### Feedback and Survey
+| Platform | Purpose |
+| --- | --- |
+| [Typeform] | I used to use Google Form, but Type form looks a little more engaging because it provides interactive experience and you can also add payment |
+
+[Typeform]:https://www.typeform.com
 
 
-SaaS
-[Cloud Computing by Digital Ocean](https://m.do.co/c/bb7f34dbec72)
-[Blue Host](https://www.bluehost.com/track/bobthedev/)
+### Video Editing
+[Adobe Premier Pro and Aftereffect](http://www.adobe.com)
 
-## Learning
-[Team Treehouse](http://treehouse.7eer.net/c/350498/228915/3944)
+### Project Management
 
-I used to learn alot. I like that it's a subscription service and you can sign up for free trials and then quit. If you like it, you can continue.
+| Platform | Purpose |
+| --- | --- |
+| [Wrike] | Wrike is an ideal project management solution for teams and businesses of all sizes: from solopreneurs and small startups to Fortune 500 firms. |
+| [Trello] | Trello provides an overview. I use it to organize my weekly work. |
+
+[Wrike]: https://www.wrike.com/?r=R4w9e0Hw
+[Trello]: https://trello.com/bobleesj/recommend-
+
+ <br>
+ <br>
+
+# Books {#books}
+All should have a kindle version, so feel free to purchase them even if you are not in the US.
+
+### Growth
+| Book | Author | What I've Learned | Category |
+| --- | --- | --- | --- |
+| [Exponential Organizations: Why new organizations are ten times better, faster, and cheaper than yours] | Salim Ismail | What it takes to create a scalable startup with two acronym: IDEAS and SCALE | Strategy |
+| [The Fourth Industrial Revolution] | Klaus Schwab | New rising technology that would disrupt governments and our lives | Future |
+
+[Exponential Organizations: Why new organizations are ten times better, faster, and cheaper than yours]: http://amzn.to/2noiFtf
+
+[The Fourth Industrial Revolution]: http://amzn.to/2mGIlwx
+
+### Personal Development
+These are books that I've the greatest impact in my life.
+
+| Book |  Author | What I've Learned | Category |
+| --- | --- | --- | --- |
+| [Drive: The Surprising Truth About What Motivates Us] | Malcom Gladwell | The intrinsic and extrinsic motivation of human nature | Motivation |
+| [The Definitive Book of Body Language] | Barbara Pease | Unconscious behaviors that reflect human characteristics |  Body Language |
+| [Outliers: The Story of Success] | Malcom Gladwell | The 10,000 hour rule and secrets/rules that apply to the greatest | Success |
+| [The Man's Search for Meaning] | Victor Frankl | "Those who have a 'why' to live, can bear with almost any 'how'." The ability to cope with failure and crisis | Perspective |
+| [The Power of Habit: Why We Do What We Do in Life and Business] | Charles Duhigg | The importance of preserving willpower and how to create and destroy habits | Human Nature |
+
+[Outliers: The Story of Success]: http://amzn.to/2nTESM4
+
+[Drive: The Surprising Truth About What Motivates Us]: http://amzn.to/2mGIpMN
+
+[The Definitive Book of Body Language]: http://amzn.to/2mGu5Eh
+
+[The Man's Search for Meaning]: http://amzn.to/2nFLkas
+
+[The Power of Habit: Why We Do What We Do in Life and Business]: http://amzn.to/2nU09W5
+
+### Software Development
+
+| Book | Author | Category |
+| --- | --- | --- |
+| [Cracking the Code Interview: 189 Programming Questions and Solutions] | Gayle McDowell | Algorithm & Data Structure |
+| [iOS Programming: The Big Nerd Ranch Guide] | Christian Keur | iOS Development |
+
+
+[Cracking the Code Interview: 189 Programming Questions and Solutions]: http://amzn.to/2nol338
+[iOS Programming: The Big Nerd Ranch Guide]: http://amzn.to/2nAlszX
+
+
+<br>
+<br>
+
+### UI/UX Resources
+
+Michael Flarup
+https://www.youtube.com/watch?v=oa_LYHAAbIk
+
+Things CS Major Should Know
+http://matt.might.net/articles/what-cs-majors-should-know/
+
+
+http://www.emarketer.com/Article/How-Many-Apps-Do-Smartphone-Owners-Use/1013309
+
 
 
 #### Stay Connected
-If you'd like to be on my mailing list and receive personal updates on upcoming books and courses, feel free to send me an email at `bobleesj@gmail.com`
+I'm Bob. I work towards providing global education so that anyone who is willing to work, can rise and improve one's standard of living and quality of life.
+
 <p>
 <a href="http://bobthedeveloper.io"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
 <a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
