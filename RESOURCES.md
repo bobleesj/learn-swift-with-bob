@@ -182,7 +182,7 @@ If you would like to work as a freelancer, you might find these articles useful.
 # Gadgets {#gadgets}
 These are products that I use to increase my productivity along with [keyboard shortcuts](productivity/keyboard_shortcuts.md). You don't have to have these products, but they save time in the long run. I'd pay any money to preserve and save my limited time. I rather work smart and hard.
 
-<img src="/resources/my_desk" alt="My current work environment"/>
+<img src="resources/my_desk.jpg" alt="My current workspace"/>
 
 ### iOS Development Tools
 | Gadget | My Usage | Category |
