@@ -16,7 +16,7 @@ If you have any questions, don't hesitate to contact me for any further explanat
 
 If you want to know me at a personal level, you may read personal biased thought [here](https://medium.com/bob-the-developer) or follow me on [Instagram](https://instagram.com/bobthedev)
 
-> You may subscribe to this doc so that whenever I update, it goes straight into your inbox. 
+> You may subscribe to this doc so that whenever I update, it goes straight into your inbox.
 
 ## Current Swift Study Materials
  * Protocol Oriented Programming
@@ -38,6 +38,8 @@ If you want to know me at a personal level, you may read personal biased thought
 
  [here]: https://www.gitbook.com/book/bobleesj/udemy_uikit_fundamentals_notes/details
  [Medium]: https://medium.com/@bobleesj
+
+
 
 
 ## Last Update
