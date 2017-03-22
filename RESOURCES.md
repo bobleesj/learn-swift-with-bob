@@ -204,6 +204,8 @@ amzn_assoc_asins = "B016QO5YNG,B0145NHF5K,B0143BNIXW,B016QO64FI";
 amzn_assoc_search_bar = "true";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
 [Acer 23.8 Inch Monitor]:http://amzn.to/2mFk75V
 
 [Portable 15.6 Inch Full HD Monitor]: http://amzn.to/2nAkinW
