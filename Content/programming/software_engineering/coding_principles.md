@@ -1,4 +1,4 @@
-
+> Will be translated to English soon - March 22, 2017 
 # Coding Principles
 
 ## SOLID

@@ -12,23 +12,15 @@
 
 ### Swift
  * [Learning Material](Content/programming/swift/learning.md)
-
-
-### iOS API
- * [Bluetooth](Content/programming/swift_api/ble.md)
- * [NSURLSession](Content/programming/swift_api/nsurlsession.md)
- * [Open Source](Content/programming/swift_api/open_source_project_list.md)
+ * [Swift Styling Guide](Content/programming/swift/swift_styling_guide.md)
+ * [Better Swift Developer](Content/programming/swift/better_developer.md)
+ * [Swift Resources](Content/programming/swift/swift_resources.md)
 
 
 ### Software Engineering
  * [Coding Principles](Content/programming/software_engineering/coding_principles.md)
  * [Agile Development](Content/programming/software_engineering/agile_development.md)
  * [Github Flow](Content/programming/software_engineering/github_flow.md)
-
-
-
-### Computer Science
- * [Algorithm](Content/programming/computer_science/algorithm.md)
 
 
 ### Productivity
@@ -40,53 +32,21 @@
   * [Xcode](/Content/business/productivity/keyboard_shortcuts.md#xcode)
   * [MacOS](/Content/business/productivity/keyboard_shortcuts.md#mac_os)
 * [Tools](/Content/business/productivity/tools.md)
+* [Markdown](/Content/business/productivity/markdown.md)
 
 
 ### Growth
-* [Marketing](business/sales/marketing.md)
-* [Sales Principle](business/sales/sales_principles.md)
-* [SEO](business/sales/seo.md)
-* [Personal Website](business/sales/personal_website.md)
+* [Marketing](/Content/business/growth/marketing.md)
+* [Sales Principle](/Content/business/growth/sales_principles.md)
+* [SEO](/Content/business/growth/seo.md)
+* [Personal Website](/Content/business/growth/personal_website.md)
 
 ### Mission
-* [Execution](business/dream/execution.md)
-* [Strategy](business/dream/strategy.md)
-* [Exponential Organizations](business/dream/exponential_organizations.md)
-* [Key Performance Indicators](business/dream/kpi.md)
-* [Strategy](business.dream/strategy.md)
-* [Startup](business/dream/company.md)
-* [Future](business/dream/future.md)
-
-### HR
- * [Immigration]()
- * [Culture]()
-
-### Human Skills
- * [Communication]()
- * [Negotiation]()
- * [Leadership]()
- * [Human Bias]()
-
-
-
-### Social Issues
-  * [Wage Gap](controversial/social_issue.md)
-  * [Forms of Government]()
-
-### English
-  * [Common Phrases](liberal_studies/english_common_phrases.md)
-
-### Korean
-  * [Korean History]()
-
-
-### Personal
-* [Immigration](business/dream/immigration.md)
-* [Heroes](business/dream/heroes.md)
-* [Music](personal/music.md)
-* [Fitness](personal/fitness.md)
-* [Clothing]()
-
+* [Execution](/Content/business/mission/execution.md)
+* [Strategy](/Content/business/mission/strategy.md)
+* [Exponential Organizations](Content/business/mission/exponential_organizations.md)
+* [Key Performance Indicators](/Content/business/mission/KPI.md)
+* [Strategy](/Content/business/mission/strategy.md)
 
 
 ### Patience and Work

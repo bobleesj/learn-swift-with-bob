@@ -1,3 +1,46 @@
+## Learning
+
+> This document shouldn't much make sense. This is used as a reference for me before I make tutorials for you guys.
+
+## No Escape vs Escape
+
+This will give compiler error in Xcode 8
+
+```swift 
+class MyClass {
+
+    var myClosure: (() -> ())?
+
+    func doSomething(finishBlock: () -> ()) {
+        myClosure = finishBlock    // ‼️ Error: Assigning non-escaping parameter 'finishBlock' to an @escaping closure
+    }
+}
+```
+
+This will compile ok (explicitly write @escaping)
+
+```swift
+class MyClass {
+
+    var myClosure: (() -> ())?
+
+    func doSomething(finishBlock: @escaping () -> ()) {
+        myClosure = finishBlock
+    }
+}
+```
+Benefits of @noescape:
+ - Compiler can optimize your code for better Performance
+ - Compiler can take care of memory management
+ - There is no need to use a weak reference to self in the closure
+
+
+
+
+### Lazy Variable
+You must always declare a lazy property as a variable (with the var keyword), because its initial value might not be retrieved until after instance initialization completes. Constant properties must always have a value before initialization completes, and therefore cannot be declared as lazy.
+
+
 Over the last few years I've used UIScrollViews with paging, full screen UICollectionViewCells (once had another collection view inside the cell, really really bad idea), and more recently UIPageViewControllers. I'd definitely suggest the UIPageViewControllers. It's just literally built for what you need. The one caveat I found was in the scroll view did scroll delegate for the page view controller, I got weird content offsets so had glitchy parallax effects. But I'm sure you could work around this. Page view controller seems to me like a view controller management system using a scroll view. The other thing I'd say is it's heavy on memory.
 
 UIPageViewController is easy to use, and simple to set up. You can try it out in a test program to see if it will do what you want. You get better resource management, since it already supports reclaiming offscreen viewcontrollers.

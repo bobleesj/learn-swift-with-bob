@@ -12,9 +12,11 @@
 
 I try to share what I learn and teach. This is more like a documentation rather than a tutorial, explanations could be terse. I use this platform to document what I've learned, and I teach with these materials. I mostly talk about various topics including Swift 3, Server side programming, database, soft skills for developers, language, and my long term vision. It is organized so that you may refer to topics you are only interested in.
 
-If you have any questions, don't hesitate to contact me for any further explanation. bobleesj@gmail.com
+If you have any questions, don't hesitate to contact me for any further explanation. bob@bobthedeveloper.io
 
 If you want to know me at a personal level, you may read personal biased thought [here](https://medium.com/bob-the-developer) or follow me on [Instagram](https://instagram.com/bobthedev)
+
+> You may subscribe to this doc so that whenever I update, it goes straight into your inbox. 
 
 ## Current Swift Study Materials
  * Protocol Oriented Programming

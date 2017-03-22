@@ -1,3 +1,6 @@
+# Tools
+Tools that my future startup will use for effective communication.
+
 ## Project Management
  - JIRA for Software shipping
  - Github for source code
@@ -6,12 +9,14 @@
  - Gitbook
  - Google Spreadsheet
  - Google Doc
+ - TypeForm
 
 ## Communication
  - Email
  - Trello
  - Slack
  - Google Hangout
+ - Calendly
 
 ## Dropbox
  - Video Files
@@ -23,11 +28,10 @@
 
 ## Online Payment
  - Stripe
- -
+ - Paypal
 
-## Recruit
+## Talents
  - Dribbble
- -
 
 ## Dashboard
  - https://www.klipfolio.com/features

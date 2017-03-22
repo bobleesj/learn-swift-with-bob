@@ -23,7 +23,6 @@ I aim to become the #1 iOS Blogger on Medium.
 ## How to get there
 1. Initiate and reach out to people, ask questions, make recommendations, offer to help, and pitch my ideas
 2. Compete with those way ahead of me: `Devslopes`, `Rob Riches`, `Udemy`, `Udacity`, `Treehouse`, `CodeAcademy`, `RayWenderlich`, `AppCoda`.
-3. Hustle everyday. No basketball. No hangout more than once a week. No day off. No girlfriend.
 
 ## Mission Statement
 I, Bob the Developer, can achieve anything if I show up every day, practice everyday, and improve every day. I learn to contribute. I believe in good karma
