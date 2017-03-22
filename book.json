@@ -1,0 +1,20 @@
+{
+    "root": "./",
+    "title": "Learn Swift with Bob",
+    "author": "Bob Lee",
+    "description": "Resources for iOS 10 and Swift 3 tutorials",
+    "isbn": "",
+
+    "plugins": [
+       "image-captions"
+     ],
+
+     "pluginsConfig": {
+       "image-captions": {
+             "caption": " _CAPTION_"
+         }
+     },
+     "styles": {
+       "website": "website.css"
+     }
+}

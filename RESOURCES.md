@@ -181,6 +181,8 @@ If you would like to work as a freelancer, you might find these articles useful.
 # Gadgets {#gadgets}
 These are products that I use to increase my productivity along with [keyboard shortcuts](productivity/keyboard_shortcuts.md). You don't have to have these products, but they save time in the long run. I'd pay any money to preserve and save my limited time. I rather work smart and hard.
 
+<img src="resources/my_desk" alt="My current work environment"/>
+
 ### iOS Development Tools
 | Gadget | My Usage | Category |
 | --- | --- | --- |
@@ -190,20 +192,42 @@ These are products that I use to increase my productivity along with [keyboard s
 | [Apple's Magic Mouse 2] | It looks aesthetic, and I love the fact that it is so thin that I can carry it in my pocket otherwise I had to carry a small bag. Similar to the keyboard above, it doesn't require any extra battery cells, so there is no recurring fee or time spent on going to the supermarket. | Mouse |
 | [2013 MacBook Pro 15 Inch] | I don't think I have to explain. The link provides the cheapest offer for now. It is around $800 which is pretty good deal considering I can probably use it for another 3 year. So, you'd only pay like $250 per year which is affordable. | Laptop |
 
-
+<br>
 <script type="text/javascript">
 amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "false";
 amzn_assoc_tracking_id = "iosgeekcommun-20";
 amzn_assoc_ad_mode = "manual";
 amzn_assoc_ad_type = "smart";
 amzn_assoc_marketplace = "amazon";
 amzn_assoc_region = "US";
-amzn_assoc_title = "Magic Keyboard and Mouse";
-amzn_assoc_linkid = "515a309ba29382071f375d49b89d5fef";
-amzn_assoc_asins = "B016QO5YNG,B0145NHF5K,B0143BNIXW,B016QO64FI";
-amzn_assoc_search_bar = "true";
+amzn_assoc_title = "My iOS Development Tools";
+amzn_assoc_asins = "B007471PZQ,B013XFJKGI,B0148NNKTC,B000OOYECC";
+amzn_assoc_linkid = "c500b745dfd3370e403e7d5c878f8559";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+> Having a dual increase my productivity at least 1.5x to 2.0x. It's just a must for developers.
+
+<br>
+
+
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "false";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Magic Mouse 2 and Keyboard 2";
+amzn_assoc_linkid = "47ff36e31a3f64052250a3008856dbd4";
+amzn_assoc_asins = "B016QO64FI,B01NABDNPH,B016QO5YNG,B01NAAY3RA";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+> The cheaper ones are refurbished. I'd recommend you to get a new one since it just feels better and you are going to use them for another 2-3 years. If you spot anything cheaper, make sure it is not the first generation. The second generation contains rechargeable battery: Magic Keyboard 2(MLA22LL) and Magic Mouse 2(MLA02LL)
+
 
 
 [Acer 23.8 Inch Monitor]:http://amzn.to/2mFk75V
@@ -227,14 +251,28 @@ amzn_assoc_search_bar = "true";
 | [Samsung 64GB SD Card] | I used to record videos with a normal SD card but its writing speed was so slow that the recording stopped after a couple seconds. I had no issue with the SD card. | Storage |
 | [Blue Snowball USB Microphone] | All of my YouTube tutorials and Udemy course videos are recorded with this microphone. I love it. Since I've lost its stand, I've been using a pizza box as you can see in my recent videos. | Microphone |
 | [Sony Camera Microphone] | I use it along with my camera since the Blue Snow Microphone is too big to carry it all the time. | Microphone |
-| [Phone Ring Stand] | I think it's just a must because it allows me to watch YouTube videos while eating food and right before I go to bed. | Stand |
+
+
+<br>
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Magic Keyboard and Mouse";
+amzn_assoc_linkid = "515a309ba29382071f375d49b89d5fef";
+amzn_assoc_asins = "B00BYPW00I,B000EOPQ7E,B00IVPU6BY,B00N2S6ZUQ";
+amzn_assoc_search_bar = "false";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
 
 [Canon EOS 700D]: http://amzn.to/2n3DBDg
 [Toshiba 1TB Portable Hard Drive]: http://amzn.to/2ni5bhV
 [Bluetooth Selfie Stick]: http://amzn.to/2ni6HAF
 [Blue Snowball USB Microphone]: http://amzn.to/2ni7S3o
-[Phone Ring Stand]: http://amzn.to/2nZT4n1
 [Samsung 64GB SD Card]: http://amzn.to/2ni97iT
 [Cobra Tech Tripod Stand]: http://amzn.to/2n3EHih
 [Sony Camera Microphone]: http://amzn.to/2n9oCt9
@@ -244,15 +282,34 @@ Currently, I work at home and having the right work environment allows me to sta
 
 | Gadget | Why I Would Get | Category |
 | --- | --- | --- |
-| [Silver Laptop Stand] | If I use a double monitor, it's essential for me to get a laptop stand  so that my next does not have to move up and down and stay align with the height of the monitor. It puts less stress. Also, the color matches with the laptop so it looks aesthetic.  | Laptop Stand |
-| [iPhone Stand] | Not only it is visually aesthetic, but also it allows me to use my app instantly because I don't even need to grab, but just scroll with my finger comfortably. | Phone Stand |
   | [3-Piece Corner Desk] | I just need a long desk. I care about how things look because the environment influence my mind subconsciously. It's affordable as well. | Desk |
 | [Leather Chair] | Similar to the phone stand and the desk, it just looks visually appealing. I tend to grab products that look good because I feel good. | Chair |
+| [iPhone Stand] | Not only it is visually aesthetic, but also it allows me to use my app instantly because I don't even need to grab, but just scroll with my finger comfortably. | Phone Stand |
+| [Phone Ring Stand] | I think it's just a must because it allows me to watch YouTube videos while eating food and right before I go to bed. | Stand |
+| [Silver Laptop Stand] | If I use a double monitor, it's essential for me to get a laptop stand  so that my next does not have to move up and down and stay align with the height of the monitor. It puts less stress. Also, the color matches with the laptop so it looks aesthetic.  | Laptop Stand |
 
-[Silver Laptop Stand]: http://amzn.to/2n9jGEk
+<br>
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "false";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "What Leads to Productive Office ";
+amzn_assoc_asins = "B005SGICMY,B01ARFF3OU,B01HPI5AM2,B01M8M7K84";
+amzn_assoc_linkid = "c500b745dfd3370e403e7d5c878f8559";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
 [iPhone Stand]: http://amzn.to/2moITMg
 [3-Piece Corner Desk]: http://amzn.to/2nGf6iw
 [Leather Chair]: http://amzn.to/2ni9ytG
+[Phone Ring Stand]: http://amzn.to/2nZT4n1
+[Silver Laptop Stand]: http://amzn.to/2n9jGEk
 
 
 ### Wish List
@@ -262,6 +319,26 @@ Currently, I work at home and having the right work environment allows me to sta
 | [Samsung 27-Inch Curved Monitor] | I have a descent monitor, but again, I've never had curved one before. So, I just want to try it out | Monitor |
 | [Apple Airpods] | Currently, I use [Samsung's bluetooth earphone], but Airpods is just classy. I got hooked by Apple's [video](https://www.youtube.com/watch?v=RdtHX15sXiU). | Headphones |
 | [C Shape 4-in-1 Stabilizer] | Although I'm not a film maker, I'd love to watch one of these when I travel during summer breaks. | Camera |
+
+<br>
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "false";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Wish List";
+amzn_assoc_linkid = "568611643d7191d74e9e6370129aa72e";
+amzn_assoc_asins = "B01LTHXAO0,B01CX26VNC,B01MQWUXZS,B016PW393G";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+> I'm going to buy these whenever I have a chance. These are just amazing.
+
+
+
 
 [MacBook Pro 15.4-inch with Touch Bar]: http://amzn.to/2n3F50i
 [Samsung 27-Inch Curved Monitor]: http://amzn.to/2n9nN3b
@@ -297,13 +374,6 @@ I travel quite often because my family has been living in different parts of the
 [Digital Ocean]: https://m.do.co/c/bb7f34dbec72
 [Bluehost]: https://www.bluehost.com/track/bobthedev
 
-
-### Learning
-| Platform | Purpose |
-| --- | --- |
-| [Treehouse] | If I need to devour information, I use Treehouse since it provides a free trial, and I can consume as much as information due to the subscription model. I started my first programming journey with Treehouse. |
-
-[Treehouse]: http://treehouse.7eer.net/c/350498/228915/3944
 
 ### Finance
 | Platform | Purpose |
@@ -375,6 +445,7 @@ I travel quite often because my family has been living in different parts of the
  <br>
 
 # Books {#books}
+I read 80-100 books a year. Although I'm 20, books allow me to gain insights and allow me to process any situation.
 
 ### Software Development
 Although I spend a majority of time learning iOS, I also attempt to learn design patterns, interview questions, and algorithms so that I can stay on top of the game.
@@ -383,6 +454,22 @@ Although I spend a majority of time learning iOS, I also attempt to learn design
 | --- | --- | --- |
 | [Cracking the Code Interview: 189 Programming Questions and Solutions] | Gayle McDowell | Algorithm & Data Structure |
 | [iOS Programming: The Big Nerd Ranch Guide] | Christian Keur | iOS Development |
+
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "My Amazon Picks";
+amzn_assoc_linkid = "838987ff724548efce3d0b51aedce41e";
+amzn_assoc_asins = "0984782850,098478280X,032157351X,0262033844";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
 
 [Cracking the Code Interview: 189 Programming Questions and Solutions]: http://amzn.to/2nol338
 [iOS Programming: The Big Nerd Ranch Guide]: http://amzn.to/2nAlszX
@@ -398,6 +485,21 @@ Although my first startup failed, I incorporated and grew the team with close to
 | [The Fourth Industrial Revolution] | Klaus Schwab | New rising technology that would disrupt governments and our lives | Future |
 | [The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses] | Eric Ries | How to test the market before investing a lot of money | Strategy |
 | [#AskGaryVee: One Entrepreneur's Take on Leadership, Social Media, and Self-Awareness] | Gary Vayerchuck | He is the one who tought me everything about building community and focus on long-term relationships over short-term sales. I watch his content daily on his YouTube channel. | Marketing |
+
+<br>
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "My Favorite Books for Growth";
+amzn_assoc_linkid = "973e9319d3b82abafe76dd276b86e0c3";
+amzn_assoc_asins = "1626814236,1591847788,0062273124,1524758868";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
 [Hooked: How to Build Habit-Forming Products]: http://amzn.to/2o0tRbX
 
@@ -417,6 +519,22 @@ Warren Buffett said, "The more your learn, the more you earn". As a business per
 | [The Tax and Legal Playbook: Game-Changing Solutions to Your Small-Business Questions] | Mark J. Kohler | How to pay less tax for individual, C-Corp, and S-Corp | Tax |
 | [Small Business Start-Up Kit, The: A Step-by-Step Legal Guide] |  Peri Pakroo J.D | Regulations for those who want to start a business in the US | Law |
 
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Small Business Law & Tax";
+amzn_assoc_linkid = "973e9319d3b82abafe76dd276b86e0c3";
+amzn_assoc_asins = "1413322336,158979799X,159918561X,B017IZCIZO";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
 
 [The Tax and Legal Playbook: Game-Changing Solutions to Your Small-Business Questions]: http://amzn.to/2n3QEEr
 
@@ -434,6 +552,39 @@ These books changed my life.
 | [The Man's Search for Meaning] | Victor Frankl | "Those who have a 'why' to live, can bear with almost any 'how'." The ability to cope with failure and crisis | Perspective |
 | [The Power of Habit: Why We Do What We Do in Life and Business] | Charles Duhigg | The importance of preserving willpower and how to create and destroy habits | Human Nature |
 
+<br>
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "false";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Books that Changed My Life";
+amzn_assoc_linkid = "568611643d7191d74e9e6370129aa72e";
+amzn_assoc_asins = "081298160X,1594484805,0553804723,0316017930";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Stories Filled with Wisdom and Direction";
+amzn_assoc_linkid = "568611643d7191d74e9e6370129aa72e";
+amzn_assoc_asins = "080701429X,1451639619,1501127624,006230125X";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
+
+
 [Outliers: The Story of Success]: http://amzn.to/2nTESM4
 
 [Drive: The Surprising Truth About What Motivates Us]: http://amzn.to/2mGIpMN
@@ -443,21 +594,3 @@ These books changed my life.
 [The Man's Search for Meaning]: http://amzn.to/2nFLkas
 
 [The Power of Habit: Why We Do What We Do in Life and Business]: http://amzn.to/2nU09W5
-
-
-
-<br>
-<br>
-
-
-
-
-#### Stay Connected
-I'm Bob. I work towards providing global education so that anyone who is willing to work, can rise and improve one's standard of living and quality of life.
-
-<p>
-<a href="http://bobthedeveloper.io"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
-<a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
-"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
-<a href="https://medium.com/@bobleesj"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"/></a>
-</p>
