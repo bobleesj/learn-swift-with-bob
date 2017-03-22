@@ -191,6 +191,19 @@ These are products that I use to increase my productivity along with [keyboard s
 | [2013 MacBook Pro 15 Inch] | I don't think I have to explain. The link provides the cheapest offer for now. It is around $800 which is pretty good deal considering I can probably use it for another 3 year. So, you'd only pay like $250 per year which is affordable. | Laptop |
 
 
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_tracking_id = "iosgeekcommun-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Magic Keyboard and Mouse";
+amzn_assoc_linkid = "515a309ba29382071f375d49b89d5fef";
+amzn_assoc_asins = "B016QO5YNG,B0145NHF5K,B0143BNIXW,B016QO64FI";
+amzn_assoc_search_bar = "true";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 [Acer 23.8 Inch Monitor]:http://amzn.to/2mFk75V
 
 [Portable 15.6 Inch Full HD Monitor]: http://amzn.to/2nAkinW
@@ -433,6 +446,9 @@ These books changed my life.
 
 <br>
 <br>
+
+
+
 
 #### Stay Connected
 I'm Bob. I work towards providing global education so that anyone who is willing to work, can rise and improve one's standard of living and quality of life.
