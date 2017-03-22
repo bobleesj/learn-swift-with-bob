@@ -1,6 +1,7 @@
 # iOS Development {#ios}
 I try to stay consistent and provide as much as value for my students and readers. I also focus on building long-term relationships over short-term sales. You may find all of my tutorials and articles I've written for you guys. Also, you may find some [products](Resources.md#gadgets) that I use to increase my development productivity.
 
+> if the tables below appear too large, feel free to adjust the font size on the top left.
 
 ### Swift Complete Series
 If you are new to Swift, I'd recommend you to get started with these tutorials first.
@@ -181,7 +182,7 @@ If you would like to work as a freelancer, you might find these articles useful.
 # Gadgets {#gadgets}
 These are products that I use to increase my productivity along with [keyboard shortcuts](productivity/keyboard_shortcuts.md). You don't have to have these products, but they save time in the long run. I'd pay any money to preserve and save my limited time. I rather work smart and hard.
 
-<img src="resources/my_desk" alt="My current work environment"/>
+<img src="/resources/my_desk" alt="My current work environment"/>
 
 ### iOS Development Tools
 | Gadget | My Usage | Category |
