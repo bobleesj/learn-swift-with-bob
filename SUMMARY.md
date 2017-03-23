@@ -1,14 +1,15 @@
 # Summary
 
 * [Introduction](README.md)
-* [About](ABOUT.md)
-
 
 * [Resources](RESOURCES.md)
   * [iOS Development](RESOURCES.md#ios)
   * [Gadgets](RESOURCES.md#gadgets)
   * [Software](RESOURCES.md#software)
   * [Books](RESOURCES.md#books)
+
+* [About](ABOUT.md)
+
 
 ### Swift
  * [Learning Material](Content/programming/swift/learning.md)
