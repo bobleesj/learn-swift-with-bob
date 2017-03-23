@@ -2,13 +2,15 @@
 
 * [Introduction](README.md)
 
+* [Bob the Developer](ABOUT.md)
+
+
 * [Resources](RESOURCES.md)
   * [iOS Development](RESOURCES.md#ios)
   * [Gadgets](RESOURCES.md#gadgets)
   * [Software](RESOURCES.md#software)
   * [Books](RESOURCES.md#books)
 
-* [Bob the Developer](ABOUT.md)
 
 
 ### Swift
