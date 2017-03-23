@@ -8,7 +8,7 @@
   * [Software](RESOURCES.md#software)
   * [Books](RESOURCES.md#books)
 
-* [About Me](ABOUT.md)
+* [Bob the Developer](ABOUT.md)
 
 
 ### Swift
