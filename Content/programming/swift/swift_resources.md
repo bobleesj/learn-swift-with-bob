@@ -18,6 +18,7 @@ All update with Swift 3
 ### Book
  - [Test-Driven iOS Development with Swift 3](http://amzn.to/2nIqwlS)
  - [Swift Programming: The Big Nerd Ranch Guide](http://amzn.to/2n6oJUl)
+ - [The Swift Programming Language](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309)
 
 ### Online Course
  - [Treehouse](http://treehouse.7eer.net/c/350498/228915/3944)

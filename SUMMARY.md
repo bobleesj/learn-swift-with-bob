@@ -24,29 +24,15 @@
 
 
 ### Productivity
-* [Shortcuts](/Content/business/productivity/keyboard_shortcuts.md#shortcuts)
-  * [Atom](/Content/business/productivity/keyboard_shortcuts.md#atom)
-  * [Gmail](/Content/business/productivity/keyboard_shortcuts.md#gmail)
-  * [Google Spreadsheet](/Content/business/productivity/keyboard_shortcuts.md#google_spreadsheet)
-  * [Google Chrome](/Content/business/productivity/keyboard_shortcuts.md#google_chrome)
-  * [Xcode](/Content/business/productivity/keyboard_shortcuts.md#xcode)
-  * [MacOS](/Content/business/productivity/keyboard_shortcuts.md#mac_os)
-* [Tools](/Content/business/productivity/tools.md)
-* [Markdown](/Content/business/productivity/markdown.md)
-
-
-### Growth
-* [Marketing](/Content/business/growth/marketing.md)
-* [Sales Principle](/Content/business/growth/sales_principles.md)
-* [SEO](/Content/business/growth/seo.md)
-* [Personal Website](/Content/business/growth/personal_website.md)
-
-### Mission
-* [Execution](/Content/business/mission/execution.md)
-* [Strategy](/Content/business/mission/strategy.md)
-* [Exponential Organizations](Content/business/mission/exponential_organizations.md)
-* [Key Performance Indicators](/Content/business/mission/KPI.md)
-* [Strategy](/Content/business/mission/strategy.md)
+* [Shortcuts](/Content/programming/keyboard_shortcuts.md#shortcuts)
+  * [Atom](/Content/programming/keyboard_shortcuts.md#atom)
+  * [Gmail](/Content/programming/keyboard_shortcuts.md#gmail)
+  * [Google Spreadsheet](/Content/programming/keyboard_shortcuts.md#google_spreadsheet)
+  * [Google Chrome](/Content/programming/keyboard_shortcuts.md#google_chrome)
+  * [Xcode](/Content/programming/keyboard_shortcuts.md#xcode)
+  * [MacOS](/Content/programming/keyboard_shortcuts.md#mac_os)
+* [Tools](/Content/programming/tools.md)
+* [Markdown](/Content/programming/markdown.md)
 
 
 ### Patience and Work

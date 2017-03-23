@@ -1,4 +1,12 @@
+---
+disqus: false
+---
+
 # iOS Development {#ios}
+
+Last Update on {{ gitbook.time }}
+
+
 I try to stay consistent and provide as much as value for my students and readers. I also focus on building long-term relationships over short-term sales. You may find all of my tutorials and articles I've written for you guys. Also, you may find some [products](Resources.md#gadgets) that I use to increase my development productivity.
 
 > if the tables below appear too large, feel free to adjust the font size on the top left.
@@ -262,7 +270,7 @@ amzn_assoc_ad_mode = "manual";
 amzn_assoc_ad_type = "smart";
 amzn_assoc_marketplace = "amazon";
 amzn_assoc_region = "US";
-amzn_assoc_title = "Magic Keyboard and Mouse";
+amzn_assoc_title = "Video Recording Affordable Tools"
 amzn_assoc_linkid = "515a309ba29382071f375d49b89d5fef";
 amzn_assoc_asins = "B00BYPW00I,B000EOPQ7E,B00IVPU6BY,B00N2S6ZUQ";
 amzn_assoc_search_bar = "false";
@@ -298,7 +306,7 @@ amzn_assoc_ad_mode = "manual";
 amzn_assoc_ad_type = "smart";
 amzn_assoc_marketplace = "amazon";
 amzn_assoc_region = "US";
-amzn_assoc_title = "What Leads to Productive Office ";
+amzn_assoc_title = "Productive Office Gadgets";
 amzn_assoc_asins = "B005SGICMY,B01ARFF3OU,B01HPI5AM2,B01M8M7K84";
 amzn_assoc_linkid = "c500b745dfd3370e403e7d5c878f8559";
 </script>
@@ -464,7 +472,7 @@ amzn_assoc_ad_mode = "manual";
 amzn_assoc_ad_type = "smart";
 amzn_assoc_marketplace = "amazon";
 amzn_assoc_region = "US";
-amzn_assoc_title = "My Amazon Picks";
+amzn_assoc_title = "Algorithm and Interview"";
 amzn_assoc_linkid = "838987ff724548efce3d0b51aedce41e";
 amzn_assoc_asins = "0984782850,098478280X,032157351X,0262033844";
 </script>
@@ -490,7 +498,7 @@ Although my first startup failed, I incorporated and grew the team with close to
 <br>
 <script type="text/javascript">
 amzn_assoc_placement = "adunit0";
-amzn_assoc_search_bar = "true";
+amzn_assoc_search_bar = "false";
 amzn_assoc_tracking_id = "iosgeekcommun-20";
 amzn_assoc_ad_mode = "manual";
 amzn_assoc_ad_type = "smart";
@@ -581,7 +589,6 @@ amzn_assoc_linkid = "568611643d7191d74e9e6370129aa72e";
 amzn_assoc_asins = "080701429X,1451639619,1501127624,006230125X";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
-
 
 
 

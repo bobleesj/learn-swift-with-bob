@@ -2,11 +2,76 @@
 
 > This document shouldn't much make sense. This is used as a reference for me before I make tutorials for you guys.
 
+## Things to learn
+ - Rethrow in Swift
+ - Functional programming in Swift
+ - Advanced Operator
+
+## Advanced Operator
+https://developer.apple.com/reference/swift/swift_standard_library_operators
+
+## Operator
+```swift
+~=
+func ~=<T>(lhs: _OptionalNilComparisonType, rhs: T?) -> Bool
+```
+
+## Things to Watch Out
+
+### Define Dictionary
+```swift
+let someDictionary: [String: Int] = ["Alex": 31, "Paul": 39]
+let someDictionary: Dictionary<String, Int> = ["Alex": 31, "Paul": 39]
+```
+
+### Define Optionals
+```
+var optionalInteger: Int?
+var optionalInteger: Optional<Int>
+```
+
+### Optioanl Type Unwrapping
+```swift
+let tupleOfImplicitlyUnwrappedElements: (Int!, Int!)  // Error
+let implicitlyUnwrappedTuple: (Int, Int)!             // OK
+
+let arrayOfImplicitlyUnwrappedElements: [Int!]        // Error
+let implicitlyUnwrappedArray: [Int]!                  // OK
+```
+
+### Runtime vs Compile Type
+```swift
+if type(of: someInstance) === someInstance.self {
+    print("The dynamic and static type of someInstance are the same")
+} else {
+    print("The dynamic and static type of someInstance are different")
+}
+```
+
+### Init
+```swift
+let hello = Hello()
+let hi = Hi.init()
+```
+
+### Error Handling
+```swift
+sum = try someThrowingFunction() + anotherThrowingFunction()   // try applies to both function calls
+
+sum = try (someThrowingFunction() + anotherThrowingFunction()) // try applies to both function calls
+
+sum = (try someThrowingFunction()) + anotherThrowingFunction() // Error: try applies only to the first function call
+```
+
+
+
+
+
 ## No Escape vs Escape
 
 This will give compiler error in Xcode 8
 
-```swift 
+```swift
 class MyClass {
 
     var myClosure: (() -> ())?
