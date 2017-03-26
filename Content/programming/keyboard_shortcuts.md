@@ -301,7 +301,6 @@ Increase productivity by spending less time on formatting through clicking.
  | Keyboard | Purpose |
  | ---- | ---- |
  | `cmd-b` | Build |
- | `shift-cmd-k` | Clean |
  | `cmd-r` | Run |
  | `cmd-u` | Test |
  | `shift-cmd-opt-g` | Run previous test |
