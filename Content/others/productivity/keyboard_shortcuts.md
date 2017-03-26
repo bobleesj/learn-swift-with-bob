@@ -104,6 +104,9 @@ Increase productivity by spending less time on formatting through clicking.
 
  [Shortcut World]: https://shortcutworld.com/en/Atom-(text-editor)/1.0/win/all
 
+<br>
+<br>
+
 # Gmail {#gmail}
 
  > To activate, open Gmail. On the top right, click *Settings*. Scroll down to the *Key shortcuts* section. Select Key shortcuts *on*. At the bottom of the page, click *Save Changes*.
@@ -190,6 +193,8 @@ Increase productivity by spending less time on formatting through clicking.
 
  [Gmail Official Doc](https://support.google.com/mail/answer/6594?co=GENIE.Platform%3DDesktop&hl=en)
 
+<br>
+<br>
 
 # Google Spreadsheet {#google_spreadsheet}
 
@@ -252,6 +257,8 @@ Increase productivity by spending less time on formatting through clicking.
 #### Reference
  [Google Spreadsheet Support](https://support.google.com/docs/answer/181110?hl=en)
 
+<br>
+<br>
 
 # Google Chrome {#google_chrome}
 
@@ -285,7 +292,8 @@ Increase productivity by spending less time on formatting through clicking.
 
 
 
-
+<br>
+<br>
 
 # Xcode Shortcuts {#xcode}
 
@@ -340,6 +348,9 @@ Increase productivity by spending less time on formatting through clicking.
  | `shift-cmd-o` | Open quickly
  | `ctrl-6` | File jump bar |
  | `quick open + alt-enter` | File on the assistant editor |
+
+<br>
+<br>
 
 
 # MacOS {#mac_os}

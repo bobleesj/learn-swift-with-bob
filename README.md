@@ -1,5 +1,3 @@
-![Tesla Model S](https://cdn-images-1.medium.com/max/1800/1*abEpO62UaPGdjhAl9qnVxQ.png)
-
 # Learn Swift with Bob
 <p>
 <img src="https://img.shields.io/badge/Language-Swift_3-ED4732.svg">
@@ -18,14 +16,14 @@ If you want to know me at a personal level, you may follow me on [Instagram](htt
  [Blog]: https://blog.bobthedeveloper.io/
 
 
-# The Why
+<!-- # The Why
  - Talk about why I decided to make this course with my story (Liking). Frustration
  - Talk about purpose (Reciprocity. I want to help)
  - Talk about what makes this course special than any others
  - Talk about my credentials and what makes me special
  - Scarcity: This course is special. Fear of missing out
  - Consensus
- - Liking
+ - Liking -->
 
-## Last Update
-{{ gitbook.time }}
+#### Last Update
+*{{ gitbook.time }}*

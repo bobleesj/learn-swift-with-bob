@@ -1,5 +1,5 @@
 # Markdown
-To find out if it works, you can download the source code here. You make create your own repository on Github and create `README.md` file. Once you do, Github will automatically show the file in the repository
+To find out if it works, you can download the source code here. You make create your own repository on Github and create `README.md` file. Github will automatically show the file in the repository
 
 
 ### Heading

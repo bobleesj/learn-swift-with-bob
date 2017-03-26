@@ -269,7 +269,6 @@ Currently, I work at home and having the right work environment allows me to sta
 
 
 
-
 [MacBook Pro 15.4-inch with Touch Bar]: http://amzn.to/2n3F50i
 [Samsung 27-Inch Curved Monitor]: http://amzn.to/2n9nN3b
 [Apple Airpods]: http://amzn.to/2n9qDFt
@@ -411,16 +410,6 @@ Although my first startup failed, I incorporated and grew the team with close to
 [#AskGaryVee: One Entrepreneur's Take on Leadership, Social Media, and Self-Awareness]: http://amzn.to/2moZrDO
 
 [The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses]: http://amzn.to/2n3I9cQ
-
-### Tax and Small Business Law
-Warren Buffett said, "The more your learn, the more you earn". As a business person, I try to pay as little tax as possible so that I can effectively re-invest the money back to the company I try to pursue and believe in.
-
-| Book | Author | What I've Learned | Category |
-| --- | --- | --- | --- |
-| [The Tax and Legal Playbook: Game-Changing Solutions to Your Small-Business Questions] | Mark J. Kohler | How to pay less tax for individual, C-Corp, and S-Corp | Tax |
-| [Small Business Start-Up Kit, The: A Step-by-Step Legal Guide] |  Peri Pakroo J.D | Regulations for those who want to start a business in the US | Law |
-
-
 
 [Outliers: The Story of Success]: http://amzn.to/2nTESM4
 

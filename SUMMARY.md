@@ -1,18 +1,16 @@
 # Summary
 
-### What's About
-
+### Introduction
 * [Introduction](README.md)
-
 * [Bob the Developer](ABOUT.md)
-
 * [Resources](RESOURCES.md)
 
 ### Learn Swift with Bob
- * [Table of Content](Content/course/0000/0000_table_of_content.md)
  * [Course Introduction](Content/course/0000/0001_introduction.md)
+ * [Prerequisite](PREREQUISITES.md)
  * [Expectation from Bob](Content/course/0000/0002_course_expecation.md)
- * [Resources](Content/course/0000/0003_resources.md)
+ * [Course Resources](Content/course/0000/0003_course_resources.md)
+ * [Table of Content](Content/course/0000/0000_table_of_content.md)
 
 
 ### Swift Intermediate  
@@ -33,26 +31,26 @@
 
 
 ### Swift Extra
- * [Swift Styling Guide](Content/programming/swift/swift_styling_guide.md)
- * [Better Swift Developer](Content/programming/swift/better_developer.md)
- * [Swift Resources](Content/programming/swift/swift_resources.md)
+ * [Swift Styling Guide](Content/others/swift/swift_styling_guide.md)
+ * [Better Swift Developer](Content/others/swift/better_developer.md)
+ * [Swift External Resources](Content/others/swift/swift_resources.md)
 
 
 ### Software Engineering
- * [Coding Principles](Content/programming/software_engineering/coding_principles.md)
- * [Agile Development](Content/programming/software_engineering/agile_development.md)
- * [Github Flow](Content/programming/software_engineering/github_flow.md)
+ * [Coding Principles](Content/others/software_engineering/coding_principles.md)
+ * [Agile Development](Content/others/software_engineering/agile_development.md)
+ <!-- * [Github Flow](Content/others/software_engineering/github_flow.md) -->
 
 ### Productivity
-* [Shortcuts](/Content/programming/keyboard_shortcuts.md#shortcuts)
-  * [Atom](/Content/programming/keyboard_shortcuts.md#atom)
-  * [Gmail](/Content/programming/keyboard_shortcuts.md#gmail)
-  * [Google Spreadsheet](/Content/programming/keyboard_shortcuts.md#google_spreadsheet)
-  * [Google Chrome](/Content/programming/keyboard_shortcuts.md#google_chrome)
-  * [Xcode](/Content/programming/keyboard_shortcuts.md#xcode)
-  * [MacOS](/Content/programming/keyboard_shortcuts.md#mac_os)
-* [Tools](/Content/programming/tools.md)
-* [Markdown](/Content/programming/markdown.md)
+* [Shortcuts](/Content/others/productivity/keyboard_shortcuts.md#shortcuts)
+  * [Atom](/Content/others/productivity/keyboard_shortcuts.md#atom)
+  * [Gmail](/Content/others/productivity/keyboard_shortcuts.md#gmail)
+  * [Google Spreadsheet](/Content/others/productivity/keyboard_shortcuts.md#google_spreadsheet)
+  * [Google Chrome](/Content/others/productivity/keyboard_shortcuts.md#google_chrome)
+  * [Xcode](/Content/others/productivity/keyboard_shortcuts.md#xcode)
+  * [MacOS](/Content/others/productivity/keyboard_shortcuts.md#mac_os)
 
-
-### Patience and Work
+### Development Tools   
+* [Software](/Content/others/development_tools/software.md)
+* [Markdown](/Content/others/development_tools/markdown.md)
+<!-- * [Mermaid]() -->
