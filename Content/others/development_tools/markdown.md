@@ -92,6 +92,23 @@ Cover Page: ![Cover Page](https://goo.gl/ZozVdq)
 |        RxSwift and MVVM         | Udemy |
 
 
+#### Table Align
+```
+| Tables   |      Are      |  Name |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | Bob Lee |
+| col 2 is |    centered   |   Bobby Lee |
+| col 3 is | right-aligned |    SangJoon Lee |
+```
+
+| Tables   |      Are      |  Name |
+|:----------|:-------------:|------:|
+| col 1 is |  left-aligned | Bob Lee |
+| col 2 is |    centered   |   Bobby Lee |
+| col 3 is | right-aligned |    SangJoon Lee |
+
+
+
 ### Code
 ```
 ```swift

@@ -12,6 +12,7 @@
         
         
     
+    
     <link rel="stylesheet" href="../../../gitbook/style.css">
 
     
@@ -22,6 +23,10 @@
             
                 
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
                 
             
                 
@@ -46,6 +51,9 @@
         
     
 
+
+    
+
         
     
     
@@ -56,6 +64,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="mermaid.html" />
     
     
     <link rel="prev" href="software.html" />
@@ -472,6 +482,19 @@
             
         </li>
     
+        <li class="chapter " data-level="14.3" data-path="mermaid.html">
+            
+                <a href="mermaid.html">
+            
+                    
+                    Mermaid
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -608,6 +631,38 @@
 </tr>
 </tbody>
 </table>
+<h4 id="table-align">Table Align</h4>
+<pre><code>| Tables   |      Are      |  Name |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | Bob Lee |
+| col 2 is |    centered   |   Bobby Lee |
+| col 3 is | right-aligned |    SangJoon Lee |
+</code></pre><table>
+<thead>
+<tr>
+<th style="text-align:left">Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">col 1 is</td>
+<td style="text-align:center">left-aligned</td>
+<td style="text-align:right">Bob Lee</td>
+</tr>
+<tr>
+<td style="text-align:left">col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">Bobby Lee</td>
+</tr>
+<tr>
+<td style="text-align:left">col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">SangJoon Lee</td>
+</tr>
+</tbody>
+</table>
 <h3 id="code">Code</h3>
 <pre><code>```swift
 let name = &quot;Bob the Developer&quot;
@@ -666,10 +721,14 @@ print(name)
 
             
                 
-                <a href="software.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Software">
+                <a href="software.html" class="navigation navigation-prev " aria-label="Previous page: Software">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="mermaid.html" class="navigation navigation-next " aria-label="Next page: Mermaid">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -678,12 +737,13 @@ print(name)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Markdown","level":"14.2","depth":1,"previous":{"title":"Software","level":"14.1","depth":1,"path":"Content/others/development_tools/software.md","ref":"Content/others/development_tools/software.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"Content/others/development_tools/markdown.md","mtime":"2017-03-26T11:57:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-26T13:19:50.656Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Markdown","level":"14.2","depth":1,"next":{"title":"Mermaid","level":"14.3","depth":1,"path":"Content/others/development_tools/mermaid.md","ref":"Content/others/development_tools/mermaid.md","articles":[]},"previous":{"title":"Software","level":"14.1","depth":1,"path":"Content/others/development_tools/software.md","ref":"Content/others/development_tools/software.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"Content/others/development_tools/markdown.md","mtime":"2017-03-27T01:10:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T01:06:09.931Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     
@@ -693,6 +753,10 @@ print(name)
     
         
         <script src="../../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
         
     
         
@@ -723,6 +787,8 @@ print(name)
         <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

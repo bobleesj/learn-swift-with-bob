@@ -53,4 +53,4 @@
 ### Development Tools   
 * [Software](/Content/others/development_tools/software.md)
 * [Markdown](/Content/others/development_tools/markdown.md)
-<!-- * [Mermaid]() -->
+* [Mermaid](/Content/others/development_tools/mermaid.md)
