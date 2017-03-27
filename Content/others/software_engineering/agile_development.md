@@ -1,4 +1,4 @@
-> Currently Draft - March 22, 2017 
+> Currently Draft - March 22, 2017
 
 # Agile Development with Scrum
 Software development is done by a group of people. As a result, effective communication and collaboration are much needed. Agile development is nothing more than allowing developers to add small features and submit. The process lasts typically 1 week to 4 weeks. The cycle repeats until good enough items in the product backlog has met.  The philosophy is similar to the Toyota's production method that implements Kanban.
@@ -223,12 +223,9 @@ You can't always "sprint". Going through Scrum reflection and planning is the wo
 
 ### Overall
 
-<img src="/Content/programming/software_engineering/resources/scrum_framework.png">
+<img src="/Content/others/software_engineering/resources/scrum_framework.png">
 
 
-
-### You may copy
-Feel free to copy copy and paste this page for your own startup. I'd appreciate if you could credit my blog.
 
 ### Book
 [Essential Scrum: A Practical Guide to the Most Popular Agile Process](http://amzn.to/2mOGS7u)
@@ -236,8 +233,8 @@ Feel free to copy copy and paste this page for your own startup. I'd appreciate 
 [Scrum: The Art of Doing Twice the Work in Half the Time](http://amzn.to/2n6a4bU)
 
 
-##### Reference
-[Scrum (Wikepedia)](https://en.wikipedia.org/wiki/Scrum_(software_development))
+#### Reference
+[Scrum- Wikepedia](https://en.wikipedia.org/wiki/Scrum_(software_development)
 
 
 http://scrummethodology.com/?

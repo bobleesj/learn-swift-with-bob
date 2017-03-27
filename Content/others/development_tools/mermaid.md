@@ -348,6 +348,26 @@ graph TD
 <br>
 <br>
 
+### Basic Flowchart
+```
+graph LR
+  A[Square Rect] -- Link text --> B((Circle))
+  A --> C(Round Rect)
+  B --> D{Rhombus}
+  C --> D
+```
+
+<div align="center">
+```mermaid
+graph LR
+  A[Square Rect] -- Link text --> B((Circle))
+  A --> C(Round Rect)
+  B --> D{Rhombus}
+  C --> D
+```
+</div>
+
+
 ## Sequence Diagram
 
 ### Syntax

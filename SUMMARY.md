@@ -32,7 +32,7 @@
 
 ### Swift Extra
  * [Swift Styling Guide](Content/others/swift/swift_styling_guide.md)
- * [Better Swift Developer](Content/others/swift/better_developer.md)
+ <!-- * [Better Swift Developer](Content/others/swift/better_developer.md) -->
  * [Swift External Resources](Content/others/swift/swift_resources.md)
 
 

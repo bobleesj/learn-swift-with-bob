@@ -286,20 +286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="11.2" data-path="../swift/better_developer.html">
-            
-                <a href="../swift/better_developer.html">
-            
-                    
-                    Better Swift Developer
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="11.3" data-path="../swift/swift_resources.html">
+        <li class="chapter " data-level="11.2" data-path="../swift/swift_resources.html">
             
                 <a href="../swift/swift_resources.html">
             
@@ -540,13 +527,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <blockquote>
-<p>Currently Draft</p>
-</blockquote>
-<h1 id="coding-principles">Coding Principles</h1>
+                                <h1 id="coding-principles">Coding Principles</h1>
 <h2 id="solid">SOLID</h2>
 <blockquote>
-<p>A principle created by Robert Martin for Object Oriented Programming</p>
+<p>A principle created by <a href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin" target="_blank">Robert Martin</a> for Object Oriented Programming</p>
 </blockquote>
 <table>
 <thead>
@@ -568,7 +552,7 @@
 <td>LSP</td>
 <td>The Liskov Substitution Principle</td>
 <td>Derived classes must be substitutable for their base classes.</td>
-<td>You may create a button with <code>UIButton</code> or with your own subclassed button. The subclassed button may replace <code>UIButton</code>.</td>
+<td>Subclassed<code>UIButton</code> may be used anywhere that requires <code>UIButton</code>.</td>
 </tr>
 <tr>
 <td>ISP</td>
@@ -595,82 +579,67 @@
 <li>Needless complexity</li>
 <li>Duplication</li>
 <li>Overused typed literals</li>
+<li>Over usage of <code>var</code> instead of <code>let</code></li>
 </ul>
 <h3 id="object-oriented-programming">Object Oriented Programming</h3>
 <ul>
 <li>&quot;One does it all&quot; Class</li>
-<li>Too many variables</li>
-<li>Long method
--</li>
+<li>Long method</li>
 </ul>
-<h3 id="kiss">Kiss</h3>
-<p>Keep it simple stupid
-Less code takes less time to write, has less bugs, and is easier to modify. Simplicity is the ultimate sophistication. It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away.</p>
-<p>Avoid inheritance, polymorphism, dynamic binding and other complicated OOP concepts. Use delegation and simple if-constructs instead.
-Avoid low-level optimization of algorithms especially when involving Assembler, bit-operations, and pointers. Slower implementations will work just fine.
-Use simple brute-force solutions instead of complicated algorithms. Slower algorithms will work in the first place.
-Avoid numerous classes and methods as well as large code blocks (see More Is More Complex)
-For slightly unrelated but rather small pieces of functionality use private methods instead of an additional class.
-Avoid general solutions needing parameterization. A specific solution will suffice.</p>
-<h3 id="yagni">YAGNI</h3>
+<h2 id="kiss">KISS</h2>
+<blockquote>
+<p>Keep it simple stupid</p>
+</blockquote>
+<p>Less code takes less time to write, has less bugs, and is easier to modify. Simplicity is the ultimate sophistication. It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away.</p>
+<p>Avoid inheritance, polymorphism, dynamic binding and other complicated OOP concepts. Use delegation and simple if-constructs instead.</p>
+<p>Use simple brute-force solutions first instead of complicated algorithms. Slower algorithms will work in the first place.</p>
+<p>For slightly unrelated but rather small pieces of functionality use private methods instead of an additional class.</p>
+<h2 id="yagni">YAGNI</h2>
 <p>Avoid Creating a YAGNI (You aren&#x2019;t going to need it) - You should try not to add functionality until you need it.</p>
-<h3 id="law-of-demeter">Law of Demeter</h3>
-<p>The Law of Demeter (LoD) or principle of least knowledge is a design guideline for developing software, particularly object-oriented programs. In its general form, the LoD is a specific case of loose coupling. The guideline was proposed by Ian Holland at Northeastern University towards the end of 1987, and can be succinctly summarized in each of the following ways:[1]</p>
-<p>Each unit should have only limited knowledge about other units: only units &quot;closely&quot; related to the current unit.
-Each unit should only talk to its friends; don&apos;t talk to strangers.
-Only talk to your immediate friends.</p>
-<h3 id="minimize-coupling">Minimize Coupling</h3>
-<p>Any section of code (code block, function, class, etc) should minimize the dependencies on other areas of code. This is achieved by using shared variables as little as possible. &#x201C;Low coupling is often a sign of a well-structured computer system and a good design, and when combined with high cohesion, supports the general goals of high readability and maintainability&#x201D;</p>
-<p>Eliminate, minimise, and reduce complexity of necessary relationships.
-By hiding implementation details, coupling is reduced.
-Apply the Law of Demeter.</p>
-<p>Each unit should have only limited knowledge about other units: only units &quot;closely&quot; related to the current unit</p>
+<h2 id="law-of-demeter">Law of Demeter</h2>
+<p>The Law of Demeter (LoD) or principle of least knowledge is a design guideline for developing software, particularly object-oriented programs.</p>
+<ol>
+<li>Each unit should have only limited knowledge about other units: only units &quot;closely&quot; related to the current unit.</li>
+<li>Each unit should only talk to its friends; don&apos;t talk to strangers. Only talk to your immediate friends.</li>
+</ol>
+<h3 id="elaboration">Elaboration</h3>
+<p>Any section of code (code block, function, class, etc) should minimize the dependencies on other areas of code. This is achieved by using shared variables as little as possible. Low coupling is often a sign of a well-structured computer system and a good design, and when combined with high cohesion, supports the general goals of high readability and maintainability.</p>
+<p>Eliminate, minimize, and reduce complexity of necessary relationships.
+By hiding implementation details, coupling is reduced.</p>
 <h2 id="hide-implementation-detail">Hide Implementation Detail</h2>
-<p>Hiding implementation details allows change to the implementation of a code component while minimally affecting any other modules that use that component.
-Hide Implementation Details
-A software module hides information (i.e. implementation details) by providing an interface, and not leak any unnecessary information.</p>
-<p>Why</p>
-<p>When the implementation changes, the interface clients are using does not have to change.
-How</p>
-<p>Minimize accessibility of classes and members.
-Don&#x2019;t expose member data in public.
-Avoid putting private implementation details into a class&#x2019;s interface.
-Decrease coupling to hide more implementation details.</p>
+<p>Hiding implementation details allows change to the implementation of a code component while minimally affecting any other modules that use that component.</p>
+<p>A software module hides information (i.e. implementation details) by providing an interface, and not leak any unnecessary information.</p>
+<p>You may follow a couple principles:</p>
+<ul>
+<li>Minimize accessibility of classes and members.</li>
+<li>Don&#x2019;t expose member data in public.</li>
+<li>Avoid putting private implementation details into a class&#x2019;s interface.<ul>
+<li>Decrease coupling to hide more implementation details.</li>
+</ul>
+</li>
+</ul>
 <h2 id="boy-scout-rule">Boy-Scout Rule</h2>
-<p>The Boy Scouts of America have a simple rule that we can apply to our profession: &#x201C;Leave the campground cleaner than you found it&#x201D;. The boy-scout rule states that we should always leave the code cleaner than we found it.</p>
-<p>Why</p>
-<p>When making changes to an existing codebase the code quality tends to degrade, accumulating technical debt. Following the boyscout rule, we should mind the quality with each commit. Technical debt is resisted by continuous refactoring, no matter how small.
-How</p>
+<p>&quot;Leave the campground cleaner than you found it&#x201D;. The boy-scout rule states that we should always leave the code cleaner than we found it.</p>
+<h3 id="why">Why</h3>
+<p>When making changes to an existing codebase the code quality tends to degrade, accumulating technical debt. Following the boyscout rule, we should mind the quality with each commit.</p>
+<h3 id="how">How</h3>
 <p>With each commit make sure it does not degrade the codebase quality.
 Any time someone sees some code that isn&#x2019;t as clear as it should be, they should take the opportunity to fix it right there and then.</p>
 <p>Writing code is similar to breeding living organisms. Before one releases, make sure the code provides value to the community. The code must be taken care of with love and constant attention.</p>
-<p>Code contains bugs. More code means more bugs.</p>
-<p>Software system is like a city. There are highways, buildings, and people. Some buildings are taller, some worn out.</p>
-<blockquote>
-<p>The Ninety-ninety rule: The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time. &#x2014;&#x2009;Tom Cargill, Bell Labs</p>
-</blockquote>
-<h2 id="questions">Questions</h2>
+<h2 id="patterns">Patterns</h2>
 <ul>
-<li>Does your exterior API look pretty and logical?</li>
-<li>Do the names of variables follow similar patterns</li>
+<li>The Ninety-ninety rule: The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time. &#x2014;&#x2009;Tom Cargill, Bell Labs</li>
 </ul>
 <h2 id="bug-prevention">Bug Prevention</h2>
 <ul>
 <li>Rather than fixing bugs, it&apos;s better to prevent one</li>
 <li>If debugging is to get rid of bugs, programming must be producing bugs.</li>
 </ul>
-<h2 id="quotes-from-edsger-dijkstra">Quotes from Edsger Dijkstra</h2>
+<h2 id="quotes">Quotes</h2>
 <ul>
-<li>Elegance is not a dispensable luxury but a factor that decides between success and failure</li>
+<li>Elegance is not a dispensable luxury but a factor that decides between success and failure - Edsger Dijkstra</li>
 <li>Aim for brevity while avoiding jardon</li>
-<li>Object-oriented programming is an exceptionally bad idea which could only have originated in California</li>
-</ul>
-<h2 id="software-development-is-similar-to-art">Software development is similar to art</h2>
-<ul>
-<li>Creativity and Independent thinking</li>
-<li>Beauty: balance,</li>
-<li>Use tools</li>
-<li>Team based .</li>
+<li>Object-oriented programming is an exceptionally bad idea which could only have originated in California - Edsger Dijkstra</li>
 </ul>
 
                                 
@@ -715,7 +684,7 @@ Any time someone sees some code that isn&#x2019;t as clear as it should be, they
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Coding Principles","level":"12.1","depth":1,"next":{"title":"Agile Development","level":"12.2","depth":1,"path":"Content/others/software_engineering/agile_development.md","ref":"Content/others/software_engineering/agile_development.md","articles":[]},"previous":{"title":"Swift External Resources","level":"11.3","depth":1,"path":"Content/others/swift/swift_resources.md","ref":"Content/others/swift/swift_resources.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"Content/others/software_engineering/coding_principles.md","mtime":"2017-03-26T15:05:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T01:06:09.931Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Coding Principles","level":"12.1","depth":1,"next":{"title":"Agile Development","level":"12.2","depth":1,"path":"Content/others/software_engineering/agile_development.md","ref":"Content/others/software_engineering/agile_development.md","articles":[]},"previous":{"title":"Swift External Resources","level":"11.2","depth":1,"path":"Content/others/swift/swift_resources.md","ref":"Content/others/swift/swift_resources.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"Content/others/software_engineering/coding_principles.md","mtime":"2017-03-27T02:37:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T08:46:03.132Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -65,7 +65,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="better_developer.html" />
+    <link rel="next" href="swift_resources.html" />
     
     
     <link rel="prev" href="../../course/0000/0000_table_of_content.html" />
@@ -286,20 +286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="11.2" data-path="better_developer.html">
-            
-                <a href="better_developer.html">
-            
-                    
-                    Better Swift Developer
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="11.3" data-path="swift_resources.html">
+        <li class="chapter " data-level="11.2" data-path="swift_resources.html">
             
                 <a href="swift_resources.html">
             
@@ -541,8 +528,223 @@
                                 <section class="normal markdown-section">
                                 
                                 <blockquote>
-<p>Coming soon. It will be updated. Feel free to subscribe to this book on the front page so that the update goes right into your inbox. </p>
+<p>Currently Draft</p>
 </blockquote>
+<h1 id="bob-the-developer-swift-styling-guide">Bob the Developer Swift Styling Guide</h1>
+<blockquote>
+<p>Become a better Swift developer as well</p>
+</blockquote>
+<p>It&apos;s a combination of many I&apos;ve looked. I&apos;ve read the Swift documentation including the reference many times.</p>
+<h2 id="what-swift-engineers-believe">What Swift Engineers Believe</h2>
+<p>Clarity at the point of use is your most important goal. Entities such as methods and properties are declared only once but used repeatedly. Design APIs to make those uses clear and concise. When evaluating a design, reading a declaration is seldom sufficient; always examine a use case to make sure it looks clear in context.</p>
+<p>Clarity is more important than brevity. Although Swift code can be compact, it is a non-goal to enable the smallest possible code with the fewest characters. Brevity in Swift code, where it occurs, is a side-effect of the strong type system and features that naturally reduce boilerplate.</p>
+<p>Write a documentation comment for every declaration. Insights gained by writing documentation can have a profound impact on your design, so don&#x2019;t put it off.</p>
+<h2 id="promote-clear-usage">Promote Clear Usage</h2>
+<h3 id="include-all-the-words-needed-to-avoid-ambiguity-for-a-person-reading-code-where-the-name-is-used">Include all the words needed to avoid ambiguity for a person reading code where the name is used.</h3>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">List</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">remove</span><span class="hljs-params">(at position: Index)</span></span> -&gt; <span class="hljs-type">Element</span>
+}
+employees.remove(at: x)
+</code></pre>
+<pre><code class="lang-swift">employees.remove(x) <span class="hljs-comment">// unclear: are we removing x?</span>
+</code></pre>
+<h3 id="omit-needless-words">Omit needless words</h3>
+<p>In particular, omit words that merely repeat type information.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">removeElement</span><span class="hljs-params">(<span class="hljs-number">_</span> member: Element)</span></span> -&gt; <span class="hljs-type">Element</span>?
+allViews.removeElement(cancelButton)
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">remove</span><span class="hljs-params">(<span class="hljs-number">_</span> member: Element)</span></span> -&gt; <span class="hljs-type">Element</span>?
+
+allViews.remove(cancelButton) <span class="hljs-comment">// clearer</span>
+</code></pre>
+<h3 id="name-variables-parameters-and-associated-types-according-to-their-roles-rather-than-their-type-constraints">Name variables, parameters, and associated types according to their roles, rather than their type constraints.</h3>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> string = <span class="hljs-string">&quot;Hello&quot;</span>
+<span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">ViewController</span> </span>{
+  associatedtype <span class="hljs-type">ViewType</span> : <span class="hljs-type">View</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ProductionLine</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">restock</span><span class="hljs-params">(from widgetFactory: WidgetFactory)</span></span>
+}
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> greeting = <span class="hljs-string">&quot;Hello&quot;</span>
+<span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">ViewController</span> </span>{
+  associatedtype <span class="hljs-type">ContentView</span> : <span class="hljs-type">View</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ProductionLine</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">restock</span><span class="hljs-params">(from supplier: WidgetFactory)</span></span>
+}
+</code></pre>
+<h3 id="compensate-for-weak-type-information-to-clarify-a-parameters-role">Compensate for weak type information to clarify a parameter&#x2019;s role.</h3>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-number">_</span> observer: NSObject, <span class="hljs-keyword">for</span> keyPath: String)</span></span>
+
+grid.add(<span class="hljs-keyword">self</span>, <span class="hljs-keyword">for</span>: graphics) <span class="hljs-comment">// vague</span>
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addObserver</span><span class="hljs-params">(<span class="hljs-number">_</span> observer: NSObject, forKeyPath path: String)</span></span>
+grid.addObserver(<span class="hljs-keyword">self</span>, forKeyPath: graphics) <span class="hljs-comment">// clear</span>
+</code></pre>
+<h3 id="strive-for-fluent-usage">Strive for Fluent Usage</h3>
+<ul>
+<li><p>Prefer method and function names that make use sites form grammatical English phrases.</p>
+<pre><code class="lang-swift">x.insert(y, at: z)          &#x201C;x, insert y at z&#x201D;
+x.subViews(havingColor: y)  &#x201C;x&apos;s subviews having color y&#x201D;
+x.capitalizingNouns()       &#x201C;x, capitalizing nouns&#x201D;
+</code></pre>
+</li>
+</ul>
+<pre><code class="lang-swift">x.insert(y, position: z)
+x.subViews(color: y)
+x.nounCapitalize()
+</code></pre>
+<blockquote>
+<p>It is acceptable for fluency to degrade after the first argument or two when those arguments are not central to the call&#x2019;s meaning:</p>
+</blockquote>
+<h3 id="begin-names-of-factory-methods-with-make-eg-xmakeiterator">Begin names of factory methods with &#x201C;make&#x201D;, e.g. x.makeIterator()</h3>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> foreground = <span class="hljs-type">Color</span>(red: <span class="hljs-number">32</span>, green: <span class="hljs-number">64</span>, blue: <span class="hljs-number">128</span>)
+<span class="hljs-keyword">let</span> newPart = factory.makeWidget(gears: <span class="hljs-number">42</span>, spindles: <span class="hljs-number">14</span>)
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> foreground = <span class="hljs-type">Color</span>(havingRGBValuesRed: <span class="hljs-number">32</span>, green: <span class="hljs-number">64</span>, andBlue: <span class="hljs-number">128</span>)
+<span class="hljs-keyword">let</span> newPart = factory.makeWidget(havingGearCount: <span class="hljs-number">42</span>, andSpindleCount: <span class="hljs-number">14</span>)
+</code></pre>
+<h3 id="name-functions-and-methods-according-to-their-side-effects">Name functions and methods according to their side-effects</h3>
+<pre><code class="lang-swift"><span class="hljs-comment">// Those without side-effects should read as noun phrases, e.g. x.distance(to: y), i.successor().</span>
+
+<span class="hljs-comment">// Those with side-effects should read as imperative verb phrases, e.g., print(x), x.sort(), x.append(y).</span>
+</code></pre>
+<p>imperative for the mutating method and apply the &#x201C;ed&#x201D; or &#x201C;ing&#x201D; suffix to name its nonmutating counterpart.</p>
+<p>When adding &#x201C;ed&#x201D; is not grammatical because the verb has a direct object, name the nonmutating variant using the verb&#x2019;s present participle, by appending &#x201C;ing.&#x201D;</p>
+<table>
+<thead>
+<tr>
+<th>Mutating</th>
+<th>Non-Mutating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x.sort()</td>
+<td>z = x.sorted()</td>
+</tr>
+<tr>
+<td>x.append(y)</td>
+<td>z = x.appending(y)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="try-to-use-struct-over-classes">Try to use Struct over Classes</h2>
+<h2 id="if-you-need-extra-features-use-protocol-extension">If you need extra features, use protocol extension</h2>
+<h1 id="factory-method">Factory Method</h1>
+<ul>
+<li>Init</li>
+<li>Closure</li>
+<li>Void</li>
+<li>Enum</li>
+<li>Method</li>
+<li>Error Handling</li>
+<li>If-let vs Else</li>
+<li>Protocol</li>
+</ul>
+<h1 id="naming">Naming</h1>
+<h2 id="camel-case">Camel Case</h2>
+<p>Uppercase for <code>Protocol</code>, <code>Class</code>, <code>Types</code>, <code>Enum</code></p>
+<p>lowercase for everything else</p>
+<h2 id="extra-syntax">Extra Syntax</h2>
+<ul>
+<li>Convenience, Private,</li>
+</ul>
+<h2 id="control-flow">Control Flow</h2>
+<pre><code class="lang-swift">foo <span class="hljs-keyword">as</span>[<span class="hljs-type">String</span>]   --&gt;   foo <span class="hljs-keyword">as</span> [<span class="hljs-type">String</span>]
+
+foo = bar [<span class="hljs-number">5</span>]    --&gt;   foo = bar[<span class="hljs-number">5</span>]
+</code></pre>
+<pre><code class="lang-swift">[ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ]    --&gt;    [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<pre><code class="lang-swift">foo.<span class="hljs-built_in">filter</span>{ <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span> }.<span class="hljs-built_in">map</span>{ $<span class="hljs-number">0</span> }   --&gt;   foo.<span class="hljs-built_in">filter</span> { <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span> }.<span class="hljs-built_in">map</span> { $<span class="hljs-number">0</span> }
+
+foo({})                               --&gt;   foo({})
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-type">Foo</span> &lt;<span class="hljs-type">Bar</span>&gt; ()    --&gt;    <span class="hljs-type">Foo</span>&lt;<span class="hljs-type">Bar</span>&gt;()
+```swift
+
+```swift
+foo . bar()   --&gt;    foo.bar()
+
+a+b+<span class="hljs-built_in">c</span>         --&gt;    a + b + <span class="hljs-built_in">c</span>
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> a = <span class="hljs-number">5</span><span class="hljs-comment">// assignment     --&gt;   let a = 5 // assignment</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span></span> {<span class="hljs-comment">/* no-op */</span>}   --&gt;   <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span></span> { <span class="hljs-comment">/* no-op */</span> }
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">if</span> x                 <span class="hljs-keyword">if</span> x {
+{                        <span class="hljs-comment">//foo</span>
+    <span class="hljs-comment">//foo            }</span>
+}              --&gt;   <span class="hljs-keyword">else</span> {
+<span class="hljs-keyword">else</span>                     <span class="hljs-comment">//bar</span>
+{                    }
+    <span class="hljs-comment">//bar</span>
+}
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">if</span> x {               <span class="hljs-keyword">if</span> x {
+    <span class="hljs-comment">//foo                //foo</span>
+}              --&gt;   } <span class="hljs-keyword">else</span> {
+<span class="hljs-keyword">else</span> {                   <span class="hljs-comment">//bar</span>
+    <span class="hljs-comment">//bar            }</span>
+}
+
+<span class="hljs-keyword">do</span> {                 <span class="hljs-keyword">do</span> {
+    <span class="hljs-keyword">try</span> foo              <span class="hljs-keyword">try</span> foo
+}              --&gt;   } <span class="hljs-keyword">catch</span> {
+<span class="hljs-keyword">catch</span> {                  <span class="hljs-comment">//bar</span>
+    <span class="hljs-comment">//bar            }</span>
+}
+
+<span class="hljs-keyword">repeat</span> {             <span class="hljs-keyword">repeat</span> {
+    <span class="hljs-comment">//foo                //foo</span>
+}              --&gt;   } <span class="hljs-keyword">while</span> x {
+<span class="hljs-keyword">while</span> x {                <span class="hljs-comment">//bar</span>
+    <span class="hljs-comment">//bar            }</span>
+}
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> foo: () -&gt; ()         --&gt;    <span class="hljs-keyword">let</span> foo: () -&gt; <span class="hljs-type">Void</span>
+
+<span class="hljs-keyword">let</span> bar: <span class="hljs-type">Void</span> -&gt; <span class="hljs-type">Void</span>     --&gt;    <span class="hljs-keyword">let</span> bar: () -&gt; <span class="hljs-type">Void</span>
+
+<span class="hljs-keyword">let</span> baz: (<span class="hljs-type">Void</span>) -&gt; <span class="hljs-type">Void</span>   --&gt;    <span class="hljs-keyword">let</span> baz: () -&gt; <span class="hljs-type">Void</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">quux</span><span class="hljs-params">()</span></span> -&gt; (<span class="hljs-type">Void</span>)     --&gt;    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">quux</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Void</span>
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-built_in">lazy</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">weak</span> <span class="hljs-keyword">private</span>(<span class="hljs-keyword">set</span>) <span class="hljs-keyword">var</span> foo: <span class="hljs-type">UIView</span>?    --&gt;    <span class="hljs-keyword">private</span>(<span class="hljs-keyword">set</span>) <span class="hljs-keyword">public</span> <span class="hljs-built_in">lazy</span> <span class="hljs-keyword">weak</span> <span class="hljs-keyword">var</span> foo: <span class="hljs-type">UIView</span>?
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">final</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span></span>                  --&gt;    <span class="hljs-keyword">final</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span></span>
+
+<span class="hljs-keyword">convenience</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">init</span>()                        --&gt;    <span class="hljs-keyword">private</span> <span class="hljs-keyword">convenience</span> <span class="hljs-keyword">init</span>()
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">if</span> (foo == <span class="hljs-literal">true</span>) {}           --&gt;    <span class="hljs-keyword">if</span> foo == <span class="hljs-literal">true</span> {}
+
+<span class="hljs-keyword">while</span> (i &lt; bar.<span class="hljs-built_in">count</span>) {}      --&gt;    <span class="hljs-keyword">while</span> i &lt; bar.<span class="hljs-built_in">count</span> {}
+
+queue.async() { ... }         --&gt;    queue.async { ... }
+
+<span class="hljs-keyword">let</span> foo: <span class="hljs-type">Int</span> = ({ ... })()    --&gt;    <span class="hljs-keyword">let</span> foo: <span class="hljs-type">Int</span> = { ... }()
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> foo: <span class="hljs-type">Int</span>? = <span class="hljs-literal">nil</span>     --&gt;   <span class="hljs-keyword">var</span> foo: <span class="hljs-type">Int</span>?
+
+<span class="hljs-keyword">let</span> foo: <span class="hljs-type">Int</span>? = <span class="hljs-literal">nil</span>     --&gt;   <span class="hljs-keyword">let</span> foo: <span class="hljs-type">Int</span>? = <span class="hljs-literal">nil</span> <span class="hljs-comment">// doesn&apos;t apply to `let` properties</span>
+
+<span class="hljs-keyword">var</span> foo: <span class="hljs-type">Int</span>? = <span class="hljs-number">0</span>       --&gt;   <span class="hljs-keyword">var</span> foo: <span class="hljs-type">Int</span>? = <span class="hljs-number">0</span> <span class="hljs-comment">// doesn&apos;t affect non-nil initialzation</span>
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Foo</span> </span>{                     <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Foo</span> </span>{
+    <span class="hljs-keyword">case</span> bar = <span class="hljs-string">&quot;bar&quot;</span>     --&gt;       <span class="hljs-keyword">case</span> bar
+    <span class="hljs-keyword">case</span> baz = <span class="hljs-string">&quot;quux&quot;</span>              <span class="hljs-keyword">case</span> baz = <span class="hljs-string">&quot;quux&quot;</span>
+}                              }
+</code></pre>
+<pre><code class="lang-swift">array.<span class="hljs-built_in">filter</span> { <span class="hljs-keyword">return</span> $<span class="hljs-number">0</span>.foo == bar }    --&gt;    array.<span class="hljs-built_in">filter</span> { $<span class="hljs-number">0</span>.foo == bar }
+</code></pre>
+<h4 id="reference">Reference</h4>
+<p><a href="https://swift.org/documentation/api-design-guidelines/" target="_blank">https://swift.org/documentation/api-design-guidelines/</a>
+<a href="https://github.com/raywenderlich/swift-style-guide" target="_blank">https://github.com/raywenderlich/swift-style-guide</a>
+<a href="https://github.com/nicklockwood/SwiftFormat" target="_blank">https://github.com/nicklockwood/SwiftFormat</a>
+<a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html" target="_blank">https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html</a>
+<a href="https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/" target="_blank">https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/</a></p>
 
                                 
                                 </section>
@@ -575,7 +777,7 @@
                 </a>
                 
                 
-                <a href="better_developer.html" class="navigation navigation-next " aria-label="Next page: Better Swift Developer">
+                <a href="swift_resources.html" class="navigation navigation-next " aria-label="Next page: Swift External Resources">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -586,7 +788,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Swift Styling Guide","level":"11.1","depth":1,"next":{"title":"Better Swift Developer","level":"11.2","depth":1,"path":"Content/others/swift/better_developer.md","ref":"Content/others/swift/better_developer.md","articles":[]},"previous":{"title":"Table of Content","level":"2.5","depth":1,"path":"Content/course/0000/0000_table_of_content.md","ref":"Content/course/0000/0000_table_of_content.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"Content/others/swift/swift_styling_guide.md","mtime":"2017-03-22T08:27:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T01:06:09.931Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Swift Styling Guide","level":"11.1","depth":1,"next":{"title":"Swift External Resources","level":"11.2","depth":1,"path":"Content/others/swift/swift_resources.md","ref":"Content/others/swift/swift_resources.md","articles":[]},"previous":{"title":"Table of Content","level":"2.5","depth":1,"path":"Content/course/0000/0000_table_of_content.md","ref":"Content/course/0000/0000_table_of_content.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"Content/others/swift/swift_styling_guide.md","mtime":"2017-03-27T09:38:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T08:46:03.132Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

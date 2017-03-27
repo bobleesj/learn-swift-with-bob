@@ -133,7 +133,10 @@
  - [Things CS Major Should Know](http://matt.might.net/articles/what-cs-majors-should-know/)
 
 ## Algorithm
- - [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club)
+ - [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club
+
+## Design Patterns
+  - [OOD Swift Design Patterns](https://github.com/ochococo/Design-Patterns-In-Swift#creational)
 
  <br>
  <br>
