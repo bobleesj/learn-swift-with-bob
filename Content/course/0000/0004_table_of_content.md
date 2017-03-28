@@ -5,7 +5,7 @@
 - Generics
 - Type Casting
 - Subscript
-- Class vs Struct
+- Class vs Structm
 - Optionals
 - Optional Chaining
 - Guard and defer statement
@@ -17,13 +17,12 @@
 
 ## Advanced Object Oriented Programming
 - Convenience Init
-- Failable Init
 - Computed Property
-- Override Init
-- Mutating function
+- Property Observe
+- Failable Init
+- Override Init and Method
 - Two Phase Init
-- Property Observer
-- Type Property
+- Type Property and Method
 - Singleton Pattern
 
 ## Intro to Functional Programming
@@ -32,23 +31,24 @@
 - Lazy Initialization
 - Capture list in Closure
 - Trailing Closures
-- Completion Handlers
+- Completion Handlers and Callback
 - @escape and @autoclosure
 
 ## Complete Protocol Oriented Programming
-- Definition of Protocol
+- Intro to Protocol
 - Protocol Extension
 - Protocol as Type
 - Delegate
 - Protocol Associativity Type
-- Type erasures
-- where clause
+- Where Clause
 
-## Generics
+## Advanced Generics
 - Advanced Generics
 - Generics with Classes and Structs
 - Generics with Protocols
 - Equitable and Comparable Protocol
+- Type Eraser with Protocol
+- Generic Initialization 
 
 ## Memory Management
 - Memory management

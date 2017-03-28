@@ -12,7 +12,9 @@ My dream is to provide affordable education channels for all people regardless o
 | The UIKit Fundamentals | Learn how to make apps without storyboard and protocol oriented reusable cells. Use Realm database instead of Core Data and Real-time apps. Learn how to use UI components. Design custom delegate and data source.  |
 | FP, MVVM, and RxSwift  | Learn to create explicit and stream driven apps with reactive programming. |
 | Test Driven Development   | Learn how to build safe apps |
+| Server Side Programming | Learn how to become a full-stack developer with Vapor, Realm Database, and Amazon Web Service |
 | Algorithm and Data Structure  | Optimize code. Learn how to question what we do in Swift. Dissect Swift library |
+
 
 ## Mission Statement
 I, Bob the Developer, can achieve anything if I show up every day, practice everyday, and improve every day. I learn to contribute. I believe in good karma

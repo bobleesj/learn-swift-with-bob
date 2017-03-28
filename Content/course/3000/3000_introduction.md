@@ -1,0 +1,7 @@
+- Closures vs Functions
+- Closures vs Functions (Part 2)
+- Lazy Initialization
+- Capture list in Closure
+- Trailing Closures
+- Completion Handlers and Callback
+- @escape and @autoclosure
