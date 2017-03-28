@@ -5,7 +5,7 @@ I'm 20 years old, and I was born in Korea, raised in Malaysia, Vietnam, and the 
 ## The Why
 My dream is to provide affordable education channels for all people regardless of gender, religion, sex, race, color, and wealth. Since Sept 17, 2016, I've left college in NYC to pursue this goal. Currently, I have started off with teaching how to make iOS apps and the Swift programming language. In 2017, I attempt to raise as much as funds through teaching so that I may build a company that provides a platform for learning.
 
-## Current Focus
+## Current Focus {#course}
 | Course Title  |  Description |
 |----------|--------|
 | **Learn Swift with Bob** | Become a well-versed Swift Developer. Understand advanced enum, memory management, advanced Swift, Protocol Associativity, Advanced Object Oriented Programming, Swift Intermediate Fundamentals, Intro to Functional Programming, Advanced Generics, Literal Expressions, Error Handling. Equitable and comparable protocol |

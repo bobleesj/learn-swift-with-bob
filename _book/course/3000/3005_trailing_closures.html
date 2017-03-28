@@ -95,7 +95,7 @@
 
     
         
-        <li class="header">Introduction</li>
+        <li class="header">Prologue</li>
         
         
     
@@ -202,7 +202,7 @@
                 <a href="../0000/0004_table_of_content.html">
             
                     
-                    Table of 
+                    Table of Content
             
                 </a>
             
@@ -213,7 +213,7 @@
 
     
         
-        <li class="header">Swift Intermediate</li>
+        <li class="header">The Swift Fundamentals</li>
         
         
     
@@ -335,12 +335,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="../1000/1009_set_tupule.html">
+        <li class="chapter " data-level="3.1.9" data-path="../1000/1009_set_tuple.html">
             
-                <a href="../1000/1009_set_tupule.html">
+                <a href="../1000/1009_set_tuple.html">
             
                     
-                    Set and Tupule
+                    Set and Tuple
             
                 </a>
             
@@ -698,6 +698,103 @@
         
         
     
+        <li class="chapter " data-level="6.1" data-path="../4000/4000_introduction.html">
+            
+                <a href="../4000/4000_introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../4000/4001_intro_to_protocol.html">
+            
+                <a href="../4000/4001_intro_to_protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../4000/4002_protocol_extension.html">
+            
+                <a href="../4000/4002_protocol_extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../4000/4003_protocol_as_type.html">
+            
+                <a href="../4000/4003_protocol_as_type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../4000/4004_delegate.html">
+            
+                <a href="../4000/4004_delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../4000/4005_associativity_type.html">
+            
+                <a href="../4000/4005_associativity_type.html">
+            
+                    
+                    AssociativityType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../4000/4006_conclusion.html">
+            
+                <a href="../4000/4006_conclusion.html">
+            
+                    
+                    Cconclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
         
@@ -989,11 +1086,43 @@
                                 
                                 <h1 id="trailing-closures">Trailing Closures</h1>
 <h2 id="introduction">Introduction</h2>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<h3 id="problem">Problem</h3>
+<p>Welcome to Lesson 3 of The UIKIt Fundamentals Part 1 Intro to Functional Programming. Today, we are going to learn how to make your closure block readable to your eyes when you try to use it as a parameter/argument. It&apos;s quite hard to describe in words. So, let&apos;s just dive into it.</p>
+<h2 id="problem">Problem</h2>
+<p>A closure is too long to pass through a function</p>
+<h3 id="trailing-closure">Trailing Closure</h3>
+<p>Create a function that contains a closure block as the last parameter</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">trailingClosure</span><span class="hljs-params">(number: Int, closure: <span class="hljs-params">(String)</span></span></span> -&gt; <span class="hljs-type">String</span>) {
+}
+</code></pre>
+<p>You may insert a closure right inside.</p>
+<pre><code class="lang-swift">trailingClosure(number: <span class="hljs-number">123</span>, closure: { word <span class="hljs-keyword">in</span> word })
+</code></pre>
+<p>If the last parameter is a closure block,</p>
+<pre><code class="lang-swift">trailingClosure(number: <span class="hljs-number">123</span>) { word <span class="hljs-keyword">in</span> word }
+</code></pre>
+<p>Here is another example.</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">trailingClosures</span><span class="hljs-params">(closure: <span class="hljs-params">(Int)</span></span></span> -&gt; <span class="hljs-type">Int</span>) { }
+</code></pre>
+<p>Without trailing closure</p>
+<pre><code class="lang-swift">trailingClosures(closure: { number <span class="hljs-keyword">in</span> number })
+</code></pre>
+<p>With trailing closures</p>
+<pre><code class="lang-swift">trailingClosures() { number <span class="hljs-keyword">in</span> number }
+trailingClosures() { $<span class="hljs-number">0</span> }
+</code></pre>
 <h3 id="source-code">Source Code</h3>
-<h3 id="reference">Reference</h3>
+<h3 id="resources">Resources</h3>
+<p><a href="https://www.dropbox.com/sh/npx0qq1tpwo2253/AAD1UiAnjX0Olgud9VkTi5hYa?dl=0" target="_blank">1303_Trailing Closures</a></p>
 <h2 id="conclusion">Conclusion</h2>
+<p>Boom! That&apos;s it. You&apos;ve learned how to make the last part of the closure parameter readable by using trailing closure which allows you have fewer brackets throughout which is super important for readability. In the next learn, how we use trailing closures to completion handler block which is the most important concept in this chapter. Let&apos;s dive into it. Look, if you are still struggling, it&apos;s your job. Google and practice your own to figure out what the heck is closures. You can not skip this. Learning closures is important for animation, networking with the server, and so on. Hussle my friends.</p>
+<h4 id="stay-connected">Stay Connected</h4>
+<p>If you&apos;d like to be on my mailing list and receive personal updates on upcoming books and courses, feel free to send me an email at <code>bobleesj@gmail.com</code></p>
+<p>
+<a href="http://bobthedeveloper.io" target="_blank"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
+<a href="https://facebook.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg" <="" a=""> <a href="https://twitter.com/bobleesj" target="_blank"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
+" target="_blank"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
+<a href="https://medium.com/@bobleesj" target="_blank"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"></a>
+</a></p>
 
                                 
                                 </section>
@@ -1037,7 +1166,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Trailing Closures","level":"5.1.5","depth":2,"next":{"title":"Completion Handlers and Callbacks","level":"5.1.6","depth":2,"path":"course/3000/3006_completion_handlers_callbacks.md","ref":"course/3000/3006_completion_handlers_callbacks.md","articles":[]},"previous":{"title":"Capture Lists","level":"5.1.4","depth":2,"path":"course/3000/3004_capture_lists.md","ref":"course/3000/3004_capture_lists.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/3000/3005_trailing_closures.md","mtime":"2017-03-27T14:12:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T01:51:56.742Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Trailing Closures","level":"5.1.5","depth":2,"next":{"title":"Completion Handlers and Callbacks","level":"5.1.6","depth":2,"path":"course/3000/3006_completion_handlers_callbacks.md","ref":"course/3000/3006_completion_handlers_callbacks.md","articles":[]},"previous":{"title":"Capture Lists","level":"5.1.4","depth":2,"path":"course/3000/3004_capture_lists.md","ref":"course/3000/3004_capture_lists.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/3000/3005_trailing_closures.md","mtime":"2017-03-28T14:33:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T14:27:43.924Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

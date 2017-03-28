@@ -1,6 +1,3 @@
-> Draft
-
-
 # Course Expectation
 Based on the Stack Overflow survey in 2016, Swift is considered as the second most loved language out of thousands. However, don't let its readability and hype fool you. It's a complex language inspired by many programming languages out there. In fact, you will suffer, and I want it that way. Let me explain.
 

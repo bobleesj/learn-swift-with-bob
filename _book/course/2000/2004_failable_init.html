@@ -95,7 +95,7 @@
 
     
         
-        <li class="header">Introduction</li>
+        <li class="header">Prologue</li>
         
         
     
@@ -202,7 +202,7 @@
                 <a href="../0000/0004_table_of_content.html">
             
                     
-                    Table of 
+                    Table of Content
             
                 </a>
             
@@ -213,7 +213,7 @@
 
     
         
-        <li class="header">Swift Intermediate</li>
+        <li class="header">The Swift Fundamentals</li>
         
         
     
@@ -335,12 +335,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="../1000/1009_set_tupule.html">
+        <li class="chapter " data-level="3.1.9" data-path="../1000/1009_set_tuple.html">
             
-                <a href="../1000/1009_set_tupule.html">
+                <a href="../1000/1009_set_tuple.html">
             
                     
-                    Set and Tupule
+                    Set and Tuple
             
                 </a>
             
@@ -698,6 +698,103 @@
         
         
     
+        <li class="chapter " data-level="6.1" data-path="../4000/4000_introduction.html">
+            
+                <a href="../4000/4000_introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../4000/4001_intro_to_protocol.html">
+            
+                <a href="../4000/4001_intro_to_protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../4000/4002_protocol_extension.html">
+            
+                <a href="../4000/4002_protocol_extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../4000/4003_protocol_as_type.html">
+            
+                <a href="../4000/4003_protocol_as_type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../4000/4004_delegate.html">
+            
+                <a href="../4000/4004_delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../4000/4005_associativity_type.html">
+            
+                <a href="../4000/4005_associativity_type.html">
+            
+                    
+                    AssociativityType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../4000/4006_conclusion.html">
+            
+                <a href="../4000/4006_conclusion.html">
+            
+                    
+                    Cconclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
         
@@ -989,11 +1086,83 @@
                                 
                                 <h1 id="failable-init">Failable Init</h1>
 <h2 id="introduction">Introduction</h2>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<h3 id="problem">Problem</h3>
+<p>Welcome to Lesson 2 of The UIKIt Fundamentals Part 1 Object Oriented Programming. In this lesson you are going learn how to design an init method that, first, possibly returns no object, but <code>nil</code>, second, even throws an error using error handling we talked about in Chapter 1.Let&apos;s dive into it.</p>
+<h2 id="problem">Problem</h2>
+<p>Can initialization fail? Okay, how?</p>
+<h3 id="failable-init">Failable Init</h3>
+<p>Insert <code>?</code> right after <code>init</code>. When the init method is called, you may return <code>nil</code>.  If initialization is successful, it returns an object whose type is optional.</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Product</span> </span>{
+  <span class="hljs-keyword">let</span> name: <span class="hljs-type">String</span>
+  <span class="hljs-keyword">init</span>?(name: <span class="hljs-type">String</span>) {
+    <span class="hljs-keyword">if</span> name.isEmpty { <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span> }
+    <span class="hljs-keyword">self</span>.name = name
+  }
+}
+</code></pre>
+<h4 id="create-object">Create Object</h4>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> iOSGeeKCommunity = <span class="hljs-type">Product</span>(name: <span class="hljs-string">&quot;iOS Geek Community&quot;</span>) <span class="hljs-comment">// returns Product?</span>
+<span class="hljs-keyword">var</span> myNewProduct = <span class="hljs-type">Product</span>(name: <span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">// nil</span>
+
+<span class="hljs-built_in">print</span>(myNewProduct)
+myNewProduct?.name
+<span class="hljs-built_in">print</span>(iOSGeeKCommunity?.name)
+</code></pre>
+<h3 id="error-handling-with-init">Error Handling with Init</h3>
+<blockquote>
+<p>This is a review from 1105_Error Handling.</p>
+</blockquote>
+<h4 id="design-error">Design Error</h4>
+<pre><code class="lang-swift"><span class="hljs-comment">// Second Part: Throwing Error</span>
+<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">NameError</span>: <span class="hljs-title">Error</span> </span>{
+  <span class="hljs-keyword">case</span> noName
+}
+</code></pre>
+<h4 id="design-throwable-struct">Design Throwable Struct</h4>
+<p>If the user enters an empty string value, it throws <code>NameError.noName</code>.</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">UdemyCourse</span> </span>{
+  <span class="hljs-keyword">let</span> courseName: <span class="hljs-type">String</span>
+
+  <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>) <span class="hljs-keyword">throws</span> {
+    <span class="hljs-keyword">if</span> name == <span class="hljs-string">&quot;&quot;</span> {
+      <span class="hljs-keyword">throw</span> <span class="hljs-type">NameError</span>.noName
+    }
+    <span class="hljs-keyword">self</span>.courseName = name
+  }
+}
+</code></pre>
+<h4 id="call-and-handle-error">Call and Handle Error</h4>
+<pre><code class="lang-swift"><span class="hljs-keyword">do</span> {
+  <span class="hljs-keyword">let</span> myCourse = <span class="hljs-keyword">try</span> <span class="hljs-type">UdemyCourse</span>(name: <span class="hljs-string">&quot;Bob&quot;</span>)
+  myCourse.courseName
+
+} <span class="hljs-keyword">catch</span> <span class="hljs-type">NameError</span>.noName {
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Bob, please enter the name&quot;</span>)
+}
+</code></pre>
+<h4 id="try">try?</h4>
+<p>If error is thrown, it will return <code>nil</code>. If not, it will return an optional type.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> myCourse = <span class="hljs-keyword">try</span>? <span class="hljs-type">UdemyCourse</span>(name: <span class="hljs-string">&quot;Bob Lee&quot;</span>)
+myCourse <span class="hljs-comment">// Optional</span>
+</code></pre>
+<h4 id="try">try!</h4>
+<p>If error is thrown, it will crash. If not, it will return a non-optional object.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> newCourse = <span class="hljs-keyword">try</span>! <span class="hljs-type">UdemyCourse</span>(name: <span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">// Crash</span>
+</code></pre>
+<h3 id="resources">Resources</h3>
+<p>This is a review for you if you are not still familiar with Error Handling.</p>
+<p><a href="https://medium.com/ios-geek-community/intro-to-error-handling-in-swift-3-edb2ce6a6668#.2uk9hyp7h" target="_blank">Intro to Error Handling (Blog)</a></p>
 <h3 id="source-code">Source Code</h3>
-<h3 id="reference">Reference</h3>
+<p><a href="https://www.dropbox.com/sh/hf36tvvnzqbx8ke/AABB67EWiJ8GMN-BU-EHjPwXa?dl=0" target="_blank">1202_Failable Init</a></p>
 <h2 id="conclusion">Conclusion</h2>
+<p>You&apos;ve done two things with me in this lesson. First, you&apos;ve learned how design an init method that may return <code>nil</code> or optional type by putting a <code>?</code> right to the <code>init</code> keyword. As we talked about it before. Anything that has <code>?</code> in Swift will give you an optional value. Second, you&apos;ve revisited error handling. The <code>throws</code> keyword is not only used within an <code>else-if</code> block, but also it can used for an <code>init</code> method.</p>
+<h4 id="stay-connected">Stay Connected</h4>
+<p>If you&apos;d like to be on my mailing list and receive personal updates on upcoming books and courses, feel free to send me an email at <code>bobleesj@gmail.com</code></p>
+<p>
+<a href="http://bobthedeveloper.io" target="_blank"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
+<a href="https://facebook.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg" <="" a=""> <a href="https://twitter.com/bobleesj" target="_blank"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
+" target="_blank"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
+<a href="https://medium.com/@bobleesj" target="_blank"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"></a>
+</a></p>
 
                                 
                                 </section>
@@ -1037,7 +1206,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Failable Init","level":"4.1.4","depth":2,"next":{"title":"Override Everything","level":"4.1.5","depth":2,"path":"course/2000/2005_override_everything.md","ref":"course/2000/2005_override_everything.md","articles":[]},"previous":{"title":"Property Observers","level":"4.1.3","depth":2,"path":"course/2000/2003_property_observers.md","ref":"course/2000/2003_property_observers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/2000/2004_failable_init.md","mtime":"2017-03-27T13:56:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T01:51:56.742Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Failable Init","level":"4.1.4","depth":2,"next":{"title":"Override Everything","level":"4.1.5","depth":2,"path":"course/2000/2005_override_everything.md","ref":"course/2000/2005_override_everything.md","articles":[]},"previous":{"title":"Property Observers","level":"4.1.3","depth":2,"path":"course/2000/2003_property_observers.md","ref":"course/2000/2003_property_observers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/2000/2004_failable_init.md","mtime":"2017-03-28T14:32:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T14:27:43.924Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

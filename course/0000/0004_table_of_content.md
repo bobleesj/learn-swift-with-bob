@@ -1,6 +1,6 @@
 # Table of Content
 
-## Swift Intermediate Fundamentals  
+## The Swift Intermediates   
 - Error Handling Part 1
 - Generics
 - Type Casting
@@ -40,7 +40,6 @@
 - Protocol as Type
 - Delegate
 - Protocol Associativity Type
-- Where Clause
 
 ## Advanced Generics
 - Advanced Generics
@@ -48,7 +47,7 @@
 - Generics with Protocols
 - Equitable and Comparable Protocol
 - Type Eraser with Protocol
-- Generic Initialization 
+- Generic Initialization
 
 ## Memory Management
 - Memory management

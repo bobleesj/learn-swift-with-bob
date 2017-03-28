@@ -1,6 +1,6 @@
 # Summary
 
-### Introduction
+### Prologue
 * [Introduction](README.md)
 * [Bob the Developer](ABOUT.md)
 * [Resources](RESOURCES.md)
@@ -10,9 +10,9 @@
  * [Course Expectation](/course/0000/0001_course_expecation.md)
  * [Prerequisites](/course/0000/0002_prerequisites.md)
  * [Course Resources](/course/0000/0003_course_resources.md)
- * [Table of ](/course/0000/0004_table_of_content.md)
+ * [Table of Content](/course/0000/0004_table_of_content.md)
 
-### Swift Intermediate  
+### The Swift Fundamentals
 * [Introduction](/course/1000/1000_introduction.md)
    * [Optionals](/course/1000/1001_optionals.md)
    * [Optional Chainings](/course/1000/1002_optional_chaining.md)
@@ -22,7 +22,7 @@
    * [Type Casting](/course/1000/1006_type_casting.md)
    * [Subscripts](/course/1000/1007_subscripts.md)
    * [Class vs Struct](/course/1000/1008_class_vs_struct.md)
-   * [Set and Tupule](/course/1000/1009_set_tupule.md)
+   * [Set and Tuple](/course/1000/1009_set_tuple.md)
    * [Self vs self](/course/1000/1010_Self_vs_self.md)
    * [Extension](/course/1000/1011_extension.md)
    * [Intermediate Operators](/course/1000/1012_operators.md)
@@ -52,9 +52,16 @@
   * [@escape and @autoclosure](/course/3000/3007_@escape_@autoclosure.md)
   * [Conclusion](/course/3000/3008_conclusion.md)
 
-
-
 ### Protocol Oriented Swift
+ * [Introduction](/course/4000/4000_introduction.md)
+    * [Intro to Protocol](/course/4000/4001_intro_to_protocol.md)
+    * [Protocol Extension](/course/4000/4002_protocol_extension.md)
+    * [Protocol as Type](/course/4000/4003_protocol_as_type.md)
+    * [Delegate](/course/4000/4004_delegate.md)
+    * [AssociativityType](/course/4000/4005_associativity_type.md)
+    * [Cconclusion](/course/4000/4006_conclusion.md)
+
+
 
 ### Advanced Generics
 

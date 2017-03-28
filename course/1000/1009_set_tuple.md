@@ -1,10 +1,8 @@
-# Set and Tupule
+# Set and Tuple
 
 ## Introduction
 
-## Lecture Notes
-
-### Problem
+## Problem
 
 ### Source Code
 

@@ -95,7 +95,7 @@
 
     
         
-        <li class="header">Introduction</li>
+        <li class="header">Prologue</li>
         
         
     
@@ -202,7 +202,7 @@
                 <a href="../0000/0004_table_of_content.html">
             
                     
-                    Table of 
+                    Table of Content
             
                 </a>
             
@@ -213,7 +213,7 @@
 
     
         
-        <li class="header">Swift Intermediate</li>
+        <li class="header">The Swift Fundamentals</li>
         
         
     
@@ -335,12 +335,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="../1000/1009_set_tupule.html">
+        <li class="chapter " data-level="3.1.9" data-path="../1000/1009_set_tuple.html">
             
-                <a href="../1000/1009_set_tupule.html">
+                <a href="../1000/1009_set_tuple.html">
             
                     
-                    Set and Tupule
+                    Set and Tuple
             
                 </a>
             
@@ -698,6 +698,103 @@
         
         
     
+        <li class="chapter " data-level="6.1" data-path="../4000/4000_introduction.html">
+            
+                <a href="../4000/4000_introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../4000/4001_intro_to_protocol.html">
+            
+                <a href="../4000/4001_intro_to_protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../4000/4002_protocol_extension.html">
+            
+                <a href="../4000/4002_protocol_extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../4000/4003_protocol_as_type.html">
+            
+                <a href="../4000/4003_protocol_as_type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../4000/4004_delegate.html">
+            
+                <a href="../4000/4004_delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../4000/4005_associativity_type.html">
+            
+                <a href="../4000/4005_associativity_type.html">
+            
+                    
+                    AssociativityType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../4000/4006_conclusion.html">
+            
+                <a href="../4000/4006_conclusion.html">
+            
+                    
+                    Cconclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
         
@@ -987,13 +1084,64 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="property-observers">Property Observers</h1>
+                                <h1 id="property-observer">Property Observer</h1>
 <h2 id="introduction">Introduction</h2>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<h3 id="problem">Problem</h3>
+<p>Welcome to Lesson 6 of The UIKIt Fundamentals with Bob, Part 1 Object Oriented Programming. You are going to learn how to put a tracker to a property. For example, never mind. Let&apos;s just do it.</p>
+<h2 id="problem">Problem</h2>
+<p>How can I add observer/tracker to a property?</p>
+<h3 id="willset-and-didset">willSet and didSet</h3>
+<ol>
+<li><code>willSet</code> is called just before the value is set</li>
+<li><code>didSet</code> is called immediately after the new value is set.</li>
+</ol>
+<h3 id="create-step-counter">Create Step Counter</h3>
+<p>Create a variable called, <code>totalSteps</code>. When the variable encounters a new value, you may notify the user that the value has been changed. In the <code>willSet</code> block, <code>newTotalSteps</code> refers to the new value stored. In the <code>didSet</code> block, <code>oldValue</code> refers to the previous value before <code>totalSteps</code> encounters a new value.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> totalSteps: <span class="hljs-type">Int</span> = <span class="hljs-number">20</span> {
+ <span class="hljs-keyword">willSet</span>(newTotalSteps) {
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;About to set totalSteps to <span class="hljs-subst">\(newTotalSteps)</span>&quot;</span>)
+ }
+ <span class="hljs-keyword">didSet</span> {
+   <span class="hljs-keyword">if</span> totalSteps &gt; oldValue  {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Added <span class="hljs-subst">\(totalSteps - oldValue)</span> steps&quot;</span>)
+   }
+ }
+}
+
+totalSteps = <span class="hljs-number">100</span>  
+<span class="hljs-comment">// About to set totalSteps to 100</span>
+<span class="hljs-comment">// Added 80 steps</span>
+</code></pre>
+<h3 id="real-life-application">Real Life Application</h3>
+<p>You may notify the user or change background color once the user successfully logs in to the apps.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> userLoggedIn: <span class="hljs-type">Bool</span> = <span class="hljs-literal">false</span> {
+ <span class="hljs-keyword">willSet</span>(newValue) {
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;The user has tried something&quot;</span>)
+ }
+ <span class="hljs-keyword">didSet</span> {
+   <span class="hljs-keyword">if</span> userLoggedIn {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;The user switched from <span class="hljs-subst">\(oldValue)</span> to <span class="hljs-subst">\(userLoggedIn)</span>&quot;</span>)
+   }
+ }
+}
+
+userLoggedIn = <span class="hljs-literal">false</span>
+<span class="hljs-comment">// &quot;The user has tried something&quot;</span>
+userLoggedIn = <span class="hljs-literal">true</span>
+<span class="hljs-comment">// &quot;The user has tried something&quot;</span>
+<span class="hljs-comment">// &quot;The user switched from false to true&quot;</span>
+</code></pre>
 <h3 id="source-code">Source Code</h3>
-<h3 id="reference">Reference</h3>
+<p><a href="https://www.dropbox.com/sh/icjktltawrgwmxn/AADakYCf4MubhbRBmGmvTreOa?dl=0" target="_blank">1206_Property Observer</a></p>
 <h2 id="conclusion">Conclusion</h2>
+<p>Great! The whole purpose of using property observer is to write less code but provide greater readability. You don&apos;t have to create a function with a switch or else-if statement. As you&apos;ve seen there are ways ways to check whether user has been logged or not, computed property for me works great because it provides a separate block of code with distinct keywords such as <code>didSet</code> and <code>willSet</code>.</p>
+<h4 id="stay-connected">Stay Connected</h4>
+<p>If you&apos;d like to be on my mailing list and receive personal updates on upcoming books and courses, feel free to send me an email at <code>bobleesj@gmail.com</code></p>
+<p>
+<a href="http://bobthedeveloper.io" target="_blank"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
+<a href="https://facebook.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg" <="" a=""> <a href="https://twitter.com/bobleesj" target="_blank"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
+" target="_blank"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
+<a href="https://medium.com/@bobleesj" target="_blank"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"></a>
+</a></p>
 
                                 
                                 </section>
@@ -1037,7 +1185,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Property Observers","level":"4.1.3","depth":2,"next":{"title":"Failable Init","level":"4.1.4","depth":2,"path":"course/2000/2004_failable_init.md","ref":"course/2000/2004_failable_init.md","articles":[]},"previous":{"title":"Computed Property","level":"4.1.2","depth":2,"path":"course/2000/2002_computed_property.md","ref":"course/2000/2002_computed_property.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/2000/2003_property_observers.md","mtime":"2017-03-27T14:00:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T01:51:56.742Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Property Observers","level":"4.1.3","depth":2,"next":{"title":"Failable Init","level":"4.1.4","depth":2,"path":"course/2000/2004_failable_init.md","ref":"course/2000/2004_failable_init.md","articles":[]},"previous":{"title":"Computed Property","level":"4.1.2","depth":2,"path":"course/2000/2002_computed_property.md","ref":"course/2000/2002_computed_property.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/2000/2003_property_observers.md","mtime":"2017-03-28T14:31:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T14:27:43.924Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

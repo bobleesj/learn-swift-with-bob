@@ -95,7 +95,7 @@
 
     
         
-        <li class="header">Introduction</li>
+        <li class="header">Prologue</li>
         
         
     
@@ -202,7 +202,7 @@
                 <a href="../0000/0004_table_of_content.html">
             
                     
-                    Table of 
+                    Table of Content
             
                 </a>
             
@@ -213,7 +213,7 @@
 
     
         
-        <li class="header">Swift Intermediate</li>
+        <li class="header">The Swift Fundamentals</li>
         
         
     
@@ -335,12 +335,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="1009_set_tupule.html">
+        <li class="chapter " data-level="3.1.9" data-path="1009_set_tuple.html">
             
-                <a href="1009_set_tupule.html">
+                <a href="1009_set_tuple.html">
             
                     
-                    Set and Tupule
+                    Set and Tuple
             
                 </a>
             
@@ -698,6 +698,103 @@
         
         
     
+        <li class="chapter " data-level="6.1" data-path="../4000/4000_introduction.html">
+            
+                <a href="../4000/4000_introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../4000/4001_intro_to_protocol.html">
+            
+                <a href="../4000/4001_intro_to_protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../4000/4002_protocol_extension.html">
+            
+                <a href="../4000/4002_protocol_extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../4000/4003_protocol_as_type.html">
+            
+                <a href="../4000/4003_protocol_as_type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../4000/4004_delegate.html">
+            
+                <a href="../4000/4004_delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../4000/4005_associativity_type.html">
+            
+                <a href="../4000/4005_associativity_type.html">
+            
+                    
+                    AssociativityType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../4000/4006_conclusion.html">
+            
+                <a href="../4000/4006_conclusion.html">
+            
+                    
+                    Cconclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
         
@@ -987,13 +1084,159 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="intro-to-generics">Intro to Generics</h1>
+                                <h1 id="generics">Generics</h1>
 <h2 id="introduction">Introduction</h2>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<h3 id="problem">Problem</h3>
+<p>Welcome to Lesson 6 of Part 1 Swift Fundamentals with Bob. When you think of the word, &quot;generic&quot;, what makes you think? Well, I&apos;m sure you&apos;ve thought you wanted to write code that can work with many other types. Haha, I know you are super confused, I will walk you through. But remember, the number goal is to write reusable code so that we do not repeat ourself.</p>
+<h2 id="problem">Problem</h2>
+<p>I feel like I&apos;m repeating myself...</p>
+<h3 id="your-past">Your Past</h3>
+<p>Let us reflect on how we rolled in the past. Let&apos;s attempt to access each element in an array.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> highSchoolGPA = [<span class="hljs-number">2.8</span>, <span class="hljs-number">3.2</span>, <span class="hljs-number">3.5</span>, <span class="hljs-number">3.8</span>, <span class="hljs-number">3.5</span>]
+<span class="hljs-keyword">let</span> favoritePeople = [<span class="hljs-string">&quot;Elon Musk&quot;</span>, <span class="hljs-string">&quot;Steve Jobs&quot;</span>, <span class="hljs-string">&quot;Kevin O&apos;leary&quot;</span>]
+<span class="hljs-keyword">let</span> favoriteNumbers = [<span class="hljs-number">3</span>, <span class="hljs-number">20</span>]
+</code></pre>
+<p>Worst way to access elements</p>
+<pre><code class="lang-swift">highSchoolGPA[<span class="hljs-number">0</span>]
+highSchoolGPA[<span class="hljs-number">1</span>]
+highSchoolGPA[<span class="hljs-number">2</span>]
+</code></pre>
+<h4 id="loop-and-print">Loop and Print</h4>
+<p>But, there is a better way.</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">printDoubleElement</span><span class="hljs-params">(array: [Double])</span></span> {
+  <span class="hljs-keyword">for</span> <span class="hljs-type">GPA</span> <span class="hljs-keyword">in</span> array {
+    <span class="hljs-built_in">print</span>(<span class="hljs-type">GPA</span>)
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">printStringElement</span><span class="hljs-params">(array: [String])</span></span> {
+  <span class="hljs-keyword">for</span> person <span class="hljs-keyword">in</span> array {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I love <span class="hljs-subst">\(person)</span>&quot;</span>)
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">printNumberElement</span><span class="hljs-params">(array: [Int])</span></span> {
+  <span class="hljs-keyword">for</span> number <span class="hljs-keyword">in</span> array {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I like <span class="hljs-subst">\(number)</span>&quot;</span>)
+  }
+}
+</code></pre>
+<blockquote>
+<p>Needlessly many functions. It goes against the DRY principle. Don&apos;t Repeat Yourself.</p>
+</blockquote>
+<h3 id="introducing-generics">Introducing Generics</h3>
+<p>A generic function allows you to pass any value regardless of types.   </p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">genericFunction</span>&lt;anything&gt;<span class="hljs-params">(value: anything)</span></span> {
+  <span class="hljs-built_in">print</span>(value)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">genericFunctions</span>&lt;WHATEVER&gt;<span class="hljs-params">(value: WHATEVER)</span></span> {
+  <span class="hljs-built_in">print</span>(value)
+}
+</code></pre>
+<p>You may pass any type of value. Swift sets the type of <code>value</code> identical to what the user enters.</p>
+<pre><code class="lang-swift">genericFunction(value: <span class="hljs-string">&quot;Bob&quot;</span>)  <span class="hljs-comment">// value is String</span>
+genericFunction(value: <span class="hljs-literal">true</span>)    <span class="hljs-comment">// value is Bool</span>
+</code></pre>
+<h4 id="generic-loop">Generic Loop</h4>
+<p>Let us apply to a function that loops through an array.</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">printElement</span>&lt;T&gt;<span class="hljs-params">(array: [T])</span></span> {
+  <span class="hljs-keyword">for</span> element <span class="hljs-keyword">in</span> array {
+    <span class="hljs-built_in">print</span>(element)
+  }
+}
+</code></pre>
+<p>Call the function</p>
+<pre><code class="lang-swift">printElement(array: highSchoolGPA)
+printElement(array: favoritePeople)
+</code></pre>
+<blockquote>
+<p>Generic code enables you to write flexible, reusable functions and types that can work with any type, subject to requirements that you define.</p>
+</blockquote>
+<p>Now only you can create a generic function, but also generic classes and structs. First, let&apos;s begin with a non-generic struct.</p>
+<h4 id="non-generic-struct">Non-Generic Struct</h4>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Family</span> </span>{
+  <span class="hljs-keyword">var</span> members = [<span class="hljs-type">String</span>]()
+
+  <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">push</span><span class="hljs-params">(member: String)</span></span> {
+    members.append(member)
+  }
+}
+</code></pre>
+<h4 id="non-generic-instance">Non-Generic Instance</h4>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> myFam = <span class="hljs-type">Family</span>()
+myFam.push(member: <span class="hljs-string">&quot;Bob&quot;</span>)
+myFam.members
+</code></pre>
+<p>What if you need to create a struct whose type isn&apos;t <code>String</code>, but <code>Int</code>? You probably have to create an entire new struct whose the <code>members</code> property is in <code>[Int]</code>. Well, it goes against the dry principle. Let&apos;s gets started.</p>
+<h3 id="generic-struct">Generic Struct</h3>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">genericFam</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+  <span class="hljs-keyword">var</span> members = [<span class="hljs-type">T</span>]()
+
+  <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">push</span><span class="hljs-params">(member: T)</span></span> {
+    members.append(member)
+  }
+}
+</code></pre>
+<h4 id="create-object-explicitly">Create Object Explicitly</h4>
+<p>Now, let&apos;s create an object from a generic struct. But, you have to specify the type you&apos;d like to interact with.</p>
+<pre><code class="lang-swift"><span class="hljs-comment">// Generic whose type is String</span>
+<span class="hljs-keyword">var</span> myGenericFamily = genericFam&lt;<span class="hljs-type">String</span>&gt;()
+myGenericFamily.push(member: <span class="hljs-string">&quot;Bobby&quot;</span>)
+
+<span class="hljs-comment">// Generic whose type is Int</span>
+<span class="hljs-keyword">var</span> genericFamily = genericFam&lt;<span class="hljs-type">Int</span>&gt;()
+genericFamily.push(member: <span class="hljs-number">123</span>)
+</code></pre>
+<h4 id="create-object-implicitly">Create Object Implicitly</h4>
+<p>Struct type inferred based on the property type.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> myHappyFamily = genericFam(members: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>])  <span class="hljs-comment">// struct is now Int type</span>
+</code></pre>
+<h3 id="generic-extension">Generic Extension</h3>
+<p>Grab the first value</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">genericFam</span> </span>{
+  <span class="hljs-keyword">var</span> firstElement: <span class="hljs-type">T</span>? {
+    <span class="hljs-keyword">if</span> members.isEmpty {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> members[<span class="hljs-number">0</span>]
+    }
+  }
+}
+
+<span class="hljs-keyword">let</span> geekFamilyMember = genericFam(members: [<span class="hljs-string">&quot;Bob&quot;</span>, <span class="hljs-string">&quot;Bobby&quot;</span>])
+<span class="hljs-keyword">let</span> firstElement = geekFamilyMember.firstElement
+</code></pre>
+<h3 id="type-constraint">Type Constraint</h3>
+<p>You may limit types you want to interact with.</p>
+<h4 id="create-class">Create Class</h4>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LOL</span> </span>{}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BabyLol</span>: <span class="hljs-title">LOL</span> </span>{}
+</code></pre>
+<h4 id="create-generic-function-with-constraint">Create Generic Function with Constraint</h4>
+<p>Create a function that only takes an input whose type is <code>LOL</code></p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addClassOnly</span>&lt;T: LOL&gt;<span class="hljs-params">(array: [T])</span></span> {}
+
+<span class="hljs-comment">// addClassOnly(array: [1, 2, 3, 5, 6, ])</span>
+<span class="hljs-comment">// Error</span>
+
+addClassOnly(array: [<span class="hljs-type">LOL</span>(), <span class="hljs-type">LOL</span>(), <span class="hljs-type">LOL</span>()])
+addClassOnly(array: [<span class="hljs-type">LOL</span>(), <span class="hljs-type">LOL</span>(), <span class="hljs-type">LOL</span>(), <span class="hljs-type">BabyLol</span>()]) <span class="hljs-comment">// Automatically Upcasted</span>
+</code></pre>
+<h3 id="resources">Resources</h3>
+<p><a href="https://www.youtube.com/watch?v=4pPtLjkF0HE" target="_blank">The Complete Swift 3 Tutorial with Bob: Extension (YouTube)</a></p>
+<p><a href="https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.fkmmjqnwd" target="_blank">Intro to Generics in Swift with Bob (Blog)</a></p>
 <h3 id="source-code">Source Code</h3>
-<h3 id="reference">Reference</h3>
+<p><a href="https://www.dropbox.com/sh/yln3s9r0fpnhlhm/AAD_0kollYRBkc82qFUpe_0va?dl=0" target="_blank">1106_Generics</a></p>
 <h2 id="conclusion">Conclusion</h2>
+<p>That&apos;s it. Generics provide such a powerful tool to the point it&apos;s not uncommon to notice the Swift library is written in generic code. To recap, you&apos;ve learned how to make a generic function by putting a diamond sign on the right. You&apos;ve also learned how to create generic structs. You&apos;ve learned a lot. I&apos;m very proud of you. You might not find generics as useful in this course, but when you start learning practical protocol oriented programming, functional programming, and reactive programming, which is going to my next upcoming course, you will learn that generics appear everywhere. That being said, hustle, yet be patient. We will get there, but let&apos;s focus on the fundamentals first. See you in the next lesson.</p>
+<h4 id="stay-connected">Stay Connected</h4>
+<p>I focus on building a long-term relationship with you. Feel free to follow on my social media for personal updates and engagement. You may see what my daily activity is like on Instagram.  </p>
+<p>
+<a href="http://bobthedeveloper.io" target="_blank"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
+<a href="https://facebook.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg" <="" a=""> <a href="https://twitter.com/bobleesj" target="_blank"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
+" target="_blank"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
+<a href="https://medium.com/@bobleesj" target="_blank"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"></a>
+</a></p>
 
                                 
                                 </section>
@@ -1037,7 +1280,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Intro to Generics","level":"3.1.5","depth":2,"next":{"title":"Type Casting","level":"3.1.6","depth":2,"path":"course/1000/1006_type_casting.md","ref":"course/1000/1006_type_casting.md","articles":[]},"previous":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/1000/1004_intro_error_handling.md","ref":"course/1000/1004_intro_error_handling.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/1000/1005_generics.md","mtime":"2017-03-27T13:28:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T01:51:56.742Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Intro to Generics","level":"3.1.5","depth":2,"next":{"title":"Type Casting","level":"3.1.6","depth":2,"path":"course/1000/1006_type_casting.md","ref":"course/1000/1006_type_casting.md","articles":[]},"previous":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/1000/1004_intro_error_handling.md","ref":"course/1000/1004_intro_error_handling.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/1000/1005_generics.md","mtime":"2017-03-28T14:31:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T14:27:43.924Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

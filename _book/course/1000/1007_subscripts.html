@@ -95,7 +95,7 @@
 
     
         
-        <li class="header">Introduction</li>
+        <li class="header">Prologue</li>
         
         
     
@@ -202,7 +202,7 @@
                 <a href="../0000/0004_table_of_content.html">
             
                     
-                    Table of 
+                    Table of Content
             
                 </a>
             
@@ -213,7 +213,7 @@
 
     
         
-        <li class="header">Swift Intermediate</li>
+        <li class="header">The Swift Fundamentals</li>
         
         
     
@@ -335,12 +335,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="1009_set_tupule.html">
+        <li class="chapter " data-level="3.1.9" data-path="1009_set_tuple.html">
             
-                <a href="1009_set_tupule.html">
+                <a href="1009_set_tuple.html">
             
                     
-                    Set and Tupule
+                    Set and Tuple
             
                 </a>
             
@@ -698,6 +698,103 @@
         
         
     
+        <li class="chapter " data-level="6.1" data-path="../4000/4000_introduction.html">
+            
+                <a href="../4000/4000_introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../4000/4001_intro_to_protocol.html">
+            
+                <a href="../4000/4001_intro_to_protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../4000/4002_protocol_extension.html">
+            
+                <a href="../4000/4002_protocol_extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../4000/4003_protocol_as_type.html">
+            
+                <a href="../4000/4003_protocol_as_type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../4000/4004_delegate.html">
+            
+                <a href="../4000/4004_delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../4000/4005_associativity_type.html">
+            
+                <a href="../4000/4005_associativity_type.html">
+            
+                    
+                    AssociativityType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../4000/4006_conclusion.html">
+            
+                <a href="../4000/4006_conclusion.html">
+            
+                    
+                    Cconclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
         
@@ -989,11 +1086,83 @@
                                 
                                 <h1 id="subscripts">Subscripts</h1>
 <h2 id="introduction">Introduction</h2>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<h3 id="problem">Problem</h3>
+<p>Welcome back to lesson 7 of Part 1 the Swift Fundamentals with Bob. What if I told you right now that you can create a shortcut? I know it sounds super super abstract. But, I will walk you through. I know you guys trust me more than any. Let&apos;s dive into it.</p>
+<h2 id="problem">Problem</h2>
+<p>I want a shortcut instead of calling a method.</p>
+<h3 id="normal-method">Normal Method</h3>
+<p>Create a class called, <code>HelloKitty</code> which contains a method that returns a string value.</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">HelloKitty</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">saySomething</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;I&apos;m Cute&quot;</span>
+  }
+}
+</code></pre>
+<p>Create an instance and call <code>saySomething()</code></p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> babe = <span class="hljs-type">HelloKitty</span>()
+babe.saySomething()
+</code></pre>
+<h3 id="subscripts">Subscripts</h3>
+<p>Subscripts provide shortcuts. It is analogous to creating a method but without a name.</p>
+<pre><code class="lang-swift">
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">WeekDays</span> </span>{
+  <span class="hljs-keyword">var</span> days = [<span class="hljs-string">&quot;Monday&quot;</span>, <span class="hljs-string">&quot;Tuesday&quot;</span>, <span class="hljs-string">&quot;Wednesday&quot;</span>, <span class="hljs-string">&quot;Thursday&quot;</span>, <span class="hljs-string">&quot;Friday&quot;</span>]
+
+  <span class="hljs-keyword">subscript</span>(index: <span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">String</span> {
+    <span class="hljs-keyword">return</span> days[index]
+  }  
+}
+</code></pre>
+<h4 id="access-shortcut">Access Shortcut</h4>
+<p>Call the subscript by entering <code>[]</code>.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> myDays = <span class="hljs-type">WeekDays</span>()
+
+myDays[<span class="hljs-number">0</span>]  <span class="hljs-comment">// &quot;Monday&quot;</span>
+myDays[<span class="hljs-number">1</span>]  <span class="hljs-comment">// &quot;Tuesday&quot;</span>
+</code></pre>
+<h3 id="dictionary">Dictionary</h3>
+<p>When you access elements in a dictionary, it always returns an optional type.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> info = [<span class="hljs-string">&quot;Height&quot;</span>: <span class="hljs-number">183</span>, <span class="hljs-string">&quot;Body Fat&quot;</span>: <span class="hljs-number">12.5</span>, <span class="hljs-string">&quot;Weight&quot;</span>: <span class="hljs-number">76</span>]
+
+<span class="hljs-keyword">let</span> height = info[<span class="hljs-string">&quot;Height&quot;</span>] <span class="hljs-comment">// height is an optional string</span>
+</code></pre>
+<h3 id="artificial-dictionary-subscript">Artificial Dictionary Subscript</h3>
+<p>Access element without returning an optional type</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">HealthInfo</span> </span>{
+  <span class="hljs-keyword">var</span> info = [<span class="hljs-string">&quot;Height&quot;</span>: <span class="hljs-number">183</span>, <span class="hljs-string">&quot;Body Fat&quot;</span>: <span class="hljs-number">12.5</span>, <span class="hljs-string">&quot;Weight&quot;</span>: <span class="hljs-number">76</span>]
+
+  <span class="hljs-keyword">subscript</span>(key: <span class="hljs-type">String</span>) -&gt; <span class="hljs-type">Double</span> {
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> newInfo = info[key] {
+      <span class="hljs-keyword">return</span> newInfo
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+    }
+  }
+
+}
+</code></pre>
+<h4 id="access-elements">Access Elements</h4>
+<p>Return normal type</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> bob = <span class="hljs-type">HealthInfo</span>()
+bob[<span class="hljs-string">&quot;Height&quot;</span>]         <span class="hljs-comment">// 183</span>
+bob[<span class="hljs-string">&quot;Body Fat&quot;</span>]        <span class="hljs-comment">// 12.5</span>
+bob[<span class="hljs-string">&quot;123456789&quot;</span>]       <span class="hljs-comment">// 0</span>
+</code></pre>
+<h3 id="shortcoming-of-subscript">Shortcoming of Subscript</h3>
+<p>No Context means &#x2620;&#xFE0F;</p>
+<h3 id="resources">Resources</h3>
 <h3 id="source-code">Source Code</h3>
-<h3 id="reference">Reference</h3>
+<p><a href="https://www.dropbox.com/sh/hqjvfrlf6ha2kqz/AAANCaEigEMbbckdHgOSPr3da?dl=0" target="_blank">1107_Subscripts</a></p>
 <h2 id="conclusion">Conclusion</h2>
+<p>Great, now you know what I meant by creating a shortcut. However, subscripts can be quite misleading because there is no name to it. As a result, it might create massive confusion if you work with someone else. So make sure, don&apos;t use it too often. Sometimes, it might be better for you to use a property or a method for clarity.</p>
+<p>An Apple engineering once said, brevity is not the worthwhile goal. Communication is important because a programming language is not only a way humans talk to computers, but also between us, humans. Clear communication trumps all.</p>
+<h4 id="stay-connected">Stay Connected</h4>
+<p>I focus on building a long-term relationship with you. Feel free to follow on my social media for personal updates and engagement. You may see what my daily activity is like on Instagram.  </p>
+<p>
+<a href="http://bobthedeveloper.io" target="_blank"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
+<a href="https://facebook.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg" <="" a=""> <a href="https://twitter.com/bobleesj" target="_blank"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
+" target="_blank"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
+<a href="https://medium.com/@bobleesj" target="_blank"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"></a>
+</a></p>
 
                                 
                                 </section>
@@ -1037,7 +1206,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Subscripts","level":"3.1.7","depth":2,"next":{"title":"Class vs Struct","level":"3.1.8","depth":2,"path":"course/1000/1008_class_vs_struct.md","ref":"course/1000/1008_class_vs_struct.md","articles":[]},"previous":{"title":"Type Casting","level":"3.1.6","depth":2,"path":"course/1000/1006_type_casting.md","ref":"course/1000/1006_type_casting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/1000/1007_subscripts.md","mtime":"2017-03-27T13:28:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T01:51:56.742Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Subscripts","level":"3.1.7","depth":2,"next":{"title":"Class vs Struct","level":"3.1.8","depth":2,"path":"course/1000/1008_class_vs_struct.md","ref":"course/1000/1008_class_vs_struct.md","articles":[]},"previous":{"title":"Type Casting","level":"3.1.6","depth":2,"path":"course/1000/1006_type_casting.md","ref":"course/1000/1006_type_casting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/1000/1007_subscripts.md","mtime":"2017-03-28T14:31:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T14:27:43.924Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

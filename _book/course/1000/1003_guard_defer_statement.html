@@ -95,7 +95,7 @@
 
     
         
-        <li class="header">Introduction</li>
+        <li class="header">Prologue</li>
         
         
     
@@ -202,7 +202,7 @@
                 <a href="../0000/0004_table_of_content.html">
             
                     
-                    Table of 
+                    Table of Content
             
                 </a>
             
@@ -213,7 +213,7 @@
 
     
         
-        <li class="header">Swift Intermediate</li>
+        <li class="header">The Swift Fundamentals</li>
         
         
     
@@ -335,12 +335,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="1009_set_tupule.html">
+        <li class="chapter " data-level="3.1.9" data-path="1009_set_tuple.html">
             
-                <a href="1009_set_tupule.html">
+                <a href="1009_set_tuple.html">
             
                     
-                    Set and Tupule
+                    Set and Tuple
             
                 </a>
             
@@ -698,6 +698,103 @@
         
         
     
+        <li class="chapter " data-level="6.1" data-path="../4000/4000_introduction.html">
+            
+                <a href="../4000/4000_introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../4000/4001_intro_to_protocol.html">
+            
+                <a href="../4000/4001_intro_to_protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../4000/4002_protocol_extension.html">
+            
+                <a href="../4000/4002_protocol_extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../4000/4003_protocol_as_type.html">
+            
+                <a href="../4000/4003_protocol_as_type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../4000/4004_delegate.html">
+            
+                <a href="../4000/4004_delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../4000/4005_associativity_type.html">
+            
+                <a href="../4000/4005_associativity_type.html">
+            
+                    
+                    AssociativityType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../4000/4006_conclusion.html">
+            
+                <a href="../4000/4006_conclusion.html">
+            
+                    
+                    Cconclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
         
@@ -987,13 +1084,94 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="guard-and-defer-statement">Guard and Defer Statement</h1>
+                                <h1 id="guard-statement">Guard Statement</h1>
 <h2 id="introduction">Introduction</h2>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<h3 id="problem">Problem</h3>
+<p>Welcome back. We are at Lesson 3 of Part 1 of the Swift fundamentals with Bob. First of all, let me share a story of mine. When I learned Swift as my first programming language,  I understood  an <code>else-if</code> statement. It wasn&apos;t a big deal. For example, if something is <code>true</code>, you run a block. However, a <code>guard</code> statement confused the heck out of me. Maybe some of you guys feel the same way as I did. Don&apos;t worry. I&apos;m here for you today. You will understand that a <code>guard statement</code> is just another for you to write an <code>else-if</code> statement. A <code>guard statement</code> provides a feeling of zenness. In other words, it adds clarity, emptiness, and lots of cloud and space. Let&apos;s get in.</p>
+<h2 id="problem">Problem</h2>
+<p>Is there any better way to write an <code>else-if</code> statement? How do you safely unwrap many optionals?</p>
+<h3 id="typical-else-if">Typical else-if</h3>
+<p>Without having known guard statements, you used a long <code>else-if</code> statement to handle an error message block.</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">checkDrinkingAge</span><span class="hljs-params">()</span></span> {
+
+  <span class="hljs-keyword">let</span> canDrink = <span class="hljs-literal">true</span>
+
+  <span class="hljs-keyword">if</span> canDrink {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;You may enter&quot;</span>)
+    <span class="hljs-comment">// More</span>
+    <span class="hljs-comment">// More Code</span>
+    <span class="hljs-comment">// More Code</span>
+
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// More Code</span>
+    <span class="hljs-comment">// More Code</span>
+    <span class="hljs-comment">// More Code</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Let me take you to the jail&quot;</span>)
+  }
+}
+</code></pre>
+<h3 id="issues-with-else-if">Issues with else-if</h3>
+<ol>
+<li>Nested brackets</li>
+<li>Have to read every line to spot error</li>
+</ol>
+<h3 id="guard-statement">Guard Statement</h3>
+<p>It provides an early exit and fewer brackets. A <code>guard</code> block only runs if the condition is <code>false</code>. If not, the function ignores it. If the condition is <code>false</code>, it will call <code>return</code> which causes the function to stop.</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">checkDrinkProgram</span><span class="hljs-params">()</span></span> {
+  <span class="hljs-keyword">let</span> iCanDrink = <span class="hljs-literal">true</span>
+
+  <span class="hljs-keyword">guard</span> iCanDrink <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// if iCanDrink == false, run this block</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;You can&apos;t drink&quot;</span>)
+    <span class="hljs-keyword">return</span>
+  }
+
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;You may drink&quot;</span>)
+  <span class="hljs-comment">// You may move on</span>
+  <span class="hljs-comment">// Come on.</span>
+  <span class="hljs-comment">// You may leave</span>
+  <span class="hljs-comment">// You don&apos;t need to read this.</span>
+  <span class="hljs-comment">// Only one bracket on the bottom: feeling zen.</span>
+}
+</code></pre>
+<h3 id="unwrap-optionals-with-else-if">Unwrap Optionals with else-if</h3>
+<p>A <code>guard</code> statement is not only useful for replacing an <code>else-if</code> statement. It could also unwrap optionals by minimizing the number of brackets. To compare, let&apos;s first begin how to unwrap multiple optional types using an <code>else-if</code>.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> publicName: <span class="hljs-type">String</span>? = <span class="hljs-string">&quot;Bob&quot;</span>
+<span class="hljs-keyword">var</span> publicPhoto: <span class="hljs-type">String</span>? = <span class="hljs-string">&quot;URL&quot;</span>
+<span class="hljs-keyword">var</span> publicAge: <span class="hljs-type">Int</span>? = <span class="hljs-number">21</span>
+
+<span class="hljs-comment">// If I find &quot;nil&quot; in any of these variables, don&apos;t do anything</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">unwrap</span><span class="hljs-params">()</span></span> {
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> name = publicName, <span class="hljs-keyword">let</span> photo = publicPhoto, <span class="hljs-keyword">let</span> age = publicAge {
+         <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Your name is <span class="hljs-subst">\(name)</span>. I see your face right here, <span class="hljs-subst">\(photo)</span>, you are <span class="hljs-subst">\(age)</span>&quot;</span>)
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Something is missing&quot;</span>)
+    <span class="hljs-comment">// Animation Logic</span>
+    <span class="hljs-comment">// Networking</span>
+  }
+</code></pre>
+<h3 id="unwrap-optionals-with-guard">Unwrap Optionals with Guard</h3>
+<p>Let&apos;s learn how a <code>guard</code> statement is used as a way to safely/implicitly unwrap optionals.</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">safetlyUnwrapUsingGuard</span><span class="hljs-params">()</span></span> {
+
+  <span class="hljs-keyword">guard</span> <span class="hljs-keyword">let</span> name = publicName, <span class="hljs-keyword">let</span> photo = publicPhoto, <span class="hljs-keyword">let</span> age = publicAge <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">//  If  one or more optionals contain nil</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Something is missing&quot;</span>)
+    <span class="hljs-keyword">return</span>
+  }
+
+  <span class="hljs-comment">// All optionals contain non-nil</span>
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Your name is <span class="hljs-subst">\(name)</span>. I see your, <span class="hljs-subst">\(photo)</span>. You are <span class="hljs-subst">\(age)</span>.&quot;</span>)
+  <span class="hljs-comment">// Animation Logic</span>
+  <span class="hljs-comment">// Networking</span>
+  <span class="hljs-comment">// More Code, but still zen</span>
+}
+</code></pre>
 <h3 id="source-code">Source Code</h3>
-<h3 id="reference">Reference</h3>
+<h3 id="resources">Resources</h3>
+<p><a href="https://www.youtube.com/watch?v=oeUYGNLqqqg" target="_blank">The Complete Swift 3 Tutorial with Bob: Guard Statement (YouTube)</a></p>
 <h2 id="conclusion">Conclusion</h2>
+<p>By now, I hope you understand the power of using a <code>guard</code> statement. It provides an early exit and you don&apos;t have to read all the way to the bottom spot error messages. You use a <code>guard</code> statement not just to please yourself, but also for the sake of your teammate&apos;s falling hair and prevent it from turning into grey when he/she reads your code. Okay, great. In our next lesson, you are going to learn another <code>!</code> and <code>?</code> for <code>type casting</code> which allows you to convert types. &#x1F914; Let&apos;s find out.</p>
 
                                 
                                 </section>
@@ -1037,7 +1215,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"next":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/1000/1004_intro_error_handling.md","ref":"course/1000/1004_intro_error_handling.md","articles":[]},"previous":{"title":"Optional Chainings","level":"3.1.2","depth":2,"path":"course/1000/1002_optional_chaining.md","ref":"course/1000/1002_optional_chaining.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/1000/1003_guard_defer_statement.md","mtime":"2017-03-27T13:28:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T01:51:56.742Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"next":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/1000/1004_intro_error_handling.md","ref":"course/1000/1004_intro_error_handling.md","articles":[]},"previous":{"title":"Optional Chainings","level":"3.1.2","depth":2,"path":"course/1000/1002_optional_chaining.md","ref":"course/1000/1002_optional_chaining.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/1000/1003_guard_defer_statement.md","mtime":"2017-03-28T14:04:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T14:27:43.924Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

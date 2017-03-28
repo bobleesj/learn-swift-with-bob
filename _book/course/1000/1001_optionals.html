@@ -95,7 +95,7 @@
 
     
         
-        <li class="header">Introduction</li>
+        <li class="header">Prologue</li>
         
         
     
@@ -202,7 +202,7 @@
                 <a href="../0000/0004_table_of_content.html">
             
                     
-                    Table of 
+                    Table of Content
             
                 </a>
             
@@ -213,7 +213,7 @@
 
     
         
-        <li class="header">Swift Intermediate</li>
+        <li class="header">The Swift Fundamentals</li>
         
         
     
@@ -335,12 +335,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="1009_set_tupule.html">
+        <li class="chapter " data-level="3.1.9" data-path="1009_set_tuple.html">
             
-                <a href="1009_set_tupule.html">
+                <a href="1009_set_tuple.html">
             
                     
-                    Set and Tupule
+                    Set and Tuple
             
                 </a>
             
@@ -698,6 +698,103 @@
         
         
     
+        <li class="chapter " data-level="6.1" data-path="../4000/4000_introduction.html">
+            
+                <a href="../4000/4000_introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../4000/4001_intro_to_protocol.html">
+            
+                <a href="../4000/4001_intro_to_protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../4000/4002_protocol_extension.html">
+            
+                <a href="../4000/4002_protocol_extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../4000/4003_protocol_as_type.html">
+            
+                <a href="../4000/4003_protocol_as_type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../4000/4004_delegate.html">
+            
+                <a href="../4000/4004_delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../4000/4005_associativity_type.html">
+            
+                <a href="../4000/4005_associativity_type.html">
+            
+                    
+                    AssociativityType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../4000/4006_conclusion.html">
+            
+                <a href="../4000/4006_conclusion.html">
+            
+                    
+                    Cconclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
         
@@ -989,11 +1086,97 @@
                                 
                                 <h1 id="optionals">Optionals</h1>
 <h2 id="introduction">Introduction</h2>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<h3 id="problem">Problem</h3>
+<p>Welcome to Lesson 1 of the Swift Fundamentals with Bob. When I first started programming in Swift just like many of you, I took courses from Udemy, Treehouse, Lynda. I bought books and whatever resources I could acquire to learn iOS Development.</p>
+<p>For a month, I never really understood what those <code>?</code> and <code>!</code> stood for. Xcode kept telling me what to do on the left side. You know what I&apos;m talking about. I got frustrated. It seemed like no courses gave me clear reasons how to use optionals, and most importantly, why Swift engineers have implemented such feature that is so unique compared to other programming languages. Well, let&apos;s dive into it.</p>
+<h2 id="problem">Problem</h2>
+<p>Why did Swift engineers implement optionals?</p>
+<h3 id="implicit-and-explicit-type">Implicit and Explicit Type</h3>
+<h4 id="rule">Rule</h4>
+<ol>
+<li>Every variable type must be defined (Implicit/Explicit)</li>
+<li>The Type is inferred based on the value</li>
+</ol>
+<pre><code class="lang-swift"><span class="hljs-comment">// String</span>
+<span class="hljs-keyword">let</span> name: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;Bob&quot;</span>          <span class="hljs-comment">// Explicit</span>
+<span class="hljs-keyword">let</span> newName = <span class="hljs-string">&quot;Bob the Developer&quot;</span> <span class="hljs-comment">// Implicit</span>
+
+<span class="hljs-comment">// Numbers</span>
+<span class="hljs-keyword">let</span> myAge: <span class="hljs-type">Int</span> = <span class="hljs-number">20</span>               <span class="hljs-comment">// Explicit</span>
+<span class="hljs-keyword">let</span> mySisterAge = <span class="hljs-number">14</span>              <span class="hljs-comment">// Implicit</span>
+<span class="hljs-keyword">let</span> myGPA: <span class="hljs-type">Double</span> = <span class="hljs-number">3.54</span>          <span class="hljs-comment">// Explicit</span>
+</code></pre>
+<h3 id="fetching-profile-picture">Fetching Profile Picture</h3>
+<p>When you fetch a profile picture from Facebook, it may return no value or <code>nil</code>. However, you can&apos;t store <code>nli</code> to a normal type based on the rule above.</p>
+<pre><code class="lang-swift"><span class="hljs-comment">// If could return &quot;URL&quot; or &quot;nothing&quot;</span>
+<span class="hljs-comment">// Successful</span>
+<span class="hljs-keyword">let</span> myProfileImageURL: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;https//facebook.com/bobthedeveloper&quot;</span>
+</code></pre>
+<h3 id="introduction-to-optionals">Introduction to Optionals</h3>
+<p>Optional type allows storing <code>nil</code>.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> myName: <span class="hljs-type">String</span>? = <span class="hljs-literal">nil</span>
+<span class="hljs-keyword">let</span> myNewName: <span class="hljs-type">String</span>? = <span class="hljs-literal">nil</span>
+
+<span class="hljs-built_in">print</span>(myName)
+<span class="hljs-built_in">print</span>(myNewName)
+
+<span class="hljs-keyword">let</span> bobAge: <span class="hljs-type">Int</span>? = <span class="hljs-literal">nil</span>
+<span class="hljs-keyword">let</span> robAge: <span class="hljs-type">Int</span>? = <span class="hljs-number">123</span>
+<span class="hljs-keyword">let</span> danAge: <span class="hljs-type">Int</span>? = <span class="hljs-number">3</span>
+</code></pre>
+<h3 id="optionals-rules">Optionals Rules</h3>
+<ol>
+<li>Optionals/Normal Types do not interact with each other</li>
+<li>Convert Optionals to Normal Type for usage. The process is also known as unwrapping.</li>
+</ol>
+<pre><code class="lang-swift"><span class="hljs-comment">// robAge + danAge</span>
+<span class="hljs-comment">// Error</span>
+</code></pre>
+<h3 id="optionals-unwrapping">Optionals Unwrapping</h3>
+<p>There are two ways to convert/unwrap optional types to normal types</p>
+<ol>
+<li>Forced unwrapping</li>
+<li>Implicit unwrapping</li>
+</ol>
+<h4 id="forced-unwrapping">Forced Unwrapping</h4>
+<p>Forced Unwrapping should be avoided since it causes a crash if an optional contains <code>nil</code>. You may convert by inserting <code>!</code> at the end of  a variable/constant.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> profileImageFromFacebook: <span class="hljs-type">String</span>? = <span class="hljs-string">&quot;ImageURL...&quot;</span>
+<span class="hljs-built_in">print</span>(profileImageFromFacebook) <span class="hljs-comment">// Optional</span>
+
+<span class="hljs-keyword">var</span> image = profileImageFromFacebook! <span class="hljs-comment">// String? converted to String</span>
+
+<span class="hljs-built_in">print</span>(image) <span class="hljs-comment">// Normal Type</span>
+<span class="hljs-built_in">print</span>(profileImageFromFacebook!) <span class="hljs-comment">// Normal Type</span>
+</code></pre>
+<p>In order to interact between variables, you must convert.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> newRobAge = robAge!
+<span class="hljs-keyword">let</span> newDanAge = danAge!
+
+newRobAge + newDanAge <span class="hljs-comment">// Good</span>
+</code></pre>
+<p>Bad things happen when you try to force unwrap an optional type whose value contains <code>nil</code>.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> bobAge: <span class="hljs-type">Int</span>? = <span class="hljs-literal">nil</span>
+<span class="hljs-comment">// let newBobAge = bobAge! // Error</span>
+</code></pre>
+<blockquote>
+<p>You can&apos;t store <code>nil</code> to a normal type in Swift. It violates the rule mentioned above.</p>
+</blockquote>
+<h4 id="implicit-unwrapping">Implicit Unwrapping</h4>
+<p>Implicit unwrapping is another way to convert. However, even if an optional type contains <code>nil</code>, it does not break the system.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> profileImageFromFacebook: <span class="hljs-type">String</span>? = <span class="hljs-string">&quot;Bob&apos;s pretty image&quot;</span>
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> image = profileImageFromFacebook {
+  <span class="hljs-built_in">print</span>(image)
+}
+</code></pre>
+<p>Now <code>image</code> is contain a normal type of <code>String</code>. You may use the <code>image</code> constant within the block.</p>
 <h3 id="source-code">Source Code</h3>
-<h3 id="reference">Reference</h3>
+<h3 id="resources">Resources</h3>
+<p>If you are still confused with optionals, feel free to watch an additional video similar to this on my YouTube channel. If not, you may skip.</p>
+<p><a href="https://www.youtube.com/watch?v=nTvngVHWe-M" target="_blank">The Complete Swift 3 Tutorial with Bob: Optionals (YouTube)</a></p>
 <h2 id="conclusion">Conclusion</h2>
+<p>Now you finally understand the why Swift engineers have implemented optionals and how to use them.</p>
+<p>To be more specific, you&apos;ve learned two fundamental concepts in the Swift programming language. The rule number one is that every variable type, even if optional, has to be defined whether explicitly or implicitly. Second, there are two ways to unwrap optionals to normal types.  <code>!</code> is used to force unwrap. <code>if let</code> is used to safely unwrap.</p>
+<p>In our next lesson, you will learn why <code>?</code> and <code>!</code> appear you create an object and access its properties and methods.</p>
 
                                 
                                 </section>
@@ -1037,7 +1220,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Optionals","level":"3.1.1","depth":2,"next":{"title":"Optional Chainings","level":"3.1.2","depth":2,"path":"course/1000/1002_optional_chaining.md","ref":"course/1000/1002_optional_chaining.md","articles":[]},"previous":{"title":"Introduction","level":"3.1","depth":1,"path":"course/1000/1000_introduction.md","ref":"course/1000/1000_introduction.md","articles":[{"title":"Optionals","level":"3.1.1","depth":2,"path":"course/1000/1001_optionals.md","ref":"course/1000/1001_optionals.md","articles":[]},{"title":"Optional Chainings","level":"3.1.2","depth":2,"path":"course/1000/1002_optional_chaining.md","ref":"course/1000/1002_optional_chaining.md","articles":[]},{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"path":"course/1000/1003_guard_defer_statement.md","ref":"course/1000/1003_guard_defer_statement.md","articles":[]},{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/1000/1004_intro_error_handling.md","ref":"course/1000/1004_intro_error_handling.md","articles":[]},{"title":"Intro to Generics","level":"3.1.5","depth":2,"path":"course/1000/1005_generics.md","ref":"course/1000/1005_generics.md","articles":[]},{"title":"Type Casting","level":"3.1.6","depth":2,"path":"course/1000/1006_type_casting.md","ref":"course/1000/1006_type_casting.md","articles":[]},{"title":"Subscripts","level":"3.1.7","depth":2,"path":"course/1000/1007_subscripts.md","ref":"course/1000/1007_subscripts.md","articles":[]},{"title":"Class vs Struct","level":"3.1.8","depth":2,"path":"course/1000/1008_class_vs_struct.md","ref":"course/1000/1008_class_vs_struct.md","articles":[]},{"title":"Set and Tupule","level":"3.1.9","depth":2,"path":"course/1000/1009_set_tupule.md","ref":"course/1000/1009_set_tupule.md","articles":[]},{"title":"Self vs self","level":"3.1.10","depth":2,"path":"course/1000/1010_Self_vs_self.md","ref":"course/1000/1010_Self_vs_self.md","articles":[]},{"title":"Extension","level":"3.1.11","depth":2,"path":"course/1000/1011_extension.md","ref":"course/1000/1011_extension.md","articles":[]},{"title":"Intermediate Operators","level":"3.1.12","depth":2,"path":"course/1000/1012_operators.md","ref":"course/1000/1012_operators.md","articles":[]},{"title":"Typealias","level":"3.1.13","depth":2,"path":"course/1000/1013_typealias.md","ref":"course/1000/1013_typealias.md","articles":[]},{"title":"Conclusion","level":"3.1.14","depth":2,"path":"course/1000/1014_conclusion.md","ref":"course/1000/1014_conclusion.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/1000/1001_optionals.md","mtime":"2017-03-27T13:23:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T01:51:56.742Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Optionals","level":"3.1.1","depth":2,"next":{"title":"Optional Chainings","level":"3.1.2","depth":2,"path":"course/1000/1002_optional_chaining.md","ref":"course/1000/1002_optional_chaining.md","articles":[]},"previous":{"title":"Introduction","level":"3.1","depth":1,"path":"course/1000/1000_introduction.md","ref":"course/1000/1000_introduction.md","articles":[{"title":"Optionals","level":"3.1.1","depth":2,"path":"course/1000/1001_optionals.md","ref":"course/1000/1001_optionals.md","articles":[]},{"title":"Optional Chainings","level":"3.1.2","depth":2,"path":"course/1000/1002_optional_chaining.md","ref":"course/1000/1002_optional_chaining.md","articles":[]},{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"path":"course/1000/1003_guard_defer_statement.md","ref":"course/1000/1003_guard_defer_statement.md","articles":[]},{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/1000/1004_intro_error_handling.md","ref":"course/1000/1004_intro_error_handling.md","articles":[]},{"title":"Intro to Generics","level":"3.1.5","depth":2,"path":"course/1000/1005_generics.md","ref":"course/1000/1005_generics.md","articles":[]},{"title":"Type Casting","level":"3.1.6","depth":2,"path":"course/1000/1006_type_casting.md","ref":"course/1000/1006_type_casting.md","articles":[]},{"title":"Subscripts","level":"3.1.7","depth":2,"path":"course/1000/1007_subscripts.md","ref":"course/1000/1007_subscripts.md","articles":[]},{"title":"Class vs Struct","level":"3.1.8","depth":2,"path":"course/1000/1008_class_vs_struct.md","ref":"course/1000/1008_class_vs_struct.md","articles":[]},{"title":"Set and Tuple","level":"3.1.9","depth":2,"path":"course/1000/1009_set_tuple.md","ref":"course/1000/1009_set_tuple.md","articles":[]},{"title":"Self vs self","level":"3.1.10","depth":2,"path":"course/1000/1010_Self_vs_self.md","ref":"course/1000/1010_Self_vs_self.md","articles":[]},{"title":"Extension","level":"3.1.11","depth":2,"path":"course/1000/1011_extension.md","ref":"course/1000/1011_extension.md","articles":[]},{"title":"Intermediate Operators","level":"3.1.12","depth":2,"path":"course/1000/1012_operators.md","ref":"course/1000/1012_operators.md","articles":[]},{"title":"Typealias","level":"3.1.13","depth":2,"path":"course/1000/1013_typealias.md","ref":"course/1000/1013_typealias.md","articles":[]},{"title":"Conclusion","level":"3.1.14","depth":2,"path":"course/1000/1014_conclusion.md","ref":"course/1000/1014_conclusion.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/1000/1001_optionals.md","mtime":"2017-03-28T14:04:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T14:27:43.924Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
