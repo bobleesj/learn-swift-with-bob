@@ -7,6 +7,12 @@
  - Consensus
  - Liking -->
 
+## Outline
+ - Mention pains that many students go through (Completion handlers, closures, protocol, generics, enum) and relate with the readers through my own experience (liking)
+ - Talk about how this course can help them solve, and what makes this course special from the rest in the marketplace (scarcity)
+ - Talk about myself: My growth and work I've been producing. Talk about my purpose and why I've started teaching iOS development. (Authority and reciprocity)
+ - Call to action to them to my course by mentioning their past encounter with my blog articles (Consistency). Again, mention what problems they would face if they decide to ignore, while talk about benefits they can with. Give an impression that they can't do much without me. Fear. 
+
 
 <!--
 ## Credentials
@@ -27,7 +33,6 @@ Swift is first programming language, and I'm young, and I still don't know much,
 
  - Clearly state the why. Like Apple, change the world. People buy into my dream and vision.
  - Scarcity
-
 
  Talk about negatives and struggle first.
  - Talk about the surveys I've conducted

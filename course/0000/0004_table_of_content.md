@@ -10,7 +10,6 @@
 - Optional Chaining
 - Guard and defer statement
 - Set and Tupule
-- self vs Self
 - extension
 - Tertiary operator ??, ~=, ?
 - Typealias
@@ -41,19 +40,18 @@
 - Delegate
 - Protocol Associativity Type
 
-## Advanced Generics
-- Advanced Generics
-- Generics with Classes and Structs
-- Generics with Protocols
-- Equitable and Comparable Protocol
-- Type Eraser with Protocol
-- Generic Initialization
-
 ## Memory Management
 - Memory management
 - weak, strong, unowned
 - Memory Management in Closures
 - Memory Management in Delegate
+
+## Advanced Generics
+- Generics with Classes and Structs
+- Generics with Protocols
+- Equitable and Comparable Protocol
+- Type Eraser with Protocol
+- Generic Initialization
 
 ## Advanced Enum
 - case let
@@ -71,3 +69,4 @@
 - Advanced Operators
 - Literal Expressions
 - Error Handling Rethrow
+- self vs Self

@@ -1,4 +1,4 @@
-# Learn Swift
+## Learn Swift
 
 ### Swift Blog
  - [Natasha the Robot](https://www.natashatherobot.com/)
@@ -22,7 +22,7 @@
 <br>
 <br>
 
-# Development Tools
+## Development Tools
 
 ### Library Management
  - [Cocopod](https://cocoapods.org/)
@@ -54,7 +54,7 @@
 <br>
 <br>
 
-# Hardware
+## Hardware
  - [Apple's Magic Mouse 2](http://amzn.to/2mh7537)
  - [Apple's Magic Keyboard 2](http://amzn.to/2mh8bfw)
  - [Late 2013 MacBook Pro 15 Inch](http://amzn.to/2nl1E2A)
@@ -67,7 +67,7 @@
 <br>
 <br>
 
-# Development Tools
+## Development Tools
  - [Paw](https://paw.cloud)
 
 > Paw is a full-featured HTTP client that lets you test the APIs you build or consume. It has a beautiful native OS X interface to compose requests, inspect server responses and generate client code out-of-the-box.
@@ -88,11 +88,11 @@
 <br>
 <br>
 
-# Open Source
+## Open Source
 
-## UX/UI
+### UX/UI
 
-### Presentation
+#### Presentation
   - [Presentr](https://github.com/IcaliaLabs/Presentr)
   - [Animated CollectionViewLayout](https://github.com/KelvinJin/AnimatedCollectionViewLayout)
   - [Jelly](https://github.com/SebastianBoldt/Jelly)
@@ -100,21 +100,21 @@
 > Jelly provides a way to integrate different kinds of highly customizable view controller transitions into your iOS-App with just a few lines of code
 
 
-### Animation
+#### Animation
  - [Hero](https://github.com/lkzhao/Hero)
  - [Lottie](https://github.com/airbnb/lottie-ios)
  - [LottieFiles](http://bit.ly/2mJR1TR)
 
 > A library for iOS and Android from the developers at Airbnb that parses Adobe After Effects animations and renders the vector animations natively on mobile. Lottie can handle animations exported as JSON using the bodymovin plugin and as the animations are backed by JSON they can be complex without being huge in size. Best of all, as the animations are rendered as vectors they can be resized, looped, sped up, slowed down, and even interactively scrubbed without any loss in quality.
 
-## Swift
+### Swift
 
-### Formatting
+#### Formatting
  - [SwiftFormat](https://github.com/nicklockwood/SwiftFormat/)
 
 > Many programmers have a preferred style for formatting their code, and others seem entirely blind to the existing formatting conventions of a project. When collaborating on a project, it can be helpful to agree on a common coding style, but enforcing that manually is tedious and error-prone, and can lead to bad feeling if some participants take it more seriously than others. Having a tool to automatically enforce a common style eliminates those issues, and lets you focus on the operation of the code, not its presentation.
 
-### Networking & JSON
+#### Networking & JSON
  - [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
  - [Alamofire](https://github.com/Alamofire/Alamofire)
 
@@ -122,33 +122,32 @@
  <br>
  <br>
 
-# Reactive Programming
+## Reactive Programming
  - [RxSwift Brings Native Reactive Functional Programming to Swift](https://www.infoq.com/news/2016/02/rxswift-reactive-swift)
 
 
  <br>
  <br>
 
-# Computer Science
+## Computer Science
  - [Things CS Major Should Know](http://matt.might.net/articles/what-cs-majors-should-know/)
 
-## Algorithm
- - [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club
+### Algorithm
+ - [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club)
 
-## Design Patterns
+### Design Patterns
   - [OOD Swift Design Patterns](https://github.com/ochococo/Design-Patterns-In-Swift#creational)
 
  <br>
  <br>
 
-# Statistics
+## Statistics
   - [How Many Apps Do Smartphone Owners Use](http://www.emarketer.com/Article/How-Many-Apps-Do-Smartphone-Owners-Use/1013309)
 
-
   <br>
   <br>
 
-# Learn UX/UI
+## UX/UI
   - [12 free things you can do to jump-start your UX Design career](https://medium.freecodecamp.com/how-to-become-a-ux-designer-8f5c8567aefd#.wym72n7wr)
   - [Design a Perfect Search Box](https://uxplanet.org/design-a-perfect-search-box-b6baaf9599c#.xeup7hw96)
   - [Design for Emotion to Increase User Engagement](https://uxplanet.org/design-for-emotion-to-increase-user-engagement-ee1f135900bc#.falvtb1zr)

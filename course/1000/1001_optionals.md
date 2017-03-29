@@ -115,6 +115,10 @@ If you are still confused with optionals, feel free to watch an additional video
 
 [The Complete Swift 3 Tutorial with Bob: Optionals (YouTube)](https://www.youtube.com/watch?v=nTvngVHWe-M)
 
+<iframe src="https://docs.google.com/presentation/d/1DDhLcBX6kBheVXlQNxMCrJp_OP0mXC82NgJHCPnW-OY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="460" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
 
 ## Conclusion
 Now you finally understand the why Swift engineers have implemented optionals and how to use them.

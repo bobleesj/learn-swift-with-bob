@@ -285,11 +285,8 @@ Increase productivity by spending less time on formatting through clicking.
 | `cmd-shift-j` | Open the download page |
 | `cmd-opt-i` | Open Developer Tools |
 
-
-
 #### Reference
 [Chrome keyboard shortcuts - Google](https://support.google.com/chrome/answer/157179?hl=en)
-
 
 
 <br>
@@ -314,6 +311,12 @@ Increase productivity by spending less time on formatting through clicking.
  | `shift-cmd-opt-g` | Run previous test |
  | `cmd-k` | Clean console |
  | `shift-cmd-k` | Clean |
+ | `cmd-\` | Add/remove breakpoint |
+ | `cmd-y` | Disable/enable all breakpoints |
+ | `opt-cmd-y` | Pause/play the debugger |
+ | `F6` | Breakpoint step over |
+ | `F7` | Breakpoint step into |
+
 
 #### Code Navigation
  | Keyboard | Purpose |
@@ -336,6 +339,8 @@ Increase productivity by spending less time on formatting through clicking.
  | `ctrl-shift-e` | Highlight |
  | `ctrl-o` | Move to the next line |
  | `ctrl-> or <` | Move to the next parameter |
+ | `opt-cmd-]` | Move line up and down |
+
 
 #### Library
  | Keyboard | Purpose |
@@ -348,6 +353,10 @@ Increase productivity by spending less time on formatting through clicking.
  | `shift-cmd-o` | Open quickly
  | `ctrl-6` | File jump bar |
  | `quick open + alt-enter` | File on the assistant editor |
+ | `opt-cmd-0` | Show/hide right panel |
+ | `cmd-0` | Show/hide left panel |
+ | `shift-cmd-y` | Show bottom panel |
+
 
 <br>
 <br>

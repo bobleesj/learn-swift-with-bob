@@ -23,11 +23,10 @@
    * [Subscripts](/course/1000/1007_subscripts.md)
    * [Class vs Struct](/course/1000/1008_class_vs_struct.md)
    * [Set and Tuple](/course/1000/1009_set_tuple.md)
-   * [Self vs self](/course/1000/1010_Self_vs_self.md)
-   * [Extension](/course/1000/1011_extension.md)
-   * [Intermediate Operators](/course/1000/1012_operators.md)
-   * [Typealias](/course/1000/1013_typealias.md)
-   * [Conclusion](/course/1000/1014_conclusion.md)
+   * [Extension](/course/1000/1010_extension.md)
+   * [Intermediate Operators](/course/1000/1011_operators.md)
+   * [Typealias](/course/1000/1012_typealias.md)
+   * [Conclusion](/course/1000/1013_conclusion.md)
 
 ### Object Oriented Swift
 * [Introduction](/course/2000/2000_introduction.md)
@@ -59,9 +58,7 @@
     * [Protocol as Type](/course/4000/4003_protocol_as_type.md)
     * [Delegate](/course/4000/4004_delegate.md)
     * [AssociativityType](/course/4000/4005_associativity_type.md)
-    * [Cconclusion](/course/4000/4006_conclusion.md)
-
-
+    * [Conclusion](/course/4000/4006_conclusion.md)
 
 ### Advanced Generics
 
@@ -70,7 +67,6 @@
 ### Advanced Enum
 
 ### Advanced Swift
-
 
 ### Swift Extra
  * [Swift Styling Guide](/content/swift/swift_styling_guide.md)
@@ -81,6 +77,8 @@
 ### Software Engineering
  * [Coding Principles](/content/software_engineering/coding_principles.md)
  * [Agile Development](/content/software_engineering/agile_development.md)
+ <!-- * [Test Driven Development](/content/software_engineering/test_driven_development.md)
+ * [Continuous Integration](/content/software_engineering/continuous_integration.md) -->
  <!-- * [Github Flow](/content/software_engineering/github_flow.md) -->
 
 ### Productivity

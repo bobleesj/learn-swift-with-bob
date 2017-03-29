@@ -5,24 +5,13 @@ Software development is done by a group of people. As a result, effective commun
 
 ## Benefits of Scrum
 
-### Benefits to Customer
-Customers find that the vendor is more responsive to development requests. High-value features are developed and delivered more quickly with short cycles, than with the longer cycles favored by classic “waterfall” processes.
-
-### Benefits to Vendors
-Vendors reduce wastage by focusing development effort on high-value features, and reduce time-to-market relative to waterfall processes due to decreased overhead and increased efficiency. Improved customer satisfaction translates to better customer retention and more positive customer references.
-
-###Benefits to Development Teams
-Team members enjoy development work, and like to see their work used and valued. Scrum benefits Team members by reducing non-productive work (e.g., writing specifications or other artifacts that no one uses), and giving them more time to do the work they enjoy. Team members also know their work is valued, because requirements are chosen to maximize value to customers.
-
-###Benefits to Product Managers
-Product Managers, who typically fill the Product Owner role, are responsible for making customers happy by ensuring that development work is aligned with customer needs. Scrum makes this alignment easier by providing frequent opportunities to re-prioritize work, to ensure maximum delivery of value.
-
-###Benefits to Project Managers
-Project Managers (and others) who fill the ScrumMaster role find that planning and tracking are easier and more concrete, compared to waterfall processes. The focus on task-level tracking, the use of Burndown Charts to display daily progress, and the Daily Scrum meetings, all together give the Project Manager tremendous awareness about the state of the project at all times. This awareness is key to monitoring the project, and to catching and addressing issues quickly.
-
-### Benefits to PMOs and C-Level Executives
-Scrum provides high visibility into the state of a development project, on a daily basis. External stakeholders, such as C-Level executives and personnel in the Project Management Office, can use this visibility to plan more affectively, and adjust their strategies based on more hard information and less speculation.
-
+| Beneficiary | Benefits |
+| --- | --- |
+| Customers | Customers find that the vendor is more responsive to development requests. High-value features are developed and delivered more quickly with short cycles, than with the longer cycles favored by classic “waterfall” processes. |
+| Vendors | Vendors reduce wastage by focusing development effort on high-value features, and reduce time-to-market relative to waterfall processes due to decreased overhead and increased efficiency. Improved customer satisfaction translates to better customer retention and more positive customer references. |
+| Development Teams | Team members enjoy development work, and like to see their work used and valued. Scrum benefits Team members by reducing non-productive work (e.g., writing specifications or other artifacts that no one uses), and giving them more time to do the work they enjoy. Team members also know their work is valued, because requirements are chosen to maximize value to customers. |
+| Product Managers | Product Managers, who typically fill the Product Owner role, are responsible for making customers happy by ensuring that development work is aligned with customer needs. Scrum makes this alignment easier by providing frequent opportunities to re-prioritize work, to ensure maximum delivery of value. |
+| PMOs and C-Executives | Scrum provides high visibility into the state of a development project, on a daily basis. External stakeholders, such as C-Level executives and personnel in the Project Management Office, can use this visibility to plan more affectively, and adjust their strategies based on more hard information and less speculation. |
 
 ## User Story
 Scrum does not define just what form requirements are to take, but simply says that they are gathered into the Product Backlog, and referred to generically as “Product Backlog Items,” or “PBIs” for short. Given the time-boxed nature of a Sprint, we can also infer that each set should require significantly less time to implement than the duration of the Sprint
@@ -43,9 +32,6 @@ How to test: Tester enters and saves the data, finds the name in the address boo
 
 ### Agile
 Agile software development refers to a group of software development methodologies based on iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams. Agile methods or Agile processes generally promote a disciplined project management process that encourages frequent inspection and adaptation, a leadership philosophy that encourages teamwork, self-organization and accountability, a set of engineering best practices intended to allow for rapid delivery of high-quality software, and a business approach that aligns development with customer needs and company goals. Agile development refers to any development process that is aligned with the concepts of the Agile Manifesto. The Manifesto was developed by a group fourteen leading figures in the software industry, and reflects their experience of what approaches do and do not work for software development. Read more about the Agile Manifesto.
-
-### Scrum
-
 
 ## Team
 
@@ -74,7 +60,6 @@ The three roles defined in Scrum are the ScrumMaster, the Product Owner, and the
  - educates stakeholders in the development process;
  - negotiates priorities, scope, funding, and schedule;
  - ensures that the Product Backlog is visible, transparent, and clear.
-
 
 
 ### Team
@@ -217,14 +202,26 @@ This event is facilitated by the Scrum Master
  - Check the predicted hours versus the hours actually spent. Ask why.
  - The team lead suggests or asks how can the team improve the development process
 
-
 ### Rest between Sprints
 You can't always "sprint". Going through Scrum reflection and planning is the worst. You should take your team to restaurants, and relax.
 
 ### Overall
 
-<img src="/Content/others/software_engineering/resources/scrum_framework.png">
+<img src="/content/software_engineering/resources/scrum_framework.png" alt="Agile development cycle">
 
+## The Agile Manifesto
+ - Continuous Delivery
+ - Welcome changing reqs
+ - Deliver working software frequently
+ - Involve biz and developers throughout the project
+ - Build projects around motivated folks
+ - Communication should be face-to-face
+ - Primary metric of progress is working software
+ - All participants should maintain a constant pace
+ - Continuous attention to tech excellence & good design
+ - Simplicity is essential
+ - Self organizing teams
+ - Periodic retrospectives
 
 
 ### Book
@@ -234,9 +231,6 @@ You can't always "sprint". Going through Scrum reflection and planning is the wo
 
 
 #### Reference
-[Scrum- Wikepedia](https://en.wikipedia.org/wiki/Scrum_(software_development)
-
-
-http://scrummethodology.com/?
+http://scrummethodology.com/
 
 https://www.cprime.com/resources/what-is-agile-what-is-scrum/
