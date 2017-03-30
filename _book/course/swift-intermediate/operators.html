@@ -1,0 +1,1380 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Operators · Learn Swift with Bob</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Bob Lee">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../website.css">
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="typealias.html" />
+    
+    
+    <link rel="prev" href="extension.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Prologue</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../ABOUT.html">
+            
+                <a href="../../ABOUT.html">
+            
+                    
+                    Bob the Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../RESOURCES.html">
+            
+                <a href="../../RESOURCES.html">
+            
+                    
+                    Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Learn Swift with Bob</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../introduction/course-intro.html">
+            
+                <a href="../introduction/course-intro.html">
+            
+                    
+                    Course Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../introduction/course-expecation.html">
+            
+                <a href="../introduction/course-expecation.html">
+            
+                    
+                    Expectation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../introduction/course-prerequisites.html">
+            
+                <a href="../introduction/course-prerequisites.html">
+            
+                    
+                    Prerequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../introduction/course-resources.html">
+            
+                <a href="../introduction/course-resources.html">
+            
+                    
+                    Course Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../introduction/table-of-content.html">
+            
+                <a href="../introduction/table-of-content.html">
+            
+                    
+                    Table of Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">The Swift Fundamentals</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="optionals.html">
+            
+                <a href="optionals.html">
+            
+                    
+                    Optionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="optional-chaining.html">
+            
+                <a href="optional-chaining.html">
+            
+                    
+                    Optional Chainings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="guard-defer-statement.html">
+            
+                <a href="guard-defer-statement.html">
+            
+                    
+                    Guard and Defer Statement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="intro-error-handling.html">
+            
+                <a href="intro-error-handling.html">
+            
+                    
+                    Intro to Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    Intro to Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="type-casting.html">
+            
+                <a href="type-casting.html">
+            
+                    
+                    Type Casting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="subscripts.html">
+            
+                <a href="subscripts.html">
+            
+                    
+                    Subscripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="class-struct-difference.html">
+            
+                <a href="class-struct-difference.html">
+            
+                    
+                    Class vs Struct
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="set-tuple.html">
+            
+                <a href="set-tuple.html">
+            
+                    
+                    Set and Tuple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="extension.html">
+            
+                <a href="extension.html">
+            
+                    
+                    Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.11" data-path="operators.html">
+            
+                <a href="operators.html">
+            
+                    
+                    Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="typealias.html">
+            
+                <a href="typealias.html">
+            
+                    
+                    Typealias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="conclusion.html">
+            
+                <a href="conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Object Oriented Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../object-oriented-swift/introduction.html">
+            
+                <a href="../object-oriented-swift/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../object-oriented-swift/convenience-init.html">
+            
+                <a href="../object-oriented-swift/convenience-init.html">
+            
+                    
+                    Convenience Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../object-oriented-swift/computed-property.html">
+            
+                <a href="../object-oriented-swift/computed-property.html">
+            
+                    
+                    Computed Property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../object-oriented-swift/property-observers.html">
+            
+                <a href="../object-oriented-swift/property-observers.html">
+            
+                    
+                    Property Observers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../object-oriented-swift/failable-init.html">
+            
+                <a href="../object-oriented-swift/failable-init.html">
+            
+                    
+                    Failable Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../object-oriented-swift/override-init-method-property.html">
+            
+                <a href="../object-oriented-swift/override-init-method-property.html">
+            
+                    
+                    Override Everything
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../object-oriented-swift/two-phase-init.html">
+            
+                <a href="../object-oriented-swift/two-phase-init.html">
+            
+                    
+                    Two Phase Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../object-oriented-swift/type-property-method.html">
+            
+                <a href="../object-oriented-swift/type-property-method.html">
+            
+                    
+                    Type Property and Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../object-oriented-swift/singleton-pattern.html">
+            
+                <a href="../object-oriented-swift/singleton-pattern.html">
+            
+                    
+                    Singleton Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../object-oriented-swift/conclusion.html">
+            
+                <a href="../object-oriented-swift/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Intro to Functional Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../functional-swift/introduction.html">
+            
+                <a href="../functional-swift/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../functional-swift/intro-closure-part1.html">
+            
+                <a href="../functional-swift/intro-closure-part1.html">
+            
+                    
+                    Intro to Closures Part 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../functional-swift/intro-closure-part2.html">
+            
+                <a href="../functional-swift/intro-closure-part2.html">
+            
+                    
+                    Intro to Closures Part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../functional-swift/lazy-init-closures.html">
+            
+                <a href="../functional-swift/lazy-init-closures.html">
+            
+                    
+                    Lazy Init with Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/closure-capture-lists.html">
+            
+                <a href="../functional-swift/closure-capture-lists.html">
+            
+                    
+                    Capture Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../functional-swift/trailing-closures.html">
+            
+                <a href="../functional-swift/trailing-closures.html">
+            
+                    
+                    Trailing Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../functional-swift/completion-handlers-callbacks.html">
+            
+                <a href="../functional-swift/completion-handlers-callbacks.html">
+            
+                    
+                    Completion Handlers and Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/@escape-@autoclosure.html">
+            
+                <a href="../functional-swift/@escape-@autoclosure.html">
+            
+                    
+                    @escape and @autoclosure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="../functional-swift/conclusion.html">
+            
+                <a href="../functional-swift/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Protocol Oriented Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../protocol-oriented-swift/introduction.html">
+            
+                <a href="../protocol-oriented-swift/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../protocol-oriented-swift/intro-to-protocol.html">
+            
+                <a href="../protocol-oriented-swift/intro-to-protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../protocol-oriented-swift/protocol-extension.html">
+            
+                <a href="../protocol-oriented-swift/protocol-extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../protocol-oriented-swift/protocol-as-type.html">
+            
+                <a href="../protocol-oriented-swift/protocol-as-type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../protocol-oriented-swift/delegate.html">
+            
+                <a href="../protocol-oriented-swift/delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/associative-type.html">
+            
+                <a href="../protocol-oriented-swift/associative-type.html">
+            
+                    
+                    Associative Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../protocol-oriented-swift/conclusion.html">
+            
+                <a href="../protocol-oriented-swift/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Memory Management</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../swift-memory-management/introduction.html">
+            
+                <a href="../swift-memory-management/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
+            
+                <a href="../swift-memory-management/memory-leak.html">
+            
+                    
+                    Memory Leak
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+            
+                <a href="../swift-memory-management/automatic-reference-counting.html">
+            
+                    
+                    Automatic Reference Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+            
+                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+            
+                    
+                    Closure and Delegate Retention Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+            
+                <a href="../swift-memory-management/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Generics</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Advanced Enum</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Advanced Swift</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Swift Extra</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../../content/swift/swift-styling-guide.html">
+            
+                <a href="../../content/swift/swift-styling-guide.html">
+            
+                    
+                    Swift Styling Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../../content/swift/swift-resources.html">
+            
+                <a href="../../content/swift/swift-resources.html">
+            
+                    
+                    Swift External Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Software Engineering</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../../content/software-engineering/coding-principles.html">
+            
+                <a href="../../content/software-engineering/coding-principles.html">
+            
+                    
+                    Coding Principles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
+            
+                <a href="../../content/software-engineering/agile-development.html">
+            
+                    
+                    Agile Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+            
+                <a href="../../content/software-engineering/continuous-integration.html">
+            
+                    
+                    Continuous Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Productivity</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#shortcuts">
+            
+                    
+                    Shortcuts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1.1" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#atom">
+            
+                    
+                    Atom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.2" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#gmail">
+            
+                    
+                    Gmail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.3" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#google-spreadsheet">
+            
+                    
+                    Google Spreadsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.4" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#google-chrome">
+            
+                    
+                    Google Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.5" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#xcode">
+            
+                    
+                    Xcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.6" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#mac-os">
+            
+                    
+                    MacOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Development Tools</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../../content/development-tools/software.html">
+            
+                <a href="../../content/development-tools/software.html">
+            
+                    
+                    Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="../../content/development-tools/markdown.html">
+            
+                <a href="../../content/development-tools/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="../../content/development-tools/mermaid.html">
+            
+                <a href="../../content/development-tools/mermaid.html">
+            
+                    
+                    Mermaid
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Operators</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="intermediate-operators">Intermediate Operators</h1>
+<h2 id="introduction">Introduction</h2>
+<h2 id="lecture-notes">Lecture Notes</h2>
+<p>prefix operator %
+prefix func % (percentage: Int) -&gt; Double {
+  return (Double(percentage) / 100)
+}</p>
+<p>%42</p>
+<p>postfix operator %
+postfix func % (percentage: Int) -&gt; Double {
+  return (Double(percentage) / 100)
+}</p>
+<p>42%</p>
+<p>//: Prefix
+!true
+!false</p>
+<p>/*
++: Unary plus
+-: Unary minus
+!: Logical NOT
+~: Bitwise NOT</p>
+<pre><code>func +(left: [Double], right: [Double]) -&gt; [Double] {
+  var sum = [Double](repeating: 0.0, count: left.count)
+  for (i, _) in left.enumerated() {
+    sum[i] = left[i] + right[i]
+  }
+
+  return sum
+}
+
+print([1, 2] + [3, 4]) // [1, 2, 3, 4]
+
+infix operator ** { associativity precedence 160 }
+</code></pre><pre><code class="lang-swift"> <span class="hljs-number">1</span>. <span class="hljs-keyword">infix</span> specifies that it <span class="hljs-keyword">is</span> a binary <span class="hljs-keyword">operator</span>, taking a <span class="hljs-keyword">left</span> and <span class="hljs-keyword">right</span> hand argument
+ <span class="hljs-number">2</span>. <span class="hljs-keyword">operator</span> <span class="hljs-keyword">is</span> a reserved word that must be preceded with either <span class="hljs-keyword">prefix</span>, <span class="hljs-keyword">infix</span>, or <span class="hljs-keyword">postfix</span>
+ ** <span class="hljs-keyword">is</span> the <span class="hljs-keyword">operator</span> itself
+ <span class="hljs-number">3</span>. <span class="hljs-keyword">associativity</span> <span class="hljs-keyword">left</span> means that operations are grouped from the <span class="hljs-keyword">left</span>
+ <span class="hljs-number">4</span>. <span class="hljs-keyword">precedence</span> <span class="hljs-number">160</span> means that it will evaluate with the same <span class="hljs-keyword">precedence</span> <span class="hljs-keyword">as</span> the exponential operators &lt;&lt; and &gt;&gt; (<span class="hljs-keyword">left</span> and <span class="hljs-keyword">right</span> bitshift).
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">import</span> Foundation
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> ** <span class="hljs-params">(<span class="hljs-keyword">left</span>: Double, <span class="hljs-keyword">right</span>: Double)</span></span> -&gt; <span class="hljs-type">Double</span> {
+  <span class="hljs-keyword">return</span> pow(<span class="hljs-keyword">left</span>, <span class="hljs-keyword">right</span>)
+}
+
+<span class="hljs-number">2</span> ** <span class="hljs-number">3</span>
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">prefix</span> <span class="hljs-keyword">operator</span> &#x221A;
+
+<span class="hljs-keyword">prefix</span> <span class="hljs-function"><span class="hljs-keyword">func</span> &#x221A; <span class="hljs-params">(number: Double)</span></span> -&gt; <span class="hljs-type">Double</span> {
+  <span class="hljs-keyword">return</span> sqrt(number)
+}
+
+&#x221A;<span class="hljs-number">12031231203021</span>
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">infix</span> <span class="hljs-keyword">operator</span> &#xB1; { <span class="hljs-keyword">associativity</span> <span class="hljs-keyword">left</span> <span class="hljs-keyword">precedence</span> <span class="hljs-number">140</span> }
+<span class="hljs-function"><span class="hljs-keyword">func</span> &#xB1; <span class="hljs-params">(<span class="hljs-keyword">left</span>: Double, <span class="hljs-keyword">right</span>: Double)</span></span> -&gt; (<span class="hljs-type">Double</span>, <span class="hljs-type">Double</span>) {
+  <span class="hljs-keyword">return</span> (<span class="hljs-keyword">left</span> + <span class="hljs-keyword">right</span>, <span class="hljs-keyword">left</span> - <span class="hljs-keyword">right</span>)
+}
+
+<span class="hljs-keyword">prefix</span> <span class="hljs-keyword">operator</span> &#xB1; {}
+<span class="hljs-keyword">prefix</span> <span class="hljs-function"><span class="hljs-keyword">func</span> &#xB1; <span class="hljs-params">(value: Double)</span></span> -&gt; (<span class="hljs-type">Double</span>, <span class="hljs-type">Double</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> &#xB1; value
+}
+
+<span class="hljs-number">2</span> &#xB1; <span class="hljs-number">3</span>
+<span class="hljs-comment">// (5, -1)</span>
+
+&#xB1;<span class="hljs-number">4</span>
+<span class="hljs-comment">// (4, -4)</span>
+</code></pre>
+<p>//: Guideline
+// Don&#x2019;t create an operator unless its meaning is obvious and undisputed. Seek out any potential conflicts to ensure semantic consistency.
+// Custom operators should only be provided as a convenience. Complex functionality should always be implemented in a function, preferably one specified as a generic using a custom protocol.</p>
+<p>[&quot;Bob&quot;, &quot;Bobby&quot;] + [&quot;Bob&quot;, &quot;Bobbb&quot;]</p>
+<p>//: Operator Overloading
+// Operator overloading allows you to change the way existing operators work with specific structures or classes. This is exactly what you need &#x2013; you&#x2019;d like to change the way the + operator works with Int arrays!</p>
+<p>// In programming languages, associativity (or fixity) is a property that determines how operators with the same level or precedence are grouped in the absence of any parentheses.</p>
+<p>// In Swift, the precedence of an operator is defined as a decimal integer value in the range 0 to 255 inclusive. They higher the number, the higher the precedence and the sooner the compiler evaluates it.
+func * (left: String, right: Int) -&gt; String {
+  if right &lt;= 0 {
+    return &quot;&quot;
+  }</p>
+<p>  var result = left
+  for _ in 1..&lt;right {
+    result += left
+  }</p>
+<p>  return result
+}</p>
+<p>&quot;a&quot; <em> 6
+&quot;abab&quot; </em> 3</p>
+<p>84 * 2</p>
+<p>//: Choosing a Type
+/*
+With Swift, you can define binary, unary and ternary operators. These indicate the number of targets involved.
+Unary operators involve a single target and are defined either as postfix (i++) or prefix (++i), depending on where they appear in relation to the target.
+Binary operators are infix because they appear in between the two targets, for example 1 + 1.
+Ternary operators operate on three targets. In Swift, the conditional operator is the only Ternary operator, for example a ? b : c.</p>
+<p>//: Nil-Coalescing Operator</p>
+<p>// The nil-coalescing operator (a ?? b) unwraps an optional a if it contains a value, or returns a default value b if a is nil. The expression a is always of an optional type. The expression b must match the type that is stored inside a.</p>
+<p>let defaultColorName = &quot;red&quot;
+var userDefinedColorName: String?   // defaults to nil</p>
+<p>var colorNameToUse = userDefinedColorName ?? defaultColorName</p>
+<p>&quot;Bob&quot; == &quot;Bboby&quot;</p>
+<p>// Tertiaray Operator
+//<a href="https://developer.apple.com/reference/swift/swift_standard_library_operators" target="_blank">https://developer.apple.com/reference/swift/swift_standard_library_operators</a></p>
+<p>var anOptionalInt: Int? = 10</p>
+<p>var anotherOptional = (anOptionalInt != nil ? anOptionalInt! : 0)</p>
+<p>let contentHeight = 40
+let hasHeader = true
+let rowHeight = contentHeight + (hasHeader ? 50 : 20)</p>
+<p>// var sumWithMultiplication = 1 + 3 - 3 * 2</p>
+<h3 id="terminology">Terminology</h3>
+<ol>
+<li>Unary operators operate on a single target (such as -a). Unary prefix operators appear immediately before their target (such as !b), and unary postfix operators appear immediately after their target (such as c!).</li>
+<li>Binary operators operate on two targets (such as 2 + 3) and are infix because they appear in between their two targets.</li>
+<li>Ternary operators operate on three targets. Like C, Swift has only one ternary operator, the ternary conditional operator (a ? b : c).</li>
+</ol>
+<h4 id="reference">Reference</h4>
+<p><a href="http://nshipster.com/swift-operators/" target="_blank">http://nshipster.com/swift-operators/</a></p>
+<h3 id="problem">Problem</h3>
+<h3 id="source-code">Source Code</h3>
+<h3 id="reference">Reference</h3>
+<h2 id="conclusion">Conclusion</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="extension.html" class="navigation navigation-prev " aria-label="Previous page: Extension">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="typealias.html" class="navigation navigation-next " aria-label="Next page: Typealias">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Operators","level":"3.1.11","depth":2,"next":{"title":"Typealias","level":"3.1.12","depth":2,"path":"course/swift-intermediate/typealias.md","ref":"course/swift-intermediate/typealias.md","articles":[]},"previous":{"title":"Extension","level":"3.1.10","depth":2,"path":"course/swift-intermediate/extension.md","ref":"course/swift-intermediate/extension.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":2,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/operators.md","mtime":"2017-03-30T11:48:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T14:24:29.825Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

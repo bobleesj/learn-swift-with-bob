@@ -6,29 +6,12 @@
  - Rethrow in Swift
  - Functional programming in Swift
  - Advanced Operator
+ - https://andybargh.com/swift-assertions/
 
 ## Advanced Operator
 https://developer.apple.com/reference/swift/swift_standard_library_operators
 
-## Operator
-```swift
-~=
-func ~=<T>(lhs: _OptionalNilComparisonType, rhs: T?) -> Bool
-```
 
-## Things to Watch Out
-
-### Define Dictionary
-```swift
-let someDictionary: [String: Int] = ["Alex": 31, "Paul": 39]
-let someDictionary: Dictionary<String, Int> = ["Alex": 31, "Paul": 39]
-```
-
-### Define Optionals
-```
-var optionalInteger: Int?
-var optionalInteger: Optional<Int>
-```
 
 ### Optioanl Type Unwrapping
 ```swift
@@ -62,10 +45,6 @@ sum = try (someThrowingFunction() + anotherThrowingFunction()) // try applies to
 
 sum = (try someThrowingFunction()) + anotherThrowingFunction() // Error: try applies only to the first function call
 ```
-
-
-
-
 
 ## No Escape vs Escape
 

@@ -6,91 +6,97 @@
 * [Resources](RESOURCES.md)
 
 ### Learn Swift with Bob
- * [Course Introduction](/course/0000/0000_introduction.md)
- * [Course Expectation](/course/0000/0001_course_expecation.md)
- * [Prerequisites](/course/0000/0002_prerequisites.md)
- * [Course Resources](/course/0000/0003_course_resources.md)
- * [Table of Content](/course/0000/0004_table_of_content.md)
+ * [Course Introduction](/course/introduction/course-intro.md)
+ * [Expectation](/course/introduction/course-expecation.md)
+ * [Prerequisites](/course/introduction/course-prerequisites.md)
+ * [Course Resources](/course/introduction/course-resources.md)
+ * [Table of Content](/course/introduction/table-of-content.md)
 
 ### The Swift Fundamentals
-* [Introduction](/course/1000/1000_introduction.md)
-   * [Optionals](/course/1000/1001_optionals.md)
-   * [Optional Chainings](/course/1000/1002_optional_chaining.md)
-   * [Guard and Defer Statement](/course/1000/1003_guard_defer_statement.md)
-   * [Intro to Error Handling](/course/1000/1004_intro_error_handling.md)
-   * [Intro to Generics](/course/1000/1005_generics.md)
-   * [Type Casting](/course/1000/1006_type_casting.md)
-   * [Subscripts](/course/1000/1007_subscripts.md)
-   * [Class vs Struct](/course/1000/1008_class_vs_struct.md)
-   * [Set and Tuple](/course/1000/1009_set_tuple.md)
-   * [Extension](/course/1000/1010_extension.md)
-   * [Intermediate Operators](/course/1000/1011_operators.md)
-   * [Typealias](/course/1000/1012_typealias.md)
-   * [Conclusion](/course/1000/1013_conclusion.md)
+* [Introduction](/course/swift-intermediate/introduction.md)
+   * [Optionals](/course/swift-intermediate/optionals.md)
+   * [Optional Chainings](/course/swift-intermediate/optional-chaining.md)
+   * [Guard and Defer Statement](/course/swift-intermediate/guard-defer-statement.md)
+   * [Intro to Error Handling](/course/swift-intermediate/intro-error-handling.md)
+   * [Intro to Generics](/course/swift-intermediate/generics.md)
+   * [Type Casting](/course/swift-intermediate/type-casting.md)
+   * [Subscripts](/course/swift-intermediate/subscripts.md)
+   * [Class vs Struct](/course/swift-intermediate/class-struct-difference.md)
+   * [Set and Tuple](/course/swift-intermediate/set-tuple.md)
+   * [Extension](/course/swift-intermediate/extension.md)
+   * [Operators](/course/swift-intermediate/operators.md)
+   * [Typealias](/course/swift-intermediate/typealias.md)
+   * [Conclusion](/course/swift-intermediate/conclusion.md)
 
 ### Object Oriented Swift
-* [Introduction](/course/2000/2000_introduction.md)
-  * [Convenience Init](/course/2000/2001_convenience_init.md)
-  * [Computed Property](/course/2000/2002_computed_property.md)
-  * [Property Observers](/course/2000/2003_property_observers.md)
-  * [Failable Init](/course/2000/2004_failable_init.md)
-  * [Override Everything](/course/2000/2005_override_everything.md)
-  * [Two Phase Init](/course/2000/2006_two_phase_init.md)
-  * [Type Property and Method](/course/2000/2007_type_property_method.md)
-  * [Singleton Pattern](/course/2000/2008_singleton_pattern.md)
-  * [Conclusion](/course/2000/2009_conclusion.md)
+* [Introduction](/course/object-oriented-swift/introduction.md)
+  * [Convenience Init](/course/object-oriented-swift/convenience-init.md)
+  * [Computed Property](/course/object-oriented-swift/computed-property.md)
+  * [Property Observers](/course/object-oriented-swift/property-observers.md)
+  * [Failable Init](/course/object-oriented-swift/failable-init.md)
+  * [Override Everything](/course/object-oriented-swift/override-init-method-property.md)
+  * [Two Phase Init](/course/object-oriented-swift/two-phase-init.md)
+  * [Type Property and Method](/course/object-oriented-swift/type-property-method.md)
+  * [Singleton Pattern](/course/object-oriented-swift/singleton-pattern.md)
+  * [Conclusion](/course/object-oriented-swift/conclusion.md)
 
 ### Intro to Functional Swift
-* [Introduction](/course/3000/3000_introduction.md)
-  * [Intro to Closures Part 1/2](/course/3000/3001_closures_functions_part1.md)
-  * [Intro to Closures Part 2/2](/course/3000/3002_closures_functions_part2.md)
-  * [Lazy Init with Closures](/course/3000/3003_lazy_init_closures.md)
-  * [Capture Lists](/course/3000/3004_capture_lists.md)
-  * [Trailing Closures](/course/3000/3005_trailing_closures.md)
-  * [Completion Handlers and Callbacks](/course/3000/3006_completion_handlers_callbacks.md)
-  * [@escape and @autoclosure](/course/3000/3007_@escape_@autoclosure.md)
-  * [Conclusion](/course/3000/3008_conclusion.md)
+* [Introduction](/course/functional-swift/introduction.md)
+  * [Intro to Closures Part 1](/course/functional-swift/intro-closure-part1.md)
+  * [Intro to Closures Part 2](/course/functional-swift/intro-closure-part2.md)
+  * [Lazy Init with Closures](/course/functional-swift/lazy-init-closures.md)
+  * [Capture Lists](/course/functional-swift/closure-capture-lists.md)
+  * [Trailing Closures](/course/functional-swift/trailing-closures.md)
+  * [Completion Handlers and Callbacks](/course/functional-swift/completion-handlers-callbacks.md)
+  * [@escape and @autoclosure](/course/functional-swift/@escape-@autoclosure.md)
+  * [Conclusion](/course/functional-swift/conclusion.md)
 
 ### Protocol Oriented Swift
- * [Introduction](/course/4000/4000_introduction.md)
-    * [Intro to Protocol](/course/4000/4001_intro_to_protocol.md)
-    * [Protocol Extension](/course/4000/4002_protocol_extension.md)
-    * [Protocol as Type](/course/4000/4003_protocol_as_type.md)
-    * [Delegate](/course/4000/4004_delegate.md)
-    * [AssociativityType](/course/4000/4005_associativity_type.md)
-    * [Conclusion](/course/4000/4006_conclusion.md)
-
-### Advanced Generics
+* [Introduction](/course/protocol-oriented-swift/introduction.md)
+  * [Intro to Protocol](/course/protocol-oriented-swift/intro-to-protocol.md)
+  * [Protocol Extension](/course/protocol-oriented-swift/protocol-extension.md)
+  * [Protocol as Type](/course/protocol-oriented-swift/protocol-as-type.md)
+  * [Delegate](/course/protocol-oriented-swift/delegate.md)
+  * [Associative Type](/course/protocol-oriented-swift/associative-type.md)
+  * [Conclusion](/course/protocol-oriented-swift/conclusion.md)
 
 ### Memory Management
+* [Introduction](/course/swift-memory-management/introduction.md)
+  * [Memory Leak](/course/swift-memory-management/memory-leak.md)
+  * [Automatic Reference Counting](/course/swift-memory-management/automatic-reference-counting.md)
+  * [Closure and Delegate Retention Cycle](/course/swift-memory-management/retention-cycle-closure-delegate.md)
+  * [Conclusion](/course/swift-memory-management/conclusion.md))
+
+### Advanced Generics
 
 ### Advanced Enum
 
 ### Advanced Swift
 
+
 ### Swift Extra
- * [Swift Styling Guide](/content/swift/swift_styling_guide.md)
- <!-- * [Better Swift Developer](/content/swift/better_developer.md) -->
- * [Swift External Resources](/content/swift/swift_resources.md)
+ * [Swift Styling Guide](/content/swift/swift-styling-guide.md)
+ <!-- * [Better Swift Developer](/content/swift/better-developer.md) -->
+ * [Swift External Resources](/content/swift/swift-resources.md)
 
 
 ### Software Engineering
- * [Coding Principles](/content/software_engineering/coding_principles.md)
- * [Agile Development](/content/software_engineering/agile_development.md)
- <!-- * [Test Driven Development](/content/software_engineering/test_driven_development.md)
- * [Continuous Integration](/content/software_engineering/continuous_integration.md) -->
- <!-- * [Github Flow](/content/software_engineering/github_flow.md) -->
+ * [Coding Principles](/content/software-engineering/coding-principles.md)
+ * [Agile Development](/content/software-engineering/agile-development.md)
+ <!-- * [Test Driven Development](/content/software-engineering/test-driven-development.md)
+ * [Continuous Integration](/content/software-engineering/continuous-integration.md) -->
+ <!-- * [Github Flow](/content/software-engineering/github-flow.md) -->
 
 ### Productivity
-* [Shortcuts](/content/productivity/keyboard_shortcuts.md#shortcuts)
-  * [Atom](/content/productivity/keyboard_shortcuts.md#atom)
-  * [Gmail](/content/productivity/keyboard_shortcuts.md#gmail)
-  * [Google Spreadsheet](/content/productivity/keyboard_shortcuts.md#google_spreadsheet)
-  * [Google Chrome](/content/productivity/keyboard_shortcuts.md#google_chrome)
-  * [Xcode](/content/productivity/keyboard_shortcuts.md#xcode)
-  * [MacOS](/content/productivity/keyboard_shortcuts.md#mac_os)
+* [Shortcuts](/content/productivity/keyboard-shortcuts.md#shortcuts)
+  * [Atom](/content/productivity/keyboard-shortcuts.md#atom)
+  * [Gmail](/content/productivity/keyboard-shortcuts.md#gmail)
+  * [Google Spreadsheet](/content/productivity/keyboard-shortcuts.md#google-spreadsheet)
+  * [Google Chrome](/content/productivity/keyboard-shortcuts.md#google-chrome)
+  * [Xcode](/content/productivity/keyboard-shortcuts.md#xcode)
+  * [MacOS](/content/productivity/keyboard-shortcuts.md#mac-os)
 
 ### Development Tools   
-* [Software](/content/development_tools/software.md)
-* [Markdown](/content/development_tools/markdown.md)
-* [Mermaid](/content/development_tools/mermaid.md)
+* [Software](/content/development-tools/software.md)
+* [Markdown](/content/development-tools/markdown.md)
+* [Mermaid](/content/development-tools/mermaid.md)

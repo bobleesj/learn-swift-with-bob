@@ -1,0 +1,1521 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Agile Development · Learn Swift with Bob</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Bob Lee">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../website.css">
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="continuous-integration.html" />
+    
+    
+    <link rel="prev" href="coding-principles.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Prologue</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../ABOUT.html">
+            
+                <a href="../../ABOUT.html">
+            
+                    
+                    Bob the Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../RESOURCES.html">
+            
+                <a href="../../RESOURCES.html">
+            
+                    
+                    Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Learn Swift with Bob</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../course/introduction/course-intro.html">
+            
+                <a href="../../course/introduction/course-intro.html">
+            
+                    
+                    Course Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../course/introduction/course-expecation.html">
+            
+                <a href="../../course/introduction/course-expecation.html">
+            
+                    
+                    Expectation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../course/introduction/course-prerequisites.html">
+            
+                <a href="../../course/introduction/course-prerequisites.html">
+            
+                    
+                    Prerequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../course/introduction/course-resources.html">
+            
+                <a href="../../course/introduction/course-resources.html">
+            
+                    
+                    Course Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../course/introduction/table-of-content.html">
+            
+                <a href="../../course/introduction/table-of-content.html">
+            
+                    
+                    Table of Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">The Swift Fundamentals</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../course/swift-intermediate/introduction.html">
+            
+                <a href="../../course/swift-intermediate/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../course/swift-intermediate/optionals.html">
+            
+                <a href="../../course/swift-intermediate/optionals.html">
+            
+                    
+                    Optionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../course/swift-intermediate/optional-chaining.html">
+            
+                <a href="../../course/swift-intermediate/optional-chaining.html">
+            
+                    
+                    Optional Chainings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../course/swift-intermediate/guard-defer-statement.html">
+            
+                <a href="../../course/swift-intermediate/guard-defer-statement.html">
+            
+                    
+                    Guard and Defer Statement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../course/swift-intermediate/intro-error-handling.html">
+            
+                <a href="../../course/swift-intermediate/intro-error-handling.html">
+            
+                    
+                    Intro to Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../../course/swift-intermediate/generics.html">
+            
+                <a href="../../course/swift-intermediate/generics.html">
+            
+                    
+                    Intro to Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../../course/swift-intermediate/type-casting.html">
+            
+                <a href="../../course/swift-intermediate/type-casting.html">
+            
+                    
+                    Type Casting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../../course/swift-intermediate/subscripts.html">
+            
+                <a href="../../course/swift-intermediate/subscripts.html">
+            
+                    
+                    Subscripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../../course/swift-intermediate/class-struct-difference.html">
+            
+                <a href="../../course/swift-intermediate/class-struct-difference.html">
+            
+                    
+                    Class vs Struct
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../../course/swift-intermediate/set-tuple.html">
+            
+                <a href="../../course/swift-intermediate/set-tuple.html">
+            
+                    
+                    Set and Tuple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../../course/swift-intermediate/extension.html">
+            
+                <a href="../../course/swift-intermediate/extension.html">
+            
+                    
+                    Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../../course/swift-intermediate/operators.html">
+            
+                <a href="../../course/swift-intermediate/operators.html">
+            
+                    
+                    Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../../course/swift-intermediate/typealias.html">
+            
+                <a href="../../course/swift-intermediate/typealias.html">
+            
+                    
+                    Typealias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../../course/swift-intermediate/conclusion.html">
+            
+                <a href="../../course/swift-intermediate/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Object Oriented Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../course/object-oriented-swift/introduction.html">
+            
+                <a href="../../course/object-oriented-swift/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../course/object-oriented-swift/convenience-init.html">
+            
+                <a href="../../course/object-oriented-swift/convenience-init.html">
+            
+                    
+                    Convenience Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../course/object-oriented-swift/computed-property.html">
+            
+                <a href="../../course/object-oriented-swift/computed-property.html">
+            
+                    
+                    Computed Property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../../course/object-oriented-swift/property-observers.html">
+            
+                <a href="../../course/object-oriented-swift/property-observers.html">
+            
+                    
+                    Property Observers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../../course/object-oriented-swift/failable-init.html">
+            
+                <a href="../../course/object-oriented-swift/failable-init.html">
+            
+                    
+                    Failable Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../../course/object-oriented-swift/override-init-method-property.html">
+            
+                <a href="../../course/object-oriented-swift/override-init-method-property.html">
+            
+                    
+                    Override Everything
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../../course/object-oriented-swift/two-phase-init.html">
+            
+                <a href="../../course/object-oriented-swift/two-phase-init.html">
+            
+                    
+                    Two Phase Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../../course/object-oriented-swift/type-property-method.html">
+            
+                <a href="../../course/object-oriented-swift/type-property-method.html">
+            
+                    
+                    Type Property and Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../../course/object-oriented-swift/singleton-pattern.html">
+            
+                <a href="../../course/object-oriented-swift/singleton-pattern.html">
+            
+                    
+                    Singleton Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../../course/object-oriented-swift/conclusion.html">
+            
+                <a href="../../course/object-oriented-swift/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Intro to Functional Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../course/functional-swift/introduction.html">
+            
+                <a href="../../course/functional-swift/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../course/functional-swift/intro-closure-part1.html">
+            
+                <a href="../../course/functional-swift/intro-closure-part1.html">
+            
+                    
+                    Intro to Closures Part 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../course/functional-swift/intro-closure-part2.html">
+            
+                <a href="../../course/functional-swift/intro-closure-part2.html">
+            
+                    
+                    Intro to Closures Part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../../course/functional-swift/lazy-init-closures.html">
+            
+                <a href="../../course/functional-swift/lazy-init-closures.html">
+            
+                    
+                    Lazy Init with Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../../course/functional-swift/closure-capture-lists.html">
+            
+                <a href="../../course/functional-swift/closure-capture-lists.html">
+            
+                    
+                    Capture Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../../course/functional-swift/trailing-closures.html">
+            
+                <a href="../../course/functional-swift/trailing-closures.html">
+            
+                    
+                    Trailing Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../../course/functional-swift/completion-handlers-callbacks.html">
+            
+                <a href="../../course/functional-swift/completion-handlers-callbacks.html">
+            
+                    
+                    Completion Handlers and Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="../../course/functional-swift/@escape-@autoclosure.html">
+            
+                <a href="../../course/functional-swift/@escape-@autoclosure.html">
+            
+                    
+                    @escape and @autoclosure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="../../course/functional-swift/conclusion.html">
+            
+                <a href="../../course/functional-swift/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Protocol Oriented Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../course/protocol-oriented-swift/introduction.html">
+            
+                <a href="../../course/protocol-oriented-swift/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../course/protocol-oriented-swift/intro-to-protocol.html">
+            
+                <a href="../../course/protocol-oriented-swift/intro-to-protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../../course/protocol-oriented-swift/protocol-extension.html">
+            
+                <a href="../../course/protocol-oriented-swift/protocol-extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../../course/protocol-oriented-swift/protocol-as-type.html">
+            
+                <a href="../../course/protocol-oriented-swift/protocol-as-type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../../course/protocol-oriented-swift/delegate.html">
+            
+                <a href="../../course/protocol-oriented-swift/delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../../course/protocol-oriented-swift/associative-type.html">
+            
+                <a href="../../course/protocol-oriented-swift/associative-type.html">
+            
+                    
+                    Associative Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../../course/protocol-oriented-swift/conclusion.html">
+            
+                <a href="../../course/protocol-oriented-swift/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Memory Management</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../course/swift-memory-management/introduction.html">
+            
+                <a href="../../course/swift-memory-management/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../../course/swift-memory-management/memory-leak.html">
+            
+                <a href="../../course/swift-memory-management/memory-leak.html">
+            
+                    
+                    Memory Leak
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../../course/swift-memory-management/automatic-reference-counting.html">
+            
+                <a href="../../course/swift-memory-management/automatic-reference-counting.html">
+            
+                    
+                    Automatic Reference Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../../course/swift-memory-management/retention-cycle-closure-delegate.html">
+            
+                <a href="../../course/swift-memory-management/retention-cycle-closure-delegate.html">
+            
+                    
+                    Closure and Delegate Retention Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../../course/swift-memory-management/conclusion.html">
+            
+                <a href="../../course/swift-memory-management/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Generics</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Advanced Enum</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Advanced Swift</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Swift Extra</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../swift/swift-styling-guide.html">
+            
+                <a href="../swift/swift-styling-guide.html">
+            
+                    
+                    Swift Styling Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../swift/swift-resources.html">
+            
+                <a href="../swift/swift-resources.html">
+            
+                    
+                    Swift External Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Software Engineering</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="coding-principles.html">
+            
+                <a href="coding-principles.html">
+            
+                    
+                    Coding Principles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="12.2" data-path="agile-development.html">
+            
+                <a href="agile-development.html">
+            
+                    
+                    Agile Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="continuous-integration.html">
+            
+                <a href="continuous-integration.html">
+            
+                    
+                    Continuous Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Productivity</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../productivity/keyboard-shortcuts.html">
+            
+                <a href="../productivity/keyboard-shortcuts.html#shortcuts">
+            
+                    
+                    Shortcuts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1.1" data-path="../productivity/keyboard-shortcuts.html">
+            
+                <a href="../productivity/keyboard-shortcuts.html#atom">
+            
+                    
+                    Atom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.2" data-path="../productivity/keyboard-shortcuts.html">
+            
+                <a href="../productivity/keyboard-shortcuts.html#gmail">
+            
+                    
+                    Gmail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.3" data-path="../productivity/keyboard-shortcuts.html">
+            
+                <a href="../productivity/keyboard-shortcuts.html#google-spreadsheet">
+            
+                    
+                    Google Spreadsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.4" data-path="../productivity/keyboard-shortcuts.html">
+            
+                <a href="../productivity/keyboard-shortcuts.html#google-chrome">
+            
+                    
+                    Google Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.5" data-path="../productivity/keyboard-shortcuts.html">
+            
+                <a href="../productivity/keyboard-shortcuts.html#xcode">
+            
+                    
+                    Xcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.6" data-path="../productivity/keyboard-shortcuts.html">
+            
+                <a href="../productivity/keyboard-shortcuts.html#mac-os">
+            
+                    
+                    MacOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Development Tools</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../development-tools/software.html">
+            
+                <a href="../development-tools/software.html">
+            
+                    
+                    Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="../development-tools/markdown.html">
+            
+                <a href="../development-tools/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="../development-tools/mermaid.html">
+            
+                <a href="../development-tools/mermaid.html">
+            
+                    
+                    Mermaid
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Agile Development</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="agile-development-with-scrum">Agile Development with Scrum</h1>
+<p> When a group of developers work on a single project, effective communication and collaboration play big roles. Agile development is one method to accomplish the need. In a nutshell, it allows a team/teams to add small features and ship the product. The development process lasts 1 week to 4 weeks. The cycle repeats until the team meets the requirements.</p>
+<div align="center">
+<div class="mermaid">
+graph TD
+    A[Define Requirements]-- Sprint Backlog --&gt;B[Choose Requirements]
+    B[Choose Requirements]-- Sprint --&gt;C[Execute and Ship]
+    C[Execute and Ship]-- Demo Day --&gt;D[Demonstrate]
+    D[Demonstrate]-- Sprint Retrospectives --&gt;E[Review]
+    E[Review]--&gt;F[Celebrate]
+    F[Celebrate]-- Product Backlog --&gt;A[Define Requirements]
+</div>
+</div>
+
+<h2 id="definition">Definition</h2>
+<table>
+<thead>
+<tr>
+<th>Terms</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Agile</td>
+<td>A group of software development methodologies based on iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams.</td>
+</tr>
+<tr>
+<td>Scrum</td>
+<td>One of agile development methodologies</td>
+</tr>
+<tr>
+<td>Product Backlog</td>
+<td>An ordered list of requirements that for a product. It consists of features, bug fixes, non-functional requirements. The Product Owner (clients, CEO) orders the Product Backlog Items (PBIs) based on considerations such as risk, business value, dependencies, and date needed.</td>
+</tr>
+<tr>
+<td>Sprint</td>
+<td>1 week to 1 month of period to execute requirements</td>
+</tr>
+<tr>
+<td>Sprint Backlog</td>
+<td>The Sprint Backlog is the list of work the Development Team must address during the next Sprint.</td>
+</tr>
+<tr>
+<td>Product Inclement</td>
+<td>The sum of all the Product Backlog Items completed during a Sprint, integrated with the work of all previous Sprints. At the end of a Sprint, the increment must be complete, according to the Scrum Team&apos;s definition of done (DoD), fully functioning, and in a usable condition regardless of whether the client decides to actually release it.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-agile-manifesto-definition">The Agile Manifesto Definition</h2>
+<p>Agile software development methodologies follow a set of ground principles created by leading software engineers.</p>
+<ul>
+<li>Continuous Delivery</li>
+<li>Welcome changing requirements</li>
+<li>Deliver working software frequently</li>
+<li>Involve business and developers throughout the project</li>
+<li>Build projects around motivated folks</li>
+<li>Communication should be face-to-face</li>
+<li>Primary metric of progress is working software</li>
+<li>All participants should maintain a constant pace</li>
+<li>Continuous attention to tech excellence &amp; good design</li>
+<li>Simplicity is essential</li>
+<li>Self organizing teams</li>
+<li>Periodic retrospectives</li>
+</ul>
+<h2 id="organization">Organization</h2>
+<p>There are three roles defined in Scrum: the ScrumMaster, the Product Owner, and the Team. Every role work together closely on a daily basis.</p>
+<h3 id="the-team">The Team</h3>
+<p>The Team is a self-organizing and cross-functional group of people who do the hands-on work of developing and testing the product. Since the Team is responsible for producing the product, it must also have the authority to make decisions about how to perform the work. The Team is therefore self-organizing: Team members decide how to break work into tasks, and how to allocate tasks to individuals, throughout the Sprint. The Team size should be kept in the range from five to nine people</p>
+<h3 id="the-scrum-master">The Scrum Master</h3>
+<ul>
+<li>Remove the barriers between the development Team and the Product Owner so that the Product Owner directly drives development.</li>
+<li>Teach the Product Owner how to maximize return on investment (ROI), and meet his/her objectives through Scrum.</li>
+<li>Improve the lives of the development Team by facilitating creativity and empowerment.</li>
+<li>Improve the productivity of the development Team in any way possible.</li>
+<li>Improve the engineering practices and tools so that each increment of functionality is potentially shippable.</li>
+<li>Keep information about the Team&#x2019;s progress up to date and visible to all parties.</li>
+<li>The Scrum Master is not a traditional team lead or project manager</li>
+<li>Acts as a buffer between the team and any distracting influences.</li>
+<li>Ensures that the Scrum framework is followed.</li>
+<li>The role has also been referred to as a team facilitator or servant-leader to reinforce these dual perspectives.</li>
+</ul>
+<h3 id="product-owner">Product Owner</h3>
+<p> The Product Owner is the keeper of the requirements. He provides the &#x201C;single source of truth&#x201D; for the Team regarding requirements and their planned order of implementation. The Product Owner represents the product&apos;s stakeholders and the voice of the customer; and is accountable for ensuring that the team delivers value to the business. The Product Owner writes customer-centric items (typically user stories), prioritizes them based on importance and dependencies, and adds them to the Product Backlog. Scrum Teams should have one Product Owner. This role should not be combined with that of the Scrum Master.</p>
+<p> As the face of the team to the stakeholders, the following are some of the communication tasks of the Product Owner to the stakeholders</p>
+<ul>
+<li>The Product Owner demonstrates the solution to key stakeholders who were not present at a Sprint Review.</li>
+<li>The Product Owner defines and announces releases</li>
+<li>The Product Owner communicates team status</li>
+<li>The Product Owner organizes milestone reviews</li>
+<li>The Product Owner educates stakeholders in the development process</li>
+<li>The Product Owner negotiates priorities, scope, funding, and schedule</li>
+<li>The Product Owner ensures that the Product Backlog is visible, transparent, and clear.</li>
+</ul>
+<h2 id="overall-scrum-process">Overall Scrum Process</h2>
+<ol>
+<li>Determine product backlogs based on priority</li>
+<li>Determine which backlogs to complete for a sprint</li>
+<li>Modularize the selected backlogs into tasks. Each task should require 2-3 hours to complete .</li>
+<li>During the sprint, run a daily meeting at the same time and location that last 10-15 minutes</li>
+<li>When the sprint is over, have a review meeting and demo day.</li>
+<li>Prepare for next sprints</li>
+</ol>
+<h3 id="user-story">User Story</h3>
+<p>Scrum does not define just what form requirements are to take, but simply says that they are gathered into the Product Backlog, and referred to generically as &#x201C;Product Backlog Items,&#x201D; or &#x201C;PBIs&#x201D; for short. Given the time-boxed nature of a Sprint, we can also infer that each set should require significantly less time to implement than the duration of the Sprint</p>
+<p>A User Story describes a desired feature (functional requirement) in narrative form. User Stories are usually written by the Product Owner, and are the Product Owner&#x2019;s responsibility.</p>
+<p>Name: Planner enters new contact into address book, so that he can contact the person later by postal or electronic mail</p>
+<p>Description: Planner enters standard contact information (first and last name, two street address lines, city, state, zip / postal code, country, etc.) into contact-entry screen. He clicks &#x201C;Save&#x201D; to keep the data, and &#x201C;Cancel&#x201D; to discard data and return to previous screen.</p>
+<p>How to test: Tester enters and saves the data, finds the name in the address book, and clicks on it. He sees a read-only view of the contact-entry screen, with all data previously entered.</p>
+<h3 id="create-a-list-of-backlog-items">Create a list of backlog items</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Priority</th>
+<th>Days</th>
+<th>Demo</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Transfer Money</td>
+<td>30</td>
+<td>5</td>
+<td>LogIn, page, $10</td>
+<td>No need to care about passwords</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Balance sheet</td>
+<td>10</td>
+<td>5</td>
+<td>Withdraw page</td>
+<td>The balance sheet has to look pretty</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Days = number of days x developer(s) and every backlog item must have a leader.</p>
+</blockquote>
+<h3 id="daily-scrum">Daily Scrum</h3>
+<p>Go through three following questions</p>
+<ul>
+<li>What did I do yesterday that helped the Development Team meet the Sprint goal?</li>
+<li>What will I do today to help the Development Team meet the Sprint goal?</li>
+<li>Do I see any impediment that prevents me or the Development Team from meeting the Sprint goal?</li>
+</ul>
+<p>Any impediment (e.g., stumbling block, risk, issue, delayed dependency, assumption proved unfounded) identified in the Daily Scrum should be captured by the Scrum Master and displayed on the team&apos;s Scrum board or on a shared resolved, owned, accepted, mitigated (ROAM) board, with an agreed person designated to working toward a resolution (outside of the Daily Scrum). No detailed discussions should happen during the Daily Scrum.</p>
+<h3 id="foundation">Foundation</h3>
+<p>These three pillars require trust and openness in the team, which the following five values of Scrum enable:</p>
+<ul>
+<li><strong>Commitment</strong>: Team members individually commit to achieving their team goals, each and every Sprint.</li>
+<li><strong>Courage</strong>: Team members know they have the courage to work through conflict and challenges together so that they can do the right thing.</li>
+<li><strong>Focus</strong>: Team members focus exclusively on their team goals and the Sprint Backlog; there should be no work done other than through their backlog.</li>
+<li><strong>Openness</strong>: Team members and their stakeholders agree to be transparent about their work and any challenges they face.</li>
+<li><strong>Respect</strong>: Team members respect each other to be technically capable and to work with good intent.</li>
+</ul>
+<h3 id="sprint-meeting">Sprint Meeting</h3>
+<p>This is the most important event in the process. These are following outcomes:</p>
+<ul>
+<li>One sprint purpose</li>
+<li>sprint backlog</li>
+<li>demo day</li>
+<li>Daily meet up time and place</li>
+<li>product owner must attend</li>
+</ul>
+<p>The scrum methodology always has a strict time line.</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Tasks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13:00 - 13:30</td>
+<td>The product owner reviews the purpose, product backlog, demo, and date.</td>
+</tr>
+<tr>
+<td>13:40 - 15:00</td>
+<td>The team determines approximate time. If needed, the backlog is modularized and organized</td>
+</tr>
+<tr>
+<td>15:10 - 16:00</td>
+<td>The team chooses product backlog items</td>
+</tr>
+<tr>
+<td>16:10 - 17:00</td>
+<td>Choose time and place for daily standup.  Modularize the selected stories</td>
+</tr>
+</tbody>
+</table>
+<h3 id="demo-day">Demo Day</h3>
+<p>Every sprint must end up with a demo day. Here is a list of reasons,</p>
+<ul>
+<li>Team may feel good for the achievement</li>
+<li>The team knows which tasks they have implemented</li>
+<li>Feedbacks generated from the feature</li>
+<li>Demo instills new conversations and ideas.</li>
+</ul>
+<h3 id="demo-day-tips">Demo Day Tips</h3>
+<ul>
+<li>Check if the demo aligns with the sprint purpose</li>
+<li>Don&apos;t spend too much time on demo. No need to be fancy.</li>
+<li>Demo must be business oriented. Instead of how you did, focus on what you did.</li>
+<li>You may mention small bugs, but do not point out aggressively.</li>
+</ul>
+<h3 id="sprint-retrospectives">Sprint Retrospectives</h3>
+<p>Sprint reflection is a must since it allows the team to improve and share honest thoughts and feelings during the process.</p>
+<p>Two main questions are asked in the Sprint Retrospective: What went well during the Sprint? What could be improved in the next Sprint?
+The recommended duration is one-and-a-half hours for a two-week Sprint (pro-rata for other Sprint durations)
+This event is facilitated by the Scrum Master</p>
+<ul>
+<li>It should last 1-3 hours.</li>
+<li>The team lead and team members join</li>
+<li>Hold the meeting somewhere casual and loose</li>
+<li>The team lead reflects upon the dashboard</li>
+<li>Check the predicted hours versus the hours actually spent. Ask why.</li>
+<li>The team lead suggests or asks how can the team improve the development process</li>
+</ul>
+<h3 id="rest-between-sprints">Rest between Sprints</h3>
+<p>You can&apos;t always &quot;sprint&quot;. Going through Scrum reflection and planning is the worst. You should take your team to restaurants, and relax.</p>
+<h2 id="benefits-of-scrum">Benefits of Scrum</h2>
+<table>
+<thead>
+<tr>
+<th>Beneficiary</th>
+<th>Benefits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customers</td>
+<td>Customers find that the vendor is more responsive to development requests. High-value features are developed and delivered more quickly with short cycles, than with the longer cycles favored by classic &#x201C;waterfall&#x201D; processes.</td>
+</tr>
+<tr>
+<td>Vendors</td>
+<td>Vendors reduce wastage by focusing development effort on high-value features, and reduce time-to-market relative to waterfall processes due to decreased overhead and increased efficiency. Improved customer satisfaction translates to better customer retention and more positive customer references.</td>
+</tr>
+<tr>
+<td>Development Teams</td>
+<td>Team members enjoy development work, and like to see their work used and valued. Scrum benefits Team members by reducing non-productive work (e.g., writing specifications or other artifacts that no one uses), and giving them more time to do the work they enjoy. Team members also know their work is valued, because requirements are chosen to maximize value to customers.</td>
+</tr>
+<tr>
+<td>Product Managers</td>
+<td>Product Managers, who typically fill the Product Owner role, are responsible for making customers happy by ensuring that development work is aligned with customer needs. Scrum makes this alignment easier by providing frequent opportunities to re-prioritize work, to ensure maximum delivery of value.</td>
+</tr>
+<tr>
+<td>PMOs and C-Executives</td>
+<td>Scrum provides high visibility into the state of a development project, on a daily basis. External stakeholders, such as C-Level executives and personnel in the Project Management Office, can use this visibility to plan more affectively, and adjust their strategies based on more hard information and less speculation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="overall">Overall</h3>
+<figure id="fig12.2.1"><img src="../software_engineering/resources/scrum_framework.png" alt="Agile development cycle"><figcaption> Agile development cycle</figcaption></figure>
+<h3 id="book">Book</h3>
+<p><a href="http://amzn.to/2mOGS7u" target="_blank">Essential Scrum: A Practical Guide to the Most Popular Agile Process</a></p>
+<p><a href="http://amzn.to/2n6a4bU" target="_blank">Scrum: The Art of Doing Twice the Work in Half the Time</a></p>
+<h4 id="reference">Reference</h4>
+<p><a href="http://scrummethodology.com/" target="_blank">scrummethodology.com</a></p>
+<p><a href="https://www.cprime.com/resources/what-is-agile-what-is-scrum/" target="_blank">What is Agile? What is Scrum?</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="coding-principles.html" class="navigation navigation-prev " aria-label="Previous page: Coding Principles">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="continuous-integration.html" class="navigation navigation-next " aria-label="Next page: Continuous Integration">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Agile Development","level":"12.2","depth":1,"next":{"title":"Continuous Integration","level":"12.3","depth":1,"path":"content/software-engineering/continuous-integration.md","ref":"content/software-engineering/continuous-integration.md","articles":[]},"previous":{"title":"Coding Principles","level":"12.1","depth":1,"path":"content/software-engineering/coding-principles.md","ref":"content/software-engineering/coding-principles.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":2,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"content/software-engineering/agile-development.md","mtime":"2017-03-30T02:39:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T14:24:29.825Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

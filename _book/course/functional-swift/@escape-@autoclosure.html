@@ -1,0 +1,1263 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>@escape and @autoclosure · Learn Swift with Bob</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Bob Lee">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../website.css">
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="conclusion.html" />
+    
+    
+    <link rel="prev" href="completion-handlers-callbacks.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Prologue</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../ABOUT.html">
+            
+                <a href="../../ABOUT.html">
+            
+                    
+                    Bob the Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../RESOURCES.html">
+            
+                <a href="../../RESOURCES.html">
+            
+                    
+                    Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Learn Swift with Bob</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../introduction/course-intro.html">
+            
+                <a href="../introduction/course-intro.html">
+            
+                    
+                    Course Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../introduction/course-expecation.html">
+            
+                <a href="../introduction/course-expecation.html">
+            
+                    
+                    Expectation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../introduction/course-prerequisites.html">
+            
+                <a href="../introduction/course-prerequisites.html">
+            
+                    
+                    Prerequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../introduction/course-resources.html">
+            
+                <a href="../introduction/course-resources.html">
+            
+                    
+                    Course Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../introduction/table-of-content.html">
+            
+                <a href="../introduction/table-of-content.html">
+            
+                    
+                    Table of Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">The Swift Fundamentals</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../swift-intermediate/introduction.html">
+            
+                <a href="../swift-intermediate/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../swift-intermediate/optionals.html">
+            
+                <a href="../swift-intermediate/optionals.html">
+            
+                    
+                    Optionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../swift-intermediate/optional-chaining.html">
+            
+                <a href="../swift-intermediate/optional-chaining.html">
+            
+                    
+                    Optional Chainings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../swift-intermediate/guard-defer-statement.html">
+            
+                <a href="../swift-intermediate/guard-defer-statement.html">
+            
+                    
+                    Guard and Defer Statement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../swift-intermediate/intro-error-handling.html">
+            
+                <a href="../swift-intermediate/intro-error-handling.html">
+            
+                    
+                    Intro to Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../swift-intermediate/generics.html">
+            
+                <a href="../swift-intermediate/generics.html">
+            
+                    
+                    Intro to Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../swift-intermediate/type-casting.html">
+            
+                <a href="../swift-intermediate/type-casting.html">
+            
+                    
+                    Type Casting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../swift-intermediate/subscripts.html">
+            
+                <a href="../swift-intermediate/subscripts.html">
+            
+                    
+                    Subscripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../swift-intermediate/class-struct-difference.html">
+            
+                <a href="../swift-intermediate/class-struct-difference.html">
+            
+                    
+                    Class vs Struct
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../swift-intermediate/set-tuple.html">
+            
+                <a href="../swift-intermediate/set-tuple.html">
+            
+                    
+                    Set and Tuple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../swift-intermediate/extension.html">
+            
+                <a href="../swift-intermediate/extension.html">
+            
+                    
+                    Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../swift-intermediate/operators.html">
+            
+                <a href="../swift-intermediate/operators.html">
+            
+                    
+                    Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../swift-intermediate/typealias.html">
+            
+                <a href="../swift-intermediate/typealias.html">
+            
+                    
+                    Typealias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../swift-intermediate/conclusion.html">
+            
+                <a href="../swift-intermediate/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Object Oriented Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../object-oriented-swift/introduction.html">
+            
+                <a href="../object-oriented-swift/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../object-oriented-swift/convenience-init.html">
+            
+                <a href="../object-oriented-swift/convenience-init.html">
+            
+                    
+                    Convenience Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../object-oriented-swift/computed-property.html">
+            
+                <a href="../object-oriented-swift/computed-property.html">
+            
+                    
+                    Computed Property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../object-oriented-swift/property-observers.html">
+            
+                <a href="../object-oriented-swift/property-observers.html">
+            
+                    
+                    Property Observers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../object-oriented-swift/failable-init.html">
+            
+                <a href="../object-oriented-swift/failable-init.html">
+            
+                    
+                    Failable Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../object-oriented-swift/override-init-method-property.html">
+            
+                <a href="../object-oriented-swift/override-init-method-property.html">
+            
+                    
+                    Override Everything
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../object-oriented-swift/two-phase-init.html">
+            
+                <a href="../object-oriented-swift/two-phase-init.html">
+            
+                    
+                    Two Phase Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../object-oriented-swift/type-property-method.html">
+            
+                <a href="../object-oriented-swift/type-property-method.html">
+            
+                    
+                    Type Property and Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../object-oriented-swift/singleton-pattern.html">
+            
+                <a href="../object-oriented-swift/singleton-pattern.html">
+            
+                    
+                    Singleton Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../object-oriented-swift/conclusion.html">
+            
+                <a href="../object-oriented-swift/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Intro to Functional Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="intro-closure-part1.html">
+            
+                <a href="intro-closure-part1.html">
+            
+                    
+                    Intro to Closures Part 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="intro-closure-part2.html">
+            
+                <a href="intro-closure-part2.html">
+            
+                    
+                    Intro to Closures Part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="lazy-init-closures.html">
+            
+                <a href="lazy-init-closures.html">
+            
+                    
+                    Lazy Init with Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="closure-capture-lists.html">
+            
+                <a href="closure-capture-lists.html">
+            
+                    
+                    Capture Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="trailing-closures.html">
+            
+                <a href="trailing-closures.html">
+            
+                    
+                    Trailing Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="completion-handlers-callbacks.html">
+            
+                <a href="completion-handlers-callbacks.html">
+            
+                    
+                    Completion Handlers and Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.1.7" data-path="@escape-@autoclosure.html">
+            
+                <a href="@escape-@autoclosure.html">
+            
+                    
+                    @escape and @autoclosure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="conclusion.html">
+            
+                <a href="conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Protocol Oriented Swift</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../protocol-oriented-swift/introduction.html">
+            
+                <a href="../protocol-oriented-swift/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../protocol-oriented-swift/intro-to-protocol.html">
+            
+                <a href="../protocol-oriented-swift/intro-to-protocol.html">
+            
+                    
+                    Intro to Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../protocol-oriented-swift/protocol-extension.html">
+            
+                <a href="../protocol-oriented-swift/protocol-extension.html">
+            
+                    
+                    Protocol Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../protocol-oriented-swift/protocol-as-type.html">
+            
+                <a href="../protocol-oriented-swift/protocol-as-type.html">
+            
+                    
+                    Protocol as Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../protocol-oriented-swift/delegate.html">
+            
+                <a href="../protocol-oriented-swift/delegate.html">
+            
+                    
+                    Delegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/associative-type.html">
+            
+                <a href="../protocol-oriented-swift/associative-type.html">
+            
+                    
+                    Associative Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../protocol-oriented-swift/conclusion.html">
+            
+                <a href="../protocol-oriented-swift/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Memory Management</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../swift-memory-management/introduction.html">
+            
+                <a href="../swift-memory-management/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
+            
+                <a href="../swift-memory-management/memory-leak.html">
+            
+                    
+                    Memory Leak
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+            
+                <a href="../swift-memory-management/automatic-reference-counting.html">
+            
+                    
+                    Automatic Reference Counting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+            
+                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+            
+                    
+                    Closure and Delegate Retention Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+            
+                <a href="../swift-memory-management/conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Generics</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Advanced Enum</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Advanced Swift</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Swift Extra</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../../content/swift/swift-styling-guide.html">
+            
+                <a href="../../content/swift/swift-styling-guide.html">
+            
+                    
+                    Swift Styling Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../../content/swift/swift-resources.html">
+            
+                <a href="../../content/swift/swift-resources.html">
+            
+                    
+                    Swift External Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Software Engineering</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../../content/software-engineering/coding-principles.html">
+            
+                <a href="../../content/software-engineering/coding-principles.html">
+            
+                    
+                    Coding Principles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
+            
+                <a href="../../content/software-engineering/agile-development.html">
+            
+                    
+                    Agile Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+            
+                <a href="../../content/software-engineering/continuous-integration.html">
+            
+                    
+                    Continuous Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Productivity</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#shortcuts">
+            
+                    
+                    Shortcuts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1.1" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#atom">
+            
+                    
+                    Atom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.2" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#gmail">
+            
+                    
+                    Gmail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.3" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#google-spreadsheet">
+            
+                    
+                    Google Spreadsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.4" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#google-chrome">
+            
+                    
+                    Google Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.5" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#xcode">
+            
+                    
+                    Xcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.1.6" data-path="../../content/productivity/keyboard-shortcuts.html">
+            
+                <a href="../../content/productivity/keyboard-shortcuts.html#mac-os">
+            
+                    
+                    MacOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Development Tools</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../../content/development-tools/software.html">
+            
+                <a href="../../content/development-tools/software.html">
+            
+                    
+                    Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="../../content/development-tools/markdown.html">
+            
+                <a href="../../content/development-tools/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="../../content/development-tools/mermaid.html">
+            
+                <a href="../../content/development-tools/mermaid.html">
+            
+                    
+                    Mermaid
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >@escape and @autoclosure</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="escape-and-autoclosure">@Escape and @Autoclosure</h1>
+<h2 id="introduction">Introduction</h2>
+<h2 id="lecture-notes">Lecture Notes</h2>
+<h3 id="problem">Problem</h3>
+<h3 id="source-code">Source Code</h3>
+<h3 id="reference">Reference</h3>
+<h2 id="conclusion">Conclusion</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="completion-handlers-callbacks.html" class="navigation navigation-prev " aria-label="Previous page: Completion Handlers and Callbacks">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="conclusion.html" class="navigation navigation-next " aria-label="Next page: Conclusion">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"@escape and @autoclosure","level":"5.1.7","depth":2,"next":{"title":"Conclusion","level":"5.1.8","depth":2,"path":"course/functional-swift/conclusion.md","ref":"course/functional-swift/conclusion.md","articles":[]},"previous":{"title":"Completion Handlers and Callbacks","level":"5.1.6","depth":2,"path":"course/functional-swift/completion-handlers-callbacks.md","ref":"course/functional-swift/completion-handlers-callbacks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":2,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/functional-swift/@escape-@autoclosure.md","mtime":"2017-03-27T14:13:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T14:24:29.825Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
