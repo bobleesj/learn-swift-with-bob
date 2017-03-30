@@ -357,7 +357,6 @@ Increase productivity by spending less time on formatting through clicking.
  | `cmd-0` | Show/hide left panel |
  | `shift-cmd-y` | Show bottom panel |
 
-
 <br>
 <br>
 

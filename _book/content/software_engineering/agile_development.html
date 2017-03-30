@@ -1084,83 +1084,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <blockquote>
-<p>Currently Draft - March 22, 2017</p>
-</blockquote>
-<h1 id="agile-development-with-scrum">Agile Development with Scrum</h1>
-<p>Software development is done by a group of people. As a result, effective communication and collaboration are much needed. Agile development is nothing more than allowing developers to add small features and submit. The process lasts typically 1 week to 4 weeks. The cycle repeats until good enough items in the product backlog has met.  The philosophy is similar to the Toyota&apos;s production method that implements Kanban.</p>
-<h2 id="benefits-of-scrum">Benefits of Scrum</h2>
-<table>
-<thead>
-<tr>
-<th>Beneficiary</th>
-<th>Benefits</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Customers</td>
-<td>Customers find that the vendor is more responsive to development requests. High-value features are developed and delivered more quickly with short cycles, than with the longer cycles favored by classic &#x201C;waterfall&#x201D; processes.</td>
-</tr>
-<tr>
-<td>Vendors</td>
-<td>Vendors reduce wastage by focusing development effort on high-value features, and reduce time-to-market relative to waterfall processes due to decreased overhead and increased efficiency. Improved customer satisfaction translates to better customer retention and more positive customer references.</td>
-</tr>
-<tr>
-<td>Development Teams</td>
-<td>Team members enjoy development work, and like to see their work used and valued. Scrum benefits Team members by reducing non-productive work (e.g., writing specifications or other artifacts that no one uses), and giving them more time to do the work they enjoy. Team members also know their work is valued, because requirements are chosen to maximize value to customers.</td>
-</tr>
-<tr>
-<td>Product Managers</td>
-<td>Product Managers, who typically fill the Product Owner role, are responsible for making customers happy by ensuring that development work is aligned with customer needs. Scrum makes this alignment easier by providing frequent opportunities to re-prioritize work, to ensure maximum delivery of value.</td>
-</tr>
-<tr>
-<td>PMOs and C-Executives</td>
-<td>Scrum provides high visibility into the state of a development project, on a daily basis. External stakeholders, such as C-Level executives and personnel in the Project Management Office, can use this visibility to plan more affectively, and adjust their strategies based on more hard information and less speculation.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="user-story">User Story</h2>
-<p>Scrum does not define just what form requirements are to take, but simply says that they are gathered into the Product Backlog, and referred to generically as &#x201C;Product Backlog Items,&#x201D; or &#x201C;PBIs&#x201D; for short. Given the time-boxed nature of a Sprint, we can also infer that each set should require significantly less time to implement than the duration of the Sprint</p>
-<p>A User Story describes a desired feature (functional requirement) in narrative form. User Stories are usually written by the Product Owner, and are the Product Owner&#x2019;s responsibility.</p>
-<p>Name: Planner enters new contact into address book, so that he can contact the person later by postal or electronic mail</p>
-<p>Description: Planner enters standard contact information (first and last name, two street address lines, city, state, zip / postal code, country, etc.) into contact-entry screen. He clicks &#x201C;Save&#x201D; to keep the data, and &#x201C;Cancel&#x201D; to discard data and return to previous screen.</p>
-<p>Screens and External Documents: <a href="http://myserver/screens/contact-entry.html" target="_blank">http://myserver/screens/contact-entry.html</a></p>
-<p>How to test: Tester enters and saves the data, finds the name in the address book, and clicks on it. He sees a read-only view of the contact-entry screen, with all data previously entered.</p>
+                                <h1 id="agile-development-with-scrum">Agile Development with Scrum</h1>
+<p> When a group of developers work on a single project, effective communication and collaboration play big roles. Agile development is one method to accomplish the need. In a nutshell, it allows a team/teams to add small features and ship the product. The development process lasts 1 week to 4 weeks. The cycle repeats until the team meets the requirements.</p>
+<div align="center">
+<div class="mermaid">
+graph TD
+    A[Define Requirements]-- Sprint Backlog --&gt;B[Choose Requirements]
+    B[Choose Requirements]-- Sprint --&gt;C[Execute and Ship]
+    C[Execute and Ship]-- Demo Day --&gt;D[Demonstrate]
+    D[Demonstrate]-- Sprint Retrospectives --&gt;E[Review]
+    E[Review]--&gt;F[Celebrate]
+    F[Celebrate]-- Product Backlog --&gt;A[Define Requirements]
+</div>
+</div>
+
 <h2 id="definition">Definition</h2>
-<h3 id="agile">Agile</h3>
-<p>Agile software development refers to a group of software development methodologies based on iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams. Agile methods or Agile processes generally promote a disciplined project management process that encourages frequent inspection and adaptation, a leadership philosophy that encourages teamwork, self-organization and accountability, a set of engineering best practices intended to allow for rapid delivery of high-quality software, and a business approach that aligns development with customer needs and company goals. Agile development refers to any development process that is aligned with the concepts of the Agile Manifesto. The Manifesto was developed by a group fourteen leading figures in the software industry, and reflects their experience of what approaches do and do not work for software development. Read more about the Agile Manifesto.</p>
-<h2 id="team">Team</h2>
-<p>The three roles defined in Scrum are the ScrumMaster, the Product Owner, and the Team (which consists of Team members). The people who fulfill these roles work together closely, on a daily basis, to ensure the smooth flow of information and the quick resolution of issues.</p>
-<h3 id="the-scrum-master">The Scrum Master</h3>
-<ul>
-<li>Removing the barriers between the development Team and the Product Owner so that the Product Owner directly drives development.</li>
-<li>Teach the Product Owner how to maximize return on investment (ROI), and meet his/her objectives through Scrum.</li>
-<li>Improve the lives of the development Team by facilitating creativity and empowerment.</li>
-<li>Improve the productivity of the development Team in any way possible.</li>
-<li>Improve the engineering practices and tools so that each increment of functionality is potentially shippable.</li>
-<li>Keep information about the Team&#x2019;s progress up to date and visible to all parties.</li>
-<li>The Scrum Master is not a traditional team lead or project manager, but acts as a buffer between the team and any distracting influences. The Scrum Master ensures that the Scrum framework is followed. The Scrum Master helps to ensure the team follows the agreed processes in the Scrum framework, often facilitates key sessions, and encourages the team to improve. The role has also been referred to as a team facilitator[20] or servant-leader to reinforce these dual perspectives.</li>
-</ul>
-<h3 id="product-owner">Product Owner</h3>
-<ul>
-<li>The Product Owner is the keeper of the requirements. He provides the &#x201C;single source of truth&#x201D; for the Team regarding requirements and their planned order of implementation.</li>
-<li><p>The Product Owner represents the product&apos;s stakeholders and the voice of the customer; and is accountable for ensuring that the team delivers value to the business. The Product Owner writes customer-centric items (typically user stories), prioritizes them based on importance and dependencies, and adds them to the Product Backlog.[citation needed] Scrum Teams should have one Product Owner. This role should not be combined with that of the Scrum Master.</p>
-<p>As the face of the team to the stakeholders, the following are some of the communication tasks of the Product Owner to the stakeholders:[18]</p>
-</li>
-<li><p>demonstrates the solution to key stakeholders who were not present at a Sprint Review;</p>
-</li>
-<li>defines and announces releases;</li>
-<li>communicates team status;</li>
-<li>organizes milestone reviews;</li>
-<li>educates stakeholders in the development process;</li>
-<li>negotiates priorities, scope, funding, and schedule;</li>
-<li>ensures that the Product Backlog is visible, transparent, and clear.</li>
-</ul>
-<h3 id="team">Team</h3>
-<ul>
-<li>The Team is a self-organizing and cross-functional group of people who do the hands-on work of developing and testing the product. Since the Team is responsible for producing the product, it must also have the authority to make decisions about how to perform the work. The Team is therefore self-organizing: Team members decide how to break work into tasks, and how to allocate tasks to individuals, throughout the Sprint. The Team size should be kept in the range from five to nine people</li>
-</ul>
 <table>
 <thead>
 <tr>
@@ -1170,62 +1108,75 @@
 </thead>
 <tbody>
 <tr>
+<td>Agile</td>
+<td>A group of software development methodologies based on iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams.</td>
+</tr>
+<tr>
+<td>Scrum</td>
+<td>One of agile development methodologies</td>
+</tr>
+<tr>
 <td>Product Backlog</td>
-<td>Features that must be implemented</td>
+<td>An ordered list of requirements that for a product. It consists of features, bug fixes, non-functional requirements. The Product Owner (clients, CEO) orders the Product Backlog Items (PBIs) based on considerations such as risk, business value, dependencies, and date needed.</td>
 </tr>
 <tr>
 <td>Sprint</td>
-<td>1 week to 1 month of period to execute product backlogs</td>
+<td>1 week to 1 month of period to execute requirements</td>
 </tr>
 <tr>
-<td>Inclement</td>
-<td>Completed software or feature</td>
+<td>Sprint Backlog</td>
+<td>The Sprint Backlog is the list of work the Development Team must address during the next Sprint.</td>
+</tr>
+<tr>
+<td>Product Inclement</td>
+<td>The sum of all the Product Backlog Items completed during a Sprint, integrated with the work of all previous Sprints. At the end of a Sprint, the increment must be complete, according to the Scrum Team&apos;s definition of done (DoD), fully functioning, and in a usable condition regardless of whether the client decides to actually release it.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="product-backlog">Product Backlog</h3>
-<p>Product backlog
-The product backlog comprises an ordered list of requirements that a Scrum Team maintains for a product.[29] It consists of features, bug fixes, non-functional requirements, etc.&#x2014;whatever must be done to successfully deliver a viable product. The Product Owner orders the Product Backlog Items (PBIs) based on considerations such as risk, business value, dependencies, and date needed.</p>
-<h3 id="sprint-backlog">Sprint Backlog</h3>
-<p>The Sprint Backlog is the list of work the Development Team must address during the next Sprint.</p>
-<h3 id="product-increment">Product Increment</h3>
-<p>The increment (or potentially shippable increment, PSI) is the sum of all the Product Backlog Items completed during a Sprint, integrated with the work of all previous Sprints. At the end of a Sprint, the increment must be complete, according to the Scrum Team&apos;s definition of done (DoD), fully functioning, and in a usable condition regardless of whether the Product Owner decides to actually release it.</p>
-<p>Scrum Team</p>
-<p>Product Owner, Scrum Master and Development Team
-Product Owner</p>
-<p>The person responsible for maintaining the Product Backlog by representing the interests of the stakeholders, and ensuring the value of the work the Development Team does.
-Scrum Master</p>
-<p>The person responsible for the Scrum framework, making sure it is used correctly and maximizing its benefits.
-Development Team</p>
-<p>A cross-functional group of people responsible for delivering potentially shippable increments of product at the end of every Sprint.
-Sprint burn-down chart</p>
-<p>Daily progress for a Sprint over the Sprint&apos;s length.
-Release burn-down chart</p>
-<p>Feature level progress of completed Product Backlog Items in the Product Backlog.
-Product Backlog (PBL) list</p>
-<p>A prioritized list of high-level requirements.
-Sprint Backlog (SBL) list</p>
-<p>A prioritized list of tasks to complete during the Sprint.
-Sprint</p>
-<p>A time period (typically 1&#x2013;4 weeks) in which development occurs on a set of Product Backlog Items that the team has committed to&#x2014;commonly referred to as a time-box or iteration</p>
-<h3 id="daily-scrum">Daily Scrum</h3>
-<p>Go through three following questions</p>
+<h2 id="the-agile-manifesto-definition">The Agile Manifesto Definition</h2>
+<p>Agile software development methodologies follow a set of ground principles created by leading software engineers.</p>
 <ul>
-<li>What did I do yesterday that helped the Development Team meet the Sprint goal?<ul>
-<li>What will I do today to help the Development Team meet the Sprint goal?</li>
-<li>Do I see any impediment that prevents me or the Development Team from meeting the Sprint goal?</li>
+<li>Continuous Delivery</li>
+<li>Welcome changing requirements</li>
+<li>Deliver working software frequently</li>
+<li>Involve business and developers throughout the project</li>
+<li>Build projects around motivated folks</li>
+<li>Communication should be face-to-face</li>
+<li>Primary metric of progress is working software</li>
+<li>All participants should maintain a constant pace</li>
+<li>Continuous attention to tech excellence &amp; good design</li>
+<li>Simplicity is essential</li>
+<li>Self organizing teams</li>
+<li>Periodic retrospectives</li>
 </ul>
-</li>
-</ul>
-<p>Any impediment (e.g., stumbling block, risk, issue, delayed dependency, assumption proved unfounded) identified in the Daily Scrum should be captured by the Scrum Master and displayed on the team&apos;s Scrum board or on a shared resolved, owned, accepted, mitigated (ROAM) board, with an agreed person designated to working toward a resolution (outside of the Daily Scrum). No detailed discussions should happen during the Daily Scrum.</p>
-<h3 id="foundation">Foundation</h3>
-<p>These three pillars require trust and openness in the team, which the following five values of Scrum enable:</p>
+<h2 id="organization">Organization</h2>
+<p>There are three roles defined in Scrum: the ScrumMaster, the Product Owner, and the Team. Every role work together closely on a daily basis.</p>
+<h3 id="the-team">The Team</h3>
+<p>The Team is a self-organizing and cross-functional group of people who do the hands-on work of developing and testing the product. Since the Team is responsible for producing the product, it must also have the authority to make decisions about how to perform the work. The Team is therefore self-organizing: Team members decide how to break work into tasks, and how to allocate tasks to individuals, throughout the Sprint. The Team size should be kept in the range from five to nine people</p>
+<h3 id="the-scrum-master">The Scrum Master</h3>
 <ul>
-<li><strong>Commitment</strong>: Team members individually commit to achieving their team goals, each and every Sprint.</li>
-<li><strong>Courage</strong>: Team members know they have the courage to work through conflict and challenges together so that they can do the right thing.</li>
-<li><strong>Focus</strong>: Team members focus exclusively on their team goals and the Sprint Backlog; there should be no work done other than through their backlog.</li>
-<li><strong>Openness</strong>: Team members and their stakeholders agree to be transparent about their work and any challenges they face.</li>
-<li><strong>Respect</strong>: Team members respect each other to be technically capable and to work with good intent.</li>
+<li>Remove the barriers between the development Team and the Product Owner so that the Product Owner directly drives development.</li>
+<li>Teach the Product Owner how to maximize return on investment (ROI), and meet his/her objectives through Scrum.</li>
+<li>Improve the lives of the development Team by facilitating creativity and empowerment.</li>
+<li>Improve the productivity of the development Team in any way possible.</li>
+<li>Improve the engineering practices and tools so that each increment of functionality is potentially shippable.</li>
+<li>Keep information about the Team&#x2019;s progress up to date and visible to all parties.</li>
+<li>The Scrum Master is not a traditional team lead or project manager</li>
+<li>Acts as a buffer between the team and any distracting influences.</li>
+<li>Ensures that the Scrum framework is followed.</li>
+<li>The role has also been referred to as a team facilitator or servant-leader to reinforce these dual perspectives.</li>
+</ul>
+<h3 id="product-owner">Product Owner</h3>
+<p> The Product Owner is the keeper of the requirements. He provides the &#x201C;single source of truth&#x201D; for the Team regarding requirements and their planned order of implementation. The Product Owner represents the product&apos;s stakeholders and the voice of the customer; and is accountable for ensuring that the team delivers value to the business. The Product Owner writes customer-centric items (typically user stories), prioritizes them based on importance and dependencies, and adds them to the Product Backlog. Scrum Teams should have one Product Owner. This role should not be combined with that of the Scrum Master.</p>
+<p> As the face of the team to the stakeholders, the following are some of the communication tasks of the Product Owner to the stakeholders</p>
+<ul>
+<li>The Product Owner demonstrates the solution to key stakeholders who were not present at a Sprint Review.</li>
+<li>The Product Owner defines and announces releases</li>
+<li>The Product Owner communicates team status</li>
+<li>The Product Owner organizes milestone reviews</li>
+<li>The Product Owner educates stakeholders in the development process</li>
+<li>The Product Owner negotiates priorities, scope, funding, and schedule</li>
+<li>The Product Owner ensures that the Product Backlog is visible, transparent, and clear.</li>
 </ul>
 <h2 id="overall-scrum-process">Overall Scrum Process</h2>
 <ol>
@@ -1236,6 +1187,12 @@ Sprint</p>
 <li>When the sprint is over, have a review meeting and demo day.</li>
 <li>Prepare for next sprints</li>
 </ol>
+<h3 id="user-story">User Story</h3>
+<p>Scrum does not define just what form requirements are to take, but simply says that they are gathered into the Product Backlog, and referred to generically as &#x201C;Product Backlog Items,&#x201D; or &#x201C;PBIs&#x201D; for short. Given the time-boxed nature of a Sprint, we can also infer that each set should require significantly less time to implement than the duration of the Sprint</p>
+<p>A User Story describes a desired feature (functional requirement) in narrative form. User Stories are usually written by the Product Owner, and are the Product Owner&#x2019;s responsibility.</p>
+<p>Name: Planner enters new contact into address book, so that he can contact the person later by postal or electronic mail</p>
+<p>Description: Planner enters standard contact information (first and last name, two street address lines, city, state, zip / postal code, country, etc.) into contact-entry screen. He clicks &#x201C;Save&#x201D; to keep the data, and &#x201C;Cancel&#x201D; to discard data and return to previous screen.</p>
+<p>How to test: Tester enters and saves the data, finds the name in the address book, and clicks on it. He sees a read-only view of the contact-entry screen, with all data previously entered.</p>
 <h3 id="create-a-list-of-backlog-items">Create a list of backlog items</h3>
 <table>
 <thead>
@@ -1270,6 +1227,23 @@ Sprint</p>
 <blockquote>
 <p>Days = number of days x developer(s) and every backlog item must have a leader.</p>
 </blockquote>
+<h3 id="daily-scrum">Daily Scrum</h3>
+<p>Go through three following questions</p>
+<ul>
+<li>What did I do yesterday that helped the Development Team meet the Sprint goal?</li>
+<li>What will I do today to help the Development Team meet the Sprint goal?</li>
+<li>Do I see any impediment that prevents me or the Development Team from meeting the Sprint goal?</li>
+</ul>
+<p>Any impediment (e.g., stumbling block, risk, issue, delayed dependency, assumption proved unfounded) identified in the Daily Scrum should be captured by the Scrum Master and displayed on the team&apos;s Scrum board or on a shared resolved, owned, accepted, mitigated (ROAM) board, with an agreed person designated to working toward a resolution (outside of the Daily Scrum). No detailed discussions should happen during the Daily Scrum.</p>
+<h3 id="foundation">Foundation</h3>
+<p>These three pillars require trust and openness in the team, which the following five values of Scrum enable:</p>
+<ul>
+<li><strong>Commitment</strong>: Team members individually commit to achieving their team goals, each and every Sprint.</li>
+<li><strong>Courage</strong>: Team members know they have the courage to work through conflict and challenges together so that they can do the right thing.</li>
+<li><strong>Focus</strong>: Team members focus exclusively on their team goals and the Sprint Backlog; there should be no work done other than through their backlog.</li>
+<li><strong>Openness</strong>: Team members and their stakeholders agree to be transparent about their work and any challenges they face.</li>
+<li><strong>Respect</strong>: Team members respect each other to be technically capable and to work with good intent.</li>
+</ul>
 <h3 id="sprint-meeting">Sprint Meeting</h3>
 <p>This is the most important event in the process. These are following outcomes:</p>
 <ul>
@@ -1279,14 +1253,33 @@ Sprint</p>
 <li>Daily meet up time and place</li>
 <li>product owner must attend</li>
 </ul>
-<p>The scrum methodology always has a strict time line.
-| Time | Tasks |
-| --- | --- |
-| 13:00 - 13:30 | The product owner reviews the purpose, product backlog, demo, and date. |
-| 13:40 - 15:00 | The team determines approximate time. If needed, the backlog is modularized and organized |
-| 15:10 - 16:00 | The team chooses product backlog items |
-| 16:10 - 17:00 | Choose time and place for daily standup.  Modularize the selected stories |</p>
-<p>During the daily standup, make sure see look the dashboard. You may use Trello or Jira.</p>
+<p>The scrum methodology always has a strict time line.</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Tasks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13:00 - 13:30</td>
+<td>The product owner reviews the purpose, product backlog, demo, and date.</td>
+</tr>
+<tr>
+<td>13:40 - 15:00</td>
+<td>The team determines approximate time. If needed, the backlog is modularized and organized</td>
+</tr>
+<tr>
+<td>15:10 - 16:00</td>
+<td>The team chooses product backlog items</td>
+</tr>
+<tr>
+<td>16:10 - 17:00</td>
+<td>Choose time and place for daily standup.  Modularize the selected stories</td>
+</tr>
+</tbody>
+</table>
 <h3 id="demo-day">Demo Day</h3>
 <p>Every sprint must end up with a demo day. Here is a list of reasons,</p>
 <ul>
@@ -1317,29 +1310,45 @@ This event is facilitated by the Scrum Master</p>
 </ul>
 <h3 id="rest-between-sprints">Rest between Sprints</h3>
 <p>You can&apos;t always &quot;sprint&quot;. Going through Scrum reflection and planning is the worst. You should take your team to restaurants, and relax.</p>
+<h2 id="benefits-of-scrum">Benefits of Scrum</h2>
+<table>
+<thead>
+<tr>
+<th>Beneficiary</th>
+<th>Benefits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customers</td>
+<td>Customers find that the vendor is more responsive to development requests. High-value features are developed and delivered more quickly with short cycles, than with the longer cycles favored by classic &#x201C;waterfall&#x201D; processes.</td>
+</tr>
+<tr>
+<td>Vendors</td>
+<td>Vendors reduce wastage by focusing development effort on high-value features, and reduce time-to-market relative to waterfall processes due to decreased overhead and increased efficiency. Improved customer satisfaction translates to better customer retention and more positive customer references.</td>
+</tr>
+<tr>
+<td>Development Teams</td>
+<td>Team members enjoy development work, and like to see their work used and valued. Scrum benefits Team members by reducing non-productive work (e.g., writing specifications or other artifacts that no one uses), and giving them more time to do the work they enjoy. Team members also know their work is valued, because requirements are chosen to maximize value to customers.</td>
+</tr>
+<tr>
+<td>Product Managers</td>
+<td>Product Managers, who typically fill the Product Owner role, are responsible for making customers happy by ensuring that development work is aligned with customer needs. Scrum makes this alignment easier by providing frequent opportunities to re-prioritize work, to ensure maximum delivery of value.</td>
+</tr>
+<tr>
+<td>PMOs and C-Executives</td>
+<td>Scrum provides high visibility into the state of a development project, on a daily basis. External stakeholders, such as C-Level executives and personnel in the Project Management Office, can use this visibility to plan more affectively, and adjust their strategies based on more hard information and less speculation.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="overall">Overall</h3>
 <figure id="fig12.2.1"><img src="resources/scrum_framework.png" alt="Agile development cycle"><figcaption> Agile development cycle</figcaption></figure>
-<h2 id="the-agile-manifesto">The Agile Manifesto</h2>
-<ul>
-<li>Continuous Delivery</li>
-<li>Welcome changing reqs</li>
-<li>Deliver working software frequently</li>
-<li>Involve biz and developers throughout the project</li>
-<li>Build projects around motivated folks</li>
-<li>Communication should be face-to-face</li>
-<li>Primary metric of progress is working software</li>
-<li>All participants should maintain a constant pace</li>
-<li>Continuous attention to tech excellence &amp; good design</li>
-<li>Simplicity is essential</li>
-<li>Self organizing teams</li>
-<li>Periodic retrospectives</li>
-</ul>
 <h3 id="book">Book</h3>
 <p><a href="http://amzn.to/2mOGS7u" target="_blank">Essential Scrum: A Practical Guide to the Most Popular Agile Process</a></p>
 <p><a href="http://amzn.to/2n6a4bU" target="_blank">Scrum: The Art of Doing Twice the Work in Half the Time</a></p>
 <h4 id="reference">Reference</h4>
-<p><a href="http://scrummethodology.com/" target="_blank">http://scrummethodology.com/</a></p>
-<p><a href="https://www.cprime.com/resources/what-is-agile-what-is-scrum/" target="_blank">https://www.cprime.com/resources/what-is-agile-what-is-scrum/</a></p>
+<p><a href="http://scrummethodology.com/" target="_blank">scrummethodology.com</a></p>
+<p><a href="https://www.cprime.com/resources/what-is-agile-what-is-scrum/" target="_blank">What is Agile? What is Scrum?</a></p>
 
                                 
                                 </section>
@@ -1383,7 +1392,7 @@ This event is facilitated by the Scrum Master</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Agile Development","level":"12.2","depth":1,"next":{"title":"Continuous Integration","level":"12.3","depth":1,"path":"content/software_engineering/continuous_integration.md","ref":"content/software_engineering/continuous_integration.md","articles":[]},"previous":{"title":"Coding Principles","level":"12.1","depth":1,"path":"content/software_engineering/coding_principles.md","ref":"content/software_engineering/coding_principles.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"content/software_engineering/agile_development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":2,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"content/software_engineering/agile_development.md","mtime":"2017-03-29T04:51:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-29T08:29:30.764Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Agile Development","level":"12.2","depth":1,"next":{"title":"Continuous Integration","level":"12.3","depth":1,"path":"content/software_engineering/continuous_integration.md","ref":"content/software_engineering/continuous_integration.md","articles":[]},"previous":{"title":"Coding Principles","level":"12.1","depth":1,"path":"content/software_engineering/coding_principles.md","ref":"content/software_engineering/coding_principles.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"content/software_engineering/agile_development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":2,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"content/software_engineering/agile_development.md","mtime":"2017-03-30T02:14:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T01:12:42.155Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
