@@ -59,29 +59,57 @@ structObject.name = "Bobby"
 newStructObject.name // "Bob"
 ```
 
+<img src="/course/swift-intermediate/assets/refernece-value-type-difference.png" alt="The difference in value type and reference type"/>
+
+
+## One Difference in Mutability
+
+### Mutability in Classes
+
+```swift
+class BobClass {
+  var name = "Bob"
+}
+
+let bobClass = BobClass()
+bobClass.name = "Bobby"
+
+let newBobClass = bobClass
+
+newBobClass.name = "Bob the Developer"
+bobClass.name // "Bob the Developer"
+```
+
+Although the instance, `bobClass` has been created as a constant, the property of it has been mutated. It is possible because the instance does not own any object, but has a reference to `BobClass`.
+
+
+### No Mutability in Structs
+```swift
+struct BobStruct {
+  var name = "Bob"
+}
+
+let bobStruct = BobStruct()
+bobStruct.name
+
+// bobStruct.name = "Bob Lee"
+// Error: Immutable
+```
+
+In structs, when an instance is created with a constant, `let`, it's not possible to mutate its property because the instance has its own copy and the `let` protects anyone from interfering with its own instance.
+
 ### When to use Struct/Value Type?
  - 100,000 - 1,000,000 faster than Class
  - No mutability due to no relationship between objects
+ - Avoid subclassing if you can to prevent any further headache.
 
 ### Resources
-You may take a look at why Object Oriented Programming isn't the best option. You don't have to read the entire article. We are going to cover Protocol Oriented Programming in Chapter 4.
+You may take a look at why Object Oriented Programming isn't the best option. You don't have to read the entire article. since you will learn about Protocol Oriented Swift in Chapter 4.
 
 [Intro to Protocol Oriented Programming](https://medium.com/ios-geek-community/introduction-to-protocol-oriented-programming-in-swift-b358fe4974f#.nyah1q3fo)
 
 
 ### Source Code
-[1108_Class vs Struct](https://www.dropbox.com/sh/eiy1yqq1em7f4n5/AABWZr6yNX8OCzrinGSaUXMfa?dl=0)
-
 
 ## Conclusion
-You've learned the fundamental difference in how memory is managed when an object is created either through classes or structs. You've learned the difference between reference type and value type. At this point, you might feel as if there is no point of learning the difference. You are right, when you are creating small apps, it doesn't really matter. But, once you start to have a complex structure, that's when you truly see how OOP can be difficult to manage as you've seen the diagram of the UIKIt Structure created by Apple engineers. In Part 3 of this course, I hope to talk more why I prefer using value type over reference type.
-
-#### Stay Connected
-I focus on building a long-term relationship with you. Feel free to follow on my social media for personal updates and engagement. You may see what my daily activity is like on Instagram.  
-
-<p>
-<a href="http://bobthedeveloper.io"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
-<a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
-"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
-<a href="https://medium.com/@bobleesj"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"/></a>
-</p>
+You've learned the fundamental difference in how memory is managed when an object is created either through classes or structs. You've learned the difference between reference type and value type. At this point, you might feel as if there is no point of learning the difference. You are right, when you are creating small apps, it doesn't really matter. But, once you start to have a complex structure, that's when you truly see how OOP can be difficult to manage as you've seen the diagram of the UIKIt Structure created by Apple engineers. ]

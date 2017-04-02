@@ -18,8 +18,8 @@
    * [Optional Chainings](/course/swift-intermediate/optional-chaining.md)
    * [Guard and Defer Statement](/course/swift-intermediate/guard-defer-statement.md)
    * [Intro to Error Handling](/course/swift-intermediate/intro-error-handling.md)
-   * [Intro to Generics](/course/swift-intermediate/generics.md)
    * [Type Casting](/course/swift-intermediate/type-casting.md)
+   * [Intro to Generics](/course/swift-intermediate/generics.md)
    * [Subscripts](/course/swift-intermediate/subscripts.md)
    * [Class vs Struct](/course/swift-intermediate/class-struct-difference.md)
    * [Set and Tuple](/course/swift-intermediate/set-tuple.md)
@@ -73,7 +73,6 @@
 
 ### Advanced Swift
 
-
 ### Swift Extra
  * [Swift Styling Guide](/content/swift/swift-styling-guide.md)
  <!-- * [Better Swift Developer](/content/swift/better-developer.md) -->
@@ -87,7 +86,6 @@
  * [Continuous Integration](/content/software-engineering/continuous-integration.md) -->
  <!-- * [Github Flow](/content/software-engineering/github-flow.md) -->
 
-### Productivity
 * [Shortcuts](/content/productivity/keyboard-shortcuts.md#shortcuts)
   * [Atom](/content/productivity/keyboard-shortcuts.md#atom)
   * [Gmail](/content/productivity/keyboard-shortcuts.md#gmail)

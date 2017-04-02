@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="subscripts.html" />
+    <link rel="next" href="generics.html" />
     
     
-    <link rel="prev" href="generics.html" />
+    <link rel="prev" href="intro-error-handling.html" />
     
 
     </head>
@@ -283,12 +283,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.5" data-path="generics.html">
+        <li class="chapter active" data-level="3.1.5" data-path="type-casting.html">
             
-                <a href="generics.html">
+                <a href="type-casting.html">
             
                     
-                    Intro to Generics
+                    Type Casting
             
                 </a>
             
@@ -296,12 +296,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.6" data-path="type-casting.html">
+        <li class="chapter " data-level="3.1.6" data-path="generics.html">
             
-                <a href="type-casting.html">
+                <a href="generics.html">
             
                     
-                    Type Casting
+                    Intro to Generics
             
                 </a>
             
@@ -963,7 +963,7 @@
 
     
         
-        <li class="header">Productivity</li>
+        <li class="divider"></li>
         
         
     
@@ -1157,17 +1157,20 @@
                                 
                                 <h1 id="type-casting">Type Casting</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome back to lesson 4 of Part 1 the Swift Fundamentals with Bob. you must be tired of seeing these <code>!</code>s and <code>?</code>s since Lesson 1. But you know what, You&apos;ve got to get through it. It is absolutely necessary for you to distinguish every situation when you use those two symbols. There is no excuse for it. In this lesson, you are going to learn how to convert types in objects that are created with classes. I don&apos;t think I need to talk to much. Let&apos;s learn by doing it.</p>
+<p>Welcome back to lesson 5 of The Swift Fundamentals with Bob. You might be tired of seeing these <code>!</code>s and <code>?</code>s since Lesson 1. But you know what, you&apos;ve got to know all. It is absolutely necessary for you to distinguish their usage in every situation.</p>
+<p>In this lesson, you are going to learn how to convert types in objects that are created with classes. If you&apos;ve been programming with Storyboard in iOS, you&apos;ve been using <code>type casting</code> for a while.</p>
 <h2 id="problem">Problem</h2>
-<p>How do you distinguish between as, as?, as! ?</p>
-<p>Why does Xcode keep telling me what to do?</p>
-<h3 id="type-casting-from-uikit">Type Casting from UIKit</h3>
+<ol>
+<li>How do you distinguish between <code>as</code>, <code>as?</code>, <code>as!</code> ?</li>
+<li>Why does Xcode keep telling me what to do?</li>
+</ol>
+<h2 id="type-casting-in-uikit">Type Casting in UIKit</h2>
 <p>You&apos;ve probably seen something like this.</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">import</span> UIKit
 <span class="hljs-keyword">let</span> label = <span class="hljs-type">UILabel</span>() <span class="hljs-keyword">as</span> <span class="hljs-type">UIView</span>
 </code></pre>
-<p>You&apos;ve got to know what just happened. Let&apos;s figure out with me.</p>
-<h3 id="human-class">Human Class</h3>
+<figure id="fig3.1.5.1"><img src="assets/uikit-framework-hierarchy.png" alt="The UIKit framework hierarchy"><figcaption> The UIKit framework hierarchy</figcaption></figure>
+<h2 id="human-class">Human Class</h2>
 <p>Design a class called, <code>Human</code> that contains a single method.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Human</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">introduce</span><span class="hljs-params">()</span></span> {
@@ -1175,7 +1178,7 @@
   }
 }
 </code></pre>
-<h3 id="human-subclass">Human Subclass</h3>
+<h2 id="human-subclass">Human Subclass</h2>
 <p>Design <code>Korean</code> and <code>Japanese</code> that inherit from the <code>Human</code> class.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Korean</span>: <span class="hljs-title">Human</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">singGangNamStyle</span><span class="hljs-params">()</span></span> {
@@ -1189,56 +1192,56 @@
   }
 }
 </code></pre>
-<h4 id="check">Check</h4>
+<p>Check if everything works.</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">let</span> bob = <span class="hljs-type">Korean</span>()
 bob.introduce()
 bob.singGangNamStyle()
 </code></pre>
-<h3 id="type-casting">Type Casting</h3>
+<h2 id="type-casting">Type Casting</h2>
 <p>Now, you may want to convert <code>Korean</code> to <code>Human</code> or <code>Human</code> to <code>Korea</code>. There are two ways: upcasting and downcasting.</p>
-<h4 id="upcasting">Upcasting</h4>
+<h3 id="upcasting">Upcasting</h3>
 <p>Upcasting is all about going to its base/super class. Imagine the UIKIt class structure. If you may upcast <code>UILable</code> to <code>UIView</code>. To upcast, use <code>as</code>.</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">let</span> newBob = bob <span class="hljs-keyword">as</span> <span class="hljs-type">Human</span>  <span class="hljs-comment">// Korean -&gt; Human</span>
 newBob.introduce()
-newBob.singGangNamStyle() <span class="hljs-comment">// Does not exist</span>
+<span class="hljs-comment">// newBob.singGangNamStyle()</span>
+<span class="hljs-comment">// Does not exist</span>
 </code></pre>
-<h4 id="upcasting-example-in-swift">Upcasting Example in Swift</h4>
+<h3 id="upcasting-example-in-swift">Upcasting Example in Swift</h3>
 <pre><code class="lang-swift"><span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;Bob&quot;</span> <span class="hljs-keyword">as</span> <span class="hljs-type">Any</span>
 <span class="hljs-keyword">var</span> number = <span class="hljs-number">20</span> <span class="hljs-keyword">as</span> <span class="hljs-type">Any</span>
 <span class="hljs-keyword">var</span> anyArray = [name, number] <span class="hljs-comment">// [Any]</span>
 </code></pre>
-<h4 id="downcasting">Downcasting</h4>
-<p>Downcasting the opposite of upcasting. Downcasting may fail. As a result, you may as force downcasting or implicit downcasting.</p>
-<h4 id="force-downcasting-">Force Downcasting (!)</h4>
-<p>It does not return an optional type but it fails, crashes.</p>
+<h3 id="downcasting">Downcasting</h3>
+<p>Downcasting is the opposite of upcasting. Downcasting may fail. As a result, you may as force downcasting or implicit downcasting.</p>
+<h3 id="force-downcasting">Force Downcasting</h3>
+<p>It does not return an optional type but if it fails, crashes as well.</p>
 <pre><code class="lang-swift"><span class="hljs-comment">// Force Downcasting</span>
 <span class="hljs-keyword">let</span> newValue = anyArray[<span class="hljs-number">0</span>] <span class="hljs-keyword">as</span>! <span class="hljs-type">String</span>
 </code></pre>
 <blockquote>
-<p>Downcasting only applies when you upcast first.</p>
+<p>Downcasting only applies when you upcast first</p>
 </blockquote>
-<h4 id="safe-downcasting-">Safe Downcasting (?)</h4>
+<h3 id="safe-downcasting">Safe Downcasting</h3>
 <p> It returns an optional type. If downcasting fails, returns <code>nil</code>.</p>
 <pre><code class="lang-swift"><span class="hljs-comment">// Implicit Downcasting (safety)</span>
 <span class="hljs-keyword">let</span> newNewValue = anyArray[<span class="hljs-number">0</span>] <span class="hljs-keyword">as</span>? <span class="hljs-type">Int</span>
 </code></pre>
-<h3 id="type-casting-in-practice">Type Casting in Practice</h3>
-<h4 id="create-instances">Create Instances</h4>
+<h2 id="type-casting-in-practice">Type Casting in Practice</h2>
+<h3 id="create-instances">Create Instances</h3>
 <pre><code class="lang-swift"><span class="hljs-keyword">let</span> shion = <span class="hljs-type">Japanese</span>()
 <span class="hljs-keyword">let</span> lee = <span class="hljs-type">Korean</span>()
 <span class="hljs-keyword">let</span> kenji = <span class="hljs-type">Japanese</span>()
 <span class="hljs-keyword">let</span> park = <span class="hljs-type">Korean</span>()
 </code></pre>
-<h4 id="group">Group</h4>
+<h3 id="group">Group</h3>
 <p>Explicit upcasting</p>
 <pre><code class="lang-swift"> <span class="hljs-keyword">let</span> humans: [<span class="hljs-type">Human</span>] = [shion <span class="hljs-keyword">as</span> <span class="hljs-type">Human</span>, lee <span class="hljs-keyword">as</span> <span class="hljs-type">Human</span>, kenji <span class="hljs-keyword">as</span> <span class="hljs-type">Human</span>, park <span class="hljs-keyword">as</span> <span class="hljs-type">Human</span>]
 </code></pre>
 <p>Upcasting inferred</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">let</span> humans: [<span class="hljs-type">Human</span>] = [shion, lee, kenji, park]
 </code></pre>
-<h4 id="call-method-in-element">Call Method in Element</h4>
+<h2 id="call-method-in-element">Call Method in Element</h2>
 <pre><code class="lang-swift"><span class="hljs-keyword">for</span> human <span class="hljs-keyword">in</span> humans {
-
   <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> korean = human <span class="hljs-keyword">as</span>? <span class="hljs-type">Korean</span> {
     korean.singGangNamStyle()
   }
@@ -1246,15 +1249,52 @@ newBob.singGangNamStyle() <span class="hljs-comment">// Does not exist</span>
   <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> japanese = human <span class="hljs-keyword">as</span>? <span class="hljs-type">Japanese</span> {
     japanese.doNinja()
   }
-
 }
+</code></pre>
+<h2 id="usage-case-in-ios-development">Usage Case in iOS Development</h2>
+<pre><code class="lang-swift"><span class="hljs-keyword">import</span> UIKit
+
+<span class="hljs-keyword">let</span> loginButton = <span class="hljs-type">UIButton</span>()
+<span class="hljs-keyword">let</span> loginMessage = <span class="hljs-type">UILabel</span>()
+<span class="hljs-keyword">let</span> loginView = <span class="hljs-type">UIView</span>()
+
+<span class="hljs-keyword">let</span> <span class="hljs-type">UIComponents</span> = [loginButton, loginMessage, loginView]
+
+<span class="hljs-keyword">for</span> component <span class="hljs-keyword">in</span> <span class="hljs-type">UIComponents</span> {
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> button = component <span class="hljs-keyword">as</span>? <span class="hljs-type">UIButton</span> {
+    <span class="hljs-comment">// Change background color</span>
+    <span class="hljs-comment">// Add Title</span>
+    <span class="hljs-comment">// ...</span>
+  }
+
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> label = component <span class="hljs-keyword">as</span>? <span class="hljs-type">UILabel</span> {
+
+  }
+
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> view = component <span class="hljs-keyword">as</span>? <span class="hljs-type">UIView</span> {
+
+  }
+}
+</code></pre>
+<p>However, upcasting is not recommended since there is a better way to go about with Protocol Oriented Programming. You will find out more the differences soon. &#x2DC;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewController</span>: <span class="hljs-title">UIViewController</span> </span>{  
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">introduce</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-keyword">self</span>)
+  }
+}
+</code></pre>
+<p>You probably have used <code>type casting</code> to identify your designated view controller from Storyboard.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> storyboard = <span class="hljs-type">UIStoryboard</span>(name: <span class="hljs-string">&quot;Main&quot;</span>, bundle: <span class="hljs-literal">nil</span>)
+<span class="hljs-keyword">let</span> vc = storyboard instantiateViewController(withIdentifier: <span class="hljs-string">&quot;VC&quot;</span>) <span class="hljs-keyword">as</span>! <span class="hljs-type">VC</span>
+
+vc.introduce
 </code></pre>
 <h3 id="source-code">Source Code</h3>
 <h3 id="resources">Resources</h3>
 <p>If you are still confused with type casting, feel free to watch my YouTube video I posted earlier.</p>
 <p><a href="https://www.youtube.com/watch?v=A2M5sIXFNbg&amp;t=12s" target="_blank">The Complete Swift 3 Tutorials with Bob: Type Casting (YouTube)</a></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Great job, if you&apos;ve understood what type casting is finally. It is somewhat similar to optionals, right? You&apos;ve learn two ways convert types. One is upcasting with <code>as</code>, which always works because you are going up to super class and you getting rid of properties and methods.You&apos;ve also learned downcasting which converts  object to more specifc classes. However, as you&apos;ve seen it may work and may not work. Therefore you use either <code>as?</code>to safely convert or <code>as!</code> to force convert. In Part 2, you will find out how type casting is used to groups UI objects. I know you are excited. In our next lesson, we are going to deal with another <code>?</code> and <code>!</code>. It&apos;s going to be the last one, and you will no longer have to fear those red signs on the left. Let&apos;s keep learning.</p>
+<p>To recap, you&apos;ve learned two ways convert types. One is upcasting with <code>as</code>, which always works because you are going up to the super class and you are getting rid of properties and methods.You&apos;ve also learned downcasting which converts  object to more specific types within the class hierarchy. However, as you&apos;ve seen, it may work and may not work. Therefore you use either <code>as?</code>to safely convert. Lastly, you&apos;ve learnde how <code>type casting</code> can be used to group objects together and apply universal attributes through a <code>for-in</code> loop. However, upcasting isn&apos;t recommended in iOS development because it&apos;s quite a bit of a headache to convert back and forth, and there is a better way to go about grouping objects together: Protocol Oriented Swift. We will learn more about it in Chapter 3.</p>
 
                                 
                                 </section>
@@ -1282,12 +1322,12 @@ newBob.singGangNamStyle() <span class="hljs-comment">// Does not exist</span>
 
             
                 
-                <a href="generics.html" class="navigation navigation-prev " aria-label="Previous page: Intro to Generics">
+                <a href="intro-error-handling.html" class="navigation navigation-prev " aria-label="Previous page: Intro to Error Handling">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="subscripts.html" class="navigation navigation-next " aria-label="Next page: Subscripts">
+                <a href="generics.html" class="navigation navigation-next " aria-label="Next page: Intro to Generics">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1298,7 +1338,7 @@ newBob.singGangNamStyle() <span class="hljs-comment">// Does not exist</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Type Casting","level":"3.1.6","depth":2,"next":{"title":"Subscripts","level":"3.1.7","depth":2,"path":"course/swift-intermediate/subscripts.md","ref":"course/swift-intermediate/subscripts.md","articles":[]},"previous":{"title":"Intro to Generics","level":"3.1.5","depth":2,"path":"course/swift-intermediate/generics.md","ref":"course/swift-intermediate/generics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":2,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/type-casting.md","mtime":"2017-03-28T14:06:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T14:24:29.825Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Type Casting","level":"3.1.5","depth":2,"next":{"title":"Intro to Generics","level":"3.1.6","depth":2,"path":"course/swift-intermediate/generics.md","ref":"course/swift-intermediate/generics.md","articles":[]},"previous":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/swift-intermediate/intro-error-handling.md","ref":"course/swift-intermediate/intro-error-handling.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/type-casting.md","mtime":"2017-03-31T10:33:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-02T06:11:59.260Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

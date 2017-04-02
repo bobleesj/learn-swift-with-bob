@@ -15,7 +15,7 @@
 ### Abstraction {#abstraction}
 The programmer works with an idealized interface and can add additional levels of functionality that would otherwise be too complex to handle. For example, a programmer writing code that involves numerical operations may not be interested in the way numbers are represented in the underlying hardware and its assembly language. In iOS Development, developers use frameworks created and encapsulated by Apple UIKit engineers.
 
-## Code Smell
+## Code Smell {#code-smell}
 > Omen that causes bad future
 
 ### Universal Smell

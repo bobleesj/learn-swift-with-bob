@@ -1,5 +1,8 @@
 # Table of Content
 
+
+https://www.dropbox.com/s/euln0sfozo3tzlz/README.md?dl=0
+
 ## Chapter 1: The Swift Intermediates   
 - Error Handling Part 1
 - Generics
@@ -32,6 +35,7 @@
 - Trailing Closures
 - Completion Handlers and Callback
 - @escape and @autoclosure
+- Intro to Functional Programming
 
 ## Chapter 4: Complete Protocol Oriented Programming
 - Intro to Protocol

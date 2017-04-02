@@ -283,12 +283,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.5" data-path="generics.html">
+        <li class="chapter " data-level="3.1.5" data-path="type-casting.html">
             
-                <a href="generics.html">
+                <a href="type-casting.html">
             
                     
-                    Intro to Generics
+                    Type Casting
             
                 </a>
             
@@ -296,12 +296,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.6" data-path="type-casting.html">
+        <li class="chapter " data-level="3.1.6" data-path="generics.html">
             
-                <a href="type-casting.html">
+                <a href="generics.html">
             
                     
-                    Type Casting
+                    Intro to Generics
             
                 </a>
             
@@ -963,7 +963,7 @@
 
     
         
-        <li class="header">Productivity</li>
+        <li class="divider"></li>
         
         
     
@@ -1157,8 +1157,8 @@
                                 
                                 <h1 id="optionals-chainings">Optionals Chainings</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome to Lesson 2 of Part 1 the Swift Fundamentals with me. Just to recap, in our previous lesson, you&apos;ve learned why we optionals, and there were two ways to unwrap.</p>
-<p>But, have you ever wondered why <code>?</code> and <code>!</code> automatically appear when you randomly try to get  properties and methods of an object? If you haven&apos;t, that&apos;s okay. You will find out. The goal is to prevent you from guessing and checking. Let&apos;s dig in what&apos;s really going under the hood. We shall begin.</p>
+<p>Welcome to Lesson 2 of The Swift Fundamentals. In the previous lesson, you&apos;ve learned why we use optionals, and there were two ways to unwrap/convert.</p>
+<p>However, have you wondered why <code>?</code> and <code>!</code> automatically appear when you try to get properties and methods of an object? If you haven&apos;t, that&apos;s okay. You will find out. The goal is to prevent you from guessing. Let us find out what goes under the hood.</p>
 <h2 id="problem">Problem</h2>
 <p>Why do I see &quot;?&quot; and &quot;!&quot; when accessing methods and properties?</p>
 <h3 id="optional-chaining-in-uikit">Optional Chaining in UIKit</h3>
@@ -1180,11 +1180,6 @@
   }
 }
 </code></pre>
-<p>Create an instance called <code>bob</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> bob = <span class="hljs-type">Human</span>(name: <span class="hljs-string">&quot;Bob&quot;</span>)
-bob.name
-bob.sayHello()
-</code></pre>
 <h3 id="design-apartment">Design Apartment</h3>
 <p>Create <code>Apartment</code> class that contains a property whose type is <code>Human?</code>.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Apartment</span> </span>{
@@ -1204,11 +1199,14 @@ seoulApartment.human = <span class="hljs-type">Human</span>(name: <span class="h
 <pre><code>if let name = myName {
   print(name)
 }
-</code></pre><h3 id="source-code">Source Code</h3>
+</code></pre><blockquote>
+<p><strong>Rules:</strong> When you attempt to access a property whose type is optional, Swift will add <code>?</code>. Anything that comes after the <code>?</code> will be optional.</p>
+</blockquote>
+<h3 id="source-code">Source Code</h3>
 <h3 id="resources">Resources</h3>
 <h2 id="conclusion">Conclusion</h2>
-<p>Now, you no longer have to guess when to use <code>?</code> and <code>!</code> when you are working with objects such as UIKit. Please remember that if you see any <code>?</code>, it will return an optional type. So make sure unwrap implicitly. If you have any questions, make sure check out resources above.</p>
-<p>In our next lesson, you are learn how to use a <code>guard</code> statement to implicitly unwrap and why you use it in the first place instead of using <code>if let</code>.</p>
+<p>Now, you no longer have to guess when to use <code>?</code> and <code>!</code>. It should be particularly useful when you work with the UIKit objects. But, make sure safely unwrap.</p>
+<p>In our next lesson, you are learn how to use a <code>guard</code> statement to implicitly unwrap multiple optionals, and why you use it instead of using a<code>if let</code>.</p>
 
                                 
                                 </section>
@@ -1252,7 +1250,7 @@ seoulApartment.human = <span class="hljs-type">Human</span>(name: <span class="h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Optional Chainings","level":"3.1.2","depth":2,"next":{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"path":"course/swift-intermediate/guard-defer-statement.md","ref":"course/swift-intermediate/guard-defer-statement.md","articles":[]},"previous":{"title":"Optionals","level":"3.1.1","depth":2,"path":"course/swift-intermediate/optionals.md","ref":"course/swift-intermediate/optionals.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":2,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/optional-chaining.md","mtime":"2017-03-28T14:03:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T14:24:29.825Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Optional Chainings","level":"3.1.2","depth":2,"next":{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"path":"course/swift-intermediate/guard-defer-statement.md","ref":"course/swift-intermediate/guard-defer-statement.md","articles":[]},"previous":{"title":"Optionals","level":"3.1.1","depth":2,"path":"course/swift-intermediate/optionals.md","ref":"course/swift-intermediate/optionals.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/optional-chaining.md","mtime":"2017-04-01T08:33:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-02T06:11:59.260Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

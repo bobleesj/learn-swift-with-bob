@@ -196,7 +196,7 @@ Increase productivity by spending less time on formatting through clicking.
 <br>
 <br>
 
-# Google Spreadsheet {#google_spreadsheet}
+# Google Spreadsheet {#google-spreadsheet}
 
 #### General
  | Key | Purpose |
@@ -260,7 +260,7 @@ Increase productivity by spending less time on formatting through clicking.
 <br>
 <br>
 
-# Google Chrome {#google_chrome}
+# Google Chrome {#google-chrome}
 
 
 #### Window
@@ -361,7 +361,7 @@ Increase productivity by spending less time on formatting through clicking.
 <br>
 
 
-# MacOS {#mac_os}
+# MacOS {#mac-os}
 | Keyboard | Purpose |
 | --- | --- |
 | `cmd-e` | Eject selected disk |
