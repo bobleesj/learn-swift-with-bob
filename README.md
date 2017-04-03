@@ -27,6 +27,13 @@ I feel grateful for what learning offers in my life. It would have been impossib
 ## Mailing List
 If you are interested in receiving regular updates on [upcoming courses](ABOUT.md#course) with discounts, shoot me an email briefly introducing yourself at `bob@bobthedeveloper.io`. If you'd like to stay up-to-date with the progress and get to know me at a personal level and my work journey, feel free to follow me on [Instagram](https://instagram.com/bobthedev)
 
+
+<a class="typeform-share button" href="https://boblee.typeform.com/to/oR9Nt2" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#19AA6E;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:17px;line-height:42.5px;text-align:center;margin:0;height:42.5px;padding:0px 28px;border-radius:0px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Join Me</a><script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm_share",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!gi.call(d,id)){js=ce.call(d,"script");js.id=id;js.src=b+"share.js";q=gt.call(d,"script")[0];q.parentNode.insertBefore(js,q)}})()</script>
+
+<br>
+<br>
+<br>
+
 ## Contribution [![](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/bobthedev/Gitbook_Learn_Swift)
 
 If you've found this document on Github, you may read at [LearnSwiftwithBob.com](https://learnswiftwithbob.com). If you wish to provide feedbacks and suggestions, please feel free to leave a comment by clicking on a box that appears on the right side when you hover onto a paragraph or contribute directly through [Github](https://github.com/bobthedev/Gitbook_Learn_Swift).

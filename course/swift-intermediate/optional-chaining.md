@@ -69,6 +69,8 @@ if let name = myName {
 
 ### Resources
 
+Xcode Shortcuts
+https://blog.bobthedeveloper.io/bobs-favorite-xcode-8-shortcuts-part-1-3-36381e07284d
 
 ## Conclusion
 Now, you no longer have to guess when to use `?` and `!`. It should be particularly useful when you work with the UIKit objects. But, make sure safely unwrap.
