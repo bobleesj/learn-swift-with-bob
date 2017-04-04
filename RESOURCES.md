@@ -139,7 +139,6 @@ If you would like to work as a freelancer, you might find these articles useful.
 [My 4 Step Formula to Goal Execution]: https://www.linkedin.com/pulse/my-4-step-formula-goal-execution-bob-lee?trk=mp-reader-card
 
 
-
 [10 Tips to become a better Swift Developer]: https://medium.com/ios-geek-community/10-tips-to-become-better-swift-developer-a7c2ab6fc0c2
 
 
