@@ -66,6 +66,9 @@ if let name = myName {
 > **Rules:** When you attempt to access a property whose type is optional, Swift will add `?`. Anything that comes after the `?` will be optional.
 
 ### Source Code
+[1002_optional_chainings]
+
+[1002_optional_chainings]: https://www.dropbox.com/sh/t809vje5icodnvz/AACWWIxjan6RlEfvgCuT87uVa?dl=0
 
 ### Resources
 

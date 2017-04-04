@@ -14,6 +14,7 @@
  - [iOS Dev Weekly](http://iosdevweekly.com/)
  - [iOS Goodies](http://ios-goodies.com/)
  - [The Week in Swift](https://swiftnews.curated.co/)
+ - [Bob Lee](https://boblee.typeform.com/to/oR9Nt2)
 
 ### Book
  - [Test-Driven iOS Development with Swift (free)](https://www.packtpub.com/packt/free-ebook/TDD-Swift)

@@ -155,7 +155,6 @@ let firstElement = geekFamilyMember.firstElement
 ```
 
 
-```
 
 ### Resources
 [The Complete Swift 3 Tutorial with Bob: Extension (YouTube)](https://www.youtube.com/watch?v=4pPtLjkF0HE)
@@ -163,7 +162,9 @@ let firstElement = geekFamilyMember.firstElement
 [Intro to Generics in Swift with Bob (Bob the Developer)](https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.fkmmjqnwd)
 
 ### Source Code
+[1006_generics.playground]
 
+[1006_generics.playground]: https://www.dropbox.com/sh/wuf65widfors50d/AABCJF-aojTJLPGdA79Vc78Ma?dl=0
 
 ## Conclusion
 That's it. Generics provide such a powerful tool that many of the Swift library is written with generic code. To recap, you've learned how to make a generic function by putting a diamond sign on the right. You've also learned how to create generic structs. In Chapter 6, you will learn a lot more about generics.

@@ -88,10 +88,12 @@ No Context means = ☠️
 ### Resources
 
 ### Source Code
-[1107_Subscripts](https://www.dropbox.com/sh/hqjvfrlf6ha2kqz/AAANCaEigEMbbckdHgOSPr3da?dl=0)
+[1107_subscripts.playground]
+
+[1107_subscripts.playground]: https://www.dropbox.com/sh/mrrmaocche40bye/AADQlKE45soQzf48J1MEK1V3a?dl=0
 
 
 ## Conclusion
 Great, now you know what I meant by creating a shortcut. However, subscripts can be quite misleading because there is no name to it. As a result, it might create massive confusion if you work with someone else. So make sure, don't use it too often. Sometimes, it might be better for you to use a property or a method for clarity.
 
-Swift engineers recommend that, brevity is not the worthwhile goal. Communication is important because a programming language is not only a way humans talk to computers, but also between us, humans. 
+Swift engineers recommend that, brevity is not the worthwhile goal. Communication is important because a programming language is not only a way humans talk to computers, but also between us, humans.

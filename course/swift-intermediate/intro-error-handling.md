@@ -138,7 +138,10 @@ let myNewCourse = try! Course(name: "Bobby Lee")
 ```
 
 ### Source Code
+[1004_intro_error_handling.playground]
 
+[1004_intro_error_handling.playground]:
+https://www.dropbox.com/sh/kiib6lgy1xa7lww/AAANnWweDDT_KB4-hFJEB9taa?dl=0
 
 ### Resources
 [Intro to Error Handling by Bob the Developer](https://goo.gl/EaepCa)

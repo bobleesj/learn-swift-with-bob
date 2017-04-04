@@ -110,6 +110,9 @@ You may take a look at why Object Oriented Programming isn't the best option. Yo
 
 
 ### Source Code
+[1008_class_struct_difference.playground]
+
+[1008_class_struct_difference.playground]:https://www.dropbox.com/sh/der2imu4z41c7nr/AAAaLyZhh4jJLe-_oQFPFGmxa?dl=0 
 
 ## Conclusion
 You've learned the fundamental difference in how memory is managed when an object is created either through classes or structs. You've learned the difference between reference type and value type. At this point, you might feel as if there is no point of learning the difference. You are right, when you are creating small apps, it doesn't really matter. But, once you start to have a complex structure, that's when you truly see how OOP can be difficult to manage as you've seen the diagram of the UIKIt Structure created by Apple engineers. ]

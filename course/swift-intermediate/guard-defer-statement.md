@@ -185,6 +185,10 @@ for i in 1...3 {
  Completion handler block, or any code you want to explicitly inform your team without reading the entire block.  function/method.
 
 ### Source Code
+[1003_guard_defer_statement.playground]
+
+[1003_guard_defer_statement.playground]: https://www.dropbox.com/sh/t809vje5icodnvz/AACWWIxjan6RlEfvgCuT87uVa?dl=0
+
 
 ### Resources
 [The Complete Swift 3 Tutorial with Bob: Guard Statement (YouTube)](https://www.youtube.com/watch?v=oeUYGNLqqqg)

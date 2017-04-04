@@ -111,6 +111,9 @@ if let image = profileImageFromFacebook {
 Now `image` is contain a normal type of `String`. You may use the `image` constant within the block. If `profileImageFromFacebook`. contains `nil`, Swift ignore the `{ print("image)") }`
 
 ### Source Code
+[1001_optionals.playground]
+
+[1001_optionals.playground]: https://www.dropbox.com/sh/0u7dqz6e84zst9y/AAA90TqRvoX7Gf4oCpCBrEPya?dl=0
 
 ### Resources
 If you are still stuck with optionals, feel free to watch an additional video similar to this on my YouTube channel.

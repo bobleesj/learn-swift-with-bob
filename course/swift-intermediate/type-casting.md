@@ -175,6 +175,10 @@ vc.introduce
 ```
 
 ### Source Code
+[1005_type_casting.playground]
+
+[1005_type_casting.playground]:
+https://www.dropbox.com/sh/i09nd3r1ii55deo/AABSiq-tuXxkUDn-Qrl7QL6la?dl=0
 
 ### Resources
 If you are still confused with type casting, feel free to watch my YouTube video I posted earlier.
