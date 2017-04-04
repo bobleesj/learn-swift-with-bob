@@ -6,7 +6,6 @@ disqus: false
 
 Last Update on {{ gitbook.time }}
 
-
 I try to stay consistent and provide as much as value for my students and readers. I also focus on building long-term relationships over short-term sales. You may find all of my tutorials and articles I've written for you guys. Also, you may find some [products](Resources.md#gadgets) that I use to increase my development productivity.
 
 > if the tables below appear too large, feel free to adjust the font size on the top left.
@@ -32,23 +31,27 @@ If you want to learn how to use certain APIs created provided by Apple
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
+| [Swift Retention Cycle in Closures and Delegate] | Mar 25, 2017 | Blog |
 | [The Life Cycle of an App] |  Feb 6, 2017  | YouTube |
-| [Make Memory Management Great Again] |  Feb 2, 2017  | Medium |
-| [Beginner's Guide to Core Data in Swift 3] | Dec 29, 2016 | Medium |
-| [Store UIColor with UserDefaults in Swift 3] | Dec 22, 2016 | Medium |
-| [Pass Data with NSNotification in Swift 3] | Dec 17, 2016 | Medium |
-| [UI & Networking Like a Boss in Swift 3] | Dec 10, 2016 | Medium |
-| [Intro to Grand Central Dispatch in Swift 3 with Bob] | Dec 3, 2016 | Medium |
-| [The Meaning of tableView.delegate = self] | Nov 30, 2016 | Medium |
-| [Introduction to Delegate in Swift] | Nov 26, 2016 | Medium |
+| [Make Memory Management Great Again] |  Feb 2, 2017  | Blog |
+| [Beginner's Guide to Core Data in Swift 3] | Dec 29, 2016 | Blog |
+| [Store UIColor with UserDefaults in Swift 3] | Dec 22, 2016 | Blog |
+| [Pass Data with NSNotification in Swift 3] | Dec 17, 2016 | Blog |
+| [UI & Networking Like a Boss in Swift 3] | Dec 10, 2016 | Blog |
+| [Intro to Grand Central Dispatch in Swift 3 with Bob] | Dec 3, 2016 | Blog |
+| [The Meaning of tableView.delegate = self] | Nov 30, 2016 | Blog |
+| [Introduction to Delegate in Swift] | Nov 26, 2016 | Blog |
+
+[Swift Retention Cycle in Closures and Delegate]: https://blog.bobthedeveloper.io/swift-retention-cycle-in-closures-and-delegate-836c469ef128
+
 
 ### Protocol Oriented Programming
 If you want to write reusable and modular code with protocols.
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [Protocol Oriented Programming View in Swift] | Jan 18, 2017 | Medium |
-| [Introduction to Protocol Oriented Programming in Swift] | Nov 23 2016 | Medium |
+| [Protocol Oriented Programming View in Swift] | Jan 18, 2017 | Blog |
+| [Introduction to Protocol Oriented Programming in Swift] | Nov 23 2016 | Blog |
 
 [Introduction to Protocol Oriented Programming in Swift]: https://medium.com/ios-geek-community/introduction-to-protocol-oriented-programming-in-swift-b358fe4974f#.u9hn50l5i
 
@@ -57,11 +60,14 @@ If you want to get your closure game strong and you are waiting for my RxSwift a
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [Swift Capture List in Closures] | Mar 18, 2017 | Medium |
-| [Intro to Functional Programming with Bob] | Feb 27, 2017 | Medium |
-| [Completion Handlers in Swift with Bob] | March 4, 2017 | Medium |
-| [No Fear Closure in Swift 3 with Bob (Part 2)][Closure Part 2] | Jan 13, 2017 | Medium |
-| [No Fear Closure in Swift 3 with Bob][Closure Part 1] | Dec 31, 2016 | Medium |
+| [Swift Lazy Initialization with Closures] | Apr 1, 2017 | Blog |
+| [Swift Capture List in Closures] | Mar 18, 2017 | Blog |
+| [Intro to Functional Programming with Bob] | Feb 27, 2017 | Blog |
+| [Completion Handlers in Swift with Bob] | March 4, 2017 | Blog |
+| [No Fear Closure in Swift 3 with Bob (Part 2)][Closure Part 2] | Jan 13, 2017 | Blog |
+| [No Fear Closure in Swift 3 with Bob][Closure Part 1] | Dec 31, 2016 | Blog |
+
+[Swift Lazy Initialization with Closures]: (https://blog.bobthedeveloper.io/swift-lazy-initialization-with-closures-a9ef6f6312c)
 
 [Completion Handlers in Swift with Bob]:(https://medium.com/ios-geek-community/completion-handlers-in-swift-with-bob-6a2a1a854dc4#.rwqvi0el5)
 
@@ -74,20 +80,20 @@ What makes Swift unique and ranked as the second most loved language based on th
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [Intro to Generics in Swift with Bob] | Feb 18, 2017 | Medium |
-| [The Complete Understanding of Access Control in Swift 3] |  Jan 25, 2017 | Medium |
-| [Intro to Error Handling in Swift 3] | Jan 22, 2017 | Medium |
-| [10 Tips to become a better Swift Ninja] | Nov 19, 2016 | Medium |
-| [10 Tips to become a better Swift Developer] | Nov 16, 2016 | Medium |
+| [Intro to Generics in Swift with Bob] | Feb 18, 2017 | Blog |
+| [The Complete Understanding of Access Control in Swift 3] |  Jan 25, 2017 | Blog |
+| [Intro to Error Handling in Swift 3] | Jan 22, 2017 | Blog |
+| [10 Tips to become a better Swift Ninja] | Nov 19, 2016 | Blog |
+| [10 Tips to become a better Swift Developer] | Nov 16, 2016 | Blog |
 
 [Intro to Generics in Swift with Bob]: https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.ylx1w3ai4
 
 ### Productivity
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [My Favorite Xcode 8 Shortcuts (Part 1)] | Dec 7, 2016 | Medium |
-| [My Favorite Xcode 8 Shortcuts (Part 2)] | Dec 7, 2016 | Medium |
-| [My Favorite Xcode 8 Shortcuts (Part 3)] | Dec 7, 2016 | Medium |
+| [My Favorite Xcode 8 Shortcuts (Part 1)] | Dec 7, 2016 | Blog |
+| [My Favorite Xcode 8 Shortcuts (Part 2)] | Dec 7, 2016 | Blog |
+| [My Favorite Xcode 8 Shortcuts (Part 3)] | Dec 7, 2016 | Blog |
 
 [My Favorite Xcode 8 Shortcuts (Part 1)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-8-shortcuts-part-1-3-36381e07284d#.opbcbdae2
 
@@ -101,12 +107,12 @@ I share my biased perspectives on the iOS ecosystem.
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [Why I don't use Storyboard] | Mar 11, 2017  | Medium |
-| [How to become an iOS Developer, Bob] | Feb 11, 2017 | Medium |
-| [Top 10 Ground Rules for iOS Developers] | Dec 14, 2016 | Medium |
-| [Love and hate relationship between Apple and iOS Developers] | Nov 6, 2016 | Medium |
-| [How it feels to learn iOS in 2016] | Nov 11, 2016 | Medium |
-| [5 Reasons I Fell in Love with Swift] | Oc 22, 2016 | Medium |
+| [Why I don't use Storyboard] | Mar 11, 2017  | Blog |
+| [How to become an iOS Developer, Bob] | Feb 11, 2017 | Blog |
+| [Top 10 Ground Rules for iOS Developers] | Dec 14, 2016 | Blog |
+| [Love and hate relationship between Apple and iOS Developers] | Nov 6, 2016 | Blog |
+| [How it feels to learn iOS in 2016] | Nov 11, 2016 | Blog |
+| [5 Reasons I Fell in Love with Swift] | Oc 22, 2016 | Blog |
 
 ### Soft Skills
 If you would like to work as a freelancer, you might find these articles useful. I talk about how I received a number of job offers even though I didn't have much experience.
