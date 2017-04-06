@@ -1,15 +1,16 @@
 # Type Casting
 ## Introduction
-Welcome back to lesson 5 of The Swift Fundamentals with Bob. You might be tired of seeing these `!`s and `?`s since Lesson 1. But you know what, you've got to know all. It is absolutely necessary for you to distinguish their usage in every situation.
+Welcome to lesson 5 of The Swift Fundamentals with Bob. We've covered a number of `!`s and `?`s since Lesson 1. You've got to know all. It is absolutely necessary for you to distinguish their usage in every situation.
 
-In this lesson, you are going to learn how to convert types in objects that are created with classes. If you've been programming with Storyboard in iOS, you've been using `type casting` for a while.
+In this lesson, you are going to learn how to convert types in objects that are created with classes. In fact, if you've used  `Storyboard` in iOS, you've been using `type casting` for a while. Let's go.
 
 ## Problem
-  1. How do you distinguish between `as`, `as?`, `as!` ?
+  1. How do you distinguish between `as`, `as?`, `as!`?
   2. Why does Xcode keep telling me what to do?
 
 ## Type Casting in UIKit
 You've probably seen something like this.
+
 ```swift
 import UIKit
 let label = UILabel() as UIView
@@ -29,7 +30,7 @@ class Human {
 ```
 
 ## Human Subclass
-Design `Korean` and `Japanese` that inherit from the `Human` class.
+Design `Korean` and `Japanese` which inherit from the `Human` class.
 
 ```swift
 class Korean: Human {
@@ -46,6 +47,7 @@ class Japanese: Human {
 ```
 
 Check if everything works.
+
 ```swift
 let bob = Korean()
 bob.introduce()
@@ -53,19 +55,19 @@ bob.singGangNamStyle()
 ```
 
 ## Type Casting
-Now, you may want to convert `Korean` to `Human` or `Human` to `Korea`. There are two ways: upcasting and downcasting.
+Now, you may want to convert `Korean` to `Human` or `Human` to `Koream`. There are two ways: upcasting and downcasting.
 
 ### Upcasting
-Upcasting is all about going to its base/super class. Imagine the UIKIt class structure. If you may upcast `UILable` to `UIView`. To upcast, use `as`.
+Upcasting is all about going up to the base/super class. In the early example you've upcasted `UILabel` to `UIView` by usin `as`.
 
 ```swift
 let newBob = bob as Human  // Korean -> Human
 newBob.introduce()
-// newBob.singGangNamStyle()
-// Does not exist
+newBob.singGangNamStyle() // Does not exist
 ```
 
 ### Upcasting Example in Swift
+
 ```swift
 var name = "Bob" as Any
 var number = 20 as Any
@@ -73,26 +75,29 @@ var anyArray = [name, number] // [Any]
 ```
 
 ### Downcasting
-Downcasting is the opposite of upcasting. Downcasting may fail. As a result, you may as force downcasting or implicit downcasting.
+Downcasting is the opposite of upcasting. For example, from `Any` to `String` would be downcasting. However, it may fail. As a result, there are two ways to downcast: `Force downcasting` or `Implicit Downcasting`.
 
 ### Force Downcasting
-It does not return an optional type but if it fails, crashes as well.
+It does not return an optional type.  but if it fails, it crashes.
 
 ```swift
 // Force Downcasting
 let newValue = anyArray[0] as! String
+let newValue = anyArray[1] as! String // Error
 ```
 > Downcasting only applies when you upcast first
 
-### Safe Downcasting
- It returns an optional type. If downcasting fails, returns `nil`.
+
+### Implicit Downcasting
+ It returns an optional type. If it fails, it returns `nil`.
 
 ```swift
-// Implicit Downcasting (safety)
 let newNewValue = anyArray[0] as? Int
+print(newNewValue) // Optional(20)
 ```
 
 ## Type Casting in Practice
+
 ### Create Instances
 
 ```swift
@@ -102,18 +107,21 @@ let kenji = Japanese()
 let park = Korean()
 ```
 
-### Group
-Explicit upcasting
+### Create Array Using Upcasting
+
 ```swift
  let humans: [Human] = [shion as Human, lee as Human, kenji as Human, park as Human]
 ```
 
-Upcasting inferred
+Automatic upcasting
+
 ```swift
 let humans: [Human] = [shion, lee, kenji, park]
+let humans = [shion, lee, kenji, park]
 ```
 
-## Call Method in Element
+### Loop
+
 ```swift
 for human in humans {
   if let korean = human as? Korean {
@@ -126,7 +134,8 @@ for human in humans {
 }
 ```
 
-## Usage Case in iOS Development
+## Usage in iOS Development
+Typecasting can be used to group UI Components and add attributes as a whole.
 
 ```swift
 import UIKit
@@ -154,36 +163,22 @@ for component in UIComponents {
 }
 ```
 
-However, upcasting is not recommended since there is a better way to go about with Protocol Oriented Programming. You will find out more the differences soon. ˜
+However, upcasting is not recommended since there is a better way to go about: Protocol Oriented Programming. You will find out more the differences soon.
 
-
-```swift
-class MyViewController: UIViewController {  
-  func introduce() {
-    print(self)
-  }
-}
-```
-
-You probably have used `type casting` to identify your designated view controller from Storyboard.
+ If you've worked with `Storyboard`, you have used `type casting` to identify the designated view controller.
 
 ```swift
 let storyboard = UIStoryboard(name: "Main", bundle: nil)
 let vc = storyboard instantiateViewController(withIdentifier: "VC") as! VC
-
-vc.introduce
 ```
 
 ### Source Code
-[1005_type_casting.playground]
+[1005_type_casting.playground](https://www.dropbox.com/sh/i09nd3r1ii55deo/AABSiq-tuXxkUDn-Qrl7QL6la?dl=0)
 
-[1005_type_casting.playground]:
-https://www.dropbox.com/sh/i09nd3r1ii55deo/AABSiq-tuXxkUDn-Qrl7QL6la?dl=0
-
-### Resources
-If you are still confused with type casting, feel free to watch my YouTube video I posted earlier.
-
-[The Complete Swift 3 Tutorials with Bob: Type Casting (YouTube)](https://www.youtube.com/watch?v=A2M5sIXFNbg&t=12s)
+### Reference
+[AnyObject and Any in Swift (Stack Overflow)](http://stackoverflow.com/questions/25809168/anyobject-and-any-in-swift)
 
 ## Conclusion
-To recap, you've learned two ways convert types. One is upcasting with `as`, which always works because you are going up to the super class and you are getting rid of properties and methods.You've also learned downcasting which converts  object to more specific types within the class hierarchy. However, as you've seen, it may work and may not work. Therefore you use either `as?`to safely convert. Lastly, you've learnde how `type casting` can be used to group objects together and apply universal attributes through a `for-in` loop. However, upcasting isn't recommended in iOS development because it's quite a bit of a headache to convert back and forth, and there is a better way to go about grouping objects together: Protocol Oriented Swift. We will learn more about it in Chapter 3.
+I lied. I said `Type Casting` is used to convert types in classes, but you may also convert `Int` and `String` to `Any` even though they are made up of structs, not classes.
+
+Unnecessary upcasting isn't recommended among iOS developers because it's quite a bit of a headache to cast back and forth. Again, there is an alternative to go about when it comes to grouping objects together: Protocol Oriented Swift. We will learn more about it in Chapter 3.

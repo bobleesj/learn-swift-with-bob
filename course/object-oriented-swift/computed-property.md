@@ -83,7 +83,7 @@ area = 400 // side becomes 20
 ```
 
 ### Source Code
-[1203_Computed Property](https://www.dropbox.com/sh/uha7lagqevpnmfu/AAAQZzHRtM3MMYd1hFF5T_yfa?dl=0)
+[2002_computed_property.playground](https://www.dropbox.com/sh/sunfww1daece1fe/AAB31bu-Q-_V_ZF2-AOaUdc9a?dl=0)
 
 ## Conclusion
 In the beginning of the lesson, you've learned what it means to create a `gettable` property by calling `get` or just by returning value. After that, you've also learned how to add `set` which allows you to modify its value as well as those of other variables. We are going to take a look at how Apple Engineers use computed property to create the iOS ecosystem safe and non-customizable. I know you are super excited to build apps. You will learn how everything fits together in Part 2 and Part 3 of this course.

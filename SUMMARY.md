@@ -53,9 +53,9 @@
 
 ### Protocol Oriented Swift
 * [Introduction](/course/protocol-oriented-swift/introduction.md)
-  * [Intro to Protocol](/course/protocol-oriented-swift/intro-to-protocol.md)
+  * [Intro to Protocol](/course/protocol-oriented-swift/intro-protocol.md)
   * [Protocol Extension](/course/protocol-oriented-swift/protocol-extension.md)
-  * [Protocol as Type](/course/protocol-oriented-swift/protocol-as-type.md)
+  * [Protocol as Type](/course/protocol-oriented-swift/protocol-type.md)
   * [Delegate](/course/protocol-oriented-swift/delegate.md)
   * [Associative Type](/course/protocol-oriented-swift/associative-type.md)
   * [Conclusion](/course/protocol-oriented-swift/conclusion.md)

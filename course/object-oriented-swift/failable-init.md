@@ -86,7 +86,7 @@ This is a review for you if you are not still familiar with Error Handling.
 [Intro to Error Handling (Blog)](https://medium.com/ios-geek-community/intro-to-error-handling-in-swift-3-edb2ce6a6668#.2uk9hyp7h)
 
 ### Source Code
-[1202_Failable Init](https://www.dropbox.com/sh/hf36tvvnzqbx8ke/AABB67EWiJ8GMN-BU-EHjPwXa?dl=0)
+[2004_failable_init.playground](https://www.dropbox.com/sh/zduzf0flqdly0st/AAAkq8tFl8vfQ4FGoRoccLRla?dl=0)
 
 ## Conclusion
 You've done two things with me in this lesson. First, you've learned how design an init method that may return `nil` or optional type by putting a `?` right to the `init` keyword. As we talked about it before. Anything that has `?` in Swift will give you an optional value. Second, you've revisited error handling. The `throws` keyword is not only used within an `else-if` block, but also it can used for an `init` method.

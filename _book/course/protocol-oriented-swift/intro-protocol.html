@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Protocol as Type · Learn Swift with Bob</title>
+        <title>Intro to Protocol · Learn Swift with Bob</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="delegate.html" />
+    <link rel="next" href="protocol-extension.html" />
     
     
-    <link rel="prev" href="protocol-extension.html" />
+    <link rel="prev" href="introduction.html" />
     
 
     </head>
@@ -699,9 +699,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="intro-to-protocol.html">
+        <li class="chapter active" data-level="6.1.1" data-path="intro-protocol.html">
             
-                <a href="intro-to-protocol.html">
+                <a href="intro-protocol.html">
             
                     
                     Intro to Protocol
@@ -725,9 +725,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.1.3" data-path="protocol-as-type.html">
+        <li class="chapter " data-level="6.1.3" data-path="protocol-type.html">
             
-                <a href="protocol-as-type.html">
+                <a href="protocol-type.html">
             
                     
                     Protocol as Type
@@ -1140,7 +1140,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Protocol as Type</a>
+        <a href="../.." >Intro to Protocol</a>
     </h1>
 </div>
 
@@ -1155,84 +1155,74 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="protocol-as-type">Protocol as Type</h1>
+                                <h1 id="introduction-to-protocol">Introduction to Protocol</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome to Lesson 3 of The UIKIt Fundamentals Part 1 Intro to Protocol Oriented Programming. You should be guilty if you haven&apos;t thought about how POP can be applied in your future app. If you are just consuming without thinking. You are a zombie. You are passive. You are not going to learn. Stop being passive. Think. Well, let&apos;s learn more about Protocol Oriented Programming. You will be awed.</p>
+<p>Welcome to Lesson 1 of The UIKIt Fundamentals Part 1 Intro to Protocol Oriented Programming. Before I talk about details, I&apos;d like to share with you that learning Protocol was such a daunting task. Not only it was located at the end of the Swift documentation, but it just felt really foreign to me. It sounded scary. Of course, it feels natural to use it, so I understand if you are not comfortable with it. I just would like to tell you that you might have to watch this video multiple times to get by. You might have to read 10 more articles for you to fully get comfortable. I really expect you guys to be proactive when you are confused. I will do my part which is to explain in the most clear way possible. Well, let&apos;s get started from the bottom with me. Let&apos;s go!</p>
+<p>There are certainly benefits of using OOP, but the opposites as well.
+When you subclass, you have to inherit properties and methods which you may not need. Your object becomes unnecessarily bloated.
+When you make a lot of super classes, it becomes extremely hard to navigate between each class and fix bugs/edit.
+Since objects are referencing to the same place in memory, if you make a copy and create a small change its property, it can f up the rest. (Mutability due to reference)</p>
 <h2 id="problem">Problem</h2>
-<p>Protocol met with Generics</p>
-<p>Create a protocol called, <code>EastAsianable</code>. It contains two properties.</p>
-<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">EastAsianable</span> </span>{
-<span class="hljs-keyword">var</span> useChopstic: <span class="hljs-type">Bool</span> { <span class="hljs-keyword">get</span> }
-<span class="hljs-keyword">var</span> origin: <span class="hljs-type">String</span> { <span class="hljs-keyword">get</span> }
+<p>Problem: I don&apos;t know Protocol</p>
+<blockquote>
+<p>Protocol is like a basketball coach. He/she tells players what to do, but he/she doesn&apos;t know how to dunk.</p>
+</blockquote>
+<h3 id="protocol">Protocol</h3>
+<p>Create a protocol called, <code>Rookieable</code>. It contains two properties and one method. Do not worry about <code>get</code> and <code>set</code> for now.</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">Rookieable</span> </span>{
+<span class="hljs-keyword">var</span> numberOfEXP: <span class="hljs-type">String</span> { <span class="hljs-keyword">get</span> <span class="hljs-keyword">set</span> }
+<span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span> { <span class="hljs-keyword">get</span> }
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">introduce</span><span class="hljs-params">()</span></span>
 }
 </code></pre>
-<p>Create an extension to <code>EastAsianable</code> that sets <code>useChopstic</code> to <code>true</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">EastAsianable</span> </span>{
+<p>Create a class that conforms to <code>Rookieable</code> just like how you would subclass. To prevent Swift from screaming, you must implement two properties and one method defined in the protocol.</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bob</span>: <span class="hljs-title">Rookieable</span> </span>{
+<span class="hljs-comment">// Stored property has no effect on get or set</span>
+<span class="hljs-keyword">var</span> numberOfEXP: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;13&quot;</span>
+<span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;Bob&quot;</span>
 
-<span class="hljs-comment">// Extension may not contain stored properties</span>
-<span class="hljs-keyword">var</span> useChopstic: <span class="hljs-type">Bool</span> {
-<span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
-}
-}
-</code></pre>
-<p>Create <code>Korean</code>, <code>Japanese</code>, and <code>Chinese</code> that conforms to <code>EastAsianable</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Korean</span>: <span class="hljs-title">EastAsianable</span> </span>{
-<span class="hljs-keyword">var</span> origin: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;Korea&quot;</span>
-}
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Japanese</span>: <span class="hljs-title">EastAsianable</span> </span>{
-<span class="hljs-keyword">var</span> origin: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;Japan&quot;</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">introduce</span><span class="hljs-params">()</span></span> {
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hi, I&apos;m <span class="hljs-subst">\(name)</span> and I have <span class="hljs-subst">\(numberOfEXP)</span> years of experience&quot;</span>)
 }
 
-<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Chinese</span>: <span class="hljs-title">EastAsianable</span> </span>{
-<span class="hljs-keyword">var</span> origin: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;China&quot;</span>
 }
 </code></pre>
-<h3 id="protocol-as-type">Protocol as Type</h3>
-<p>Just like you may group into an array using <code>[String]</code> and <code>[Int]</code>, you may group elements that conform to the same protocol.</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> <span class="hljs-type">EastAsians</span>: [<span class="hljs-type">EastAsianable</span>] = [<span class="hljs-type">Korean</span>(), <span class="hljs-type">Japanese</span>(), <span class="hljs-type">Chinese</span>()]
+<p>Create an object and call the <code>introduce</code> method.</p>
+<pre><code class="lang-swift"><span class="hljs-type">Bob</span>().introduce()
 </code></pre>
-<p>Since every element that conforms to <code>EastAsianable</code> contains <code>origin</code>, you may loop through the element.</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">for</span> <span class="hljs-type">EastAsian</span> <span class="hljs-keyword">in</span> <span class="hljs-type">EastAsians</span> {
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I&apos;m from <span class="hljs-subst">\(EastAsian.origin)</span>&quot;</span>)
+<blockquote>
+<p>{ get } or { get set} only apply to computed property. If you are defining a stored property, you may choose either { get } or { get set }.</p>
+</blockquote>
+<h3 id="computed-property">Computed Property</h3>
+<p>Create a protocol called, <code>Breathable</code>. It contains two properties: <code>isBreathing</code> and <code>isLiving</code>.</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">Breathable</span> </span>{
+<span class="hljs-keyword">var</span> isBreating: <span class="hljs-type">Bool</span> { <span class="hljs-keyword">get</span> <span class="hljs-keyword">set</span> }
+<span class="hljs-keyword">var</span> isLiving: <span class="hljs-type">Bool</span> { <span class="hljs-keyword">get</span> }
 }
 </code></pre>
-<h3 id="practical-examples">Practical Examples</h3>
-<p>Practical Examples: You may combine UILabel, UIImageView, loop through to change colors, animation, and so on. Use your imagination.</p>
-<h3 id="protocol-met-generics">Protocol Met Generics</h3>
-<p>Create a protocol called, <code>Sleekable</code> that contain a property.</p>
-<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">Sleekable</span> </span>{
-<span class="hljs-keyword">var</span> price: <span class="hljs-type">String</span> { <span class="hljs-keyword">get</span> }
-}
-</code></pre>
-<p>Create <code>Diamond</code>, <code>Ruby</code>, and <code>Glass</code> that conform to <code>Sleekable</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Diamond</span>: <span class="hljs-title">Sleekable</span> </span>{
-<span class="hljs-keyword">var</span> price: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;Very High&quot;</span>
+<p>Create a struct that conforms to <code>Breathable</code>. The struct contains properties: <code>isBreathing</code> and <code>isLiving</code>. Define them as computed properties rather than stored.</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Human</span>: <span class="hljs-title">Breathable</span> </span>{
+<span class="hljs-keyword">var</span> isBreating: <span class="hljs-type">Bool</span> {
+<span class="hljs-keyword">get</span> { <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span> }
+<span class="hljs-keyword">set</span> { } <span class="hljs-comment">// If no set, error occurs. isBreathing is { get set }</span>
 }
 
-<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Ruby</span>: <span class="hljs-title">Sleekable</span> </span>{
-<span class="hljs-keyword">var</span> price: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;High&quot;</span>
+<span class="hljs-keyword">var</span> isLiving: <span class="hljs-type">Bool</span> {
+<span class="hljs-keyword">get</span> { <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span> }
+<span class="hljs-keyword">set</span> { }
 }
 
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Glass</span>: <span class="hljs-title">Sleekable</span> </span>{
-<span class="hljs-keyword">var</span> price: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;Dirt Cheap&quot;</span>
 }
 </code></pre>
-<p>Create a generic function that only takes a parameter whose type must conform to <code>Sleekable</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">stateThePrice</span>&lt;T: Sleekable&gt;<span class="hljs-params">(enterGem: T)</span></span> {
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I&apos;m expensive. In fact, I&apos;m <span class="hljs-subst">\(enterGem.price)</span>&quot;</span>)
-}
-
-stateThePrice(enterGem: <span class="hljs-type">Ruby</span>())
-</code></pre>
-<h3 id="source-code">Source Code</h3>
-<p><a href="https://www.dropbox.com/sh/vvy34bgbyio7k4p/AADYOs3OUaU38RSdN4HaG4OWa?dl=0" target="_blank">1403_Protocol as Type</a></p>
+<blockquote>
+<p><strong>Rule:</strong> If you are using a computer property, if it is { get } you may make a property gettable or settable. If it is defined as { get set } within a protocol, you must make it gettable and settable.</p>
+</blockquote>
 <h3 id="resources">Resources</h3>
-<p><a href="https://medium.com/ios-geek-community/introduction-to-protocol-oriented-programming-in-swift-b358fe4974f#.cwpeva7h8" target="_blank">Intro to Protocol Oriented Programming  (Blog)</a></p>
-<p>If you are interested in applying to UIKit
-<a href="https://medium.com/ios-geek-community/protocol-oriented-programming-view-in-swift-3-8bcb3305c427#.pbyihqrsa" target="_blank">Protocol Oriented View (Blog)</a></p>
+<h3 id="source-code">Source Code</h3>
+<p><a href="https://www.dropbox.com/sh/yk5uq09o8y4ob61/AABd3FKbRtI0mi4j77jAYrtma?dl=0" target="_blank">4001_intro_protocols.playground</a></p>
 <h2 id="conclusion">Conclusion</h2>
+<p>Are you wrapping your heads around? Again, make sure you remember a couple rules. If you use { get } or { get set }. You can both use it as a stored property and change the value as you wish. However, if you identify a property with { get set } please remember if you use computed property, you have to make it settable as well. For { get }, you can do whatever you want. In our next lesson, you are going to see some of practical aspects of Protocol. You&apos;ve only seen the tip of an ice berg. Let&apos;s get started my friend. Super excited to make you smarter.</p>
 
                                 
                                 </section>
@@ -1260,12 +1250,12 @@ stateThePrice(enterGem: <span class="hljs-type">Ruby</span>())
 
             
                 
-                <a href="protocol-extension.html" class="navigation navigation-prev " aria-label="Previous page: Protocol Extension">
+                <a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page: Introduction">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="delegate.html" class="navigation navigation-next " aria-label="Next page: Delegate">
+                <a href="protocol-extension.html" class="navigation navigation-next " aria-label="Next page: Protocol Extension">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1276,7 +1266,7 @@ stateThePrice(enterGem: <span class="hljs-type">Ruby</span>())
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Protocol as Type","level":"6.1.3","depth":2,"next":{"title":"Delegate","level":"6.1.4","depth":2,"path":"course/protocol-oriented-swift/delegate.md","ref":"course/protocol-oriented-swift/delegate.md","articles":[]},"previous":{"title":"Protocol Extension","level":"6.1.2","depth":2,"path":"course/protocol-oriented-swift/protocol-extension.md","ref":"course/protocol-oriented-swift/protocol-extension.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/protocol-oriented-swift/protocol-as-type.md","mtime":"2017-03-30T14:32:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-04T11:22:50.377Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Intro to Protocol","level":"6.1.1","depth":2,"next":{"title":"Protocol Extension","level":"6.1.2","depth":2,"path":"course/protocol-oriented-swift/protocol-extension.md","ref":"course/protocol-oriented-swift/protocol-extension.md","articles":[]},"previous":{"title":"Introduction","level":"6.1","depth":1,"path":"course/protocol-oriented-swift/introduction.md","ref":"course/protocol-oriented-swift/introduction.md","articles":[{"title":"Intro to Protocol","level":"6.1.1","depth":2,"path":"course/protocol-oriented-swift/intro-protocol.md","ref":"course/protocol-oriented-swift/intro-protocol.md","articles":[]},{"title":"Protocol Extension","level":"6.1.2","depth":2,"path":"course/protocol-oriented-swift/protocol-extension.md","ref":"course/protocol-oriented-swift/protocol-extension.md","articles":[]},{"title":"Protocol as Type","level":"6.1.3","depth":2,"path":"course/protocol-oriented-swift/protocol-type.md","ref":"course/protocol-oriented-swift/protocol-type.md","articles":[]},{"title":"Delegate","level":"6.1.4","depth":2,"path":"course/protocol-oriented-swift/delegate.md","ref":"course/protocol-oriented-swift/delegate.md","articles":[]},{"title":"Associative Type","level":"6.1.5","depth":2,"path":"course/protocol-oriented-swift/associative-type.md","ref":"course/protocol-oriented-swift/associative-type.md","articles":[]},{"title":"Conclusion","level":"6.1.6","depth":2,"path":"course/protocol-oriented-swift/conclusion.md","ref":"course/protocol-oriented-swift/conclusion.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/protocol-oriented-swift/intro-protocol.md","mtime":"2017-04-06T01:14:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -8,7 +8,13 @@ Last Update on {{ gitbook.time }}
 
 I try to stay consistent and provide as much as value for my students and readers. I also focus on building long-term relationships over short-term sales. You may find all of my tutorials and articles I've written for you guys. Also, you may find some [products](Resources.md#gadgets) that I use to increase my development productivity.
 
-> if the tables below appear too large, feel free to adjust the font size on the top left.
+You can also join my mailing list and engage and receive more value for your learning.
+
+<a class="typeform-share button" href="https://boblee.typeform.com/to/oR9Nt2" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#19AA6E;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:17px;line-height:42.5px;text-align:center;margin:0;height:42.5px;padding:0px 28px;border-radius:0px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Join Me</a><script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm_share",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!gi.call(d,id)){js=ce.call(d,"script");js.id=id;js.src=b+"share.js";q=gt.call(d,"script")[0];q.parentNode.insertBefore(js,q)}})()</script>
+
+<br>
+<br>
+<br>
 
 ### Swift Complete Series
 If you are new to Swift, I'd recommend you to get started with these tutorials first.

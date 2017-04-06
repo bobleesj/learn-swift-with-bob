@@ -80,8 +80,7 @@ set { }
 
 ### Resources
 ### Source Code
-[1401_Protocol Basics](https://www.dropbox.com/sh/n5y58kvek9zp1ef/AACvWcKQbmtclxYLxc3Qy8zAa?dl=0)
+[4001_intro_protocols.playground](https://www.dropbox.com/sh/yk5uq09o8y4ob61/AABd3FKbRtI0mi4j77jAYrtma?dl=0)
 
 ## Conclusion
 Are you wrapping your heads around? Again, make sure you remember a couple rules. If you use { get } or { get set }. You can both use it as a stored property and change the value as you wish. However, if you identify a property with { get set } please remember if you use computed property, you have to make it settable as well. For { get }, you can do whatever you want. In our next lesson, you are going to see some of practical aspects of Protocol. You've only seen the tip of an ice berg. Let's get started my friend. Super excited to make you smarter.
-

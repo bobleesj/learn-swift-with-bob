@@ -68,7 +68,7 @@ returnShortClosure()(10, 10) // 100
 If you are not familiar with closures, it takes a while for you to get used to it. I highly recommend you to read my article on No Fear Closures with Bob [Part 1](https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jppz) and [Part 2](https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jpp).
 
 ### Source Code
-[1302_Closures vs Functions (Part 2)](https://www.dropbox.com/sh/95xt4fmepicptte/AABvcKLuJ3oBMUSo_xtHYeLEa?dl=0)
+[3002_intro_closures_part2.playground](https://www.dropbox.com/sh/dws40juw0rrx9mn/AACQjdv5oVoqNrB8ar2skfXva?dl=0)
 
 ## Conclusion
 If you were to take away one thing, please remember this. You can pass closure to an argument label and even return closure. This is the basis of functional programming, which I'm not going to dive into. If you want to register for the course, feel free to send me an email, `bobleesj@gmail.com` to receive personal updates from me, and receive special offers on books, courses, and so on. My next course will be about MVVM, Protocol Oriented Programming, Functional Programming, and RxSwift. If you really want to improve your coding skill, I highly recommend it for you. You will be surprised how much you will learn more me. Keep developing your skill. If you are confused, make sure check out the resources, and keep googling and searching. Feel free to ask questions as well. s

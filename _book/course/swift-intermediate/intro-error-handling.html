@@ -699,9 +699,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="../protocol-oriented-swift/intro-to-protocol.html">
+        <li class="chapter " data-level="6.1.1" data-path="../protocol-oriented-swift/intro-protocol.html">
             
-                <a href="../protocol-oriented-swift/intro-to-protocol.html">
+                <a href="../protocol-oriented-swift/intro-protocol.html">
             
                     
                     Intro to Protocol
@@ -725,9 +725,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.3" data-path="../protocol-oriented-swift/protocol-as-type.html">
+        <li class="chapter " data-level="6.1.3" data-path="../protocol-oriented-swift/protocol-type.html">
             
-                <a href="../protocol-oriented-swift/protocol-as-type.html">
+                <a href="../protocol-oriented-swift/protocol-type.html">
             
                     
                     Protocol as Type
@@ -1157,26 +1157,21 @@
                                 
                                 <h1 id="error-handling">Error Handling</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome to Lesson 4: Error Handling. If I remember correctly, Error handling came across as daunting because I thought I had to be a professional debugger to fully utilize the feature. So, I avoided this topic for a while. But, I&apos;ve noticed, it&apos;s nothing more than writing an <code>else-if</code> statement to deal with an error message. However, the large difference is that the Swift Error Handling allows you to write cleaner, modular, and readable code. Let&apos;s dive into it.</p>
+<p>Welcome to Lesson 4. Error Handling came across as daunting. I thought I had to be a professional debugger to fully utilize the feature. However,  I&apos;ve soon discovered, it&apos;s nothing more than writing an <code>else-if</code> statement to deal with an error message block. The difference is the Swift Error Handling allows you to write cleaner, modular, and readable code. Let&apos;s dive into it.</p>
 <h2 id="problem">Problem</h2>
 <ol>
 <li>How do you warn your co-workers the function may result unexpected outcomes?</li>
-<li>What is <code>do-try</code> block?</li>
-<li>How do you distinguish <code>try?</code>, <code>try!</code>, and <code>try</code>?</li>
+<li>What is a <code>do-try</code> block?</li>
+<li>How do you distinguish between <code>try?</code>, <code>try!</code>, and <code>try</code>?</li>
 </ol>
-<h3 id="problem-with-else-if-alone">Problem with Else-If alone</h3>
-<ol>
-<li>Bloated Function</li>
-<li>Lack Modularity</li>
-<li>Uncertainty</li>
-</ol>
-<p>Create a program for a roller coaster height limit</p>
+<h2 id="design-safety-feature">Design Safety Feature</h2>
+<p>Determine who may ride the roller coaster.</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">checkHeight</span><span class="hljs-params">(height: Int)</span></span> {
   <span class="hljs-keyword">if</span> height &gt; <span class="hljs-number">200</span> {
     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;You are going to hit your head and fall off&quot;</span>)
     <span class="hljs-comment">// Take him/her off from the ride</span>
     <span class="hljs-comment">// Code ...</span>
-    <span class="hljs-comment">// Seatbeat Tighten</span>
+    <span class="hljs-comment">// Seatbelt tighten</span>
 
   } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> height &lt; <span class="hljs-number">140</span> {
     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;You might fly in the air&quot;</span>)
@@ -1190,18 +1185,23 @@
   }
 }
 </code></pre>
-<h3 id="error-handling">Error Handling</h3>
+<h3 id="problem-with-else-if-alone">Problem with Else-If alone</h3>
+<ol>
+<li>Bloated Function</li>
+<li>Lack Modularity</li>
+<li>Uncertainty</li>
+</ol>
+<h2 id="error-handling">Error Handling</h2>
 <p>Error Handling is just additional way to write an <code>else-if</code> statement to deal with error messages</p>
-<h4 id="design-error">Design Error</h4>
+<h3 id="design-error">Design Error</h3>
 <p>Create an enum that conforms to <code>Error</code> protocol. Determine a few cases.  </p>
-<pre><code class="lang-swift"><span class="hljs-comment">// Design Error</span>
-<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">HeightError</span>: <span class="hljs-title">Error</span> </span>{
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">HeightError</span>: <span class="hljs-title">Error</span> </span>{
   <span class="hljs-keyword">case</span> maxHeight
   <span class="hljs-keyword">case</span> minHeight
 }
 </code></pre>
-<h4 id="design-throwable-function">Design Throwable Function</h4>
-<p>Create a function that can throw errors by inserting <code>throws</code> at the end of the function parameter.</p>
+<h3 id="design-throwable-function">Design Throwable Function</h3>
+<p>Create a function that can throw/return errors by inserting <code>throws</code> at the end of the function parameter.</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">checkHeightError</span><span class="hljs-params">(height: Int)</span></span> <span class="hljs-keyword">throws</span> {
   <span class="hljs-keyword">if</span> height &gt; <span class="hljs-number">200</span> {
     <span class="hljs-keyword">throw</span> <span class="hljs-type">HeightError</span>.maxHeight
@@ -1212,8 +1212,8 @@
   }
 }
 </code></pre>
-<h4 id="call-and-handle-error">Call and Handle Error</h4>
-<p>To call a function that contains <code>throws</code>, run the function block by inserting <code>try</code> in front of the function within a <code>do</code> block. A <code>catch</code> block is used to recognize and handle error thrown by the function.</p>
+<h3 id="call-and-handle-error">Call and Handle Error</h3>
+<p>To call a function that contains <code>throws</code>, the function requires <code>try</code> within a <code>do</code> block. A <code>catch</code> block is used to recognize and the error thrown by the function. If there is no error thrown, the <code>catch</code> block is ignored.</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">do</span> {
   <span class="hljs-keyword">try</span> checkHeightError(height: <span class="hljs-number">240</span>)
 } <span class="hljs-keyword">catch</span> <span class="hljs-type">HeightError</span>.maxHeight {
@@ -1223,14 +1223,13 @@
   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Too short to ride&quot;</span>)
 }
 </code></pre>
-<h3 id="error-handling-to-object-initialization">Error Handling to Object Initialization</h3>
-<p>Error handling not only applies to functions, but also initialization.</p>
-<h4 id="design-error">Design Error</h4>
+<h2 id="error-handling-with-object-initialization">Error Handling with Object Initialization</h2>
+<h3 id="design-error">Design Error</h3>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">NameError</span>: <span class="hljs-title">Error</span> </span>{
   <span class="hljs-keyword">case</span> noName
 }
 </code></pre>
-<h4 id="design-throwable-class">Design Throwable Class</h4>
+<h3 id="design-throwable-class">Design Throwable Class</h3>
 <p>When the user enters an empty string when initializing, the init method throws <code>NameError.noName</code>.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Course</span> </span>{
   <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
@@ -1245,8 +1244,8 @@
   }
 }
 </code></pre>
-<h4 id="init-and-handle-error">Init and Handle Error</h4>
-<p>Create an object using <code>try</code> within <code>do</code>.</p>
+<h3 id="initialize-and-handle-error">Initialize and Handle Error</h3>
+<p>Create an object using <code>try</code> within a <code>do-catch</code> block.</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">do</span> {
   <span class="hljs-keyword">let</span> myCourse = <span class="hljs-keyword">try</span> <span class="hljs-type">Course</span>(name: <span class="hljs-string">&quot;&quot;</span>)
 } <span class="hljs-keyword">catch</span> <span class="hljs-type">NameError</span>.noName {
@@ -1254,25 +1253,26 @@
   <span class="hljs-comment">// Logic</span>
 }
 </code></pre>
-<h3 id="distinguish-between-try-try-and-try">Distinguish Between <code>try?</code>, <code>try!</code>, and <code>try</code></h3>
-<p><code>try</code> is only used within a <code>do-catch</code> block. However, <code>try?</code> and <code>try!</code> can be used without it. In other words, you may call throwable method or init without handling error.</p>
-<h4 id="try">try?</h4>
-<p>It returns an optional value if it is used for init. If it throws an error, the result will be <code>nil</code>.</p>
+<h2 id="distinguish-between-try-try-and-try">Distinguish Between <code>try?</code>, <code>try!</code>, and <code>try</code></h2>
+<p><code>try</code> is only used within a <code>do-catch</code> block. However, <code>try?</code> and <code>try!</code> can be used without it.</p>
+<h3 id="try">try?</h3>
+<p>It returns an optional value. If it throws an error, the result will be <code>nil</code>.</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">let</span> newCourse = <span class="hljs-keyword">try</span>? <span class="hljs-type">Course</span>(name: <span class="hljs-string">&quot;Bob the Dev&quot;</span>) <span class="hljs-comment">// returns Course?</span>
 <span class="hljs-keyword">let</span> newDopeCourse = <span class="hljs-keyword">try</span>? <span class="hljs-type">Course</span>(name: <span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">// nil</span>
 </code></pre>
-<h4 id="try">try!</h4>
-<p>It will return a normal type if is used for init. If a method/init throws an error, it will crash.</p>
-<pre><code class="lang-swift"><span class="hljs-comment">// try!</span>
-<span class="hljs-keyword">let</span> myNewCourse = <span class="hljs-keyword">try</span>! <span class="hljs-type">Course</span>(name: <span class="hljs-string">&quot;Bobby Lee&quot;</span>)
-<span class="hljs-comment">// let myDopeNewCourse = try! Course(name: &quot;&quot;)</span>
+<h3 id="try">try!</h3>
+<p>It returns a normal type. If a method/init throws an error, it will crash.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> myNewCourse = <span class="hljs-keyword">try</span>! <span class="hljs-type">Course</span>(name: <span class="hljs-string">&quot;Bobby Lee&quot;</span>) <span class="hljs-comment">// &#x1F44D;</span>
+<span class="hljs-keyword">let</span> myDopeNewCourse = <span class="hljs-keyword">try</span>! <span class="hljs-type">Course</span>(name: <span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">// &#x2620;&#xFE0F;</span>
 </code></pre>
 <h3 id="source-code">Source Code</h3>
+<p><a href="https://www.dropbox.com/sh/kiib6lgy1xa7lww/AAANnWweDDT_KB4-hFJEB9taa?dl=0" target="_blank">1004_intro_error_handling.playground</a></p>
 <h3 id="resources">Resources</h3>
-<p><a href="https://goo.gl/EaepCa" target="_blank">Intro to Error Handling by Bob the Developer</a></p>
+<p>If you wish to review or get a better understanding, you may read <br>
+<a href="https://goo.gl/EaepCa" target="_blank">Intro to Error Handling by Bob the Developer</a></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>In this lesson, you&apos;ve learned the reason behind the Swift Error Handling syntax such as <code>catch</code>, <code>do</code>, and <code>try</code>. You&apos;ve also learned the differences between <code>try</code>, <code>try?</code>, and <code>try!</code>. You can only use <code>try</code> when you use it within a <code>do</code> block. However, if you don&apos;t care about catching errors that are thrown, you may use <code>try?</code> and <code>try!</code>. Again, avoid using<code>!</code> since it may crash at any time.</p>
-<p>In the next lesson, you will learn the final usage of <code>!</code> and <code>?</code> in the Swift programming language through <code>type casting</code>which allows you to convert types that are made with classes. &#x1F914; In fact, you&apos;ve been using a for a while. Let&apos;s learn more.</p>
+<p>In this lesson, you&apos;ve learned the Swift Error Handling syntax such as <code>catch</code>, <code>do</code>, and <code>try</code>. You&apos;ve also learned the differences between <code>try</code>, <code>try?</code>, and <code>try!</code>. You can only use <code>try</code> within a <code>do-catch</code> block. However, if you do not mind catching the error thrown, you may use <code>try?</code> and <code>try!</code> alone. Again, avoid using<code>!</code> since it may crash at any time.</p>
+<p>In the next lesson, you will learn the final usage of <code>!</code> and <code>?</code> in the Swift Programming Language through <code>type casting</code>which allows you to convert types that are made with classes. &#x1F914;</p>
 
                                 
                                 </section>
@@ -1316,7 +1316,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"next":{"title":"Type Casting","level":"3.1.5","depth":2,"path":"course/swift-intermediate/type-casting.md","ref":"course/swift-intermediate/type-casting.md","articles":[]},"previous":{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"path":"course/swift-intermediate/guard-defer-statement.md","ref":"course/swift-intermediate/guard-defer-statement.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/intro-error-handling.md","mtime":"2017-03-31T09:12:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-04T11:22:50.377Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"next":{"title":"Type Casting","level":"3.1.5","depth":2,"path":"course/swift-intermediate/type-casting.md","ref":"course/swift-intermediate/type-casting.md","articles":[]},"previous":{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"path":"course/swift-intermediate/guard-defer-statement.md","ref":"course/swift-intermediate/guard-defer-statement.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/intro-error-handling.md","mtime":"2017-04-06T11:02:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

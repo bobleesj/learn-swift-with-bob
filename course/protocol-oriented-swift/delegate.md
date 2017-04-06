@@ -65,10 +65,9 @@ classOne.delegate?.passData(data: "Hello")
 
 ### Source code
 
-[1404_Delegate](https://www.dropbox.com/sh/we5epsu2egiwyqa/AAC2JkR9H4VGWhLnmaBy9c2fa?dl=0)
+[4004_delegate.playground](https://www.dropbox.com/sh/j7xreau3y2kq8bo/AACG17ayoM8W8JMM3O6jbB5ya?dl=0)
 
 ### Resources
-
 
 
 

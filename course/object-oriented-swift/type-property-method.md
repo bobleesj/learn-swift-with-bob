@@ -150,7 +150,7 @@ AirDropID.iPhone8.rawValue // "7967-8123-7892-4563"
 
 ### Resources
 ### Source Code
-[1207_Type Property and Method](https://www.dropbox.com/sh/s3h4zvem064kldq/AADq_PTq0ZfDgjlQiSIT_6Pua?dl=0)
+[2007_type_property.playground](https://www.dropbox.com/sh/vkvljugb258t153/AAB2WsksH_AkczcD8kdt5x3ha?dl=0)
 
 
 ## Conclusion

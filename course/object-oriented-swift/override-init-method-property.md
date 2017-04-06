@@ -144,8 +144,7 @@ myFutureSexyCar.numberOfWheels // 500
 ```
 
 ### Source Code
-[1204_Override Init/Method](https://www.dropbox.com/sh/4jl0hxqy7m3i4zx/AAC_q3xyS0iKVsxn4NXr0INga?dl=0)
-
+[2005_override_init_method_property.playground](https://www.dropbox.com/sh/ij2zoiv26j2oriq/AAB--yW4-5OLaZNSPYjYAROOa?dl=0)
 
 
 ## Conclusion

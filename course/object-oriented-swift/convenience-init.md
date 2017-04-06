@@ -81,7 +81,7 @@ let randomColorWtihMe = UIColor(r: 20, g: 10, b: 50)
 ```
 
 ### Source Code
-[1201_Convenience Init](https://www.dropbox.com/sh/irzwlfsvq551s9o/AAB0Taf5E7IFXPj-yzHuCSYoa?dl=0)
+[2001_convenience_init.playground](https://www.dropbox.com/sh/s8huk2ugoeawb1c/AABvP4MipSe4CSypX7QEgZmZa?dl=0)
 
 ## Conclusion
 You've learned how to become lazy and effective at the same time. Imagine you are creating a library for your teammates to use. They no longer have to use a designated init method to initialize an object. It's  not necessary. It's a win-win situation. In the next lesson, let's talk about how initialization may fail.

@@ -70,9 +70,7 @@ for number in 1...50 {
 
 
 ### Source Code
-[1009_set_tuple.playground]
-
-[1009_set_tuple.playground]: https://www.dropbox.com/sh/w3b55cig44dkn18/AADfa-mpPqoWgDUOrhn02_goa?dl=0
+[1009_set_tuple.playground](https://www.dropbox.com/sh/w3b55cig44dkn18/AADfa-mpPqoWgDUOrhn02_goa?dl=0)
 
 
 ### Reference

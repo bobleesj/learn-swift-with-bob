@@ -27,7 +27,7 @@
 ## Development Tools
 
 ### Library Management
- - [Cocopod](https://cocoapods.org/)
+ - [CocoaPods](https://cocoapods.org/)
 
 > CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. It has over 29 thousand libraries and is used in over 1.8 million apps. CocoaPods can help you scale your projects elegantly.
 

@@ -53,7 +53,7 @@ userLoggedIn = true
 
 
 ### Source Code
-[1206_Property Observer](https://www.dropbox.com/sh/icjktltawrgwmxn/AADakYCf4MubhbRBmGmvTreOa?dl=0)
+[2003_property_observers.playground](https://www.dropbox.com/sh/tfvmjjrppvy0g01/AABB5kYVgf6ImcptnOvQ53VGa?dl=0)
 
 ## Conclusion
 Great! The whole purpose of using property observer is to write less code but provide greater readability. You don't have to create a function with a switch or else-if statement. As you've seen there are ways ways to check whether user has been logged or not, computed property for me works great because it provides a separate block of code with distinct keywords such as `didSet` and `willSet`.

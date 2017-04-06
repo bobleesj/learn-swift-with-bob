@@ -95,7 +95,9 @@ stateThePrice(enterGem: Ruby())
 ```
 
 ### Source Code
-[1403_Protocol as Type](https://www.dropbox.com/sh/vvy34bgbyio7k4p/AADYOs3OUaU38RSdN4HaG4OWa?dl=0)
+[4003_protocol_type.playground](https://www.dropbox.com/sh/vvy34bgbyio7k4p/AADYOs3OUaU38RSdN4HaG4OWa?dl=0)
+
+
 ### Resources
 
 [Intro to Protocol Oriented Programming  (Blog)](https://medium.com/ios-geek-community/introduction-to-protocol-oriented-programming-in-swift-b358fe4974f#.cwpeva7h8)

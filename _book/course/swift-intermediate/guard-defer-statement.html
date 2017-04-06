@@ -699,9 +699,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="../protocol-oriented-swift/intro-to-protocol.html">
+        <li class="chapter " data-level="6.1.1" data-path="../protocol-oriented-swift/intro-protocol.html">
             
-                <a href="../protocol-oriented-swift/intro-to-protocol.html">
+                <a href="../protocol-oriented-swift/intro-protocol.html">
             
                     
                     Intro to Protocol
@@ -725,9 +725,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.3" data-path="../protocol-oriented-swift/protocol-as-type.html">
+        <li class="chapter " data-level="6.1.3" data-path="../protocol-oriented-swift/protocol-type.html">
             
-                <a href="../protocol-oriented-swift/protocol-as-type.html">
+                <a href="../protocol-oriented-swift/protocol-type.html">
             
                     
                     Protocol as Type
@@ -1157,11 +1157,11 @@
                                 
                                 <h1 id="guard-statement">Guard Statement</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome back to Lesson 3 The Swift fundamentals. First of all, let me share a story of mine. When I learned Swift as my first programming language,  I understood  an <code>else-if</code> statement. It wasn&apos;t a big deal. For example, if something is <code>true</code>, run the block of code. However, a <code>guard</code> statement confused the heck out of me. Some of you guys may feel the same way as I did. Don&apos;t worry. I&apos;m here for you today. You will understand that a <code>guard</code> statement is just another for you to write an <code>else-if</code> statement. A <code>guard</code> statement promotes zenness. In other words, it adds clarity, emptiness, and lots of cloud and space. Let&apos;s get in.</p>
+<p>Welcome to Lesson 3 of The Swift fundamentals. When I learned Swift as my first programming language,  I understood  an <code>else-if</code> statement. However, a <code>guard</code> statement confused the heck out of me. Some of you guys may feel the same way as I did. Don&apos;t worry. I&apos;m here for you today. You will understand that a <code>guard</code> statement is just another for you to write an <code>else-if</code> statement. A <code>guard</code> statement promotes zenness. In other words, it adds clarity, emptiness, and lots of cloud and space.</p>
 <h2 id="problem">Problem</h2>
-<p>Is there any better way to write an <code>else-if</code> statement? How do you safely unwrap many optionals?</p>
-<h3 id="typical-else-if">Typical else-if</h3>
-<p>Without having known guard statements, you probably used a long <code>else-if</code> statement to handle an error message block.</p>
+<p>Is there any better way to write an <code>else-if</code> statement? How do you safely unwrap multiple optionals?</p>
+<h2 id="typical-else-if">Typical else-if</h2>
+<p>Without having known guard statements, you probably have used a long <code>else-if</code> statement to indicate an error message block.</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">checkDrinkingAge</span><span class="hljs-params">()</span></span> {
   <span class="hljs-keyword">let</span> canDrink = <span class="hljs-literal">true</span>
 
@@ -1179,13 +1179,13 @@
   }
 }
 </code></pre>
-<h3 id="issues-with-else-if">Issues with else-if</h3>
+<h2 id="issues-with-else-if">Issues with else-if</h2>
 <ol>
 <li>Nested brackets</li>
 <li>Have to read every line to spot the error message</li>
 </ol>
-<h3 id="guard-statement">Guard Statement</h3>
-<p>A <code>guard</code> block only runs if the condition is <code>false</code>, and it will exit out of the function through <code>return</code>. If the condition is <code>true</code>, Swift will ignore the block.  Eventually, it provides an early exit and fewer brackets.</p>
+<h2 id="guard-statement">Guard Statement</h2>
+<p>A <code>guard</code> block only runs if the condition is <code>false</code>, and it will exit out of the function through <code>return</code>. If the condition is <code>true</code>, Swift will ignore the block. Eventually, it provides an <strong>early exit</strong> and <strong>fewer brackets</strong>.</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">checkDrinkProgram</span><span class="hljs-params">()</span></span> {
   <span class="hljs-keyword">let</span> iCanDrink = <span class="hljs-literal">true</span>
 
@@ -1204,31 +1204,26 @@
 }
 </code></pre>
 <h2 id="unwrap-optionals-with-else-if">Unwrap Optionals with Else-If</h2>
-<p>A <code>guard</code> statement is not only useful for replacing an <code>else-if</code> statement, but also for unwrapping optionals by minimizing the number of brackets. To compare, let&apos;s first begin how to unwrap multiple optional types using an <code>else-if</code>.</p>
-<p>First, there are three optional types.</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">var</span> publicName: <span class="hljs-type">String</span>? = <span class="hljs-literal">nil</span>
-<span class="hljs-keyword">var</span> publicPhoto: <span class="hljs-type">String</span>? = <span class="hljs-string">&quot;URL&quot;</span>
-<span class="hljs-keyword">var</span> publicAge: <span class="hljs-type">Int</span>? = <span class="hljs-number">31</span>
+<p>A <code>guard</code> statement is not only useful for replacing an <code>else-if</code> statement, but also great for unwrapping optionals by minimizing the number of brackets. To compare, let&apos;s first begin how to unwrap multiple optional types using an <code>else-if</code>.</p>
+<p>First, there are three optional variables.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> publicName: <span class="hljs-type">String</span>? = <span class="hljs-string">&quot;Bob Lee&quot;</span>
+<span class="hljs-keyword">var</span> publicPhoto: <span class="hljs-type">String</span>? = <span class="hljs-string">&quot;Bob&apos;s Face&quot;</span>
+<span class="hljs-keyword">var</span> publicAge: <span class="hljs-type">Int</span>? = <span class="hljs-literal">nil</span>
 </code></pre>
-<h3 id="worst-nightmare">Worst Nightmare</h3>
-<pre><code class="lang-swift"> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">unwrapOneByOne</span><span class="hljs-params">()</span></span> {
+<h3 id="the-worst-nightmare">The Worst Nightmare</h3>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">unwrapOneByOne</span><span class="hljs-params">()</span></span> {
   <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> name = publicName {
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> photo = publicPhoto {
       <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> age = publicAge {
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Yes age&quot;</span>)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Bob: <span class="hljs-subst">\(name)</span>, <span class="hljs-subst">\(photo)</span>, <span class="hljs-subst">\(age)</span>&quot;</span>)
       } <span class="hljs-keyword">else</span> {
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;No age&quot;</span>)
-        <span class="hljs-keyword">return</span>
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;age is mising&quot;</span>)
       }
-      <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Yes photo&quot;</span>)
     } <span class="hljs-keyword">else</span> {
-      <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;No photo&quot;</span>)
-      <span class="hljs-keyword">return</span>
+      <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;photo is missing&quot;</span>)
     }
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Yes name&quot;</span>)
   } <span class="hljs-keyword">else</span> {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;No name&quot;</span>)
-    <span class="hljs-keyword">return</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;name is missing&quot;</span>)
   }
 }
 </code></pre>
@@ -1256,25 +1251,45 @@
     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;No age&quot;</span>)
     <span class="hljs-keyword">return</span>
   }
-
 }
 </code></pre>
-<h3 id="unwrap-multiple-optionals-with-else-if">Unwrap Multiple Optionals with Else-If</h3>
+<p><code>return</code> within each <code>else</code> block is used to exit out of the function.</p>
+<h2 id="unwrap-with-guard">Unwrap with Guard</h2>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">unwrapOneByOneWithGuard</span><span class="hljs-params">()</span></span> {
+  <span class="hljs-keyword">guard</span> <span class="hljs-keyword">let</span> name = publicName <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Name missing&quot;</span>)
+    <span class="hljs-keyword">return</span>
+  }
+
+  <span class="hljs-keyword">guard</span> <span class="hljs-keyword">let</span> photo = publicPhoto <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Photo missing&quot;</span>)
+    <span class="hljs-keyword">return</span>
+  }
+
+  <span class="hljs-keyword">guard</span> <span class="hljs-keyword">let</span> age = publicAge <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Age missing&quot;</span>)
+    <span class="hljs-keyword">return</span>
+  }
+  <span class="hljs-built_in">print</span>(name)
+  <span class="hljs-built_in">print</span>(photo)
+  <span class="hljs-built_in">print</span>(age)
+}
+</code></pre>
+<h2 id="unwrap-multiple-optionals-with-else-if">Unwrap Multiple Optionals with Else-If</h2>
+<p>You may unwrap multiple optional types at once. If one of them contains <code>nil</code>, it will execute the <code>else</code> block.</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">unwrap</span><span class="hljs-params">()</span></span> {
   <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> name = publicName, <span class="hljs-keyword">let</span> photo = publicPhoto, <span class="hljs-keyword">let</span> age = publicAge {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Your name is <span class="hljs-subst">\(name)</span>. I see your face here, <span class="hljs-subst">\(photo)</span>, you are <span class="hljs-subst">\(age)</span>&quot;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Your name is <span class="hljs-subst">\(name)</span>. I see your face right here, <span class="hljs-subst">\(photo)</span>, you are <span class="hljs-subst">\(age)</span>&quot;</span>)
   } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// if any one of those is missing</span>
     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Something is missing&quot;</span>)
-    <span class="hljs-comment">// Animation Logic</span>
-    <span class="hljs-comment">// Networking</span>
-    <span class="hljs-comment">// return</span>
   }
+}
 </code></pre>
-<h3 id="unwrap-multiple-optionals-with-guard">Unwrap Multiple Optionals with Guard</h3>
-<p>Let&apos;s learn how a <code>guard</code> statement is used as a way to safely/implicitly unwrap optionals.</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">safetlyUnwrapUsingGuard</span><span class="hljs-params">()</span></span> {
+<h2 id="unwrap-multiple-optionals-with-guard">Unwrap Multiple Optionals with Guard</h2>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">unwrapWithGuard</span><span class="hljs-params">()</span></span> {
   <span class="hljs-keyword">guard</span> <span class="hljs-keyword">let</span> name = publicName, <span class="hljs-keyword">let</span> photo = publicPhoto, <span class="hljs-keyword">let</span> age = publicAge <span class="hljs-keyword">else</span> {
-    <span class="hljs-comment">//  If  one or more optionals contain nil</span>
+    <span class="hljs-comment">// if one or two of the variables contain &quot;nil&quot;</span>
     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Something is missing&quot;</span>)
     <span class="hljs-keyword">return</span>
   }
@@ -1298,6 +1313,11 @@
   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Print First&quot;</span>)
 }
 </code></pre>
+<p>Let us execute the <code>simpleDefer()</code> function.</p>
+<pre><code class="lang-swift">simpleDefer()
+<span class="hljs-comment">// &quot;Print First&quot;</span>
+<span class="hljs-comment">// &quot;Chill, later&quot;</span>
+</code></pre>
 <p>Another example,</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">3</span> {
   <span class="hljs-keyword">defer</span> { <span class="hljs-built_in">print</span> (<span class="hljs-string">&quot;Deferred <span class="hljs-subst">\(i)</span>&quot;</span>) }
@@ -1311,13 +1331,12 @@
 <span class="hljs-comment">// First 3</span>
 <span class="hljs-comment">// Deferred 3</span>
 </code></pre>
-<h3 id="usage-case">Usage Case</h3>
-<p> Completion handler block, or any code you want to explicitly inform your team without reading the entire block.  function/method.</p>
+<h3 id="usage-case-for-defer">Usage Case for Defer</h3>
+<p> Completion handler block, or any code you want to explicitly inform your team without having to read the entire block.</p>
 <h3 id="source-code">Source Code</h3>
-<h3 id="resources">Resources</h3>
-<p><a href="https://www.youtube.com/watch?v=oeUYGNLqqqg" target="_blank">The Complete Swift 3 Tutorial with Bob: Guard Statement (YouTube)</a></p>
+<p><a href="https://www.dropbox.com/sh/n0kb3mv5unyhj5w/AADzn2E55lnMbi2d39pVjS6aa?dl=0" target="_blank">1003_guard_defer_statement.playground</a></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>By now, I hope you understand the power of using a <code>guard</code> statement. It provides an early exit and you don&apos;t have to read all the way to the bottom spot the error messages. You use a <code>guard</code> statement not just to please yourself, but also for the sake of your teammates&apos; falling hair when he/she reads your code.</p>
+<p>Now you understand the power of using a <code>guard</code> statement. It provides an early exit and you don&apos;t have to read all the way to the bottom spot the error messages. You use a <code>guard</code> statement not just to please yourself, but also for the sake of your teammates&apos; falling hair when he/she reads your code.</p>
 
                                 
                                 </section>
@@ -1361,7 +1380,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"next":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/swift-intermediate/intro-error-handling.md","ref":"course/swift-intermediate/intro-error-handling.md","articles":[]},"previous":{"title":"Optional Chainings","level":"3.1.2","depth":2,"path":"course/swift-intermediate/optional-chaining.md","ref":"course/swift-intermediate/optional-chaining.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/guard-defer-statement.md","mtime":"2017-03-31T09:06:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-04T11:22:50.377Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Guard and Defer Statement","level":"3.1.3","depth":2,"next":{"title":"Intro to Error Handling","level":"3.1.4","depth":2,"path":"course/swift-intermediate/intro-error-handling.md","ref":"course/swift-intermediate/intro-error-handling.md","articles":[]},"previous":{"title":"Optional Chainings","level":"3.1.2","depth":2,"path":"course/swift-intermediate/optional-chaining.md","ref":"course/swift-intermediate/optional-chaining.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/guard-defer-statement.md","mtime":"2017-04-06T10:28:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

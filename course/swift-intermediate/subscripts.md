@@ -88,9 +88,7 @@ No Context means = ☠️
 ### Resources
 
 ### Source Code
-[1107_subscripts.playground]
-
-[1107_subscripts.playground]: https://www.dropbox.com/sh/mrrmaocche40bye/AADQlKE45soQzf48J1MEK1V3a?dl=0
+[1107_subscripts.playground](https://www.dropbox.com/sh/mrrmaocche40bye/AADQlKE45soQzf48J1MEK1V3a?dl=0)
 
 
 ## Conclusion
