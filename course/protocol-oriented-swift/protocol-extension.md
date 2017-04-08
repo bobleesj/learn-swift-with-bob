@@ -1,7 +1,7 @@
 # Protocol Extension
 
 ## Introduction
-Welcome to Lesson 2 of The UIKIt Fundamentals Part 1 Intro to Protocol Oriented Programming. Today, you are going to learn a magic. It will dramatically reduce the number of lines by... so much. It's just incredible. I don't need to talk much. Let's dive in.
+Today, you are going to learn a magic. It will dramatically reduce the number of lines by... so much. It's just incredible. I don't need to talk much. Let's dive in.
 
 ## Problem
 I don't even want to type anymore.
@@ -11,7 +11,7 @@ Create a protocol called `MathGenius` that contains one method.
 
 ```swift
 protocol MathGenius {
-func calculateGPA()
+  func calculateGPA()
 }
 ```
 
@@ -20,23 +20,26 @@ Create an extension to `MathGenius`. The extension contains a default method.
 
 ```swift
 extension MathGenius {
-func calculateGPA() {
-print("I'm too cool for school")
-}
+  func calculateGPA() {
+    print("I'm too cool for skool")
+  }
 }
 ```
 
 Create a struct that conforms to `MathGenius`. Since the extension provides a default method, you no longer have to specify the required method. If you do, it will override the default method.
 ```swift
 struct Bob: MathGenius {
-// Override
+  func calculateGPA() {
+    print("1.2 GPA")
+  }
 }
 
-Bob().calculateGPA() // "I'm too cool for school"
+Bob().calculateGPA() // "1.2 GPA""
+```
 
+```swift
 struct Bobby: MathGenius {}
-Bobby().calculateGPA() // "I'm too cool for school"
-Bobby.init() // Same as calling Bobby()
+Bobby().calculateGPA() // "I'm too cool for skool"
 ```
 
 ### Practical Protocol Extension
@@ -44,7 +47,7 @@ Create a protocol that contains a method that takes two `Double` parameters and 
 
 ```swift
 protocol FindAreable {
-func calculateArea(side: Double, length: Double) -> String
+  func calculateArea(side: Double, length: Double) -> String
 }
 ```
 
@@ -52,11 +55,10 @@ Create an extension to `FindAreable` which will return a statement whose type is
 
 ```swift
 extension FindAreable {
-
-func calculateArea(side: Double, length: Double) -> String {
-let area = String(side * length)
-return "The area is \(area)"
-}
+  func calculateArea(side: Double, length: Double) -> String {
+    let area = String(side * length)
+    return "The area is \(area)"
+  }
 }
 ```
 
@@ -64,18 +66,16 @@ Every struct and class that conforms to `FindArea` contains the default `calcula
 
 ```swift
 struct Square: FindAreable {}
-
-Square.init().calculateArea(side: 4, length: 100)
-
-let bigSquare = Square.init()
-bigSquare.calculateArea(side: 100, length: 20)
-
 struct Hexagon: FindAreable {}
-Hexagon().calculateArea(side: 6, length: 20)
+
+Square().calculateArea(side: 4, length: 4)
+Hexagon.init().calculateArea(side: 6, length: 10)
 ```
 
 ### Usage Case
-UIAnimation.
+ - UILabel, UIImageView, UIView --> Animation
+ - Storyboard Identifier
+ - Reusable table and collection view cells
 
 ### Resources
 If you are interested in how you may apply Protocol to UIKit, you may read [Protocol Oriented View with Bob (Blog)](https://medium.com/ios-geek-community/protocol-oriented-programming-view-in-swift-3-8bcb3305c427#.u3rr936vm). But, I plan to cover in Part 2. So, you may get head started.

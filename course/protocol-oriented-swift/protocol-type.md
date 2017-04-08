@@ -4,42 +4,44 @@
 Welcome to Lesson 3 of The UIKIt Fundamentals Part 1 Intro to Protocol Oriented Programming. You should be guilty if you haven't thought about how POP can be applied in your future app. If you are just consuming without thinking. You are a zombie. You are passive. You are not going to learn. Stop being passive. Think. Well, let's learn more about Protocol Oriented Programming. You will be awed.
 
 ## Problem
-Protocol met with Generics
+No more type casting
 
 Create a protocol called, `EastAsianable`. It contains two properties.
 
+## Design Protocol
 ```swift
 protocol EastAsianable {
-var useChopstic: Bool { get }
-var origin: String { get }
+  var useChopstics: Bool { get }
+  var origin: String { get }
 }
 ```
 
 Create an extension to `EastAsianable` that sets `useChopstic` to `true`.
 
+## Extend Protocol
 ```swift
 extension EastAsianable {
-
-// Extension may not contain stored properties
-var useChopstic: Bool {
-return true
-}
+  // Extension may not contain stored properties
+  var useChopstics: Bool {
+    return true
+  }
 }
 ```
 
+## Create Blueprints
 Create `Korean`, `Japanese`, and `Chinese` that conforms to `EastAsianable`.
 ```swift
 struct Korean: EastAsianable {
-var origin: String = "Korea"
+  var origin: String = "Korea"
 }
 
 
 class Japanese: EastAsianable {
-var origin: String = "Japan"
+  var origin: String = "Japan"
 }
 
 struct Chinese: EastAsianable {
-var origin: String = "China"
+  var origin: String = "China"
 }
 ```
 
@@ -47,14 +49,14 @@ var origin: String = "China"
 Just like you may group into an array using `[String]` and `[Int]`, you may group elements that conform to the same protocol.
 
 ```swift
-let EastAsians: [EastAsianable] = [Korean(), Japanese(), Chinese()]
+let eastAsians: [EastAsianable] = [Korean(), Japanese(), Chinese()]
 ```
 
 Since every element that conforms to `EastAsianable` contains `origin`, you may loop through the element.
 
 ```swift
-for EastAsian in EastAsians {
-print("I'm from \(EastAsian.origin)")
+for eastAsian in eastAsians {
+  print("I'm from \(eastAsian.origin)")
 }
 ```
 
@@ -88,10 +90,11 @@ var price: String = "Dirt Cheap"
 Create a generic function that only takes a parameter whose type must conform to `Sleekable`.
 ```swift
 func stateThePrice<T: Sleekable>(enterGem: T) {
-print("I'm expensive. In fact, I'm \(enterGem.price)")
+  print("I'm expensive. In fact, I'm \(enterGem.price)")
 }
 
 stateThePrice(enterGem: Ruby())
+// "I'm expensive. In fact, I'm Dirt Cheap"
 ```
 
 ### Source Code
@@ -99,11 +102,7 @@ stateThePrice(enterGem: Ruby())
 
 
 ### Resources
-
 [Intro to Protocol Oriented Programming  (Blog)](https://medium.com/ios-geek-community/introduction-to-protocol-oriented-programming-in-swift-b358fe4974f#.cwpeva7h8)
-
-If you are interested in applying to UIKit
-[Protocol Oriented View (Blog)](https://medium.com/ios-geek-community/protocol-oriented-programming-view-in-swift-3-8bcb3305c427#.pbyihqrsa)
 
 
 ## Conclusion

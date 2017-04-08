@@ -65,7 +65,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="associative-type.html" />
+    <link rel="next" href="conclusion.html" />
     
     
     <link rel="prev" href="protocol-type.html" />
@@ -608,9 +608,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/closure-capture-lists.html">
+        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/capture-lists.html">
             
-                <a href="../functional-swift/closure-capture-lists.html">
+                <a href="../functional-swift/capture-lists.html">
             
                     
                     Capture Lists
@@ -647,20 +647,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/@escape-@autoclosure.html">
-            
-                <a href="../functional-swift/@escape-@autoclosure.html">
-            
-                    
-                    @escape and @autoclosure
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.8" data-path="../functional-swift/conclusion.html">
+        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/conclusion.html">
             
                 <a href="../functional-swift/conclusion.html">
             
@@ -751,20 +738,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="associative-type.html">
-            
-                <a href="associative-type.html">
-            
-                    
-                    Associative Type
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.1.6" data-path="conclusion.html">
+        <li class="chapter " data-level="6.1.5" data-path="conclusion.html">
             
                 <a href="conclusion.html">
             
@@ -803,25 +777,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
-            
-                <a href="../swift-memory-management/memory-leak.html">
-            
-                    
-                    Memory Leak
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/automatic-reference-counting.html">
             
                 <a href="../swift-memory-management/automatic-reference-counting.html">
             
                     
-                    Automatic Reference Counting
+                    Intro to Memory Management
             
                 </a>
             
@@ -829,12 +790,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/delegate_retain_cycle.html">
             
-                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+                <a href="../swift-memory-management/delegate_retain_cycle.html">
             
                     
-                    Closure and Delegate Retention Cycle
+                    Delegate Retain Cycle
             
                 </a>
             
@@ -842,7 +803,33 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/closure_retain_cycle.html">
+            
+                <a href="../swift-memory-management/closure_retain_cycle.html">
+            
+                    
+                    Closure Retain Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                <a href="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                    
+                    Escaping and Autoclosures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../swift-memory-management/conclusion.html">
             
                 <a href="../swift-memory-management/conclusion.html">
             
@@ -934,20 +921,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
-            
-                <a href="../../content/software-engineering/agile-development.html">
-            
-                    
-                    Agile Development
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/continuous-integration.html">
             
                 <a href="../../content/software-engineering/continuous-integration.html">
             
@@ -1159,49 +1133,51 @@
 <h2 id="introduction">Introduction</h2>
 <p>Welcome to the last lesson of The UIKIt Fundamentals Part 1 Intro to Protocol Oriented Programming. Today, you learn the most important concept. It is not technically about protocol oriented programming. You use Protocol, but you will learn how to pass data between two classes using it. There are a lot of bullshit tutorials out there. You&apos;ve come to the right place. Let me tell you the majority of people don&apos;t understand what&apos;s going on, and they simply copy off from the screen. Have you ever seen, tableView.delegate = self? What the heck is that?</p>
 <h2 id="problem">Problem</h2>
-<p>I don&apos;t get it.</p>
+<p>Pass Data between Classes</p>
 <blockquote>
 <p>You just have to memorize it. It&apos;s a gift from Apple engineers. Take it. Do not question why it works. But, find out why it is useful.You might have to watch this video multiple times</p>
 </blockquote>
-<h3 id="pass-data-from-classone-to-classtwo">Pass Data from ClassOne to ClassTwo</h3>
+<h3 id="design-protocol">Design Protocol</h3>
 <p>Create a protocol called, <code>PassDataDelegate</code>. It contains a method that takes <code>data</code> whose type is in <code>String</code> and returns <code>String</code>.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">PassDataDelegate</span> </span>{
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">passData</span><span class="hljs-params">(data: String)</span></span> -&gt; <span class="hljs-type">String</span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">passData</span><span class="hljs-params">(data: String)</span></span> -&gt; <span class="hljs-type">String</span>
 }
 </code></pre>
+<h3 id="design-delegator-sender">Design Delegator (Sender)</h3>
 <p>Create a class that contains an optional property whose type is <code>PassDataDelegate?</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassOne</span> </span>{
-<span class="hljs-keyword">var</span> delegate: <span class="hljs-type">PassDataDelegate</span>?
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FirstVC</span> </span>{
+  <span class="hljs-keyword">var</span> delegate: <span class="hljs-type">PassDataDelegate</span>?
 }
 </code></pre>
 <p>If you call the method, <code>passData</code> associated with the property, <code>delegate</code>, it will return <code>nil</code> since you have not initialized <code>delegate</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-type">ClassOne</span>().delegate?.passData(data: <span class="hljs-string">&quot;Bob&quot;</span>)
+<pre><code class="lang-swift"><span class="hljs-type">FirstVC</span>().delegate?.passData(data: <span class="hljs-string">&quot;Bob&quot;</span>) <span class="hljs-comment">// nil</span>
 </code></pre>
+<h3 id="design-delegate-receiver">Design Delegate (Receiver)</h3>
 <p>Create <code>ClassTwo</code> that conforms to <code>PassDataDelegate</code>.  <code>ClassTwo</code> must contain <code>passData(data: String)</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassTwo</span>: <span class="hljs-title">PassDataDelegate</span> </span>{
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">passData</span><span class="hljs-params">(data: String)</span></span> -&gt; <span class="hljs-type">String</span> {
-<span class="hljs-keyword">return</span> <span class="hljs-string">&quot;You passed <span class="hljs-subst">\(data)</span>&quot;</span>
-}
-
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SecondVC</span>: <span class="hljs-title">PassDataDelegate</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">passData</span><span class="hljs-params">(data: String)</span></span> -&gt; <span class="hljs-type">String</span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Something happened&quot;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;You&apos;ve entered <span class="hljs-subst">\(data)</span>&quot;</span>
+  }
 }
 </code></pre>
-<p>Create instances</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> classOne = <span class="hljs-type">ClassOne</span>()
-<span class="hljs-keyword">let</span> classTwo = <span class="hljs-type">ClassTwo</span>()
+<h3 id="create-instances">Create instances</h3>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> firstVC = <span class="hljs-type">FirstVC</span>()
+<span class="hljs-keyword">let</span> secondVC = <span class="hljs-type">SecondVC</span>()
 </code></pre>
 <p>Set <code>classOne.delegate</code> to <code>classTwo</code>. It is possible since <code>classTwo</code> conforms to <code>PassDataDelegate</code>.</p>
 <pre><code class="lang-swift">classOne.delegate = classTwo <span class="hljs-comment">// you are sending data to classTwo</span>
 </code></pre>
-<p>As soon as you make the relationship like above, whenver you call a method from <code>classOne</code>, you pass data to <code>classTwo</code> and execute the required method.</p>
-<pre><code class="lang-swift">classOne.delegate?.passData(data: <span class="hljs-string">&quot;123124124&quot;</span>)
-<span class="hljs-comment">//  &quot;You passed 123124124&quot;</span>
-classOne.delegate?.passData(data: <span class="hljs-string">&quot;Hello&quot;</span>)
-<span class="hljs-comment">// &quot;You passed Hello&quot;</span>
+<p>As soon as you make the relationship like above, whenver you call a method from <code>firstVC</code>, you pass data to <code>secondVC</code> and execute the required method.</p>
+<pre><code class="lang-swift"><span class="hljs-comment">//: Assign Delegate</span>
+firstVC.delegate = secondVC
+firstVC.delegate?.passData(data: <span class="hljs-string">&quot;Hello, 1231231&quot;</span>)  
+<span class="hljs-comment">// &quot;You&apos;ve entered Hello, 1231231&quot;</span>
 </code></pre>
 <h3 id="source-code">Source code</h3>
 <p><a href="https://www.dropbox.com/sh/j7xreau3y2kq8bo/AACG17ayoM8W8JMM3O6jbB5ya?dl=0" target="_blank">4004_delegate.playground</a></p>
 <h3 id="resources">Resources</h3>
+<p><a href="https://blog.bobthedeveloper.io/the-meaning-of-delegate-in-swift-347eaa9674d" target="_blank">Introduction to Delegate in Swift</a></p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Great, how was it guys? For those who are confused, you might have to watch this video 5-10 times to get used to it. You might have to search up on Google and learn more. You might have to playaround. If you are confused by my lesson and you are not getting it, it&apos;s your fault. It took me 2 weeks to understand delegate. It&apos;s not easy. But, you just have to struggle when you are not in the comfort zone.  Struggle is virtue.</p>
 
@@ -1236,7 +1212,7 @@ classOne.delegate?.passData(data: <span class="hljs-string">&quot;Hello&quot;</s
                 </a>
                 
                 
-                <a href="associative-type.html" class="navigation navigation-next " aria-label="Next page: Associative Type">
+                <a href="conclusion.html" class="navigation navigation-next " aria-label="Next page: Conclusion">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1247,7 +1223,7 @@ classOne.delegate?.passData(data: <span class="hljs-string">&quot;Hello&quot;</s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Delegate","level":"6.1.4","depth":2,"next":{"title":"Associative Type","level":"6.1.5","depth":2,"path":"course/protocol-oriented-swift/associative-type.md","ref":"course/protocol-oriented-swift/associative-type.md","articles":[]},"previous":{"title":"Protocol as Type","level":"6.1.3","depth":2,"path":"course/protocol-oriented-swift/protocol-type.md","ref":"course/protocol-oriented-swift/protocol-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/protocol-oriented-swift/delegate.md","mtime":"2017-04-06T01:31:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Delegate","level":"6.1.4","depth":2,"next":{"title":"Conclusion","level":"6.1.5","depth":2,"path":"course/protocol-oriented-swift/conclusion.md","ref":"course/protocol-oriented-swift/conclusion.md","articles":[]},"previous":{"title":"Protocol as Type","level":"6.1.3","depth":2,"path":"course/protocol-oriented-swift/protocol-type.md","ref":"course/protocol-oriented-swift/protocol-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/protocol-oriented-swift/delegate.md","mtime":"2017-04-08T03:07:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-08T03:05:43.408Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -65,7 +65,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="closure-capture-lists.html" />
+    <link rel="next" href="capture-lists.html" />
     
     
     <link rel="prev" href="intro-closure-part2.html" />
@@ -608,9 +608,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.4" data-path="closure-capture-lists.html">
+        <li class="chapter " data-level="5.1.4" data-path="capture-lists.html">
             
-                <a href="closure-capture-lists.html">
+                <a href="capture-lists.html">
             
                     
                     Capture Lists
@@ -647,20 +647,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.7" data-path="@escape-@autoclosure.html">
-            
-                <a href="@escape-@autoclosure.html">
-            
-                    
-                    @escape and @autoclosure
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.8" data-path="conclusion.html">
+        <li class="chapter " data-level="5.1.7" data-path="conclusion.html">
             
                 <a href="conclusion.html">
             
@@ -751,20 +738,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/associative-type.html">
-            
-                <a href="../protocol-oriented-swift/associative-type.html">
-            
-                    
-                    Associative Type
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.1.6" data-path="../protocol-oriented-swift/conclusion.html">
+        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/conclusion.html">
             
                 <a href="../protocol-oriented-swift/conclusion.html">
             
@@ -803,25 +777,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
-            
-                <a href="../swift-memory-management/memory-leak.html">
-            
-                    
-                    Memory Leak
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/automatic-reference-counting.html">
             
                 <a href="../swift-memory-management/automatic-reference-counting.html">
             
                     
-                    Automatic Reference Counting
+                    Intro to Memory Management
             
                 </a>
             
@@ -829,12 +790,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/delegate_retain_cycle.html">
             
-                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+                <a href="../swift-memory-management/delegate_retain_cycle.html">
             
                     
-                    Closure and Delegate Retention Cycle
+                    Delegate Retain Cycle
             
                 </a>
             
@@ -842,7 +803,33 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/closure_retain_cycle.html">
+            
+                <a href="../swift-memory-management/closure_retain_cycle.html">
+            
+                    
+                    Closure Retain Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                <a href="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                    
+                    Escaping and Autoclosures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../swift-memory-management/conclusion.html">
             
                 <a href="../swift-memory-management/conclusion.html">
             
@@ -934,20 +921,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
-            
-                <a href="../../content/software-engineering/agile-development.html">
-            
-                    
-                    Agile Development
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/continuous-integration.html">
             
                 <a href="../../content/software-engineering/continuous-integration.html">
             
@@ -1157,8 +1131,118 @@
                                 
                                 <h1 id="lazy-init-with-closures">Lazy Init with Closures</h1>
 <h2 id="introduction">Introduction</h2>
-<h2 id="lecture-notes">Lecture Notes</h2>
-<h3 id="problem">Problem</h3>
+<h2 id="problem">Problem</h2>
+<p>How to initialize an object with a closure?</p>
+<h2 id="unconventional-way">Unconventional Way</h2>
+<pre><code class="lang-swift"><span class="hljs-keyword">import</span> UIKit
+
+<span class="hljs-keyword">let</span> box: <span class="hljs-type">UIView</span> = {
+  <span class="hljs-keyword">let</span> view = <span class="hljs-type">UIView</span>()
+  <span class="hljs-keyword">return</span> view
+}()
+</code></pre>
+<h2 id="create-ui-components">Create UI Components</h2>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> buttonSize = <span class="hljs-type">CGRect</span>(x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, width: <span class="hljs-number">100</span>, height: <span class="hljs-number">100</span>)
+
+<span class="hljs-comment">// ViewControllerOne</span>
+<span class="hljs-keyword">let</span> bobButton = <span class="hljs-type">UIButton</span>(frame: buttonSize)
+bobButton.backgroundColor = .black
+bobButton.titleLabel?.text = <span class="hljs-string">&quot;Bob&quot;</span>
+bobButton.titleLabel?.textColor = .white
+
+<span class="hljs-comment">// ViewControllerTwo</span>
+<span class="hljs-keyword">let</span> bobbyButton = <span class="hljs-type">UIButton</span>(frame: buttonSize)
+bobbyButton.backgroundColor = .black
+bobbyButton.titleLabel?.text = <span class="hljs-string">&quot;Bobby&quot;</span>
+bobbyButton.titleLabel?.textColor = .white
+</code></pre>
+<h2 id="create-button-with-function">Create Button with Function</h2>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">createButton</span><span class="hljs-params">(enterTitle: String)</span></span> -&gt; <span class="hljs-type">UIButton</span> {
+  <span class="hljs-keyword">let</span> button = <span class="hljs-type">UIButton</span>(frame: buttonSize)
+  button.backgroundColor = .black
+  button.titleLabel?.text = enterTitle
+  <span class="hljs-keyword">return</span> button
+}
+createButton(enterTitle: <span class="hljs-string">&quot;Yoyo&quot;</span>)
+</code></pre>
+<h2 id="introducing-unconventional-way">Introducing Unconventional Way</h2>
+<h3 id="create-object-with-closure">Create Object with Closure</h3>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Human</span> </span>{
+  <span class="hljs-keyword">init</span>() {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Born 1996&quot;</span>)
+  }
+}
+
+<span class="hljs-keyword">let</span> createBob = { () -&gt; <span class="hljs-type">Human</span> <span class="hljs-keyword">in</span>
+  <span class="hljs-keyword">let</span> human = <span class="hljs-type">Human</span>()
+  <span class="hljs-keyword">return</span> human
+}
+
+<span class="hljs-keyword">let</span> bobInstance = createBob()
+</code></pre>
+<h3 id="initialize-in-single-line">Initialize in Single Line</h3>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> bobby = { () -&gt; <span class="hljs-type">Human</span> <span class="hljs-keyword">in</span>
+  <span class="hljs-keyword">let</span> human = <span class="hljs-type">Human</span>()
+  <span class="hljs-keyword">return</span> human
+}()
+</code></pre>
+<h3 id="create-uiview-unconventionally">Create <code>UIView</code> Unconventionally</h3>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> bobView = { () -&gt; <span class="hljs-type">UIView</span> <span class="hljs-keyword">in</span>
+  <span class="hljs-keyword">let</span> view = <span class="hljs-type">UIView</span>()
+  view.backgroundColor = .black
+  <span class="hljs-keyword">return</span> view
+}()
+
+<span class="hljs-keyword">let</span> bobbyView = { () -&gt; <span class="hljs-type">UIView</span> <span class="hljs-keyword">in</span>
+  <span class="hljs-keyword">let</span> view = <span class="hljs-type">UIView</span>()
+  view.backgroundColor = .black
+  <span class="hljs-keyword">return</span> view
+}()
+
+<span class="hljs-keyword">let</span> newBobbyView: <span class="hljs-type">UIView</span> = {
+  <span class="hljs-keyword">let</span> view = <span class="hljs-type">UIView</span>()
+  view.backgroundColor = .black
+  <span class="hljs-keyword">return</span> view
+}()
+
+<span class="hljs-comment">// () -&gt; UIView</span>
+</code></pre>
+<h2 id="introducing-lazy-var">Introducing Lazy Var</h2>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntenseMathProblem</span> </span>{
+  <span class="hljs-built_in">lazy</span> <span class="hljs-keyword">var</span> complexNumber: <span class="hljs-type">Int</span> = {
+    <span class="hljs-number">1</span> * <span class="hljs-number">1</span>
+  }()
+}
+
+<span class="hljs-keyword">let</span> problem = <span class="hljs-type">IntenseMathProblem</span>() <span class="hljs-comment">// no value for complexNumber</span>
+problem.complexNumber <span class="hljs-comment">// now, complexnumber is 1</span>
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SortFromDataBase</span> </span>{
+  <span class="hljs-comment">// Data</span>
+  <span class="hljs-built_in">lazy</span> <span class="hljs-keyword">var</span> sortNumberFromDatabase: [<span class="hljs-type">Int</span>] = {
+    <span class="hljs-comment">// Caluation and sorting</span>
+    [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]
+  }()
+}
+<span class="hljs-comment">// SortFromDataBase().sortNumberFromDatabase</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CompressionManager</span> </span>{
+  <span class="hljs-built_in">lazy</span> <span class="hljs-keyword">var</span> compressedImage: <span class="hljs-type">UIImage</span> = {
+    <span class="hljs-keyword">let</span> image = <span class="hljs-type">UIImage</span>()
+    <span class="hljs-comment">// Compress the image</span>
+    <span class="hljs-comment">// Logic</span>
+    <span class="hljs-keyword">return</span> image
+  }()
+}
+</code></pre>
+<h2 id="rules">Rules</h2>
+<ol>
+<li>You can&#x2019;t use lazy with let since there is no initial value, and it is attained later when it is accessed.</li>
+<li>You can&#x2019;t use it with a Computed property since computed property is always recalculated (requires CPU) when you modify any of the variables that has a relationship with the lazy property.</li>
+<li>Lazy is only valid for members of a struct or class</li>
+</ol>
+<h3 id="resources">Resources</h3>
+<p><a href="https://blog.bobthedeveloper.io/swift-lazy-initialization-with-closures-a9ef6f6312c" target="_blank">Swift Lazy Initialization with Closures</a></p>
 <h3 id="source-code">Source Code</h3>
 <p><a href="https://www.dropbox.com/sh/tdmnhesaeqlwox4/AAA1aCtKuhI1V1YXJkaV2L05a?dl=0" target="_blank">3003_lazy_init_closures.playground</a></p>
 <h3 id="reference">Reference</h3>
@@ -1195,7 +1279,7 @@
                 </a>
                 
                 
-                <a href="closure-capture-lists.html" class="navigation navigation-next " aria-label="Next page: Capture Lists">
+                <a href="capture-lists.html" class="navigation navigation-next " aria-label="Next page: Capture Lists">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1206,7 +1290,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lazy Init with Closures","level":"5.1.3","depth":2,"next":{"title":"Capture Lists","level":"5.1.4","depth":2,"path":"course/functional-swift/closure-capture-lists.md","ref":"course/functional-swift/closure-capture-lists.md","articles":[]},"previous":{"title":"Intro to Closures Part 2","level":"5.1.2","depth":2,"path":"course/functional-swift/intro-closure-part2.md","ref":"course/functional-swift/intro-closure-part2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/functional-swift/lazy-init-closures.md","mtime":"2017-04-06T01:12:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lazy Init with Closures","level":"5.1.3","depth":2,"next":{"title":"Capture Lists","level":"5.1.4","depth":2,"path":"course/functional-swift/capture-lists.md","ref":"course/functional-swift/capture-lists.md","articles":[]},"previous":{"title":"Intro to Closures Part 2","level":"5.1.2","depth":2,"path":"course/functional-swift/intro-closure-part2.md","ref":"course/functional-swift/intro-closure-part2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/functional-swift/lazy-init-closures.md","mtime":"2017-04-07T14:29:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-08T03:05:43.408Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

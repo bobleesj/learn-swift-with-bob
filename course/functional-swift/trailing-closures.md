@@ -6,38 +6,54 @@ Welcome to Lesson 3 of The UIKIt Fundamentals Part 1 Intro to Functional Program
 ## Problem
 A closure is too long to pass through a function
 
-### Trailing Closure
-Create a function that contains a closure block as the last parameter
+### Design Function
 ```swift
-func trailingClosure(number: Int, closure: (String) -> String) {
+func trailingClosure(number: Int, closure: () -> Void) {
+  print("You've entered \(number)")
+  closure()
 }
 ```
-You may insert a closure right inside.
+
+### Design Closure Block
 ```swift
-trailingClosure(number: 123, closure: { word in word })
+func helloFunc() -> Void {
+  print("Hello, Function!")
+}
+helloFunc // () -> Void
+
+let helloClosure = {
+  print("Hello, Closure!")
+}
 ```
 
-If the last parameter is a closure block,
-
+### Execute Function
 ```swift
-trailingClosure(number: 123) { word in word }
+trailingClosure(number: 100, closure: helloFunc)
+trailingClosure(number: 100, closure: helloClosure)
+
+trailingClosure(number: 100, closure: { print("Hello!!!") })
+trailingClosure(number: 100) { print("Hello!!!!!") }
 ```
 
-Here is another example.
+When there is a closure block at the end of parameter, you may use `trailing closures`.
+
+### Another Example
 ```swift
-func trailingClosures(closure: (Int) -> Int) { }
+func trailingClosures(number: Int, closure: (Int) -> Int) {
+  let newNumber = closure(number)
+  print(newNumber)
+}
+
+trailingClosures(number: 1000, closure: { number in number * number })
+
+trailingClosures(number: 500) { number in number * number }
+trailingClosures(number: 400) { $0 * $0 }
 ```
 
-Without trailing closure
-```swift
-trailingClosures(closure: { number in number })
-```
 
-With trailing closures
-```swift
-trailingClosures() { number in number }
-trailingClosures() { $0 }
-```
+
+
+
 
 ### Source Code
 ### Resources

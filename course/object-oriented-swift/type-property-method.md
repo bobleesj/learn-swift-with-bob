@@ -11,26 +11,25 @@ Anything that has `static` in front will not be overridden. In fact, `static` is
 
 ```swift
 struct SomeStructure {
- static var storedTypeProperty = "Some value."
- static var computedProperty: Int {
-   get {
-     return 120
-   }
-   set {
-     print("You've set to \(newValue)")
-   }
- }
-
- static func hello() {
-   print("hello")
- }
+  static var storedTypeProperty = "Some value."
+  static var computedProperty: Int {
+    get {
+      return 120
+    }
+    set {
+      print("You've set to \(newValue)")
+    }
+  }
+  static func hello() {
+    print("hello")
+  }
 }
 ```
 
-Access properties
+Access properties and methods
 ```swift
-SomeStructure.computedProperty = 150
-SomeStructure.computedProperty = 24234
+SomeStructure.storedTypeProperty // "Some Value"
+SomeStructure.hello() // 'hello"'
 ```
 
 ### Class
@@ -41,19 +40,18 @@ Create a class called `GrandParent`. It contains one static property and one sta
 
 ```swift
 class GrandParent {
- static var numberOfYearsInMarriage = 30
- static func introduce() {
-   print("We've been married for \(numberOfYearsInMarriage)")
+  static var numberOfYearsInMarriage = 30
+  static func introduce() {
+    print("We've been married for \(numberOfYearsInMarriage)")
  }
 
- func sayHi() {
-   print("What's popping?")
- }
+  class func introducing() {
+    print("We've been married for \(numberOfYearsInMarriage)")
+  }
 
- final func sayHello() {
-   print("What Up?")
- }
-
+  final func cantOverride() {
+    print("you can't change me")
+  }
 }
 ```
 
@@ -62,58 +60,17 @@ Now, create `Parent` class that inherits `GrandParent`.  You may override `func 
 
 ```swift
 class Parent: GrandParent {
- override func sayHi() {
-   super.sayHi()
-   print("I'm a parent")
- }
-
-//  override func sayHello() {
-//    print("What Up?")
+  override class func introducing() {
+    print("I'm married for 5 years")
+  }
+//  override static func introduce() {
+//    print("I'm married for 5 years")
 //  }
-// Error
-
 }
 
+Parent.introducing() // "I'm married for 5 years"
 ```
 
-#### Access Type Property and Method
-Now, let us grab `numberOfYearsInMarriage` and `introduction`
-
-```swift
-Parent.numberOfYearsInMarriage // 30
-Parent.introduce()
-Parent().sayHi()  // Good
-Parent().sayHello() // Good
-```
-
-### Design Class
-Create a class called, `Human` that contains two type properties.
-
-```swift
-class Human {
- static var legs = 2
-
- // class var name = "Bob"
- // Error: Stored property not valid for class var
-
- class var myName: String {
-   return "Human"
- }
-
-}
-```
-### Design Subclass
-> Again, subclasses can override class methods/properties, but cannot override static methods and properties.
-
-Create a class called, `Bob` that inherits `Human`. Attempt to override `myName` class type property.
-
-```swift
-class Bob: Human {
- override class var myName: String {
-   return "My name is Bob"
- }
-}
-```
 
 
 ### Practical Usage
@@ -130,12 +87,16 @@ class BluetoothID {
  }
 }
 ```
+
 ```swift
-BluetoothID.iPhone.iPhone8
+BluetoothID.iPhone.iPhone8 // "4234-1232-1232-5465"
+BluetoothID.iPhone.iPhone8 // ""7967-8123-7892-4563"
 ```
 
 You may also use `enum`. but I prefer the method above since I do n't have to call `rawValue`.
 
+
+### Alternative
 ```swift
 enum AirDropID: String {
  case iPhone4 = "4234-1232-1232-5465"
@@ -154,14 +115,3 @@ AirDropID.iPhone8.rawValue // "7967-8123-7892-4563"
 
 
 ## Conclusion
-Remember a couple things. First, if you use `final` or `static`, that means you may inherit, but you can not override. Second, when you are using `class property`, you have to use computed property for some reason I couldn't find out. Right now, you are learning how each organ works one by one. You are learning about the stomach, the larges intestines, and on on. Later in Part 2 and Part 3, you will learn how those organs form the entire digestive system, also known as the iOS platform.
-
-
-#### Stay Connected
-If you'd like to be on my mailing list and receive personal updates on upcoming books and courses, feel free to send me an email at `bobleesj@gmail.com`
-<p>
-<a href="http://bobthedeveloper.io"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
-<a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
-"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
-<a href="https://medium.com/@bobleesj"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"/></a>
-</p>

@@ -13,56 +13,73 @@ How can I add observer/tracker to a property?
 ### Create Step Counter
 Create a variable called, `totalSteps`. When the variable encounters a new value, you may notify the user that the value has been changed. In the `willSet` block, `newTotalSteps` refers to the new value stored. In the `didSet` block, `oldValue` refers to the previous value before `totalSteps` encounters a new value.
 
+## Grade Tracker
 ```swift
-var totalSteps: Int = 20 {
- willSet(newTotalSteps) {
-   print("About to set totalSteps to \(newTotalSteps)")
- }
- didSet {
-   if totalSteps > oldValue  {
-     print("Added \(totalSteps - oldValue) steps")
-   }
- }
+var myGrade: Int = 80 {
+  willSet(newGrade) {
+    print("About to change your grade to \(newGrade)")
+  }
+  didSet {
+    print("Your grade has been changed")
+    print("you had \(oldValue) previously. Now you have \(myGrade)")
+  }
 }
 
-totalSteps = 100  
-// About to set totalSteps to 100
-// Added 80 steps
+myGrade = 100
 ```
-### Real Life Application
+
+## Step Counter
+```swift
+var totalSteps: Int = 20 {
+  willSet(newTotalSteps) {
+    print("About to set totalSteps to \(newTotalSteps)")
+  }
+  didSet {
+    if totalSteps > oldValue  {
+      print("Added \(totalSteps - oldValue) steps")
+    }
+  }
+}
+
+totalSteps = 60
+```
+
+### Application
 You may notify the user or change background color once the user successfully logs in to the apps.
 
 ```swift
-var userLoggedIn: Bool = false {
- willSet(newValue) {
-   print("The user has tried something")
- }
- didSet {
-   if userLoggedIn {
-     print("The user switched from \(oldValue) to \(userLoggedIn)")
-   }
+var userLoginInfo: Bool = false {
+  willSet(newValue) {
+    print("The user has tried something")
+  }
+  didSet {
+    if userLoginInfo {
+      print("The user has switched from \(oldValue) to \(userLoginInfo)")
+      // Backgroud color
+      // Animation
+      // Pop Up
+      // All kinds of stuff
+  }
  }
 }
 
-userLoggedIn = false
-// "The user has tried something"
-userLoggedIn = true
-// "The user has tried something"
-// "The user switched from false to true"
+userLoginInfo = true
+// The user has tried something
+// The user has switched from false to true
+userLoginInfo = true
+// The user has tried something
+// The user has switched from true to true
 ```
 
+### Similarity with Computed Property
+ - Always recalculated
+
+### What makes Property Observers different
+ - There is a default value and it is observed rather than calculated.
+ - `willSet` and `didSet` will not get called when you initialize it.
 
 ### Source Code
 [2003_property_observers.playground](https://www.dropbox.com/sh/tfvmjjrppvy0g01/AABB5kYVgf6ImcptnOvQ53VGa?dl=0)
 
 ## Conclusion
 Great! The whole purpose of using property observer is to write less code but provide greater readability. You don't have to create a function with a switch or else-if statement. As you've seen there are ways ways to check whether user has been logged or not, computed property for me works great because it provides a separate block of code with distinct keywords such as `didSet` and `willSet`.
-
-#### Stay Connected
-If you'd like to be on my mailing list and receive personal updates on upcoming books and courses, feel free to send me an email at `bobleesj@gmail.com`
-<p>
-<a href="http://bobthedeveloper.io"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
-<a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
-"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
-<a href="https://medium.com/@bobleesj"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"/></a>
-</p>

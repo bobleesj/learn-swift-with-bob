@@ -608,9 +608,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/closure-capture-lists.html">
+        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/capture-lists.html">
             
-                <a href="../functional-swift/closure-capture-lists.html">
+                <a href="../functional-swift/capture-lists.html">
             
                     
                     Capture Lists
@@ -647,20 +647,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/@escape-@autoclosure.html">
-            
-                <a href="../functional-swift/@escape-@autoclosure.html">
-            
-                    
-                    @escape and @autoclosure
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.8" data-path="../functional-swift/conclusion.html">
+        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/conclusion.html">
             
                 <a href="../functional-swift/conclusion.html">
             
@@ -751,20 +738,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/associative-type.html">
-            
-                <a href="../protocol-oriented-swift/associative-type.html">
-            
-                    
-                    Associative Type
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.1.6" data-path="../protocol-oriented-swift/conclusion.html">
+        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/conclusion.html">
             
                 <a href="../protocol-oriented-swift/conclusion.html">
             
@@ -803,25 +777,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
-            
-                <a href="../swift-memory-management/memory-leak.html">
-            
-                    
-                    Memory Leak
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/automatic-reference-counting.html">
             
                 <a href="../swift-memory-management/automatic-reference-counting.html">
             
                     
-                    Automatic Reference Counting
+                    Intro to Memory Management
             
                 </a>
             
@@ -829,12 +790,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/delegate_retain_cycle.html">
             
-                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+                <a href="../swift-memory-management/delegate_retain_cycle.html">
             
                     
-                    Closure and Delegate Retention Cycle
+                    Delegate Retain Cycle
             
                 </a>
             
@@ -842,7 +803,33 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/closure_retain_cycle.html">
+            
+                <a href="../swift-memory-management/closure_retain_cycle.html">
+            
+                    
+                    Closure Retain Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                <a href="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                    
+                    Escaping and Autoclosures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../swift-memory-management/conclusion.html">
             
                 <a href="../swift-memory-management/conclusion.html">
             
@@ -934,20 +921,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
-            
-                <a href="../../content/software-engineering/agile-development.html">
-            
-                    
-                    Agile Development
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/continuous-integration.html">
             
                 <a href="../../content/software-engineering/continuous-integration.html">
             
@@ -1157,27 +1131,34 @@
                                 
                                 <h1 id="set-and-tuple">Set and Tuple</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome to Lesson 9 of The Swift Fundamentals. The first objective is to learn how to group a list of items with <code>set</code>. The second is to work with various types in a variable/constant with <code>tuple.</code> Enough said, let&apos;s go.</p>
+<p>Welcome to Lesson 9 of The Swift Fundamentals. The first objective is to learn how to group a list of items with <code>Set</code>. The second is to work with various types within a single variable/constant with <code>Tuple.</code> Enough said, let&apos;s get started.</p>
 <h2 id="problem">Problem</h2>
 <ol>
-<li>I&apos;d love to eliminate duplicated items</li>
-<li>I&apos;d love to combine all kinds of types</li>
+<li>I&apos;d love to eliminate duplicated items: <code>sets</code></li>
+<li>I&apos;d love to combine all kinds of types: <code>tuples</code></li>
 </ol>
 <h2 id="introducing-sets">Introducing Sets</h2>
 <p>A set stores values of the same type in a collection with <strong>no defined ordering</strong> and <strong>no duplicated elements</strong>.</p>
 <h3 id="multiple-ways-to-create-arrays">Multiple Ways to Create Arrays</h3>
-<p>Before we create sets in Swift, first let&apos;s review multiple ways to create an array in Swift</p>
-<pre><code>//: Multiple ways to create arrays
-var arrayOne: [Double] = [] // Most Common
-var arrayTwo = [Double]()
+<p>Before we create sets in Swift, first let&apos;s review multiple ways to create an array.</p>
+<blockquote>
+<p>Remember, <code>Array</code> is just a generic struct.</p>
+</blockquote>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> arrayOne: [<span class="hljs-type">Double</span>] = [] <span class="hljs-comment">// Most Common</span>
+<span class="hljs-keyword">var</span> arrayTwo = [<span class="hljs-type">Double</span>]()
 
-var arrayThree: Array&lt;Double&gt; = []
-var arrayFour: Array&lt;Double&gt; = Array()
-var arrayFive = Array([1123.08, 234.23])
+<span class="hljs-keyword">var</span> arrayThree: <span class="hljs-type">Array</span>&lt;<span class="hljs-type">Double</span>&gt; = []
+<span class="hljs-keyword">var</span> arrayFour: <span class="hljs-type">Array</span>&lt;<span class="hljs-type">Double</span>&gt; = <span class="hljs-type">Array</span>()
+<span class="hljs-keyword">var</span> arrayFive = <span class="hljs-type">Array</span>([<span class="hljs-number">1123.08</span>, <span class="hljs-number">234.23</span>])
 
-var arraySix = Array(1...100)
-var arraySeven = Array(repeatElement(&quot;Bob&quot;, count: 10))
-</code></pre><h3 id="multiple-ways-to-create-sets">Multiple Ways to Create Sets</h3>
+<span class="hljs-keyword">var</span> arraySix = <span class="hljs-type">Array</span>(<span class="hljs-number">1</span>...<span class="hljs-number">100</span>)
+<span class="hljs-keyword">var</span> arraySeven = <span class="hljs-type">Array</span>(repeatElement(<span class="hljs-string">&quot;Bob&quot;</span>, <span class="hljs-built_in">count</span>: <span class="hljs-number">10</span>))
+</code></pre>
+<blockquote>
+<p>Remember, <code>Set</code> is just a generic struct.</p>
+</blockquote>
+<h3 id="multiple-ways-to-create-sets">Multiple Ways to Create Sets</h3>
+<p><code>Set</code> in Swift looks similar to <code>Array</code>. You may convert from sets to arrays and vice versa.</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">var</span> setOne: <span class="hljs-type">Set</span> = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
 <span class="hljs-keyword">var</span> setTwo: <span class="hljs-type">Set</span>&lt;<span class="hljs-type">String</span>&gt; = [<span class="hljs-string">&quot;Bob&quot;</span>, <span class="hljs-string">&quot;Bobby&quot;</span>, <span class="hljs-string">&quot;Bob the Developer&quot;</span>]
 <span class="hljs-keyword">var</span> emptySet = <span class="hljs-type">Set</span>&lt;<span class="hljs-type">String</span>&gt;()
@@ -1187,18 +1168,54 @@ var arraySeven = Array(repeatElement(&quot;Bob&quot;, count: 10))
 emptySet.<span class="hljs-built_in">contains</span>(<span class="hljs-string">&quot;Bob&quot;</span>) <span class="hljs-comment">// true</span>
 emptySet.remove(<span class="hljs-string">&quot;Bob&quot;</span>)
 </code></pre>
-<h3 id="prepare-two-arrays">Prepare Two Arrays</h3>
-<pre><code>var oddNumbers: [Int] = []
-var evenNumbers: [Int] = []
+<h2 id="create-two-arrays">Create Two Arrays</h2>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> oddNumbers: [<span class="hljs-type">Int</span>] = []
+<span class="hljs-keyword">var</span> evenNumbers: [<span class="hljs-type">Int</span>] = []
 
-for number in 1...50 {
-  if number % 2 == 0 {
+<span class="hljs-keyword">for</span> number <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">50</span> {
+  <span class="hljs-keyword">if</span> number % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> {
     evenNumbers.append(number)
-  } else {
+  } <span class="hljs-keyword">else</span> {
     oddNumbers.append(number)
   }
 }
-</code></pre><h3 id="swift-naming-guide">Swift Naming Guide</h3>
+</code></pre>
+<h3 id="check">Check</h3>
+<pre><code class="lang-swift">oddNumbers <span class="hljs-comment">// [1, 3, 5, 7, 9, ...]</span>
+evenNumbers <span class="hljs-comment">// [2, 4, 6, 8, 10, ...]</span>
+</code></pre>
+<h3 id="tertiary-operator">Tertiary Operator</h3>
+<p>You will learn more in <a href="operators.html">Lesson 11_Operators</a>  </p>
+<pre><code class="lang-swift"><span class="hljs-keyword">for</span> number <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">50</span> {
+  (number % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) ? evenNumber.append(number) : oddNumber.append(number)
+}
+</code></pre>
+<h2 id="convert-array-to-set">Convert Array to Set</h2>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> oddNumberSet = <span class="hljs-type">Set</span>(oddNumbers)
+<span class="hljs-keyword">let</span> evenNumberSet = <span class="hljs-type">Set</span>(evenNumbers)
+</code></pre>
+<h3 id="built-in-set-methods">Built-In Set Methods</h3>
+<figure id="fig3.1.9.1"><img src="assets/swift-set-structure.png" alt="Built-in Set methods" width="600px/"><figcaption> Built-in Set methods</figcaption></figure>
+<h4 id="union">Union</h4>
+<pre><code class="lang-swift">oddNumberSet.union(evenNumberSet)
+</code></pre>
+<h4 id="symmetric-difference">Symmetric Difference</h4>
+<pre><code class="lang-swift">oddNumberSet.symmetricDifference(evenNumberSet)
+</code></pre>
+<h4 id="intersection">Intersection</h4>
+<pre><code class="lang-swift">oddNumberSet.intersection(evenNumberSet)
+</code></pre>
+<h4 id="subtract">Subtract</h4>
+<pre><code class="lang-swift">oddNumberSet.subtract(evenNumberSet)
+
+<span class="hljs-keyword">var</span> numberSet = <span class="hljs-type">Set</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+<span class="hljs-keyword">let</span> secondNumberSet = <span class="hljs-type">Set</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>])
+
+numberSet.subtract(secondNumberSet)
+<span class="hljs-built_in">print</span>(numberSet) <span class="hljs-comment">// {3}</span>
+</code></pre>
+<p><code>Subtract</code> mutates <code>oddNumberSet</code>. You can predict whether a method is mutating or not based on the naming guide below.</p>
+<h3 id="swift-naming-guide">Swift Naming Guide</h3>
 <table>
 <thead>
 <tr>
@@ -1207,6 +1224,10 @@ for number in 1...50 {
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:center"><em>verb</em></td>
+<td style="text-align:center"><em>adjective</em></td>
+</tr>
 <tr>
 <td style="text-align:center">array.append()</td>
 <td style="text-align:center">array.sorted()</td>
@@ -1217,10 +1238,60 @@ for number in 1...50 {
 </tr>
 </tbody>
 </table>
-<figure id="fig3.1.9.1"><img src="assets/swift-set-structure.png" alt="Built-in Set methods" width="600px/"><figcaption> Built-in Set methods</figcaption></figure>
+<h3 id="sort">Sort</h3>
+<p>Since sets do not provide any order, sets must be converted to an array type for sorting.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> sortedArray = evenNumberSet.sorted()
+</code></pre>
+<h4 id="functional-programming">Functional Programming</h4>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> sortedArrayFromHighToLow = evenNumberSet.sorted { $<span class="hljs-number">0</span> &gt; $<span class="hljs-number">1</span> }
+<span class="hljs-built_in">print</span>(sortedArrayFromHighToLow) <span class="hljs-comment">// [100, 98, 96, ...]</span>
+</code></pre>
+<blockquote>
+<p>If you are interested in learning more about Functional Programming with MVVM, you can be on the mailing list for my <a href="../../ABOUT.html#course">upcoming courses</a>.</p>
+</blockquote>
+<h3 id="practical-usage-of-set">Practical Usage of Set</h3>
+<ul>
+<li>Finidng unique letters</li>
+<li>Finding unique visitors</li>
+<li>Any game logic (You have to visualize)</li>
+</ul>
+<h2 id="introducing-tuples">Introducing Tuples</h2>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> firstScore = (name: <span class="hljs-string">&quot;Bob&quot;</span>, score: <span class="hljs-number">9</span>)
+firstScore.<span class="hljs-number">0</span>
+firstScore.<span class="hljs-number">1</span>
+
+firstScore.name
+firstScore.score
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> secondScore = (<span class="hljs-string">&quot;Rob&quot;</span>, <span class="hljs-number">10</span>)
+secondScore.<span class="hljs-number">0</span>
+secondScore.<span class="hljs-number">1</span>
+</code></pre>
+<h3 id="practical-usage">Practical Usage</h3>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> httpSuccess = (code: <span class="hljs-number">200</span>, description: <span class="hljs-string">&quot;success&quot;</span>)
+httpSuccess.code
+
+<span class="hljs-keyword">let</span> httpFailture: [<span class="hljs-type">Any</span>] = [<span class="hljs-number">401</span>, <span class="hljs-string">&quot;Fail&quot;</span>]
+</code></pre>
+<h2 id="bonus-tips">Bonus Tips</h2>
+<pre><code class="lang-swift"><span class="hljs-comment">// Okay</span>
+<span class="hljs-keyword">var</span> dog = <span class="hljs-string">&quot;dog&quot;</span>, cat = <span class="hljs-string">&quot;cat&quot;</span>
+<span class="hljs-built_in">print</span>(dog)
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-comment">// Better</span>
+<span class="hljs-keyword">var</span> (x, y, z) = (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+<span class="hljs-built_in">print</span>(x)
+<span class="hljs-built_in">print</span>(y)
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> shoppingList = [<span class="hljs-string">&quot;Eggs&quot;</span>, <span class="hljs-string">&quot;Milk&quot;</span>, <span class="hljs-string">&quot;Rice&quot;</span>]
+
+<span class="hljs-keyword">for</span> (index, value) <span class="hljs-keyword">in</span> shoppingList.enumerated() {
+  <span class="hljs-built_in">print</span>(index, value)
+}
+</code></pre>
+<p><code>enumerated</code> turns into a tuple</p>
 <h3 id="source-code">Source Code</h3>
 <p><a href="https://www.dropbox.com/sh/w3b55cig44dkn18/AADfa-mpPqoWgDUOrhn02_goa?dl=0" target="_blank">1009_set_tuple.playground</a></p>
-<h3 id="reference">Reference</h3>
 <h2 id="conclusion">Conclusion</h2>
 
                                 
@@ -1265,7 +1336,7 @@ for number in 1...50 {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Set and Tuple","level":"3.1.9","depth":2,"next":{"title":"Extension","level":"3.1.10","depth":2,"path":"course/swift-intermediate/extension.md","ref":"course/swift-intermediate/extension.md","articles":[]},"previous":{"title":"Class vs Struct","level":"3.1.8","depth":2,"path":"course/swift-intermediate/class-struct-difference.md","ref":"course/swift-intermediate/class-struct-difference.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/set-tuple.md","mtime":"2017-04-06T01:20:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Set and Tuple","level":"3.1.9","depth":2,"next":{"title":"Extension","level":"3.1.10","depth":2,"path":"course/swift-intermediate/extension.md","ref":"course/swift-intermediate/extension.md","articles":[]},"previous":{"title":"Class vs Struct","level":"3.1.8","depth":2,"path":"course/swift-intermediate/class-struct-difference.md","ref":"course/swift-intermediate/class-struct-difference.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/set-tuple.md","mtime":"2017-04-08T03:56:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-08T03:05:43.408Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

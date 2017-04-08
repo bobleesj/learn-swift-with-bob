@@ -608,9 +608,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.4" data-path="closure-capture-lists.html">
+        <li class="chapter " data-level="5.1.4" data-path="capture-lists.html">
             
-                <a href="closure-capture-lists.html">
+                <a href="capture-lists.html">
             
                     
                     Capture Lists
@@ -647,20 +647,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.7" data-path="@escape-@autoclosure.html">
-            
-                <a href="@escape-@autoclosure.html">
-            
-                    
-                    @escape and @autoclosure
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.8" data-path="conclusion.html">
+        <li class="chapter " data-level="5.1.7" data-path="conclusion.html">
             
                 <a href="conclusion.html">
             
@@ -751,20 +738,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/associative-type.html">
-            
-                <a href="../protocol-oriented-swift/associative-type.html">
-            
-                    
-                    Associative Type
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.1.6" data-path="../protocol-oriented-swift/conclusion.html">
+        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/conclusion.html">
             
                 <a href="../protocol-oriented-swift/conclusion.html">
             
@@ -803,25 +777,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
-            
-                <a href="../swift-memory-management/memory-leak.html">
-            
-                    
-                    Memory Leak
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/automatic-reference-counting.html">
             
                 <a href="../swift-memory-management/automatic-reference-counting.html">
             
                     
-                    Automatic Reference Counting
+                    Intro to Memory Management
             
                 </a>
             
@@ -829,12 +790,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/delegate_retain_cycle.html">
             
-                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+                <a href="../swift-memory-management/delegate_retain_cycle.html">
             
                     
-                    Closure and Delegate Retention Cycle
+                    Delegate Retain Cycle
             
                 </a>
             
@@ -842,7 +803,33 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/closure_retain_cycle.html">
+            
+                <a href="../swift-memory-management/closure_retain_cycle.html">
+            
+                    
+                    Closure Retain Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                <a href="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                    
+                    Escaping and Autoclosures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../swift-memory-management/conclusion.html">
             
                 <a href="../swift-memory-management/conclusion.html">
             
@@ -934,20 +921,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
-            
-                <a href="../../content/software-engineering/agile-development.html">
-            
-                    
-                    Agile Development
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/continuous-integration.html">
             
                 <a href="../../content/software-engineering/continuous-integration.html">
             
@@ -1157,7 +1131,7 @@
                                 
                                 <h1 id="closures-vs-functions-part-2">Closures vs Functions (Part 2)</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome to Lesson 2 of The UIKIt Fundamentals Part 1 Intro to Functional Programming. In our previous lesson, you&apos;ve learned how to create a closure. Now, you are going to create a function that both use it as a parameter, and even returns it.</p>
+<p>In the previous lesson, you&apos;ve learned how to create a closure. Now, you are going to create a function that both use it as a parameter, and even returns it.</p>
 <h2 id="problem">Problem</h2>
 <p>Can you pass/return a function/functions to a function?</p>
 <h3 id="review">Review</h3>
@@ -1179,50 +1153,50 @@
 <li>Return</li>
 <li>Store</li>
 </ol>
-<h3 id="pass-closure">Pass Closure</h3>
-<p>You may pass a closure to a function. Create a function that takes a closure whose type is <code>() -&gt; String</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">insertClosure</span><span class="hljs-params">(closure: <span class="hljs-params">()</span></span></span> -&gt; <span class="hljs-type">String</span>) -&gt; <span class="hljs-type">String</span>{
-  <span class="hljs-keyword">return</span> closure()
-}
-
-insertClosure(closure: returnString)
-</code></pre>
 <blockquote>
 <p><strong>Disclosure</strong>: Function is called Global Closure</p>
 </blockquote>
-<h3 id="return-closure">Return Closure</h3>
+<h2 id="return-closure">Return Closure</h2>
 <p>Now only you may pass a closure to a function block, you may return a closure.</p>
+<h3 id="return-closure-block">Return closure block</h3>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">returnClosure</span><span class="hljs-params">()</span></span> -&gt; ((<span class="hljs-type">Int</span>, <span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span>) {
+  <span class="hljs-keyword">return</span> addWithClosures
+}
+
+<span class="hljs-keyword">let</span> addClosure = returnClosure()
+addClosure(<span class="hljs-number">4</span>, <span class="hljs-number">10</span>)
+returnClosure()(<span class="hljs-number">4</span>, <span class="hljs-number">10</span>) <span class="hljs-comment">// addWithClosure(4, 10)</span>
+</code></pre>
+<h3 id="return-direct-closure">Return direct closure</h3>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">returnClosureDirectly</span><span class="hljs-params">()</span></span> -&gt; ((<span class="hljs-type">Int</span>, <span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span>) {
   <span class="hljs-keyword">return</span> { (number1, number2) <span class="hljs-keyword">in</span> number1 + number2 }
 }
+returnClosureDirectly()(<span class="hljs-number">4</span>, <span class="hljs-number">10</span>) <span class="hljs-comment">// 14</span>
 
-<span class="hljs-keyword">let</span> returnedClosure = returnClosure()
-returnedClosure(<span class="hljs-number">5</span>, <span class="hljs-number">10</span>)
-
-returnClosure()(<span class="hljs-number">5</span>, <span class="hljs-number">15</span>)
-</code></pre>
-<h4 id="return-short-closures">Return Short Closures</h4>
-<p>You might get confused by this. Again, a closure begins with <code>{</code> and ends with <code>}</code>.</p>
-<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">returnShortClosure</span><span class="hljs-params">()</span></span> -&gt; ((<span class="hljs-type">Int</span>, <span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span>) {
-  <span class="hljs-keyword">return</span> { $<span class="hljs-number">0</span> * $<span class="hljs-number">1</span> }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">returnClosureDirectlyTwo</span><span class="hljs-params">()</span></span> -&gt; ((<span class="hljs-type">Int</span>, <span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span>) {
+  <span class="hljs-keyword">return</span> { $<span class="hljs-number">0</span> + $<span class="hljs-number">1</span> }
 }
-
-returnShortClosure()(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>) <span class="hljs-comment">// 100</span>
+returnClosureDirectlyTwo()(<span class="hljs-number">4</span>, <span class="hljs-number">10</span>) <span class="hljs-comment">// 14</span>
+</code></pre>
+<h2 id="pass-closure">Pass Closure</h2>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">insertClosureBlock</span><span class="hljs-params">(closureBlock: <span class="hljs-params">()</span></span></span> -&gt; <span class="hljs-type">String</span>) -&gt; <span class="hljs-type">String</span> {
+  <span class="hljs-keyword">return</span> closureBlock()
+}
+</code></pre>
+<h3 id="enter-closure-indirectly">Enter closure indirectly</h3>
+<pre><code class="lang-swift">insertClosureBlock(closureBlock: hello)
+</code></pre>
+<h3 id="enter-closure-directly">Enter closure directly</h3>
+<pre><code class="lang-swift">insertClosureBlock(closureBlock: { <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;hello&quot;</span> })
+insertClosureBlock(closureBlock: { <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;hello&quot;</span> })
+insertClosureBlock(closureBlock: { <span class="hljs-string">&quot;hello&quot;</span> })
 </code></pre>
 <h3 id="resources">Resources</h3>
 <p>If you are not familiar with closures, it takes a while for you to get used to it. I highly recommend you to read my article on No Fear Closures with Bob <a href="https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jppz" target="_blank">Part 1</a> and <a href="https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jpp" target="_blank">Part 2</a>.</p>
 <h3 id="source-code">Source Code</h3>
 <p><a href="https://www.dropbox.com/sh/dws40juw0rrx9mn/AACQjdv5oVoqNrB8ar2skfXva?dl=0" target="_blank">3002_intro_closures_part2.playground</a></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>If you were to take away one thing, please remember this. You can pass closure to an argument label and even return closure. This is the basis of functional programming, which I&apos;m not going to dive into. If you want to register for the course, feel free to send me an email, <code>bobleesj@gmail.com</code> to receive personal updates from me, and receive special offers on books, courses, and so on. My next course will be about MVVM, Protocol Oriented Programming, Functional Programming, and RxSwift. If you really want to improve your coding skill, I highly recommend it for you. You will be surprised how much you will learn more me. Keep developing your skill. If you are confused, make sure check out the resources, and keep googling and searching. Feel free to ask questions as well. s</p>
-<h4 id="stay-connected">Stay Connected</h4>
-<p>If you&apos;d like to be on my mailing list and receive personal updates on upcoming books and courses, feel free to send me an email at <code>bobleesj@gmail.com</code></p>
-<p>
-<a href="http://bobthedeveloper.io" target="_blank"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
-<a href="https://facebook.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper" target="_blank"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg" <="" a=""> <a href="https://twitter.com/bobleesj" target="_blank"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
-" target="_blank"><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobleesj" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
-<a href="https://medium.com/@bobleesj" target="_blank"><img src="https://img.shields.io/badge/Medium-Read-00AB6C.svg"></a>
-</a></p>
+<p>If you were to take away one thing, please remember this. You can pass closure to an argument label and even return closure. This is the basis of functional programming, which I&apos;m not going to dive into. If you want to register for the course, feel free to send me an email, <code>bob@bobthedeveloper.io</code> to receive personal updates from me, and receive special offers on books, courses, and so on. My next course will be about MVVM, Protocol Oriented Programming, Functional Programming, and RxSwift. If you really want to improve your coding skill, I highly recommend it for you. You will be surprised how much you will learn more me. Keep developing your skill. If you are confused, make sure check out the resources, and keep googling and searching. Feel free to ask questions as well.</p>
 
                                 
                                 </section>
@@ -1266,7 +1240,7 @@ returnShortClosure()(<span class="hljs-number">10</span>, <span class="hljs-numb
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Intro to Closures Part 2","level":"5.1.2","depth":2,"next":{"title":"Lazy Init with Closures","level":"5.1.3","depth":2,"path":"course/functional-swift/lazy-init-closures.md","ref":"course/functional-swift/lazy-init-closures.md","articles":[]},"previous":{"title":"Intro to Closures Part 1","level":"5.1.1","depth":2,"path":"course/functional-swift/intro-closure-part1.md","ref":"course/functional-swift/intro-closure-part1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/functional-swift/intro-closure-part2.md","mtime":"2017-04-06T01:12:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Intro to Closures Part 2","level":"5.1.2","depth":2,"next":{"title":"Lazy Init with Closures","level":"5.1.3","depth":2,"path":"course/functional-swift/lazy-init-closures.md","ref":"course/functional-swift/lazy-init-closures.md","articles":[]},"previous":{"title":"Intro to Closures Part 1","level":"5.1.1","depth":2,"path":"course/functional-swift/intro-closure-part1.md","ref":"course/functional-swift/intro-closure-part1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/functional-swift/intro-closure-part2.md","mtime":"2017-04-07T14:21:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-08T03:05:43.408Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

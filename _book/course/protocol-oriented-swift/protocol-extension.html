@@ -608,9 +608,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/closure-capture-lists.html">
+        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/capture-lists.html">
             
-                <a href="../functional-swift/closure-capture-lists.html">
+                <a href="../functional-swift/capture-lists.html">
             
                     
                     Capture Lists
@@ -647,20 +647,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/@escape-@autoclosure.html">
-            
-                <a href="../functional-swift/@escape-@autoclosure.html">
-            
-                    
-                    @escape and @autoclosure
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.8" data-path="../functional-swift/conclusion.html">
+        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/conclusion.html">
             
                 <a href="../functional-swift/conclusion.html">
             
@@ -751,20 +738,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="associative-type.html">
-            
-                <a href="associative-type.html">
-            
-                    
-                    Associative Type
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.1.6" data-path="conclusion.html">
+        <li class="chapter " data-level="6.1.5" data-path="conclusion.html">
             
                 <a href="conclusion.html">
             
@@ -803,25 +777,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
-            
-                <a href="../swift-memory-management/memory-leak.html">
-            
-                    
-                    Memory Leak
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/automatic-reference-counting.html">
             
                 <a href="../swift-memory-management/automatic-reference-counting.html">
             
                     
-                    Automatic Reference Counting
+                    Intro to Memory Management
             
                 </a>
             
@@ -829,12 +790,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/delegate_retain_cycle.html">
             
-                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+                <a href="../swift-memory-management/delegate_retain_cycle.html">
             
                     
-                    Closure and Delegate Retention Cycle
+                    Delegate Retain Cycle
             
                 </a>
             
@@ -842,7 +803,33 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/closure_retain_cycle.html">
+            
+                <a href="../swift-memory-management/closure_retain_cycle.html">
+            
+                    
+                    Closure Retain Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                <a href="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                    
+                    Escaping and Autoclosures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../swift-memory-management/conclusion.html">
             
                 <a href="../swift-memory-management/conclusion.html">
             
@@ -934,20 +921,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
-            
-                <a href="../../content/software-engineering/agile-development.html">
-            
-                    
-                    Agile Development
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/continuous-integration.html">
             
                 <a href="../../content/software-engineering/continuous-integration.html">
             
@@ -1157,62 +1131,62 @@
                                 
                                 <h1 id="protocol-extension">Protocol Extension</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome to Lesson 2 of The UIKIt Fundamentals Part 1 Intro to Protocol Oriented Programming. Today, you are going to learn a magic. It will dramatically reduce the number of lines by... so much. It&apos;s just incredible. I don&apos;t need to talk much. Let&apos;s dive in.</p>
+<p>Today, you are going to learn a magic. It will dramatically reduce the number of lines by... so much. It&apos;s just incredible. I don&apos;t need to talk much. Let&apos;s dive in.</p>
 <h2 id="problem">Problem</h2>
 <p>I don&apos;t even want to type anymore.</p>
 <h3 id="create-protocol">Create Protocol</h3>
 <p>Create a protocol called <code>MathGenius</code> that contains one method.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">MathGenius</span> </span>{
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateGPA</span><span class="hljs-params">()</span></span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateGPA</span><span class="hljs-params">()</span></span>
 }
 </code></pre>
 <h3 id="create-protocol-extension">Create Protocol Extension</h3>
 <p>Create an extension to <code>MathGenius</code>. The extension contains a default method.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">MathGenius</span> </span>{
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateGPA</span><span class="hljs-params">()</span></span> {
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I&apos;m too cool for school&quot;</span>)
-}
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateGPA</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I&apos;m too cool for skool&quot;</span>)
+  }
 }
 </code></pre>
 <p>Create a struct that conforms to <code>MathGenius</code>. Since the extension provides a default method, you no longer have to specify the required method. If you do, it will override the default method.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Bob</span>: <span class="hljs-title">MathGenius</span> </span>{
-<span class="hljs-comment">// Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateGPA</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;1.2 GPA&quot;</span>)
+  }
 }
 
-<span class="hljs-type">Bob</span>().calculateGPA() <span class="hljs-comment">// &quot;I&apos;m too cool for school&quot;</span>
-
-<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Bobby</span>: <span class="hljs-title">MathGenius</span> </span>{}
-<span class="hljs-type">Bobby</span>().calculateGPA() <span class="hljs-comment">// &quot;I&apos;m too cool for school&quot;</span>
-<span class="hljs-type">Bobby</span>.<span class="hljs-keyword">init</span>() <span class="hljs-comment">// Same as calling Bobby()</span>
+<span class="hljs-type">Bob</span>().calculateGPA() <span class="hljs-comment">// &quot;1.2 GPA&quot;&quot;</span>
+</code></pre>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Bobby</span>: <span class="hljs-title">MathGenius</span> </span>{}
+<span class="hljs-type">Bobby</span>().calculateGPA() <span class="hljs-comment">// &quot;I&apos;m too cool for skool&quot;</span>
 </code></pre>
 <h3 id="practical-protocol-extension">Practical Protocol Extension</h3>
 <p>Create a protocol that contains a method that takes two <code>Double</code> parameters and return <code>String</code>.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">FindAreable</span> </span>{
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(side: Double, length: Double)</span></span> -&gt; <span class="hljs-type">String</span>
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(side: Double, length: Double)</span></span> -&gt; <span class="hljs-type">String</span>
 }
 </code></pre>
 <p>Create an extension to <code>FindAreable</code> which will return a statement whose type is in <code>String</code>.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">FindAreable</span> </span>{
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(side: Double, length: Double)</span></span> -&gt; <span class="hljs-type">String</span> {
-<span class="hljs-keyword">let</span> area = <span class="hljs-type">String</span>(side * length)
-<span class="hljs-keyword">return</span> <span class="hljs-string">&quot;The area is <span class="hljs-subst">\(area)</span>&quot;</span>
-}
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(side: Double, length: Double)</span></span> -&gt; <span class="hljs-type">String</span> {
+    <span class="hljs-keyword">let</span> area = <span class="hljs-type">String</span>(side * length)
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;The area is <span class="hljs-subst">\(area)</span>&quot;</span>
+  }
 }
 </code></pre>
 <p>Every struct and class that conforms to <code>FindArea</code> contains the default <code>calculateArea</code> method from the extension.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Square</span>: <span class="hljs-title">FindAreable</span> </span>{}
-
-<span class="hljs-type">Square</span>.<span class="hljs-keyword">init</span>().calculateArea(side: <span class="hljs-number">4</span>, length: <span class="hljs-number">100</span>)
-
-<span class="hljs-keyword">let</span> bigSquare = <span class="hljs-type">Square</span>.<span class="hljs-keyword">init</span>()
-bigSquare.calculateArea(side: <span class="hljs-number">100</span>, length: <span class="hljs-number">20</span>)
-
 <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Hexagon</span>: <span class="hljs-title">FindAreable</span> </span>{}
-<span class="hljs-type">Hexagon</span>().calculateArea(side: <span class="hljs-number">6</span>, length: <span class="hljs-number">20</span>)
+
+<span class="hljs-type">Square</span>().calculateArea(side: <span class="hljs-number">4</span>, length: <span class="hljs-number">4</span>)
+<span class="hljs-type">Hexagon</span>.<span class="hljs-keyword">init</span>().calculateArea(side: <span class="hljs-number">6</span>, length: <span class="hljs-number">10</span>)
 </code></pre>
 <h3 id="usage-case">Usage Case</h3>
-<p>UIAnimation.</p>
+<ul>
+<li>UILabel, UIImageView, UIView --&gt; Animation</li>
+<li>Storyboard Identifier</li>
+<li>Reusable table and collection view cells</li>
+</ul>
 <h3 id="resources">Resources</h3>
 <p>If you are interested in how you may apply Protocol to UIKit, you may read <a href="https://medium.com/ios-geek-community/protocol-oriented-programming-view-in-swift-3-8bcb3305c427#.u3rr936vm" target="_blank">Protocol Oriented View with Bob (Blog)</a>. But, I plan to cover in Part 2. So, you may get head started.</p>
 <h3 id="source-code">Source Code</h3>
@@ -1262,7 +1236,7 @@ bigSquare.calculateArea(side: <span class="hljs-number">100</span>, length: <spa
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Protocol Extension","level":"6.1.2","depth":2,"next":{"title":"Protocol as Type","level":"6.1.3","depth":2,"path":"course/protocol-oriented-swift/protocol-type.md","ref":"course/protocol-oriented-swift/protocol-type.md","articles":[]},"previous":{"title":"Intro to Protocol","level":"6.1.1","depth":2,"path":"course/protocol-oriented-swift/intro-protocol.md","ref":"course/protocol-oriented-swift/intro-protocol.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/protocol-oriented-swift/protocol-extension.md","mtime":"2017-04-06T01:14:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Protocol Extension","level":"6.1.2","depth":2,"next":{"title":"Protocol as Type","level":"6.1.3","depth":2,"path":"course/protocol-oriented-swift/protocol-type.md","ref":"course/protocol-oriented-swift/protocol-type.md","articles":[]},"previous":{"title":"Intro to Protocol","level":"6.1.1","depth":2,"path":"course/protocol-oriented-swift/intro-protocol.md","ref":"course/protocol-oriented-swift/intro-protocol.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/protocol-oriented-swift/protocol-extension.md","mtime":"2017-04-08T02:40:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-08T03:05:43.408Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

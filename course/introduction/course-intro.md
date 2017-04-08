@@ -13,6 +13,12 @@
  - Talk about myself: My growth and work I've been producing. Talk about my purpose and why I've started teaching iOS development. (Authority and reciprocity)
  - Call to action to them to my course by mentioning their past encounter with my blog articles (Consistency). Again, mention what problems they would face if they decide to ignore, while talk about benefits they can with. Give an impression that they can't do much without me. Fear.
 
+ <p>
+ <a href="http://bobthedeveloper.io"><img src="https://img.shields.io/badge/Personal-Website-333333.svg"></a>
+ <a href="https://facebook.com/bobthedeveloper"><img src="https://img.shields.io/badge/Facebook-Like-3B5998.svg"></a> <a href="https://youtube.com/bobthedeveloper"><img src="https://img.shields.io/badge/YouTube-Subscribe-CE1312.svg"</a> <a href="https://twitter.com/bobleesj"><img src="https://img.shields.io/badge/Twitter-Follow-55ACEE.svg"></a> <a href="https://instagram.com/bobthedev
+ "><img src="https://img.shields.io/badge/Instagram-Follow-BB2F92.svg"></a> <a href="https://linkedin.com/in/bobthedev"><img src= "https://img.shields.io/badge/LinkedIn-Connect-0077B5.svg"></a>
+ <a href=https://blog.bobthedeveloper.io/@bobthedev"><img src="https://img.shields.io/badge/Blog-Read-00AB6C.svg"/></a>
+ </p>
 
 <!--
 ## Credentials

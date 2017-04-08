@@ -45,10 +45,9 @@
   * [Intro to Closures Part 1](/course/functional-swift/intro-closure-part1.md)
   * [Intro to Closures Part 2](/course/functional-swift/intro-closure-part2.md)
   * [Lazy Init with Closures](/course/functional-swift/lazy-init-closures.md)
-  * [Capture Lists](/course/functional-swift/closure-capture-lists.md)
+  * [Capture Lists](/course/functional-swift/capture-lists.md)
   * [Trailing Closures](/course/functional-swift/trailing-closures.md)
   * [Completion Handlers and Callbacks](/course/functional-swift/completion-handlers-callbacks.md)
-  * [@escape and @autoclosure](/course/functional-swift/@escape-@autoclosure.md)
   * [Conclusion](/course/functional-swift/conclusion.md)
 
 ### Protocol Oriented Swift
@@ -57,20 +56,18 @@
   * [Protocol Extension](/course/protocol-oriented-swift/protocol-extension.md)
   * [Protocol as Type](/course/protocol-oriented-swift/protocol-type.md)
   * [Delegate](/course/protocol-oriented-swift/delegate.md)
-  * [Associative Type](/course/protocol-oriented-swift/associative-type.md)
   * [Conclusion](/course/protocol-oriented-swift/conclusion.md)
 
 ### Memory Management
 * [Introduction](/course/swift-memory-management/introduction.md)
-  * [Memory Leak](/course/swift-memory-management/memory-leak.md)
-  * [Automatic Reference Counting](/course/swift-memory-management/automatic-reference-counting.md)
-  * [Closure and Delegate Retention Cycle](/course/swift-memory-management/retention-cycle-closure-delegate.md)
-  * [Conclusion](/course/swift-memory-management/conclusion.md))
+  * [Intro to Memory Management](/course/swift-memory-management/automatic-reference-counting.md)
+  * [Delegate Retain Cycle](/course/swift-memory-management/delegate_retain_cycle.md)
+  * [Closure Retain Cycle](/course/swift-memory-management/closure_retain_cycle.md)
+  * [Escaping and Autoclosures](/course/swift-memory-management/@escaping_@autoclosure.md)
+  * [Conclusion](/course/swift-memory-management/conclusion.md)
 
 ### Advanced Generics
-
 ### Advanced Enum
-
 ### Advanced Swift
 
 ### Swift Extra
@@ -78,10 +75,9 @@
  <!-- * [Better Swift Developer](/content/swift/better-developer.md) -->
  * [Swift External Resources](/content/swift/swift-resources.md)
 
-
 ### Software Engineering
  * [Coding Principles](/content/software-engineering/coding-principles.md)
- * [Agile Development](/content/software-engineering/agile-development.md)
+ <!-- * [Agile Development](/content/software-engineering/agile-development.md) -->
  <!-- * [Test Driven Development](/content/software-engineering/test-driven-development.md)
  * [Continuous Integration](/content/software-engineering/continuous-integration.md) -->
  <!-- * [Github Flow](/content/software-engineering/github-flow.md) -->

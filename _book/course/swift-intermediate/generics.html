@@ -608,9 +608,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/closure-capture-lists.html">
+        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/capture-lists.html">
             
-                <a href="../functional-swift/closure-capture-lists.html">
+                <a href="../functional-swift/capture-lists.html">
             
                     
                     Capture Lists
@@ -647,20 +647,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/@escape-@autoclosure.html">
-            
-                <a href="../functional-swift/@escape-@autoclosure.html">
-            
-                    
-                    @escape and @autoclosure
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.8" data-path="../functional-swift/conclusion.html">
+        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/conclusion.html">
             
                 <a href="../functional-swift/conclusion.html">
             
@@ -751,20 +738,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/associative-type.html">
-            
-                <a href="../protocol-oriented-swift/associative-type.html">
-            
-                    
-                    Associative Type
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.1.6" data-path="../protocol-oriented-swift/conclusion.html">
+        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/conclusion.html">
             
                 <a href="../protocol-oriented-swift/conclusion.html">
             
@@ -803,25 +777,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
-            
-                <a href="../swift-memory-management/memory-leak.html">
-            
-                    
-                    Memory Leak
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/automatic-reference-counting.html">
             
                 <a href="../swift-memory-management/automatic-reference-counting.html">
             
                     
-                    Automatic Reference Counting
+                    Intro to Memory Management
             
                 </a>
             
@@ -829,12 +790,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/delegate_retain_cycle.html">
             
-                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+                <a href="../swift-memory-management/delegate_retain_cycle.html">
             
                     
-                    Closure and Delegate Retention Cycle
+                    Delegate Retain Cycle
             
                 </a>
             
@@ -842,7 +803,33 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/closure_retain_cycle.html">
+            
+                <a href="../swift-memory-management/closure_retain_cycle.html">
+            
+                    
+                    Closure Retain Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                <a href="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                    
+                    Escaping and Autoclosures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../swift-memory-management/conclusion.html">
             
                 <a href="../swift-memory-management/conclusion.html">
             
@@ -934,20 +921,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
-            
-                <a href="../../content/software-engineering/agile-development.html">
-            
-                    
-                    Agile Development
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/continuous-integration.html">
             
                 <a href="../../content/software-engineering/continuous-integration.html">
             
@@ -1157,7 +1131,7 @@
                                 
                                 <h1 id="generics">Generics</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome to Lesson 6 of The Swift Fundamentals with Bob. When you think of the word, &quot;generic&quot;, what makes you think? Well, I&apos;m sure you&apos;ve thought of writing code that can work with many other types. Some of you guys be like, &quot;What&apos;?&quot;. I will walk you through. But remember, the number one goal is to write as little as possible, but produce more with.</p>
+<p>Welcome to Lesson 6 of The Swift Fundamentals with Bob. When you think of the word, &quot;generic&quot;, what makes you think? Well, I&apos;m sure you&apos;ve thought of versatile code. Some of you guys be like, &quot;What&apos;?&quot;. I will walk you through. Remember, the number one goal is to write as little as possible, but produce as much.</p>
 <h2 id="problem">Problem</h2>
 <p>I smell something.</p>
 <blockquote>
@@ -1169,13 +1143,13 @@
 <span class="hljs-keyword">let</span> favoritePeople = [<span class="hljs-string">&quot;Elon Musk&quot;</span>, <span class="hljs-string">&quot;Steve Jobs&quot;</span>, <span class="hljs-string">&quot;Kevin O&apos;leary&quot;</span>]
 <span class="hljs-keyword">let</span> favoriteNumbers = [<span class="hljs-number">3</span>, <span class="hljs-number">20</span>]
 </code></pre>
-<p>Worst way to access elements</p>
+<p>The Worst way to access elements</p>
 <pre><code class="lang-swift">highSchoolGPA[<span class="hljs-number">0</span>]
 highSchoolGPA[<span class="hljs-number">1</span>]
 highSchoolGPA[<span class="hljs-number">2</span>]
 </code></pre>
 <h3 id="loop-and-print">Loop and Print</h3>
-<p>But, there is a better way.</p>
+<p>This works as well.</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">printDoubleElement</span><span class="hljs-params">(array: [Double])</span></span> {
   <span class="hljs-keyword">for</span> <span class="hljs-type">GPA</span> <span class="hljs-keyword">in</span> array {
     <span class="hljs-built_in">print</span>(<span class="hljs-type">GPA</span>)
@@ -1195,7 +1169,7 @@ highSchoolGPA[<span class="hljs-number">2</span>]
 }
 </code></pre>
 <blockquote>
-<p>Needlessly many functions. It goes against the DRY principle. Don&apos;t Repeat Yourself.</p>
+<p>Needlessly many functions. It goes against the DRY principle.</p>
 </blockquote>
 <h2 id="introducing-generics">Introducing Generics</h2>
 <p>A generic function allows you to pass any value regardless of types.   </p>
@@ -1207,12 +1181,12 @@ highSchoolGPA[<span class="hljs-number">2</span>]
   <span class="hljs-built_in">print</span>(value)
 }
 </code></pre>
-<p>You may pass any type of value. Swift sets the type of <code>value</code> identical to what the user enters.</p>
+<p>Swift infers the type of <code>anything</code> based on the input.</p>
 <pre><code class="lang-swift">genericFunction(value: <span class="hljs-string">&quot;Bob&quot;</span>)  <span class="hljs-comment">// value is String</span>
 genericFunction(value: <span class="hljs-literal">true</span>)    <span class="hljs-comment">// value is Bool</span>
 </code></pre>
 <h3 id="generic-loop">Generic Loop</h3>
-<p>Let us apply to a function that loops through an array.</p>
+<p>Let us create a generic function.</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">printElement</span>&lt;T&gt;<span class="hljs-params">(array: [T])</span></span> {
   <span class="hljs-keyword">for</span> element <span class="hljs-keyword">in</span> array {
     <span class="hljs-built_in">print</span>(element)
@@ -1224,9 +1198,9 @@ genericFunction(value: <span class="hljs-literal">true</span>)    <span class="h
 printElement(array: favoritePeople)
 </code></pre>
 <blockquote>
-<p>Generic code enables you to write flexible, reusable functions and types that can work with any type, subject to requirements that you define.</p>
+<p>Generic code enables you to write flexible, reusable functions, classes, enums, protocols, and structs subject to <strong>requirements</strong> that you define.</p>
 </blockquote>
-<p>Now only you can create a generic function, but also generic classes and structs. First, let&apos;s begin with a non-generic struct.</p>
+<p>Now only you can create generic functions, but also generic classes and structs. Let us begin with a non-generic struct.</p>
 <h3 id="non-generic-struct">Non-Generic Struct</h3>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Family</span> </span>{
   <span class="hljs-keyword">var</span> members = [<span class="hljs-type">String</span>]()
@@ -1241,7 +1215,7 @@ printElement(array: favoritePeople)
 myFam.push(member: <span class="hljs-string">&quot;Bob&quot;</span>)
 myFam.members
 </code></pre>
-<p>What if you need to create a struct whose type isn&apos;t <code>String</code>, but <code>Int</code>? You probably have to create an entire new struct whose the <code>members</code> property is in <code>[Int]</code>. Well, it goes against the dry principle. Let&apos;s gets started.</p>
+<p>What if you wish to create a struct whose type pre-defined as <code>String</code>, but <code>Int</code>? You probably have to create an entire new struct. It goes against the DRY principle.</p>
 <h2 id="generic-struct">Generic Struct</h2>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">genericFam</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
   <span class="hljs-keyword">var</span> members = [<span class="hljs-type">T</span>]()
@@ -1252,21 +1226,19 @@ myFam.members
 }
 </code></pre>
 <h3 id="create-object-explicitly">Create Object Explicitly</h3>
-<p>Now, let&apos;s create an object from a generic struct. But, you have to specify the type you&apos;d like to interact with.</p>
-<pre><code class="lang-swift"><span class="hljs-comment">// Generic whose type is String</span>
-<span class="hljs-keyword">var</span> myGenericFamily = genericFam&lt;<span class="hljs-type">String</span>&gt;()
+<p>Now, let us create an object from the generic struct. You have to specify the type you&apos;d like to interact with.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> myGenericFamily = genericFam&lt;<span class="hljs-type">String</span>&gt;()
 myGenericFamily.push(member: <span class="hljs-string">&quot;Bobby&quot;</span>)
 
-<span class="hljs-comment">// Generic whose type is Int</span>
 <span class="hljs-keyword">var</span> genericFamily = genericFam&lt;<span class="hljs-type">Int</span>&gt;()
 genericFamily.push(member: <span class="hljs-number">123</span>)
 </code></pre>
 <h3 id="create-object-implicitly">Create Object Implicitly</h3>
-<p>Struct type inferred based on the property type.</p>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> myHappyFamily = genericFam(members: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>])  <span class="hljs-comment">// struct is now Int type</span>
+<p>However, the type of structs can be inferred based on the input.</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> myHappyFamily = genericFam(members: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>])  <span class="hljs-comment">// T becomes Int</span>
 </code></pre>
 <h2 id="generic-extension">Generic Extension</h2>
-<p>Grab the first value</p>
+<p>You may add an <a href="extension.html">extension</a> to generics for more features. Let us grab the first element in the <code>members</code> property.</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">genericFam</span> </span>{
   <span class="hljs-keyword">var</span> firstElement: <span class="hljs-type">T</span>? {
     <span class="hljs-keyword">if</span> members.isEmpty {
@@ -1281,13 +1253,12 @@ genericFamily.push(member: <span class="hljs-number">123</span>)
 <span class="hljs-keyword">let</span> firstElement = geekFamilyMember.firstElement
 </code></pre>
 <h3 id="resources">Resources</h3>
-<p><a href="https://www.youtube.com/watch?v=4pPtLjkF0HE" target="_blank">The Complete Swift 3 Tutorial with Bob: Extension (YouTube)</a></p>
-<p><a href="https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.fkmmjqnwd" target="_blank">Intro to Generics in Swift with Bob (Bob the Developer)</a></p>
+<p><a href="https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.fkmmjqnwd" target="_blank">Intro to Generics in Swift with Bob</a></p>
 <h3 id="source-code">Source Code</h3>
 <p><a href="https://www.dropbox.com/sh/wuf65widfors50d/AABCJF-aojTJLPGdA79Vc78Ma?dl=0" target="_blank">1006_generics.playground</a></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>That&apos;s it. Generics provide such a powerful tool that many of the Swift library is written with generic code. To recap, you&apos;ve learned how to make a generic function by putting a diamond sign on the right. You&apos;ve also learned how to create generic structs. In Chapter 6, you will learn a lot more about generics.</p>
-<p>You&apos;ve learned a lot. I&apos;m very proud of you. You might not find generics as useful in this course, but when you start learning practical protocol oriented programming, functional programming, and reactive programming, you will find out how generics appear quite often. That being said, let&apos;s keep learning.</p>
+<p>To recap, you&apos;ve learned how to design generic functions and structs. In Chapter 6, you will more about advanced generics along with enums and protocols. If you feel uncomfortable with the syntax, I recommend you to watch the lecture again and refer to the article I&apos;ve attached.</p>
+<p>You&apos;ve come a long way. I&apos;m very proud of your progress. You may not find generics as useful in this course. However, as you start implement practical protocol oriented programming, functional programming, and reactive programming, you will soon discover generics appear quite often.</p>
 
                                 
                                 </section>
@@ -1331,7 +1302,7 @@ genericFamily.push(member: <span class="hljs-number">123</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Intro to Generics","level":"3.1.6","depth":2,"next":{"title":"Subscripts","level":"3.1.7","depth":2,"path":"course/swift-intermediate/subscripts.md","ref":"course/swift-intermediate/subscripts.md","articles":[]},"previous":{"title":"Type Casting","level":"3.1.5","depth":2,"path":"course/swift-intermediate/type-casting.md","ref":"course/swift-intermediate/type-casting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/generics.md","mtime":"2017-04-06T01:21:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Intro to Generics","level":"3.1.6","depth":2,"next":{"title":"Subscripts","level":"3.1.7","depth":2,"path":"course/swift-intermediate/subscripts.md","ref":"course/swift-intermediate/subscripts.md","articles":[]},"previous":{"title":"Type Casting","level":"3.1.5","depth":2,"path":"course/swift-intermediate/type-casting.md","ref":"course/swift-intermediate/type-casting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/generics.md","mtime":"2017-04-07T09:30:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-08T03:05:43.408Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

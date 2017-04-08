@@ -608,9 +608,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/closure-capture-lists.html">
+        <li class="chapter " data-level="5.1.4" data-path="../functional-swift/capture-lists.html">
             
-                <a href="../functional-swift/closure-capture-lists.html">
+                <a href="../functional-swift/capture-lists.html">
             
                     
                     Capture Lists
@@ -647,20 +647,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/@escape-@autoclosure.html">
-            
-                <a href="../functional-swift/@escape-@autoclosure.html">
-            
-                    
-                    @escape and @autoclosure
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.8" data-path="../functional-swift/conclusion.html">
+        <li class="chapter " data-level="5.1.7" data-path="../functional-swift/conclusion.html">
             
                 <a href="../functional-swift/conclusion.html">
             
@@ -751,20 +738,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/associative-type.html">
-            
-                <a href="../protocol-oriented-swift/associative-type.html">
-            
-                    
-                    Associative Type
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.1.6" data-path="../protocol-oriented-swift/conclusion.html">
+        <li class="chapter " data-level="6.1.5" data-path="../protocol-oriented-swift/conclusion.html">
             
                 <a href="../protocol-oriented-swift/conclusion.html">
             
@@ -803,25 +777,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/memory-leak.html">
-            
-                <a href="../swift-memory-management/memory-leak.html">
-            
-                    
-                    Memory Leak
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/automatic-reference-counting.html">
+        <li class="chapter " data-level="7.1.1" data-path="../swift-memory-management/automatic-reference-counting.html">
             
                 <a href="../swift-memory-management/automatic-reference-counting.html">
             
                     
-                    Automatic Reference Counting
+                    Intro to Memory Management
             
                 </a>
             
@@ -829,12 +790,12 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/retention-cycle-closure-delegate.html">
+        <li class="chapter " data-level="7.1.2" data-path="../swift-memory-management/delegate_retain_cycle.html">
             
-                <a href="../swift-memory-management/retention-cycle-closure-delegate.html">
+                <a href="../swift-memory-management/delegate_retain_cycle.html">
             
                     
-                    Closure and Delegate Retention Cycle
+                    Delegate Retain Cycle
             
                 </a>
             
@@ -842,7 +803,33 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/conclusion.html">
+        <li class="chapter " data-level="7.1.3" data-path="../swift-memory-management/closure_retain_cycle.html">
+            
+                <a href="../swift-memory-management/closure_retain_cycle.html">
+            
+                    
+                    Closure Retain Cycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                <a href="../swift-memory-management/@escaping_@autoclosure.html">
+            
+                    
+                    Escaping and Autoclosures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../swift-memory-management/conclusion.html">
             
                 <a href="../swift-memory-management/conclusion.html">
             
@@ -934,20 +921,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/agile-development.html">
-            
-                <a href="../../content/software-engineering/agile-development.html">
-            
-                    
-                    Agile Development
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/continuous-integration.html">
             
                 <a href="../../content/software-engineering/continuous-integration.html">
             
@@ -1157,13 +1131,13 @@
                                 
                                 <h1 id="class-vs-struct">Class vs Struct</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Great to see you at lesson 8 of Part 1 Swift Fundamentals with Bob. I&apos;m super excited. You all know, and you should by now, that there is no inheritance in Structs. Right? Okay, anything else? Sure, there is. Let&apos;s find out.</p>
+<p>Welcome to Lesson 8. There are two objectives. First, you will learn the fundamental difference between structs and classes by understanding value types and reference types. I expect you to know that structs do not provide inheritance. However, we will focus on the reason behind.</p>
 <h2 id="problem">Problem</h2>
 <ol>
-<li>What&apos;s the difference besides inheritance?</li>
+<li>What are the differences besides inheritance?</li>
 <li>When to use Structs over Classes?</li>
 </ol>
-<h3 id="create-class">Create Class</h3>
+<h2 id="design-class">Design Class</h2>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HumanClass</span> </span>{
   <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
   <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>) {
@@ -1171,18 +1145,19 @@
   }
 }
 </code></pre>
-<h4 id="create-class-instance">Create Class Instance</h4>
+<h3 id="create-instance">Create Instance</h3>
 <pre><code class="lang-swift"><span class="hljs-keyword">var</span> humanClassObject = <span class="hljs-type">HumanClass</span>(name: <span class="hljs-string">&quot;Bob&quot;</span>)
-humanClassObject.name
+humanClassObject.name <span class="hljs-comment">// &quot;Bob&quot;</span>
 </code></pre>
-<p>Create an instance that has a reference to <code>humanClassObject</code></p>
+<p>Create another instance that &quot;copies&quot; <code>humanClassObject</code></p>
 <pre><code class="lang-swift"><span class="hljs-keyword">let</span> newHumanClassObject = humanClassObject
 </code></pre>
-<p>Change the <code>name</code> property of <code>humanClassObject</code> to &quot;Bobby&quot;. Then, the name property of <code>newHumanClassObject</code> will be also changed to &quot;Bobby&quot;.</p>
+<p>Change the <code>name</code> property of <code>newHumanClassObject</code> to &quot;Bobby&quot;.</p>
 <pre><code class="lang-swift">humanClassObject.name = <span class="hljs-string">&quot;Bobby&quot;</span>
 newHumanClassObject.name <span class="hljs-comment">// &quot;Bobby&quot;</span>
 </code></pre>
-<h3 id="create-struct">Create Struct</h3>
+<p>The name property of <code>newHumanClassObject</code> has been changed to &quot;Bobby&quot; as well.</p>
+<h2 id="design-struct">Design Struct</h2>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">HumanStruct</span> </span>{
   <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
   <span class="hljs-keyword">init</span>(name: <span class="hljs-type">String</span>) {
@@ -1190,16 +1165,18 @@ newHumanClassObject.name <span class="hljs-comment">// &quot;Bobby&quot;</span>
   }
 }
 </code></pre>
-<h4 id="create-struct-object">Create Struct Object</h4>
+<h3 id="create-instance">Create Instance</h3>
 <pre><code class="lang-swift"><span class="hljs-keyword">var</span> structObject = <span class="hljs-type">HumanStruct</span>(name: <span class="hljs-string">&quot;Bob&quot;</span>)
 <span class="hljs-keyword">let</span> newStructObject = structObject
 </code></pre>
-<p>Change the name property of <code>structObject</code> to &quot;Bobby&quot;. However, it has no effect on <code>newStructObject.name</code> because <code>newStructObject</code> is no relationship between the two objects.</p>
+<p>Change the name property of <code>structObject</code> to &quot;Bobby&quot;.</p>
 <pre><code class="lang-swift">structObject.name = <span class="hljs-string">&quot;Bobby&quot;</span>
 newStructObject.name <span class="hljs-comment">// &quot;Bob&quot;</span>
 </code></pre>
+<p>However, it has no effect on <code>newStructObject.name</code> because <code>newStructObject</code> has no relationship.  The graph below shows the fundamental difference between <code>value types</code> vs <code>reference types</code>.</p>
 <figure id="fig3.1.8.1"><img src="assets/refernece-value-type-difference.png" alt="The difference in value type and reference type"><figcaption> The difference in value type and reference type</figcaption></figure>
 <h2 id="one-difference-in-mutability">One Difference in Mutability</h2>
+<p>Due to the fundamental difference, there is an interesting discrepancy when it comes to <code>let</code>.</p>
 <h3 id="mutability-in-classes">Mutability in Classes</h3>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BobClass</span> </span>{
   <span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;Bob&quot;</span>
@@ -1222,23 +1199,26 @@ bobClass.name <span class="hljs-comment">// &quot;Bob the Developer&quot;</span>
 <span class="hljs-keyword">let</span> bobStruct = <span class="hljs-type">BobStruct</span>()
 bobStruct.name
 
-<span class="hljs-comment">// bobStruct.name = &quot;Bob Lee&quot;</span>
+bobStruct.name = <span class="hljs-string">&quot;Bob Lee&quot;</span>
 <span class="hljs-comment">// Error: Immutable</span>
 </code></pre>
-<p>In structs, when an instance is created with a constant, <code>let</code>, it&apos;s not possible to mutate its property because the instance has its own copy and the <code>let</code> protects anyone from interfering with its own instance.</p>
+<p>In structs, when an instance is created with a constant, <code>let</code>, it&apos;s not possible to mutate its property since the instance has its own copy and the <code>let</code> protects anyone from interfering with its own instance.</p>
 <h3 id="when-to-use-structvalue-type">When to use Struct/Value Type?</h3>
 <ul>
-<li>100,000 - 1,000,000 faster than Class</li>
+<li>10,000 - 1,000,000 faster than Class</li>
 <li>No mutability due to no relationship between objects</li>
-<li>Avoid subclassing if you can to prevent any further headache.</li>
+<li>When subclassing not needed and non-nested structure is recommended</li>
 </ul>
 <h3 id="resources">Resources</h3>
-<p>You may take a look at why Object Oriented Programming isn&apos;t the best option. You don&apos;t have to read the entire article. since you will learn about Protocol Oriented Swift in Chapter 4.</p>
-<p><a href="https://medium.com/ios-geek-community/introduction-to-protocol-oriented-programming-in-swift-b358fe4974f#.nyah1q3fo" target="_blank">Intro to Protocol Oriented Programming</a></p>
+<p>To learn more about cons of Object Oriented Programming, you may read the beginning of <a href="https://blog.bobthedeveloper.io/introduction-to-protocol-oriented-programming-in-swift-b358fe4974f" target="_blank">Intro to Protocol Oriented Programming</a>. You will learn more about POP in <a href="../protocol-oriented-swift/introduction.html">Chapter 4</a>.</p>
+<h3 id="reference">Reference</h3>
+<p><a href="https://krakendev.io/blog/subclassing-can-suck-and-heres-why" target="_blank">If you&apos;re subclassing, you are doing it wrong - Hector Matos</a>
+<br><a href="https://content.pivotal.io/blog/all-evidence-points-to-oop-being-bullshit" target="_blank">All evidence points to OOP being bullshit</a>
+<br><a href="https://www.leaseweb.com/labs/2015/08/object-oriented-programming-is-exceptionally-bad/" target="_blank">Object Oriented Programming is exceptionally bad</a></p>
 <h3 id="source-code">Source Code</h3>
 <p><a href="https://www.dropbox.com/sh/der2imu4z41c7nr/AAAaLyZhh4jJLe-_oQFPFGmxa?dl=0" target="_blank">1008_class_struct_difference.playground</a></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>You&apos;ve learned the fundamental difference in how memory is managed when an object is created either through classes or structs. You&apos;ve learned the difference between reference type and value type. At this point, you might feel as if there is no point of learning the difference. You are right, when you are creating small apps, it doesn&apos;t really matter. But, once you start to have a complex structure, that&apos;s when you truly see how OOP can be difficult to manage as you&apos;ve seen the diagram of the UIKIt Structure created by Apple engineers. ]</p>
+<p>You&apos;ve learned the fundamental difference classes or structs through value types vs reference types. At this point, you might feel as if there is no point of learning the difference. You are right, when you are creating small apps, it doesn&apos;t really matter. But, once you start to have a complex structure, that&apos;s when you truly see how OOP can be difficult to manage as you&apos;ve seen the UIKIt diagram.</p>
 
                                 
                                 </section>
@@ -1282,7 +1262,7 @@ bobStruct.name
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Class vs Struct","level":"3.1.8","depth":2,"next":{"title":"Set and Tuple","level":"3.1.9","depth":2,"path":"course/swift-intermediate/set-tuple.md","ref":"course/swift-intermediate/set-tuple.md","articles":[]},"previous":{"title":"Subscripts","level":"3.1.7","depth":2,"path":"course/swift-intermediate/subscripts.md","ref":"course/swift-intermediate/subscripts.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"content/software-engineering/agile-development.html#fig12.2.1","level":"12.2","list_caption":"Figure: Agile development cycle","alt":"Agile development cycle","nro":5,"url":"/content/software_engineering/resources/scrum_framework.png","index":1,"caption_template":" _CAPTION_","label":"Agile development cycle","attributes":{},"skip":false,"key":"12.2.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/class-struct-difference.md","mtime":"2017-04-04T11:58:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T10:14:59.829Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Class vs Struct","level":"3.1.8","depth":2,"next":{"title":"Set and Tuple","level":"3.1.9","depth":2,"path":"course/swift-intermediate/set-tuple.md","ref":"course/swift-intermediate/set-tuple.md","articles":[]},"previous":{"title":"Subscripts","level":"3.1.7","depth":2,"path":"course/swift-intermediate/subscripts.md","ref":"course/swift-intermediate/subscripts.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-intermediate/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-intermediate/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-intermediate/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-intermediate/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-intermediate/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-intermediate/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/swift-intermediate/class-struct-difference.md","mtime":"2017-04-07T10:13:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-08T03:05:43.408Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
