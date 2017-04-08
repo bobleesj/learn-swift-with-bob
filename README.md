@@ -22,7 +22,7 @@ This is a platform for my students to download the source code, lecture notes, a
 > Until the course get officially released, please consider it as a rough draft.
 
 ## Personal Motivation
-I feel grateful for what learning offers in my life. It would have been impossible for me to create this course and communicate in English. I've decided to devote my career providing affordable education channels for all people globally. As a person who has lived in third world countries and also attended college in NYC, I understand, education is the way for anyone rise up and increase a standard of living and quality of life. To pursue this grand goal, I have started off with teaching iOS development to raise funds and increase my personal brand. 
+I feel grateful for what learning offers in my life. It would have been impossible for me to create this course and communicate in English. I've decided to devote my career providing affordable education channels for all people globally. As a person who has lived in third world countries and also attended college in NYC, I understand, education is the way for anyone rise up and increase a standard of living and quality of life. To pursue this grand goal, I have started off with teaching iOS development to raise funds and increase my personal brand.
 
 ## Mailing List
 If you are interested in receiving regular updates on [upcoming courses](ABOUT.md#course) with discounts, you easily sign up through the button below. If you'd like to stay up-to-date with the progress and get to know me at a personal level and my work journey, feel free to follow me on [Instagram](https://instagram.com/bobthedev)
@@ -37,6 +37,21 @@ If you are interested in receiving regular updates on [upcoming courses](ABOUT.m
 ## Contribution [![](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/bobthedev/Gitbook_Learn_Swift)
 
 If you've found this document on Github, you may read at [LearnSwiftwithBob.com](https://learnswiftwithbob.com). If you wish to provide feedbacks and suggestions, please feel free to leave a comment by clicking on a box that appears on the right side when you hover onto a paragraph or contribute directly through [Github](https://github.com/bobthedev/Gitbook_Learn_Swift).
+
+## Progress
+| Date | Commit Title | Next Step |  
+| --- | --- |  --- |
+| April 8th, 2017 | Added source code for Ch 1, 2, 3, 4 |  Prep and record Ch 5 and document Ch 2, 3, 4, 5 |
+
+
+
+
+
+
+
+
+
+
 
 #### Last Update
 {{ gitbook.time }}
