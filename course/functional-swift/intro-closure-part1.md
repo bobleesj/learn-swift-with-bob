@@ -1,33 +1,34 @@
-# Closures vs Functions
-
+# Intro to Closures Part 1
 
 ## Introduction
-When I learned Swift as my firsts programming language, I had a really hard time understanding closures. I avoided it as much as possible, and I didn't know why we use it in the first place. It took me good 3 months to completely understand Closures. So, I don't expect you to be comfortable with closures taking by taking a couple of lessons. It is hard, and you just have to admit it. It's riding a bicycle for the first time. You just have to fall and feel uncomfortable until you get used it. It's like seeing a mathematical formula you've never seen before. You just have to get used it. Enough said, let's find out how closures is different from normal functions. Brace yourself.
+Welcome to Lesson of 1 of Intro to Functional Swift. You will learn what makes closures different from the Swift functions. If you've never used closures before, this lesson will be tough.
 
 ## Problem
 Who are you closures, () -> ()?
 
 ### Definition
- - A closure is a function without name and the func keyword (for now).
- - Quick and easy to carry around as a variable/constant or just pass as a parameter
+ - A closure is a function without name and the `func` keyword (for now).
+ - Quick and easy to carry around as a variable/constant or pass as a parameter
 
-### Functions
-Create a function that add two numbers.
+## Functions
+To appreciate closures, let us begin with functions. Create a function that add two numbers.
+
 ```swift
 func addTwoNumbers(number1: Int, number2: Int) -> Int {
   return number1 + number2
 }
 ```
 
-#### First Class Citizen
+### First Class Citizen
 You may store a function into a variable/constant.
+
 ```swift
 var addFunction = addTwoNumbers
 addFunction(10, 30) // 40
 ```
 
-### Introducing Closures
-Store closures into a variable. A closure begins with `{`. In order to store into a variable/constant, you must specify its type.
+## Introducing Closures
+Create a closure whose functionality is identical as above. A closure block begins and ends with `{`,`}`.
 
 ```swift
 var addClosures: (Int, Int) -> Int = {
@@ -38,38 +39,53 @@ var addClosures: (Int, Int) -> Int = {
 addClosures(4, 10) // 14
 ```
 
-#### Short Form
-You may not enter `return` after `in` if only if you enter the value that the closure expects to return.
+The type of  `addClosures` is `(Int, Int) -> Int`. It is identical to `addTwoNumbers` from the early example. `number1` and `number2` are the parameter labels. Anything comes after  the keyword,`in`, is a return block.
+
+
+### Short Form
+It is not required to enter `return` after `in` only if the closure solely returns value.
 
 ```swift
 var addClosuresTwo = {
   (number1: Int, number2: Int) in
-  return number1 + number2
+  print("Hello")
+  return number1 + number2 // return required
 }
 
 var addClosuresThree = {
   (number1: Int, number2: Int) in
-  number1 + number2
+  number1 + number2 // return not required
 }
 
 addClosuresThree(4, 6)
 ```
 
-#### Shortest Form
-As long as you specify the type, you may not create an argument label. You may just insert `$0` or `$1`.
+The `addClosuresTwo` requires `return` since there is an additional line of `print("Hello")`. Besides, you may skip the `return` keyword.
+
+
+### Shortest Form
+As long as you specify the type, you may not create an argument label.
 
 ```swift
 var addClosuresFour: (Int, Int) -> Int = { $0 + $1 }
-
 addClosuresFour(4, 5) // 9
 ```
 
-### One example with () -> String
+In the example above, `$0` and `$1` refer to the first and second parameter.    Swift recognizes 4 as `$0` and 5, `$1` from `addClosuresFour(4, 5)`.
+
+## Another Example
+Let us create a function that does not require any parameter but returns `String`.
+
 ```swift
 func callString() -> String {
   return "hello, I'm a function"
 }
+```
 
+Let us express the `callString` function with a closure block instead.
+
+
+```swift
 let callStringWtihClosure: () -> String = { () in
   print("hello")
   return "hello, I'm a closure"
@@ -78,18 +94,25 @@ let callStringWtihClosure: () -> String = { () in
 callStringWtihClosure()
 // "hello, I'm a closure"
 
+// Skip Return
 let callStringWtihClosureTwo: () -> String = { () in
   "hello, I'm a closure"
 }
+```
 
+### Short Form {#no-parameter}
+If you pass no parameter, you may ignore explicit type definition.
+
+```swift
+// Type defined explicitly
 let callStringWtihClosureThree: () -> String = { "hello, I'm a closure" }
+
+// Type defined implicitly
 let callStringWtihClosureFour = { "hello, I'm a closure" }
 callStringWtihClosureFour // () -> String
 ```
 
 ### Resource
-If you are not familiar with closures, you have to get used to it. Again, it took me ages to a couple weeks to get used to it. You must understand. Keep googling on your own.
-
 [No Fear Closure in Swift 3 with Bob]
 
 [No Fear Closure in Swift 3 with Bob]: https://blog.bobthedeveloper.io/no-fear-closure-in-swift-3-with-bob-72a10577c564
@@ -100,4 +123,8 @@ If you are not familiar with closures, you have to get used to it. Again, it too
 
 
 ## Conclusion
-Do you feel uncomfortable or confused? That's okay. It's just a part of the process of acquiring knowledge. You struggle to learn because it indicates that you are not in your comfort zone. Learning is done by your. So, if you need to, refer to my resources, and google until you figure out what's going on. Don't give up. I hope you are able to distinguish the difference between a function and variable. Remember you can store a function into a variable and carry it around. Also, when you make a closure, you must indicate its type. You've learned how to write a closure statement using longer as well as shorter syntax by putting dollar signs and eliminating `in` and `return`. In the next lesson, you will find out how to pass closure as a parameter in a function.
+To recap, you've learned functions and closures are identical. However, you may express closures using various forms which often lead to zenness and effective communication. You've learned the basics. You will discover the power of closures as you step up one at a time.
+
+You may feel uncomfortable. You should be. In fact, if you are not struggling, you are not learning. Accumulating knowledge goes against the Second Law of Thermodynamics that the universe wants to remain scattered. When you defy the law as a human being, you face consequences. Embrace the pain and it's a natural phenomenon.
+
+In the following lesson, you will how learn how to pass and return a closure block within a function.

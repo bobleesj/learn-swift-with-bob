@@ -1,13 +1,15 @@
-# Type Property
+# Type Property and Method
 
 ## Introduction
-Welcome to Lesson 7, the last lesson of The UIKIt Fundamentals with Bob, Part 1 Object Oriented Programming. Today, you are going to learn one of the most confusing topics when it comes to Object Oriented Programming. It's type methods and properties. If you aren't familiar with those, don't you worry. Right now, you may feel confused, but you will come out strong, confident, and pumped. You will be excited to apply what you will learn today in your code later. Enough of talking. Let's go!
+Welcome to Lesson 7 of Object Oriented Swift. You are going to learn one of the most useful, yet confusing topics.
 
 ## Problem
-I don't know when to use `static`, `final`, `class`. What are those?
+ I'm confused by `static`, `final`, `class`. What are those?
 
-### Static Property and Method
-Anything that has `static` in front will not be overridden. In fact, `static` is the only type property and method used within `struct` since it does not provide inheritance.
+## Static Property and Method
+No longer have to initialize an object to access properties and methods. Let us design a struct that contains a type property and a type method.
+
+### Design Struct
 
 ```swift
 struct SomeStructure {
@@ -26,17 +28,22 @@ struct SomeStructure {
 }
 ```
 
-Access properties and methods
+Access the properties and methods
+
 ```swift
 SomeStructure.storedTypeProperty // "Some Value"
 SomeStructure.hello() // 'hello"'
 ```
 
-### Class
-Unlike `static`, `class` is only used within Classes. But, Classes also support `static`. `class` properties and types may be overridden.
+> Anything that has `static` in front will not be overridden.
 
-#### Design Class
-Create a class called `GrandParent`. It contains one static property and one static method. It also contains a normal method and another method with `final` attached.
+## Class
+Unlike `static`, `class` is only used within Classes. On the other hand, classes also support `static`.
+
+> Unlike `static`, `class` properties may be overridden.
+
+### Design Class
+Create a class called `GrandParent`.
 
 ```swift
 class GrandParent {
@@ -55,8 +62,8 @@ class GrandParent {
 }
 ```
 
-#### Design Subclass
-Now, create `Parent` class that inherits `GrandParent`.  You may override `func sayHi()`, but you may not override `final func sayHello()`. `final` prevents Classes from overriding. It's similar to `static`.
+### Design Subclass
+Now, create `Parent` class that inherits `GrandParent`.  You may override `class func introducing()`, but you may not override `final func cantOverride()`. `final` prevents Classes from overriding.
 
 ```swift
 class Parent: GrandParent {
@@ -72,9 +79,8 @@ Parent.introducing() // "I'm married for 5 years"
 ```
 
 
-
 ### Practical Usage
-You may store a list of items using the follow way below.
+You may store a list of items.
 
 ```swift
 class BluetoothID {
@@ -93,10 +99,9 @@ BluetoothID.iPhone.iPhone8 // "4234-1232-1232-5465"
 BluetoothID.iPhone.iPhone8 // ""7967-8123-7892-4563"
 ```
 
-You may also use `enum`. but I prefer the method above since I do n't have to call `rawValue`.
-
-
 ### Alternative
+
+You may also use `enum`.
 ```swift
 enum AirDropID: String {
  case iPhone4 = "4234-1232-1232-5465"
@@ -109,9 +114,13 @@ enum AirDropID: String {
 AirDropID.iPhone8.rawValue // "7967-8123-7892-4563"
 ```
 
-### Resources
 ### Source Code
 [2007_type_property.playground](https://www.dropbox.com/sh/vkvljugb258t153/AAB2WsksH_AkczcD8kdt5x3ha?dl=0)
 
 
 ## Conclusion
+You've learned how to access properties and methods without creating an object. When you work structs, you may only have `static` type. When you work classes, however, you may have `static` and `class` type. If you wish to prevent any property from being overridden, you may use the `final` keyword.
+
+When you start taking The UIKit Fundamentals with Bob, you will discover the beauty of static methods and properties.
+
+In the following lesson, you will learn how to create the only object that exists everywhere. 

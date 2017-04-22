@@ -1,16 +1,18 @@
 # Introduction to Protocol
 
 ## Introduction
- Before I talk about details, I'd like to share with you that learning Protocol was such a daunting task. Not only it was located at the end of the Swift documentation, but it just felt really foreign to me. It sounded scary. Of course, it feels natural to use it, so I understand if you are not comfortable with it. I just would like to tell you that you might have to watch this video multiple times to get by. You might have to read 10 more articles for you to fully get comfortable. I really expect you guys to be proactive when you are confused. I will do my part which is to explain in the most clear way possible. Well, let's get started from the bottom with me. Let's go!
+Welcome to Lesson 1 of Protocol Oriented Swift. In this lesson, the goal is to master the `protocol` syntax before you take full advantage of what it offers on the table.
 
 ## Problem
 Problem: Protocols, who are you?
 
-> Protocol is like a basketball coach. He/she tells players what to do, but he/she doesn't know how to dunk.
+> **Analogy:** Protocol is like a basketball coach. He/she tells players what to do, but he/she doesn't know how to dunk.
 
 
 ### Drawbacks of OOP
- 1. When you subclass, you have to inherit properties and methods which you may not need. Your object becomes unnecessarily bloated.
+Before implementing protocols, you should be aware of drawbacks from solely relying on OOP.
+
+ 1. When you subclass, you have to inherit properties and methods which you may not need. The object becomes unnecessarily bloated.
  2. When you make a lot of super classes, it becomes extremely hard to navigate between each class and fix bugs/edit.
  3. Since objects are referencing to the same place in memory, if you make a copy and create a small change its property, it can mess up the rest. (Mutability due to reference)
 
@@ -46,12 +48,18 @@ class American: Humanable {
 ```
 
 ## Protocol Inheritance
+A protocol may "inherit" the requirements from other protocols.
+
 ```swift
 protocol SuperHumanable: Humanable {
   var canFly: Bool { get set }
   func punch()
 }
+```
 
+Any classes, structs, enums that conform the `SuperHumanable` must contain properties and methods from `Humanable` as well.  
+
+```swift
 struct BobtheDeveloper: SuperHumanable {
   var name: String = "Bob"
   var race: String = "Asian"
@@ -66,10 +74,11 @@ struct BobtheDeveloper: SuperHumanable {
 }
 ```
 
-> { get } or { get set} only apply to computed property. If you are defining a stored property, you may choose either { get } or { get set }.
+> **Important:** { get } or { get set } only apply to computed property. If a class has a stored property, you may choose either { get } or { get set }.
 
+## Computed Property
+When a class/struct/enum contains computed properties, you must take into account of `{ get }` or `{ get set }` while setting the requirements of a protocol.
 
-### Computed Property
 Create a protocol called, `Breathable`. It contains two properties: `isBreathing` and `isLiving`.
 
 ```swift
@@ -79,7 +88,7 @@ protocol Breathable {
 }
 ```
 
-Create a struct that conforms to `Breathable`. The struct contains properties: `isBreathing` and `isLiving`. Define them as computed properties rather than stored.
+Create a struct that conforms to `Breathable`. The struct contains properties: `isBreathing` and `isLiving`. Define them as computed properties.
 
 ```swift
 struct Human: Breathable {
@@ -95,24 +104,24 @@ struct Human: Breathable {
 }
 ```
 
-> **Rule:** If you are using a computer property, if it is { get } you may make a property gettable or settable. If it is defined as { get set } within a protocol, you must make it gettable and settable.
+> **Rule:** When you set the requirement as { get } you may make the property gettable or settable. If it is defined as { get set }, you must define the property as settable.
 
 
 | { get } | { get set } |
 | --- | --- |
-| Stored Property 😀 |  Computed Property --> Gettable, Settable (Optional) |
-| Stored Property 😀 | Computed Property --> Gettable, Settable (Must) |
-
-
-### Resources
-
-### Reference
-https://krakendev.io/blog/subclassing-can-suck-and-heres-why
-
-https://content.pivotal.io/blog/all-evidence-points-to-oop-being-bullshit
+| Stored Property 😀 | Stored Property 😀  |
+| Computed Property --> Gettable, Settable (Optional) | Computed Property --> Gettable, Settable (Must) |
 
 ### Source Code
 [4001_intro_protocols.playground](https://www.dropbox.com/sh/yk5uq09o8y4ob61/AABd3FKbRtI0mi4j77jAYrtma?dl=0)
 
+### References
+[All evidence points to OOP being bullshit by John Barker ](https://content.pivotal.io/blog/all-evidence-points-to-oop-being-bullshit)
+
+[If you're subclassing, you are doing it wrong by Hector Matos](https://krakendev.io/blog/subclassing-can-suck-and-heres-why)
+
+
 ## Conclusion
-Are you wrapping your heads around? Again, make sure you remember a couple rules. If you use { get } or { get set }. You can both use it as a stored property and change the value as you wish. However, if you identify a property with { get set } please remember if you use computed property, you have to make it settable as well. For { get }, you can do whatever you want. In our next lesson, you are going to see some of practical aspects of Protocol. You've only seen the tip of an ice berg. Let's get started my friend. Super excited to make you smarter.
+For stored properties, it does not matter whether you use `{ get }` or `{ get set }`. For computed properties, however, if you define the requirement as `{ get set }`, the property must be settable. If it is `{ get }` alone, the property can be gettable or settable. Remember, protocol is like a basketball coach. structs, enums, classes, are like players.
+
+In the following lesson, you will learn how to create a scalable architecture with protocol `extension`, a.k.a, the magic.    

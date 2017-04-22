@@ -1,13 +1,13 @@
 # Computed Property
 
 ## Introduction
-Welcome to Lesson 3 of Object Oriented Swift. Today, we are going to learn how to create relationships between variables. So that you don't need to manage two or more variables separately. Are you confused? Well, have you heard, `get` and `set` before? Haven't? No worry. I will walk you through by placing your feet on mine. Let's dive into it.
+Welcome to Lesson 2 of Object Oriented Swift. You will learn how to create relationships between variables. You no longer have to manage two or more variables separately. You probably have seen `get` and `set` before. If you haven't, don't you worry. I will walk you through by placing your feet on mine.
 
 ## Problem
 Do we have to make functions all the time to calculate something?
 
 ## Atrocious Code
-Unrelated functions that take up many lines. The functions below are used to calculate radius.
+Unrelated functions that take up many lines. The functions below are used to calculate a radius and diameter.
 
 ```swift
 func getDiameter(radius: Double) -> Double {
@@ -22,13 +22,16 @@ getRadius(diameter: 200) // return 100
 getRadius(diameter: 600) // return 300
 ```
 
-## Introducing Computed Property
-You may create a variable that only can be read. You may not customize. It is also referred to as a gettable property.
+The two functions are separate and there is no relationship . Computed Property will help you solve this problem.
 
-> Computed = calcualted
+## Introducing Computed Property
+You may create a variable that only can be read. It is also referred to as a gettable property.
+
+> Computed = calculated
 
 ### Gettable Property
 Create a only readable property.
+
 ```swift
 class NumberClass {
   var readableNumber: Double {
@@ -66,15 +69,15 @@ var diameter: Double {
 }
 ```
 
+`newValue` refers to the newly set value of `diameter`.  For example, when you set `diameter` to 100,  `newValue` becomes 100.
+
 ```swift
 diameter = 50
 radius = 100
 diameter // 200
 ```
 
-Now, if you set `diameter` to 100,  `newValue` becomes 100. As a result, `radius` will be 50. If you set `radius` to 500, `diameter` will be 1000.
-
-Instead of calling `newValue`, you may name the recently set value as you wish. In the example below, there is a relationship between `area` and `side`. Instead of calling `newValue`, I call it as `newArea`.
+Instead of calling `newValue`, you may add a different name. In the example below, there is a relationship between `area` and `side`. Instead of calling `newValue`, let us use `newArea`.
 
 ```swift
 import Foundation
@@ -90,7 +93,9 @@ var area: Double {
 }
 ```
 
-```swift 
+There is a relationship between `side` and `area`.
+
+```swift
 area = 1000
 side // 31.6
 ```
@@ -104,4 +109,6 @@ side // 31.6
 [2002_computed_property.playground](https://www.dropbox.com/sh/sunfww1daece1fe/AAB31bu-Q-_V_ZF2-AOaUdc9a?dl=0)
 
 ## Conclusion
-In the beginning of the lesson, you've learned what it means to create a `gettable` property by calling `get` or just by returning value. After that, you've also learned how to add `set` which allows you to modify its value as well as those of other variables. We are going to take a look at how Apple Engineers use computed property to create the iOS ecosystem safe and non-customizable. I know you are super excited to build apps. You will learn how everything fits together in Part 2 and Part 3 of this course.
+ You've learned what it means to create a gettable property that can be only read. You've also learned how to create a settable property which allows you to modify its value as well as those of others. The UIKIt framework often utilizes gettable properties to prevent us, developers, from modifying them. 
+
+In the lesson lesson, you will learn how to add an observer to a property.

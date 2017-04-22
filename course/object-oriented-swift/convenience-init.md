@@ -1,7 +1,7 @@
 # Convenience Init
 
 ## Introduction
-Welcome to the first lesson of Object Oriented Swift. In this lesson, you will learn how to become lazy.  In other words, you learn to become smart and effective when it comes to initializing an object. In programming, getting lazy to write less code is in fact good for your teammates and users as long as it's readable. Bill Gates once mentioned, whenever there is hard work to be done, he assigns it to the laziest person as he or she is sure to find an easy way of doing it. So, let's get started.
+Welcome to the first lesson of Object Oriented Swift. You will learn how to become lazy.  In other words, you become smarter and effective when it comes to initializing an object. In programming, getting lazy to write less code is in fact good for your teammates and users as long as it's readable and gets the job done. Bill Gates once mentioned, whenever there is hard work to be done, he assigns it to the laziest person as he or she is sure to find an easy way of doing it.
 
 ## Problem
 I'm lazy. Can we initialize quickly?
@@ -23,7 +23,7 @@ class Human {
 }
  ```
 
-Convenience init initializes the designated init method by calling `self.init`.
+`Convenience` init initializes the designated init method by calling `self.init`.
 
 ### Create Object
 ```swift
@@ -41,7 +41,7 @@ let randomColor = UIColor(colorLiteralRed: 255/255, green: 80/255, blue: 85/255,
 ```
 
 ## Custom Convenience Init
-Create our own convenience init that initializes the designated init by adding `extension` to `UIColor`.
+Create our own `convenience` init that initializes the designated init by adding `extension` to `UIColor`.
 
 ```swift
 extension UIColor {
@@ -54,11 +54,13 @@ let myFavoriteColor = UIColor(r: 255, g: 80, b: 85)
 ```
 
 ### Application
- 1. Useful for quick initialization for open source projects
- 2. Custom convenience like UIKIt
+ 1. Quick initialization for open source projects
+ 2. Custom `convenience` inits with `UIKit`
 
 ### Source Code
 [2001_convenience_init.playground](https://www.dropbox.com/sh/s8huk2ugoeawb1c/AABvP4MipSe4CSypX7QEgZmZa?dl=0)
 
 ## Conclusion
-You've learned how to become lazy and effective at the same time. Imagine you are creating a library for your teammates to use. They no longer have to use a designated init method to initialize an object. It's  not necessary. It's a win-win situation. In the next lesson, let's talk about how initialization may fail.
+You've learned how to become lazy and effective at the same time. Imagine, you are the owner of a library for your teammates. They no longer have to use the bloated designated init method. Instead, you may provide multiple `convenience` init methods so that their lives become easier. It is similar to how the Apple engineers have provided us with convenience init methods for `UIColor`. It's a win-win situation.
+
+In the next lesson, you will learn how to fail initializations.

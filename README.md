@@ -8,7 +8,7 @@
  <a><img src="https://img.shields.io/badge/Langauge-Swift_3.1-E73A05.svg?style=flat"></a>
  <a><img src="https://img.shields.io/badge/iOS-10.3-1E8CFD.svg?style=flat"></a>
  <a href="https://linkedin.com/in/bobthedev"><img src= "https://img.shields.io/badge/LinkedIn-Connect-233642.svg"></a>
-<a href="https://blog.bobthedeveloper.io"><img src="https://img.shields.io/badge/Medium-Blog-19AA6E.svg"/></a>
+<a href="https://blog.bobthedeveloper.io"><img src="https://img.shields.io/badge/Blog-Read-19AA6E.svg"/></a>
 <a><img src="https://img.shields.io/badge/Platform-Udemy-00A202.svg"/></a>
 </p>
 <hr>
@@ -38,15 +38,13 @@ If you are interested in receiving regular updates on [upcoming courses](ABOUT.m
 
 If you've found this document on Github, you may read at [LearnSwiftwithBob.com](https://learnswiftwithbob.com). If you wish to provide feedbacks and suggestions, please feel free to leave a comment by clicking on a box that appears on the right side when you hover onto a paragraph or contribute directly through [Github](https://github.com/bobthedev/Gitbook_Learn_Swift).
 
-## Progress
-| Date | Commit Title | Next Step |  
+## Update Log
+| Date | Change | Next Step |  
 | --- | --- |  --- |
+| April 22nd, 2017 | Documented all chapters | Take intro and conclusion videos |
+| April 16th, 2017 | Recorded the entire lecture | Document on GitBook for each lesson |
+| April 15th, 2017 | Added source code for Ch 5, 6, 7, 8 | Prep and record Ch 8 and document |
 | April 8th, 2017 | Added source code for Ch 1, 2, 3, 4 |  Prep and record Ch 5 and document Ch 2, 3, 4, 5 |
-
-
-
-
-
 
 
 

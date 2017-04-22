@@ -1,0 +1,5 @@
+# Chapter 1
+## The Swift Fundamentals
+Welcome to the first chapter of Learn Swift with Bob. I've chosen topics that distinguish Swift from any other modern programming languages. You will learn how to identify and distinguish every possible `?` and `!` so that you no longer have to rely on vague instructions from Xcode. You will also learn standard practices through `generics`, `error handling` and `guard` statement to create reusable, modular, and safe lines of code. Swift provides us with amazing tools to work with, such as `optional chainings` and `extension`. Let's utilize them as much as we can.
+
+I started my programming journey with Swift. I understand the struggles you go through. You may have experienced a lack of confidence when you were asked to show your code to someone else. You may asked yourself whether you were writing descent lines of code. From now on, don't you worry. You've come to the right place with me, Bob the Developer. You follow my lead, you will come out programming in a different playing field. If you have any questions along the way, feel free to comment below. Let's begin our first step.

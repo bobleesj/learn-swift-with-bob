@@ -1,10 +1,6 @@
-# Protocol Oriented Swift
+# Chapter 4
+## Protocol Oriented Swift
 
-Welcome guys! This is the very last chapter of Part 1 Swift Intermediate Fundamentals. You've come a long way, my friend.  In this chapter, you are going to learn how to stay away from Object Oriented Programming to implement certain features. Unlike OOP, Protocol Oriented Programming allows you to write non-nested code. In other words, your code becomes flat and easy to read. I'm sure you are curious to know more. Let's get into it. Again, in this course, we are not going to dive too deeply with POP, however you will still be able to reduce a lot more lines of code. Stop subclassing!
+Welcome to Chapter 4, Protocol Oriented Swift. The primary focus of this chapter is to understand how to produce  a non-nested, value-oriented, highly scalable codebase. In Lesson 1, you will learn the syntax of Swift `protocols`. In Lesson 2 and 3, you will see the flaws of type casting and inheritance by comparing with the protocol way . In the last lesson, you will learn how to pass data between classes through utilizing `delegate`.
 
-
-- Intro to Protocol
-- Protocol Extension
-- Protocol as Type
-- Delegate
-- Protocol Associativity Type
+> **Disclaimer:** You will not understand the statement, "Swift is a protocol oriented language" until you get to Chapter 8..

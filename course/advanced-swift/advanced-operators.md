@@ -1,172 +1,262 @@
+# Advanced Operators
 
-prefix operator %
-prefix func % (percentage: Int) -> Double {
-  return (Double(percentage) / 100)
-}
+## Introduction
+Welcome to Lesson 2 of Advanced Swift. Throughout the previous lessons, I've given you a little taste about Advanced Operators. It's your turn.
 
-%42
+## Problem
+Learn how to create custom operators
 
-postfix operator %
-postfix func % (percentage: Int) -> Double {
-  return (Double(percentage) / 100)
-}
+## Inout
 
-42%
+> **Note:** Function parameters are constants by default.
 
-
-//: Prefix
-!true
-!false
-
-/*
-+: Unary plus
--: Unary minus
-!: Logical NOT
-~: Bitwise NOT
-
-
-```
-func +(left: [Double], right: [Double]) -> [Double] {
-  var sum = [Double](repeating: 0.0, count: left.count)
-  for (i, _) in left.enumerated() {
-    sum[i] = left[i] + right[i]
-  }
-
-  return sum
-}
-
-print([1, 2] + [3, 4]) // [1, 2, 3, 4]
-
-infix operator ** { associativity precedence 160 }
-```
-
+Let us create a function whose parameter is decorated with `inout`.
 
 ```swift
- 1. infix specifies that it is a binary operator, taking a left and right hand argument
- 2. operator is a reserved word that must be preceded with either prefix, infix, or postfix
- ** is the operator itself
- 3. associativity left means that operations are grouped from the left
- 4. precedence 160 means that it will evaluate with the same precedence as the exponential operators << and >> (left and right bitshift).
+func enterSomething(_ a: inout Int) {
+  a += 1
+  print(a)
+}
 ```
 
+`inout` parameters can be modified. Let us execute the function.
 
 ```swift
-import Foundation
-
-func ** (left: Double, right: Double) -> Double {
-  return pow(left, right)
-}
-
-2 ** 3
+var number = 10
+enterSomething(&number)
 ```
 
+Let us check `number`
+
+```swift
+print(number) // 11
+```
+
+It has been mutated by the function even though it was used as the parameter.  
+
+## Design Prefix and PostFix Operators
+Let us get to the objective.
+
+### Prefix Operator
+Let us create one.  Define an operator.
 
 ```swift
 prefix operator √
+```
 
-prefix func √ (number: Double) -> Double {
+Add logics to the operator.
+
+```swift
+prefix func √(number: Double) -> Double {
   return sqrt(number)
 }
 
-√12031231203021
+√1000000 // 1000
+√10000234234 // Some number
 ```
+
+Let us a create a silly one.
 
 ```swift
-infix operator ± { associativity left precedence 140 }
-func ± (left: Double, right: Double) -> (Double, Double) {
-  return (left + right, left - right)
+prefix operator ©
+prefix func ©(enterWord: String) -> String {
+  return "\(enterWord)™"
 }
-
-prefix operator ± {}
-prefix func ± (value: Double) -> (Double, Double) {
-  return 0 ± value
-}
-
-2 ± 3
-// (5, -1)
-
-±4
-// (4, -4)
 ```
 
+Let us apply
+
+```swift
+ ©("Bob the Developer")
+ // "Bob the Developer™"
+ ```
+
+> **Important:** Click `opt-g` to create ©
 
 
+### PostFix Operator
+Postfix is an operator that comes after the value.
 
-//: Guideline
-// Don’t create an operator unless its meaning is obvious and undisputed. Seek out any potential conflicts to ensure semantic consistency.
-// Custom operators should only be provided as a convenience. Complex functionality should always be implemented in a function, preferably one specified as a generic using a custom protocol.
+```swift
+let myName: String? = "Bob"
+myName!
+```
 
-["Bob", "Bobby"] + ["Bob", "Bobbb"]
+Let us create one.
+
+```swift
+postfix operator =!
+
+postfix func =!(value: String?) -> String {
+  guard let unwrappedValue = value else {
+    return ""
+  }
+  return unwrappedValue
+}
+```
+
+Let us apply.
+
+```swift
+myName=!
+// "Bob"
+```
+
+Let us create an operator, `%%` that determines whether the number is odd or even.
+
+```swift
+postfix operator %%
+postfix func %%(enterNumber: Int) -> String {
+  return enterNumber % 2 == 0 ? "Even" : "Odd"
+}
+```
+
+Let us use the operator.
+
+```swift
+Int(arc4random())%% // "Even" or "Odd"
+```
+
+## Infix Operator
+This is the real deal. Let us take a look at a couple default examples.
+
+| Group | Precedence | Examples |
+| --- | --- | --- |
+| BitwiseShiftPrecedence |   precedence 160  | <<, >> |
+| MultiplicationPrecedence |  associativity left precedence 150  |  /, %, &, * |
+| AdditionPrecedence |  associativity left precedence 140 | +, - |
+| RangeFormationPrecedence |  precedence 135 |  ..<, ... |
+| CastingPrecedence | precedence 132  | is, as |
+| ComparisonPrecedence |precedence 130  | <, <=, ==, !=, === |
+| LogicalConjunctionPrecedence | associativity left precedence 120  | && |
+| NilCoalescingPrecedence |  associativity right precedence 110  | ?? |
+| TernaryPrecedence |  associativity right precedence 100  | ? |
+| AssignmentPrecedence  | associativity right precedence 90  | =, *=, /=, += |
 
 
-//: Operator Overloading
-// Operator overloading allows you to change the way existing operators work with specific structures or classes. This is exactly what you need – you’d like to change the way the + operator works with Int arrays!
+### Old Method
+Let us create one.
 
+```swift
+infix operator ** { associativity left precedence 130 }
+```
 
-// In programming languages, associativity (or fixity) is a property that determines how operators with the same level or precedence are grouped in the absence of any parentheses.
+Let us add logics.
 
+```swift
+func ** (left: Double, right: Double) -> Double {
+  return pow(left, right)
+}
+```
 
-// In Swift, the precedence of an operator is defined as a decimal integer value in the range 0 to 255 inclusive. They higher the number, the higher the precedence and the sooner the compiler evaluates it.
+Let us call the operator.
+
+```swift
+2 ** 3 // 8
+2 ** 10 // 1024
+```
+
+### Swift 3.0
+Precedence value is no longer used. Instead, the priority of custom operators is determined relatively.
+
+Let us a create a group called, `CustomOperatorPrecedence`.
+
+```swift
+precedencegroup CustomOperatorPrecedence {
+  higherThan: AdditionPrecedence
+  lowerThan: MultiplicationPrecedence
+  associativity: left
+}
+```
+
+Define an operator, `????` that conforms to `CustomOperatorPrecedence`.
+
+```swift
+ infix operator ????: CustomOperatorPrecedence
+```
+
+The `????` is used to generate a random number.
+
+```swift
+func ???? (left: UInt32, right: UInt32) -> Double {
+  let lower : UInt32 = left
+  let upper : UInt32 = right
+  let randomNumber = arc4random_uniform(upper - lower) + lower
+  return Double(randomNumber)
+}
+```
+
+Execute the operator.
+
+```swift
+1 ???? 10 // 10
+1 ???? 124234324 // 124234324
+```
+
+## Operator Overloading
+You may override an operator that is pre-defined by Swift engineers. Let us attempt to add an extra functionality with `*` as shown below.
+
+```swift
+"a" * 10
+"aaaaaaaaa"
+```
+
+Add extra feature.
+
+```swift
 func * (left: String, right: Int) -> String {
-  if right <= 0 {
+  guard right >= 0 else {
+    print("Make sure enter number higher 0")
     return ""
   }
 
-  var result = left
+  var result = String()
   for _ in 1..<right {
     result += left
   }
 
   return result
 }
+```
 
-"a" * 6
-"abab" * 3
+Execute the operator
+```swift
+"Bob" * 10 // "BobBobBob..."
+```
 
-84 * 2
+### Another Example
+Let us attempt to achieve the effect as shown by operator below.
 
+```swift
+[1, 2] + [3, 4] // [4.0, 6.0]
+```
 
+Add logics to the operator.
 
-//: Choosing a Type
-/*
-With Swift, you can define binary, unary and ternary operators. These indicate the number of targets involved.
-Unary operators involve a single target and are defined either as postfix (i++) or prefix (++i), depending on where they appear in relation to the target.
-Binary operators are infix because they appear in between the two targets, for example 1 + 1.
-Ternary operators operate on three targets. In Swift, the conditional operator is the only Ternary operator, for example a ? b : c.
+```swift
+func +(left: [Double], right: [Double]) -> [Double] {
+  var sum = [Double](repeatElement(0.0, count: left.count))
 
+  print(left.enumerated())
+  for (i, _) in left.enumerated() {
+    sum[i] = left[i] + right[i]
+  }
 
-//: Nil-Coalescing Operator
+  return sum
+}
+```
 
-// The nil-coalescing operator (a ?? b) unwraps an optional a if it contains a value, or returns a default value b if a is nil. The expression a is always of an optional type. The expression b must match the type that is stored inside a.
+### Source Code
+[8002_advanced_operators](https://www.dropbox.com/sh/ri3z2v69o2ls1a1/AABbuPxeBoQkWF1i8domQ8qoa?dl=0)
 
-let defaultColorName = "red"
-var userDefinedColorName: String?   // defaults to nil
+### References
+[Swift Operators by Matt Thompson](http://nshipster.com/swift-operators/)
 
-var colorNameToUse = userDefinedColorName ?? defaultColorName
-
-"Bob" == "Bboby"
-
-// Tertiaray Operator
-//https://developer.apple.com/reference/swift/swift_standard_library_operators
-
-
-var anOptionalInt: Int? = 10
-
-var anotherOptional = (anOptionalInt != nil ? anOptionalInt! : 0)
-
-let contentHeight = 40
-let hasHeader = true
-let rowHeight = contentHeight + (hasHeader ? 50 : 20)
-
-// var sumWithMultiplication = 1 + 3 - 3 * 2
-
-
-### Terminology
- 1. Unary operators operate on a single target (such as -a). Unary prefix operators appear immediately before their target (such as !b), and unary postfix operators appear immediately after their target (such as c!).
- 2. Binary operators operate on two targets (such as 2 + 3) and are infix because they appear in between their two targets.
- 3. Ternary operators operate on three targets. Like C, Swift has only one ternary operator, the ternary conditional operator (a ? b : c).
+[The Swift Programming Language (Swift 3.1) - Advanced Operators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html)
 
 
 
-#### Reference
-http://nshipster.com/swift-operators/
+## Conclusion
+First, you've learned that `inout` parameters can be modified within the function. Second, you've learned how to create `prefix` and `postfix` operators by defining them first and adding the logic second. Lastly, you've learned the old way of creating `infix` operators with the definite precedence value.  Now, however, you define the precedence value relative to default operator groups. However, be careful not to overuse custom operators. Once you use them, you should create documents for your teammates and for yourself.
+
+In the following lesson, you will the final aspect of Swift Error Handling.

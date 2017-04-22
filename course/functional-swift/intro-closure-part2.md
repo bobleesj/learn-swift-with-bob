@@ -1,11 +1,11 @@
-# Closures vs Functions (Part 2)
+# Intro to Closures Part 2
 ## Introduction
-In the previous lesson, you've learned how to create a closure. Now, you are going to create a function that both use it as a parameter, and even returns it.
+Welcome to Lesson 2 of Intro to Functional Swift. In the previous lesson, you've learned how to create a closure block with various forms. Today, you will learn how to create a special function. It not only takes a closure block as its parameter and but also returns it.
 
 ## Problem
 Can you pass/return a function/functions to a function?
 
-### Review
+## Review
 Add two numbers using a closure
 
 ```swift
@@ -13,7 +13,9 @@ var addWithClosures: (Int, Int) -> Int = { (number1: Int, number2: Int) in
   return number1 + number2
 }
 ```
-Return a string value
+
+Return `String`
+
 ```swift
 var returnString: () -> String = { () in
   "hello"
@@ -22,18 +24,20 @@ var returnString: () -> String = { () in
 let returnedValue = returnString() // "hello"
 ```
 
-### First Class Citizen
-  1. Pass
-  2. Return
-  3. Store
+## First Class Citizen
+The Swift functions and closures are often referred as "First Class Citizen". You may
 
-> **Disclosure**: Function is called Global Closure
+  1. store in a variable/constant
+  2. pass as a parameter
+  3. return
+
+> **Disclosure**: The Swift Function is called Global Closure
 
 ## Return Closure
-Now only you may pass a closure to a function block, you may return a closure.
+Let us create a function that returns a closure block. There are two ways.
 
-
-### Return closure block
+### Return Closure Indirectly
+First, design a function whose return type is `(Int, Int) -> Int`.
 
 ```swift
 func returnClosure() -> ((Int, Int) -> Int) {
@@ -45,13 +49,21 @@ addClosure(4, 10)
 returnClosure()(4, 10) // addWithClosure(4, 10)
 ```
 
-### Return direct closure
+You've returned `addWithClosures` whose type is `(Int, Int) -> Int` as well.  If there is no `()` at the end, it is considered as a constant/variable.
+
+### Return Closure Directly
+You may return a closure block directly instead of `addWithClosures`.
+
 ```swift
 func returnClosureDirectly() -> ((Int, Int) -> Int) {
   return { (number1, number2) in number1 + number2 }
 }
 returnClosureDirectly()(4, 10) // 14
+```
 
+You may use the short from instead.
+
+```swift
 func returnClosureDirectlyTwo() -> ((Int, Int) -> Int) {
   return { $0 + $1 }
 }
@@ -59,30 +71,45 @@ returnClosureDirectlyTwo()(4, 10) // 14
 ```
 
 ## Pass Closure
+Create a function whose parameter accepts `() -> String`. Then, execute the closure block within the function.
+
 ```swift
 func insertClosureBlock(closureBlock: () -> String) -> String {
   return closureBlock()
 }
 ```
 
-### Enter closure indirectly
+### Design Closure Block
+Create a closure which will be passed in the `insertClosureBlock` function.
+
 ```swift
-insertClosureBlock(closureBlock: hello)
+func hello() -> String {
+  return "hello"
+}
 ```
 
-### Enter closure directly
+### Pass Closure Indirectly
+```swift
+insertClosureBlock(closureBlock: hello)
+// "hello"
+```
+
+### Pass Closure Directly
 ```swift
 insertClosureBlock(closureBlock: { _ in return "hello" })
 insertClosureBlock(closureBlock: { return "hello" })
 insertClosureBlock(closureBlock: { "hello" })
 ```
 
-
 ### Resources
-If you are not familiar with closures, it takes a while for you to get used to it. I highly recommend you to read my article on No Fear Closures with Bob [Part 1](https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jppz) and [Part 2](https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jpp).
+No Fear Closures with Bob [Part 1](https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jppz) and [Part 2](https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jpp).
 
 ### Source Code
 [3002_intro_closures_part2.playground](https://www.dropbox.com/sh/dws40juw0rrx9mn/AACQjdv5oVoqNrB8ar2skfXva?dl=0)
 
 ## Conclusion
-If you were to take away one thing, please remember this. You can pass closure to an argument label and even return closure. This is the basis of functional programming, which I'm not going to dive into. If you want to register for the course, feel free to send me an email, `bob@bobthedeveloper.io` to receive personal updates from me, and receive special offers on books, courses, and so on. My next course will be about MVVM, Protocol Oriented Programming, Functional Programming, and RxSwift. If you really want to improve your coding skill, I highly recommend it for you. You will be surprised how much you will learn more me. Keep developing your skill. If you are confused, make sure check out the resources, and keep googling and searching. Feel free to ask questions as well.
+You've learned how to pass and return a closure block directly and indirectly within a function. The is the fundamental root of functional programming which I'm not going to dive much into in this course. You may sign up for my mailing list if you are interested in learning about reactive programming with RxSwift and MVVM.
+
+We've covered the basics of closures in Swift. From now on, difficulty of this chapter will dramatically increase. Before you step onto the arena, I recommend you to read my articles and practice on your own until you become well-versed with the closure syntax. If not, you will suffer.
+
+In the following lesson, you will learn how to initialize an object using a closure block and the meaning of `lazy` in the Swift Programming Language.

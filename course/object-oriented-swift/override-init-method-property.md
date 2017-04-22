@@ -1,25 +1,29 @@
-# Override Init
+# Override Everything
 
 ## Introduction
-In this lesson, you are going to learn what it means by the word `super`. A lot of beginners often have no clue but copy because they have seen on StackOver Flow or tutorials. Today, we are going to dive in what's really going on. There are a lot of examples, so let's get started.
+Welcome to Lesson 5 of Object Oriented Swift. You will master the word `super` and `override`. A lot of beginners  have no clue because they simply copy from StackOver Flow and shallow tutorials. I was one of them. That's no longer acceptable from now on.
 
 ## Problem
 Problem: Super... Super.init?
 
-### UIViewController
-You might have seen something like this below. Many wonder what `super` and `override` stand for. Let us find out.
+### Example from UIViewController
+You might have seen something like this below.
 
 ```swift
 import UIKit
 
 class MyViewController: UIViewController {
-  // viewDidLoad() is built-in and it runs automatically
   override func viewDidLoad() {
     super.viewDidLoad()
     print("Hello")
   }
 }
 ```
+
+> **Important:** The viewDidLoad() method runs automatically by the `UIViewController` class.
+
+Many wonder what `super` and `override` stand for. Let us find out.
+
 ### Create Vehicle Class
 Create a class called `Vehicle`. It contains one gettable property and one method.
 
@@ -36,6 +40,8 @@ class Vehicle {
 ```
 
 ### Override Method and Property
+Create a class called, `ToyCar`, and inherit `Vehicle`. You may customize inherited properties and methods by inserting `override`.  You may access inherited properties and methods by calling `super`.
+
 ```swift
 class ToyCar: Vehicle {
   override var description: String {
@@ -47,48 +53,24 @@ class ToyCar: Vehicle {
     super.warning()
   }
 }
-
-let myFutureCar = ToyCar()
-myFutureCar.description
-myFutureCar.warning()
 ```
 
-You may customize inherited properties and methods by inserting `override`.  You may access inherited properties and methods by calling `super`.
-
-```swift
-class ToyCar: Vehicle {
-
- let price = "$100"
-
- override var description: String {
-   return "\(super.description), I'm \(price)"
- }
-
- override func warning() {
-   super.warning() // "Be careful, I'm going pretty fast"
-   print("Let me just tell you, I'm not dangerous much")
- }
-}
-```
-
-#### Subclass Object
-Create an object to check if the methods and properties have been overridden in the subclass,`ToyCar`.
+Now, let us access the `description` property and the `warning` method of `ToyCar`.
 
 ```swift
 let myFutureCar = ToyCar()
-
 myFutureCar.description
-// "Hello, I'm moving at 30km/hr, I'm a cute car"
+// "Hello, I'm moving at 30km/hr hey I'm a cute car"
 myFutureCar.warning()
-// "hello, dont' mind me"
+// "hello, don't mind me"
 // "Be careful, I'm going pretty fast"
 ```
 
-### Super Init
-You may override init from super class. However, the number one rule is: you must put associated value to every property even from the super class.
+## Super Init
+You may override an init method from the super class. Remember, every property must be initialized even the ones from the super class.
 
-#### Design Super Class
-Create a class that contain one property called, `origin`.
+### Design Super Class
+Create a class that contain a property called, `origin`.
 
 ```swift
 class Human {
@@ -99,7 +81,8 @@ class Human {
  }
 }
 ```
-#### Design Subclass
+
+### Design Subclass
 Create a subclass, called `Korean` that inherits from `Human`. The `Korean` class contains a property called, `name`.  However, when you initialize, you must initialize the `origin` property from the `Human` class by calling `super.init`.
 
 ```swift
@@ -117,7 +100,7 @@ class Korean: Human {
   }
 }
 ```
-#### Create Object
+### Create Object
 There are two init methods in the `Korean` class. You may choose any since both initialize the `origin` property from the `Human` class.
 
 ```swift
@@ -125,10 +108,10 @@ let bob = Korean(enterName: "Bob the Dev")
 let bobby = Korean(enterName: "Bob the Dev", myOrigin: "Korean")
 ```
 
-### Override Init
-Similar to how you may override a method and property, you may include additional lines of code by overriding the init method.
+## Override Init
+Not only you may override methods and properties, but also init methods.
 
-#### Design Base Class
+### Design Base Class
 Design a class called, `Tesla`. It contains a property called, `numberOfWheels`.
 
 ```swift
@@ -139,7 +122,12 @@ class Tesla {
     numberOfWheels = enterWheelNumber
   }
 }
+```
 
+### Design SubClass
+Design a called, `ModelS` that inherits `Tesla`. Add the `override` keyword in front of the init method and call `super.init` to initialize the property from the `Tesla` class. Once you initialize the property, you may add additional lines of code for customization.
+
+```swift
 class ModelS: Tesla {
   override init(enterWheelNumber: Int) {
     super.init(enterWheelNumber: enterWheelNumber)
@@ -155,4 +143,6 @@ ModelS(enterWheelNumber: 50) // Wow, you've got a nice car
 
 
 ## Conclusion
-Now, you understand what goes under when you see or type phrases such as `super.init`, `super.viewDidLoad`, and `override`. If you have not been confident with OOP, this lesson could have been tough for you. So, make sure review if necessary.
+From now on, you no longer have to fear `super.init`, `super.viewDidLoad`, and `override`. If you feel stuck, I recommend you to watch the lecture multiple times and then ask questions if necessary. You've got to understand every piece of information from here. If not, you will suffer. A lot.
+
+In the following lesson, you will learn how one init method can initialize the other.

@@ -1,17 +1,15 @@
 # Property Observer
 
 ## Introduction
-Welcome to Lesson 6 of The UIKIt Fundamentals with Bob, Part 1 Object Oriented Programming. You are going to learn how to put a tracker to a property. For example, never mind. Let's just do it.
+Welcome to Lesson 3 of Object Oriented Swift. You are going to learn how to add an observer to a property so that you may track when it is mutated or anything happens.
 
 ## Problem
 How can I add observer/tracker to a property?
 
 ### willSet and didSet
   1. `willSet` is called just before the value is set
-  2. `didSet` is called immediately after the new value is set.
+  2. `didSet` is called immediately after the new value is set to the property.
 
-### Create Step Counter
-Create a variable called, `totalSteps`. When the variable encounters a new value, you may notify the user that the value has been changed. In the `willSet` block, `newTotalSteps` refers to the new value stored. In the `didSet` block, `oldValue` refers to the previous value before `totalSteps` encounters a new value.
 
 ## Grade Tracker
 ```swift
@@ -24,11 +22,24 @@ var myGrade: Int = 80 {
     print("you had \(oldValue) previously. Now you have \(myGrade)")
   }
 }
-
-myGrade = 100
 ```
 
+Let us modify `myGrade`.
+
+```swift
+myGrade = 100
+// "About to change your grade to 100"
+// "Your grade has been changed"
+// "You had 80 previously. Now you have 100"
+```
+
+The `willSet` block is called before `myGrade` is set to 100. The `didSet` block runs only after. `oldValue` refers to the initial value.
+
+
 ## Step Counter
+Create a variable called, `totalSteps`. When the variable encounters a new value, you may notify the user that the value has been changed.
+
+
 ```swift
 var totalSteps: Int = 20 {
   willSet(newTotalSteps) {
@@ -40,12 +51,16 @@ var totalSteps: Int = 20 {
     }
   }
 }
-
-totalSteps = 60
 ```
 
-### Application
-You may notify the user or change background color once the user successfully logs in to the apps.
+```swift
+totalSteps = 60
+// "About to set totalSteps to 60"
+// "Added 20 steps"
+```
+
+## Application
+You may notify the user or change background color once the user successfully logs in to the app.
 
 ```swift
 var userLoginInfo: Bool = false {
@@ -72,7 +87,7 @@ userLoginInfo = true
 ```
 
 ### Similarity with Computed Property
- - Always recalculated
+ - Always recalculated even if the value has not changed.
 
 ### What makes Property Observers different
  - There is a default value and it is observed rather than calculated.
@@ -82,4 +97,6 @@ userLoginInfo = true
 [2003_property_observers.playground](https://www.dropbox.com/sh/tfvmjjrppvy0g01/AABB5kYVgf6ImcptnOvQ53VGa?dl=0)
 
 ## Conclusion
-Great! The whole purpose of using property observer is to write less code but provide greater readability. You don't have to create a function with a switch or else-if statement. As you've seen there are ways ways to check whether user has been logged or not, computed property for me works great because it provides a separate block of code with distinct keywords such as `didSet` and `willSet`.
+The purpose of using property observers is not only to write less code but also to provide greater readability through the distinctive keywords. You no longer have to create unnecessary functions filled with `switch` or `else-if` statements. No need.
+
+In the next lesson, you will design init methods that may return `nil` through failable initializations.

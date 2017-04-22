@@ -1,78 +1,69 @@
 # Table of Content
 
-
-https://www.dropbox.com/s/euln0sfozo3tzlz/README.md?dl=0
-
-## Chapter 1: The Swift Intermediates   
-- Error Handling Part 1
-- Generics
-- Type Casting
-- Subscript
-- Class vs Structm
+## Chapter 1: The Swift Fundamentals   
 - Optionals
-- Optional Chaining
-- Guard and defer statement
+- Optional Chainings
+- Guard and Defer Statement
+- Intro to Error Handling
+- Type Casting
+- Intro to Generics
+- Subscripts
+- Class vs Struct
 - Set and Tuple
-- extension
-- Tertiary operator ??, ~=, ?
+- Extension
+- Intro to Operators
 - Typealias
 
-## Chapter 2: Advanced Object Oriented Programming
+## Chapter 2: Object Oriented Swift
 - Convenience Init
 - Computed Property
-- Property Observe
+- Property Observers
 - Failable Init
-- Override Init and Method
+- Override Method, Init, Property
 - Two Phase Init
 - Type Property and Method
 - Singleton Pattern
 
-## Chapter 3: Intro to Functional Programming
-- Closures vs Functions
-- Closures vs Functions (Part 2)
-- Lazy Initialization
-- Capture list in Closure
+## Chapter 3: Intro to Functional Swift
+- Intro to Closures Part 1
+- Intro to Closures Part 2
+- Lazy Init with Closures
+- Swift Capture Lists
 - Trailing Closures
-- Completion Handlers and Callback
-- @escape and @autoclosure
-- Intro to Functional Programming
+- Completion Handlers
 
-## Chapter 4: Complete Protocol Oriented Programming
-- Intro to Protocol
+## Chapter 4: Protocol Oriented Swift
+- Intro to Protocols
 - Protocol Extension
 - Protocol as Type
 - Delegate
-- Protocol Associativity Type
 
 ## Chapter 5: Memory Management
-- Memory management
-- weak, strong, unowned
-- Memory Management in Closures
-- Memory Management in Delegate
+- Automatic Reference Counting 
+- Delegate Retain Cycle
+- Closure Retain Cycle
+- @escape and @autoclosures
 
-## Chapter 6: Advanced Generics
-- Generics with Classes and Structs
-- Generics with Protocols
-- Equitable and Comparable Protocol
-- Type Eraser with Protocol
-- Generic Initialization
+## Chapter 6: Generic Protocol
+- Intro to Associated Type
+- Protocol Extension and Type Constraints
+- Override Protocol Associated Type
+- Protocol Pitfalls
+- Type Eraser
 
 ## Chapter 7: Advanced Enum
-- case let
-- where clause
-- Associated Value Types
-- Optional Pattern, Type Casting Patterns, Expression Pattern
-- Raw Value and String
-- switch self
-- Recursive Enumeration with indirect
-- enum static property-
-- Nested Type
+- The Enum Basics
+- Static and Mutating Methods with self
+- Nested Enum
+- Protocol Oriented Enum
+- Recursive Enum
+- Generic Enum
+- Error Handling with Enum Result Type
 
 ## Chapter 8: Advanced Swift
-- Access Control
-- Advanced Operators
-- Literal Expressions
-- Error Handling Rethrow
-- self vs Self
-- Swift Assertion (Intro to Test-Driven Development)
-- Intro to Test Driven Swift
+ - Nested Generics and Recursive Enum
+ - Advanced Operators
+ - Advanced Error Handling
+ - Equatable and Comparable Protocol
+ - Sequence and Iterator Protocol
+ - Intro to Test Driven Swift

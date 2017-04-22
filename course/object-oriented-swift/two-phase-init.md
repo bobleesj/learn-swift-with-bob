@@ -1,7 +1,7 @@
 # Two Phase Init
 
 ## Introduction
-In this lesson, you are going to learn how one init method initializes the other. Sounds super confusing? Well, let's find out how it works. At the end of this lesson, you will learn how NASA could have saved millions of dollars if they used the feature Swift offers.
+Welcome to Lesson 6 of Object Oriented Swift. You will learn how one init method may initialize the other. The process is analogous to that of `convenience`. At the end, you will learn how the NASA could have saved millions of dollars if they used the feature Swift offers.
 
 ## Problem
 How can one init init the other?
@@ -29,7 +29,7 @@ struct NuclearRocket {
 }
 ```
 
-Using the second init method, you may initialize the properties using `ft` and `gallon` because it calls the first init method by calling `self.init`. This is analogous to `convenience init`.
+Using the second init method, you may initialize the properties using `ft` and `gallon`. Yet, you've initalized the `meters` and `liters` properties by calling`self.init`.
 
 #### Create Object
 For Korean scientists
@@ -50,6 +50,6 @@ newRocket.meters // 91.4
 
 
 ## Conclusion
-Great, to be honest, I haven't used two phase init in my previous apps before. I just wanted to make sure when you read someone's code, you are ready to rock and roll.
+In 1998, The NASA launched The Mars Climate robot to study the Mars. However, a year later, it went out of the orbit. It was due to the computer software which produced non-SI units. The program returned units of pound instead of the SI units of newton. $327.6 million evaporated. They could have potentially used  two phase initializations in Swift.
 
-So, let's go back to the introduction. Why this is important.  The Mars Climate robot launched by NASA in 1998 to study the Mars.  However, a year later,  communication with the spacecraft was lost as the spacecraft, due to ground-based computer software which produced output in non-SI units of pound instead of the SI units of newton. $327.6 million gone. The two phase init could have been useful.
+In the following lesson, you will learn how to use methods and properties without creating an actual object.
