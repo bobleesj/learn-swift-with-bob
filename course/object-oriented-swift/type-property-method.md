@@ -123,4 +123,4 @@ You've learned how to access properties and methods without creating an object. 
 
 When you start taking The UIKit Fundamentals with Bob, you will discover the beauty of static methods and properties.
 
-In the following lesson, you will learn how to create the only object that exists everywhere. 
+In the following lesson, you will learn how to create the only object that exists everywhere.

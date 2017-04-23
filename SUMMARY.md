@@ -2,15 +2,13 @@
 
 ### Prologue
 * [Introduction](README.md)
-* [Bob the Developer](ABOUT.md)
-* [Resources](RESOURCES.md)
+* [Bob Lee](ABOUT.md)
+* [Resources Page](RESOURCES.md)
 
 ### Learn Swift with Bob
- <!-- * [Course Introduction](/course/introduction/course-intro.md)
- * [Expectation](/course/introduction/course-expecation.md)-->
-
- *  [Prerequisites](/course/introduction/course-prerequisites.md)
- * [Course Resources](/course/introduction/course-resources.md)
+ * [Promotion Video](/course/introduction/course-promo.md)
+ * [Course Overview](/course/introduction/course-overview.md)
+ * [Resources](/course/introduction/course-resources.md)
  * [Table of Content](/course/introduction/table-of-content.md)
 
 ### I. The Swift Fundamentals
@@ -28,7 +26,6 @@
    * [Intro to Operators](/course/swift-fundamentals/intro-operators.md)
    * [Typealias](/course/swift-fundamentals/typealias.md)
    * [Conclusion](/course/swift-fundamentals/conclusion.md)
-
 
 ### II. Object Oriented Swift
 * [Introduction](/course/object-oriented-swift/introduction.md)
@@ -66,7 +63,7 @@
   * [Automatic Reference Count](/course/memory-management/automatic-reference-counting.md)
   * [Delegate Retain Cycle](/course/memory-management/delegate_retain_cycle.md)
   * [Closure Retain Cycle](/course/memory-management/closure_retain_cycle.md)
-  * [Escaping and Autoclosures](/course/memory-management/@escaping_@autoclosure.md)
+  * [Escaping and Autoclosures](/course/memory-management/@escaping-@autoclosure.md)
   * [Conclusion](/course/memory-management/conclusion.md)
 
 ### VI. Generic Protocol
@@ -77,7 +74,6 @@
   * [Protocol Pitfalls](/course/generic-protocol/protocol-pitfalls.md)
   * [Type Eraser](/course/generic-protocol/type-eraser.md)
   * [Conclusion](/course/generic-protocol/conclusion.md)
-
 
 ### VII. Advanced Enum
  * [Introduction](/course/advanced-enum/introduction.md)
