@@ -47,7 +47,7 @@
   * [Capture Lists](/course/functional-swift/capture-lists.md)
   * [Trailing Closures](/course/functional-swift/trailing-closures.md)
   * [Completion Handlers](/course/functional-swift/completion-handlers.md)
-  * [Conclusion](/course/functional-swift/conclusion.md) -->
+  * [Conclusion](/course/functional-swift/conclusion.md)
 
 ### IV. Protocol Oriented Swift
 * [Introduction](/course/protocol-oriented-swift/introduction.md)
@@ -96,15 +96,15 @@
   * [Intro to Test Driven Development](/course/advanced-swift/intro-test-driven.md)
   * [Conclusion](/course/advanced-swift/conclusion.md)
 
-### Swift Extra
+### What's Next
+ * [The UIKIt Fundamentals with Bob](/course/conclusion/whats-next.md)
+
+### Extra
  <!-- * [Swift Styling Guide](/content/swift/swift-styling-guide.md) -->
  <!-- * [Better Swift Developer](/content/swift/better-developer.md) -->
  * [Swift External Resources](/content/swift/swift-resources.md)
-
-### Software Engineering
  * [Coding Principles](/content/software-engineering/coding-principles.md)
  <!-- * [Agile Development](/content/software-engineering/agile-development.md) -->
- <!-- * [Test Driven Development](/content/software-engineering/test-driven-development.md)
  * [Continuous Integration](/content/software-engineering/continuous-integration.md) -->
  <!-- * [Github Flow](/content/software-engineering/github-flow.md) -->
 

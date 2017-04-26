@@ -1,52 +1,56 @@
-## Outline
-### 1. Course Image Placeholder (3 seconds)
-### 2. Welcome & Instructor Bio (20 seconds)
- My personal story - dropped out and fou
- - Credential - medium followers, hundreds thousand views on monthly basis - in just few months of blogging. The number and review speaks for itself
- - I have a tutor for a long time.
+# Promotion Video
 
- I've been a tutor for the last 5 years in my life teaching students in various topics in Math, Chemistry, Biology, and programming. I have mover 10,000 developers follow me on my blog, and gets a couple thousands developers visit my blog and read my tutorials. They come, because not only I provide great value for in exchange for their time but also humor and fun. (Authority)
+### Course Image Placeholder
+> The basic Learn to Contribute Animation with Music
 
+### Instructor Introduction
+You probably know who I'm as Bob the Developer. I'm the editor of the largest iOS [Facebook Page](https://www.facebook.com/apple.ios.developers), and a [blogger](https://blog.bobthedeveloper.io) over thousands of daily visitors from students and iOS developers all around the world (Social Proof).
 
-### 3. Benefits and Pain (20 seconds)
-Many student lack fundamentals becasue many courses and books focus on final products. They ended up being code monkeys including myself. I know becasue Swift is my first programming language and I feel you.
-no single online course for intermediate swift developers
-Its hard ti watch with your phone.
-No source code available
+Less than half a year, I became one of the top bloggers standing right next to big named brands. You don't have to question my quality of content. The growth and reputation speak for themselves. (Authority).
 
-- Mention pains that many students go through (Completion handlers, closures, protocol, generics, enum) and relate with the readers through my own experience (liking)
-- Talk about how this course can help them solve, and what makes this course special from the rest in the marketplace (scarcity)
-- Talk about myself: My growth and work I've been producing. Talk about my purpose and why I've started teaching iOS development. (Authority and reciprocity)
-- Call to action to them to my course by mentioning their past encounter with my blog articles (Consistency). Again, mention what problems they would face if they decide to ignore, while talk about benefits they can with. Give an impression that they can't do much without me. Fear.
+People love my tutorials. I started learning Swift as the first programming language. Unlike other instructors, I understand what you are exactly going through because I'm been in your shoes and I struggled. (Liking)
 
-- Clearly state the why. Like Apple, change the world. People buy into my dream and vision.
-- Scarcity
+> **Focus:** Social Proof, Authority, Liking
 
-> Goal: The reader must buy into my goal and vision
+### Student Benefits
+Let me ask you a couple questions. Do you know why `optionals` were invented? Do you know what completion handlers and how to design one for your project? Do you know retain cycle within closures and delegates? Do you know the difference between `autoclosures`, `trailing` closures, and `escaping` closures? Do you know every usage case of `?` and `!` in` type casting` and `error handling`? Do you know how to create custom operators. Do you truly understand the statement, "Swift is a protocol oriented programming language", and know how to use default protocols such as `Equatable`, `Comparable`, `Sequence`, and `Iterator Protocol`. Lastly, do you know the difference between normal and recursive enums?
 
-You dont know what completion handlers, retain cycle, memory management in delegate, autoclosure, enum result type, autoclosure, capture list, rethrow? Do you know when yo use as, as? as!, try? Try, and try?
+These are just a few topics from the course. Yet, I already know many of you don't know these topics because I've conducted close to thousands of surveys (Social Proof, Screen). I know the iOS learning environment more than anyone else.
 
-### 4. List of Components (20 seconds) - explain the benefits of the approach,
-- My default is 28px- i also have a pointer and zooming effect for better user experience
-- Entire book is available with source code. You may use it as a reference even when you take a shower since phones nowadays are water proof (show humor)
-- No more boring reading and typing. I type right next to you all day. You will see me coding. You can see my face
-- My lessons are prepared from top to bottom, almost no unexpected error and you wont waste time typing. You save time.
+Here is the problem. Most students lack fundamentals because many courses and books focus on the final products. You've probably heard or taken, "Be a paid developer and build 21 apps just by taking one course." Give me a break. You know what happens. They end up being code monkeys, copying and pasting. I'm speaking from my experience and hundreds of personal emails.
 
-### 5. what the students will do
- - The student will learn how to program and out come in a different playing field.
- - You will learn the best practices in the iOS development
- - Clearly state what makes this course different. Focus on the "benefits" and customer oriented
- 
-### 6. Ideal student students for this course
-Either you've programmed with Swift  and understand the basic concept of Object Oriented Programming.
+> **Focus:** Social proof, Fear of missing out, Scarcity
 
-### 7. Call to action
- - Being an iOS developers in Sillicon Valley makes 6 figures yet bootcamps are still expensive over $1,000 - 3000 depending on the region. Or you are just doing it for fun.  you can ask questions and get help at any moment from me its only $50. The internet is plebty. All of my information I learned from the internet for the last 6 months and and dropping out of college as an engineering student. B
- - No discount will be applied unless If you are a student or from third world countries, you may send me an email to get discounts.
+### What Makes the Course Unique
+In this course, you will learn the four major paradigms in Swift: Functional, Object Oriented, and Protocol Oriented, and lastly value oriented with structs and enums.
 
-## Goal
-Impression of Bob
- 1. His first programming language is Swift so he understands how we feel
- 2. He is only 20 years old and he dropped out from college. He must have a big goal behind of his intention
- 3. He has over 10,000 followers and 100,000 monthly visitors in just about 4 months? People must be liking him alot!
- 4. He seems like a cool dude. He is a type of a guy who will get a lot of girls. He's got everything and he encourages us to.move up as well
+Here are a list of weapons that distinguish this course from the rest.
+
+- I focus on every detail. My default font is 28px. I also have a pointer and zooming effect so that you have no problem watching my course on your phone. (Screen)
+- The entire lecture note is available with source code, explanations, resources, and references. You may use the entire book a reference even when you take a shower since phones nowadays are water proof. (Screen)
+- You can see my face while learning although it takes more editing effort and preparation since I have to look presentable at all times. (Screen)
+- My lessons are prepared from top to bottom. There is no unexpected error and you won't waste time me trying to figure out what's going on. (Screen)
+- Lastly, you may join the group chat and ask questions at any time (Screen)
+
+> **Focus:** Fear of missing out, Scarcity
+
+### What the Students Will Do
+Making a software is similar to writing a novel. You may still be able to publish your first ebook even if it is filled with wrong grammar and wrong words.
+
+You may have questioned yourself whether you are writing decent lines of code. You may have felt embarrassed to show your code to someone else. Well, you've come to the right place. You've got to know every expression and find out pros and cons. I haven't seen single course that attempts what I try to accomplish. If you take the journey with me, you will come out coding in a different league.
+
+Every lesson is filled with practical examples. After each lesson, you probably get an urge to fix your pre-existing code base. You don't learn something just for the sake of learning. You will and you must apply. This will only happen when you take this course with me.
+
+ >**Focus:**  Focus on possibility and hope.
+
+### Ideal Students
+This course is designed for anyone who has been programming with Swift or other similar languages such as Javascript and understand the basic concept of `Object Oriented Programming`, `else-if` and `switch` statement. If you've never programmed before, don't worry. I've attached  videos for you to catch up and join the course later when you are ready.
+
+### Call to Action
+iOS developers in Silicon Valley make 6 figures yet bootcamps are still expensive over $1,000 - $3000 depending on the region. This course is only $50. Let me put you in a perspective, let say you earn $3,000. But if you are able to code more effectively with fewer bugs and fast production speed by taking this course by 50%, the price you pay for this course is nothing compared what you will gain after.
+
+There is be no discount unless you are a student from third world countries. If you are not satisfied with the material, of course, there is 30-day money back guaranteed.
+
+Here is the last statement. I'm 20 years old. I dropped out of college instead of  getting a degree to be a chemical engineer for my purpose. I dropped out to teach and provide global education. If you want to grow and learn together and provide great impact on the humanity, I will you there.
+
+>**Focus:**  Commitment and Consistency, Anchorism,

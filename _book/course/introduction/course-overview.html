@@ -1188,11 +1188,31 @@
 
     
         
-        <li class="header">Swift Extra</li>
+        <li class="header">What's Next</li>
         
         
     
-        <li class="chapter " data-level="11.1" data-path="../../content/swift/swift-resources.html">
+        <li class="chapter " data-level="11.1" data-path="../conclusion/whats-next.html">
+            
+                <a href="../conclusion/whats-next.html">
+            
+                    
+                    The UIKIt Fundamentals with Bob
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Extra</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../../content/swift/swift-resources.html">
             
                 <a href="../../content/swift/swift-resources.html">
             
@@ -1205,14 +1225,7 @@
             
         </li>
     
-
-    
-        
-        <li class="header">Software Engineering</li>
-        
-        
-    
-        <li class="chapter " data-level="12.1" data-path="../../content/software-engineering/coding-principles.html">
+        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/coding-principles.html">
             
                 <a href="../../content/software-engineering/coding-principles.html">
             
@@ -1225,7 +1238,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="../../content/software-engineering/continuous-integration.html">
+        <li class="chapter " data-level="12.3" data-path="../../content/software-engineering/continuous-integration.html">
             
                 <a href="../../content/software-engineering/continuous-integration.html">
             
@@ -1434,10 +1447,30 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="course-overview">Course Overview</h1>
+<p>Welcome to Learn Swift with Bob. You&apos;ve made the right choice. You won&apos;t regret the decision you&apos;ve made to embark the journey with me. Before you and I jumping into the lessons, let us go through the prerequisites, table of content, and course expectation.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To maximize your learning, you should be familiar with the following Swift syntax.</p>
-<h2 id="swift-fundamentals">Swift Fundamentals</h2>
-<h3 id="for-in-loops">For-In Loops</h3>
+<p>This course is designed for Swift intermediate. So, I won&apos;t cover the basics. Please visit learnSwiftwithBob.com and go to prerequisites. You will find a list of items you are expected to know. There is a YouTube video for each concept, so if you ever get stuck, you can always learn and come back.</p>
+<h4 id="variables-and-constants">Variables and Constants</h4>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> imuttableName = <span class="hljs-string">&quot;Bob&quot;</span>
+<span class="hljs-keyword">var</span> muttableName = <span class="hljs-string">&quot;Bobby&quot;</span>
+
+imuttableName = <span class="hljs-string">&quot;SangJoon&quot;</span> <span class="hljs-comment">// Error</span>
+</code></pre>
+<p><a href="https://www.youtube.com/watch?v=W8l-Kt_aKNo&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx&amp;index=1" target="_blank">Variable vs Constants</a></p>
+<h4 id="conditional-statement">Conditional Statement</h4>
+<pre><code class="lang-swift"><span class="hljs-keyword">if</span> isBobHansome {
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;He good&quot;</span>)
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;That&apos;s okay&quot;</span>)
+}
+</code></pre>
+<p><a href="https://www.youtube.com/watch?v=ayuB4HChkI0&amp;index=2&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx" target="_blank">Conditional Statement</a></p>
+<h4 id="array-and-dictionary">Array and Dictionary</h4>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> countries = [<span class="hljs-string">&quot;S.Korea&quot;</span>, <span class="hljs-string">&quot;USA&quot;</span>, <span class="hljs-string">&quot;Vietnam&quot;</span>, <span class="hljs-string">&quot;Malaysia&quot;</span>]
+<span class="hljs-keyword">let</span> info = [<span class="hljs-string">&quot;Name&quot;</span>: <span class="hljs-string">&quot;Bob&quot;</span>, <span class="hljs-string">&quot;Age&quot;</span>: <span class="hljs-string">&quot;20&quot;</span>]
+</code></pre>
+<p><a href="https://www.youtube.com/watch?v=yfFkj_8c70o&amp;index=3&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx" target="_blank">Array and Dictionary</a></p>
+<h4 id="for-in-loops">For-In Loops</h4>
 <pre><code class="lang-swift"><span class="hljs-keyword">for</span> <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">100</span> {
   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Repeat&quot;</span>)
 }
@@ -1446,7 +1479,8 @@
 <span class="hljs-comment">// &quot;Repeat&quot;</span>
 <span class="hljs-comment">// ...</span>
 </code></pre>
-<h3 id="switch-statement">Switch Statement</h3>
+<p><a href="https://www.youtube.com/watch?v=bPrdNIEoZio&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx&amp;index=4" target="_blank">For-In Loop</a></p>
+<h4 id="switch-statement">Switch Statement</h4>
 <pre><code class="lang-swift"><span class="hljs-keyword">switch</span> number {
 <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>...<span class="hljs-number">10</span> :
   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Your number is between 1 to 10&quot;</span>)
@@ -1454,41 +1488,13 @@
   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;I don&apos;t know&quot;</span>)
 }
 </code></pre>
-<h3 id="var-vs-let">Var vs Let</h3>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> imuttableName = <span class="hljs-string">&quot;Bob&quot;</span>
-<span class="hljs-keyword">var</span> muttableName = <span class="hljs-string">&quot;Bobby&quot;</span>
-
-imuttableName = <span class="hljs-string">&quot;SangJoon&quot;</span> <span class="hljs-comment">// Error</span>
-</code></pre>
-<h3 id="else-if-statement">Else-If Statement</h3>
-<pre><code class="lang-swift"><span class="hljs-keyword">if</span> isBobHansome {
-  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;He good&quot;</span>)
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;That&apos;s okay&quot;</span>)
-}
-</code></pre>
-<h3 id="types">Types</h3>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> string = <span class="hljs-string">&quot;String&quot;</span>
-<span class="hljs-keyword">let</span> bool = <span class="hljs-literal">true</span>
-<span class="hljs-keyword">let</span> double = <span class="hljs-number">20.0</span>
-<span class="hljs-keyword">let</span> int = <span class="hljs-number">20</span>
-</code></pre>
-<h3 id="array-and-dictionary">Array and Dictionary</h3>
-<pre><code class="lang-swift"><span class="hljs-keyword">let</span> countries = [<span class="hljs-string">&quot;S.Korea&quot;</span>, <span class="hljs-string">&quot;USA&quot;</span>, <span class="hljs-string">&quot;Vietnam&quot;</span>, <span class="hljs-string">&quot;Malaysia&quot;</span>]
-<span class="hljs-keyword">let</span> info = [<span class="hljs-string">&quot;Height&quot;</span>: <span class="hljs-number">183</span>, <span class="hljs-string">&quot;Age&quot;</span>: <span class="hljs-number">20</span>]
-</code></pre>
-<h3 id="function">Function</h3>
+<h4 id="function">Function</h4>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">returnName</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
   <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Bob the Developer&quot;</span>
 }
 </code></pre>
-<h3 id="basic-operators">Basic Operators</h3>
-<pre><code class="lang-swift"><span class="hljs-number">1</span> + <span class="hljs-number">1</span>
-<span class="hljs-number">3</span> / <span class="hljs-number">2</span>
-<span class="hljs-number">2</span> * <span class="hljs-number">4</span>
-<span class="hljs-number">9</span> % <span class="hljs-number">5</span>
-</code></pre>
-<h3 id="intro-to-enums">Intro to Enums</h3>
+<p><a href="https://www.youtube.com/watch?v=mvteZcbFRbA&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx&amp;index=6" target="_blank">Function</a></p>
+<h4 id="intro-to-enums">Intro to Enums</h4>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Race</span>: <span class="hljs-title">String</span> </span>{
   <span class="hljs-keyword">case</span> asian
   <span class="hljs-keyword">case</span> white
@@ -1498,7 +1504,8 @@ imuttableName = <span class="hljs-string">&quot;SangJoon&quot;</span> <span clas
 
 <span class="hljs-type">Race</span>.asian.rawValue <span class="hljs-comment">// &quot;asian&quot;</span>
 </code></pre>
-<h2 id="object-oriented-programming">Object Oriented Programming</h2>
+<p><a href="https://www.youtube.com/watch?v=DHCgaQ5GeR4&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx&amp;index=8" target="_blank">Basic Enum</a></p>
+<h4 id="object-oriented-programming">Object Oriented Programming</h4>
 <p>You should be familiar with initialization, property, method, and inheritance</p>
 <pre><code class="lang-swift"> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Human</span> </span>{
    <span class="hljs-keyword">let</span> name: <span class="hljs-type">String</span>
@@ -1510,17 +1517,17 @@ imuttableName = <span class="hljs-string">&quot;SangJoon&quot;</span> <span clas
    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">sayName</span><span class="hljs-params">()</span></span> {
      <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hi, I&apos;m <span class="hljs-subst">\(name)</span>&quot;</span>)
    }
-
  }
 </code></pre>
-<p>If you are not confident with any of those topics above, you may watch my videos I&apos;ve for complete beginners below on YouTube. Remember, this course is designed for those have played around with Swift and iOS.</p>
-<p><a href="https://www.youtube.com/playlist?list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx" target="_blank">The Complete Swift 3 Beginner&apos;s Tutorial with Bob</a></p>
-<h2 id="the-goal">The Goal</h2>
-<p>It is to come out coding in a different playing field. Understand what makes Swift unique from other languages. You will learn every possible <code>?</code> <code>!</code> and the Swift way such as Error Handling, enum oriented programming, and intro to functional programming. Focus on value types over reference types. Learn how to manage memory so that your app takes up the least amount of space when running. </p>
+<p><a href="https://www.youtube.com/watch?v=orvmHi498YI&amp;index=9&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx" target="_blank">What is Object Oriented Programming</a></p>
+<p><a href="https://www.youtube.com/watch?v=YtA1b7dX_ZE&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx&amp;index=10" target="_blank">Inheritance</a></p>
+<p><a href="https://www.youtube.com/watch?v=Jejtrj9Xfpk&amp;index=11&amp;list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx" target="_blank">Initialization</a></p>
+<h2 id="table-of-content">Table of Content</h2>
+<p>Go to learnSwiftwithBob.com and click Table of Content. There are 8 chapters in this course. From Chapter 1 to 4, you will get a firm understanding of both Functional, and protocol, and Object Oriented Programming. In Chapter 5, you will fully understand how objects are created and removed. In Chapter 6 and 7, you will learn how to create value oriented swift code along with protocol generics and enums. In the last Chapter, you will learn a various advanced and hidden tips and secrets about the Swift programming languages. </p>
 <h2 id="course-expectation">Course Expectation</h2>
 <p>Based on the Stack Overflow survey in 2016, Swift is considered as the second most loved language out of thousands. However, don&apos;t let its readability and hype fool you. It&apos;s a complex language inspired by many programming languages out there. In fact, you will suffer, and I want it that way. Let me explain.</p>
 <h3 id="be-skeptical">Be Skeptical</h3>
-<p>I&#x2019;m a biased human being. I hope you do not trust me all the way. &#x1F605; If you spot any practices that raise your eyebrows, make sure challenge me and come up with a better solution. Although I try to prevent that from happening through doing my homework, I encourage you to think outside of the box.</p>
+<p>I&#x2019;m a biased human being. I hope you do not trust me all the way. If you spot any practices that raise your eyebrows, make sure challenge me and come up with a better solution. Although I try to prevent that from happening through doing my homework, I encourage you to think outside of the box.</p>
 <h3 id="be-proactive">Be Proactive</h3>
 <p>You might have seen those red error messages on the left side. I expect you to figure out and search what the issue is. Copy and paste the error message on Google. Ask me questions. Do whatever it takes. Do not move on without knowing the cause and how you could prevent them from occurring.
 I mentioned that learning is done by you, not me. I&#x2019;m here to teach you how to catch fish. I&#x2019;m going to show you how to use nets and fish rods. After this course, you are expected to use those tools on your own. You might cut yourself through sharp edges, but it&apos;s just a part of your learning journey and becoming a stronger version of yourself.</p>
@@ -1600,7 +1607,7 @@ I mentioned that learning is done by you, not me. I&#x2019;m here to teach you h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Course Overview","level":"2.2","depth":1,"next":{"title":"Resources","level":"2.3","depth":1,"path":"course/introduction/course-resources.md","ref":"course/introduction/course-resources.md","articles":[]},"previous":{"title":"Promotion Video","level":"2.1","depth":1,"path":"course/introduction/course-promo.md","ref":"course/introduction/course-promo.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-fundamentals/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-fundamentals/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-fundamentals/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-fundamentals/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-fundamentals/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-fundamentals/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"course/memory-management/automatic-reference-counting.html#fig7.1.1.1","level":"7.1.1","list_caption":"Figure: RAM is like a fridge","nro":5,"url":"/course/memory-management/assets/fridge.jpg","index":1,"caption_template":" _CAPTION_","label":"RAM is like a fridge","attributes":{},"title":"RAM is like a fridge","skip":false,"key":"7.1.1.1"},{"backlink":"course/generic-protocol/protocol-pitfalls.html#fig8.1.4.1","level":"8.1.4","list_caption":"Figure: Folder Cell","nro":6,"url":"/course/generic-protocol/assets/31_folder_cell.png","index":1,"caption_template":" _CAPTION_","label":"Folder Cell","attributes":{},"title":"Folder Cell","skip":false,"key":"8.1.4.1"},{"backlink":"course/generic-protocol/protocol-pitfalls.html#fig8.1.4.2","level":"8.1.4","list_caption":"Figure: List Cell and Collection Cell","nro":7,"url":"/course/generic-protocol/assets/32_file_cell.png","index":2,"caption_template":" _CAPTION_","label":"List Cell and Collection Cell","attributes":{},"title":"List Cell and Collection Cell","skip":false,"key":"8.1.4.2"},{"backlink":"course/advanced-swift/nested-generics-recursive-enum.html#fig10.1.1.1","level":"10.1.1","list_caption":"Figure: Reference vs Value Types in Associated Value","nro":8,"url":"/course/advanced-swift/assets/11_value_types_reference_types.jpg","index":1,"caption_template":" _CAPTION_","label":"Reference vs Value Types in Associated Value","attributes":{},"title":"Reference vs Value Types in Associated Value","skip":false,"key":"10.1.1.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/introduction/course-overview.md","mtime":"2017-04-23T01:06:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-23T01:03:33.934Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Course Overview","level":"2.2","depth":1,"next":{"title":"Resources","level":"2.3","depth":1,"path":"course/introduction/course-resources.md","ref":"course/introduction/course-resources.md","articles":[]},"previous":{"title":"Promotion Video","level":"2.1","depth":1,"path":"course/introduction/course-promo.md","ref":"course/introduction/course-promo.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","disqus","mermaid-gb3","livereload"],"root":"./","styles":{"website":"website.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"learn-swift-with-bob"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":" _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"Bob Lee","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{"_pictures":[{"backlink":"RESOURCES.html#fig1.3.1","level":"1.3","list_caption":"Figure: My current workspace","alt":"My current workspace","nro":1,"url":"resources/my_desk.jpg","index":1,"caption_template":" _CAPTION_","label":"My current workspace","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"course/swift-fundamentals/type-casting.html#fig3.1.5.1","level":"3.1.5","list_caption":"Figure: The UIKit framework hierarchy","alt":"The UIKit framework hierarchy","nro":2,"url":"/course/swift-fundamentals/assets/uikit-framework-hierarchy.png","index":1,"caption_template":" _CAPTION_","label":"The UIKit framework hierarchy","attributes":{},"skip":false,"key":"3.1.5.1"},{"backlink":"course/swift-fundamentals/class-struct-difference.html#fig3.1.8.1","level":"3.1.8","list_caption":"Figure: The difference in value type and reference type","alt":"The difference in value type and reference type","nro":3,"url":"/course/swift-fundamentals/assets/refernece-value-type-difference.png","index":1,"caption_template":" _CAPTION_","label":"The difference in value type and reference type","attributes":{},"skip":false,"key":"3.1.8.1"},{"backlink":"course/swift-fundamentals/set-tuple.html#fig3.1.9.1","level":"3.1.9","list_caption":"Figure: Built-in Set methods","alt":"Built-in Set methods","nro":4,"url":"/course/swift-fundamentals/assets/swift-set-structure.png","index":1,"caption_template":" _CAPTION_","label":"Built-in Set methods","attributes":{},"skip":false,"key":"3.1.9.1"},{"backlink":"course/memory-management/automatic-reference-counting.html#fig7.1.1.1","level":"7.1.1","list_caption":"Figure: RAM is like a fridge","nro":5,"url":"/course/memory-management/assets/fridge.jpg","index":1,"caption_template":" _CAPTION_","label":"RAM is like a fridge","attributes":{},"title":"RAM is like a fridge","skip":false,"key":"7.1.1.1"},{"backlink":"course/generic-protocol/protocol-pitfalls.html#fig8.1.4.1","level":"8.1.4","list_caption":"Figure: Folder Cell","nro":6,"url":"/course/generic-protocol/assets/31_folder_cell.png","index":1,"caption_template":" _CAPTION_","label":"Folder Cell","attributes":{},"title":"Folder Cell","skip":false,"key":"8.1.4.1"},{"backlink":"course/generic-protocol/protocol-pitfalls.html#fig8.1.4.2","level":"8.1.4","list_caption":"Figure: List Cell and Collection Cell","nro":7,"url":"/course/generic-protocol/assets/32_file_cell.png","index":2,"caption_template":" _CAPTION_","label":"List Cell and Collection Cell","attributes":{},"title":"List Cell and Collection Cell","skip":false,"key":"8.1.4.2"},{"backlink":"course/advanced-swift/nested-generics-recursive-enum.html#fig10.1.1.1","level":"10.1.1","list_caption":"Figure: Reference vs Value Types in Associated Value","nro":8,"url":"/course/advanced-swift/assets/11_value_types_reference_types.jpg","index":1,"caption_template":" _CAPTION_","label":"Reference vs Value Types in Associated Value","attributes":{},"title":"Reference vs Value Types in Associated Value","skip":false,"key":"10.1.1.1"}]},"title":"Learn Swift with Bob","gitbook":"*","description":"Resources for iOS 10 and Swift 3 tutorials"},"file":{"path":"course/introduction/course-overview.md","mtime":"2017-04-24T06:59:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-25T10:45:25.046Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
