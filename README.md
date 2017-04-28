@@ -24,6 +24,8 @@ This is a platform for my students to download the source code, lecture notes, a
 ## Personal Motivation
 I feel grateful for what learning offers in my life. It would have been impossible for me to create this course and communicate in English. I've decided to devote my career providing affordable education channels for all people globally. As a person who has lived in third world countries and also attended college in NYC, I understand, education is the way for anyone rise up and increase a standard of living and quality of life. To pursue this grand goal, I have started off with teaching iOS development to raise funds and increase my personal brand.
 
+
+
 ## Mailing List
 If you are interested in receiving regular updates on [upcoming courses](ABOUT.md#course) with discounts, you easily sign up through the button below. If you'd like to stay up-to-date with the progress and get to know me at a personal level and my work journey, feel free to follow me on [Instagram](https://instagram.com/bobthedev)
 

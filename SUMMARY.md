@@ -1,5 +1,7 @@
 # Summary
 
+* [Swift Korea](swiftkorea.md)
+
 ### Prologue
 * [Introduction](README.md)
 * [Bob Lee](ABOUT.md)
@@ -105,7 +107,6 @@
  * [Swift External Resources](/content/swift/swift-resources.md)
  * [Coding Principles](/content/software-engineering/coding-principles.md)
  <!-- * [Agile Development](/content/software-engineering/agile-development.md) -->
- * [Continuous Integration](/content/software-engineering/continuous-integration.md) -->
  <!-- * [Github Flow](/content/software-engineering/github-flow.md) -->
 
 * [Shortcuts](/content/productivity/keyboard-shortcuts.md#shortcuts)
