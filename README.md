@@ -43,10 +43,12 @@ If you've found this document on Github, you may read at [LearnSwiftwithBob.com]
 ## Update Log
 | Date | Change | Next Step |  
 | --- | --- |  --- |
+| May 1st, 2017 | Course Submitted | Wait for it to get approved |
 | April 22nd, 2017 | Documented all chapters | Take intro and conclusion videos |
 | April 16th, 2017 | Recorded the entire lecture | Document on GitBook for each lesson |
 | April 15th, 2017 | Added source code for Ch 5, 6, 7, 8 | Prep and record Ch 8 and document |
 | April 8th, 2017 | Added source code for Ch 1, 2, 3, 4 |  Prep and record Ch 5 and document Ch 2, 3, 4, 5 |
+
 
 
 

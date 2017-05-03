@@ -6,10 +6,11 @@
 ## Source Code Inspection
 오픈, Apple 소스 등등을  쉽게 찾아봅시다.
 
-### Then 보기
+### Then 보기776
 | Mouse and Trackpad | Shortcuts |
 | --- | --- |
-| Use mouse to focus and type | Close the left panel using `cmd-0` or `cmd-j` to focus |
+| Use mouse to focus and type | Close the lef
+t panel using `cmd-0` or `cmd-j` to focus |
 | Assistant 마우스로 클릭 | `cmd-shift-o`, Quick open 그리고 `opt-enter` |
 
 ### Then이 무엇인지 찾기

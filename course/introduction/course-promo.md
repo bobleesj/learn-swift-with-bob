@@ -17,7 +17,7 @@ Let me ask you a couple questions. Do you know why `optionals` were invented? Do
 
 These are just a few topics from the course. Yet, I already know many of you don't know these topics because I've conducted close to thousands of surveys (Social Proof, Screen). I know the iOS learning environment more than anyone else.
 
-Here is the problem. Most students lack fundamentals because many courses and books focus on the final products. You've probably heard or taken, "Be a paid developer and build 21 apps just by taking one course." Give me a break. You know what happens. They end up being code monkeys, copying and pasting. I'm speaking from my experience and hundreds of personal emails.
+Here is the problem. Most students lack fundamentals because many courses and books focus on the final products. You've probably heard or taken, "Be a paid developer and build 21 apps just by taking one course." Give me a break. You know what happens. They end up being code monkeys, copying and pasting. I'm speaking from my experience and hundreds of personal emails before I launched this course with close to thousand people on the waiting list.  
 
 > **Focus:** Social proof, Fear of missing out, Scarcity
 
@@ -47,9 +47,9 @@ Every lesson is filled with practical examples. After each lesson, you probably 
 This course is designed for anyone who has been programming with Swift or other similar languages such as Javascript and understand the basic concept of `Object Oriented Programming`, `else-if` and `switch` statement. If you've never programmed before, don't worry. I've attached  videos for you to catch up and join the course later when you are ready.
 
 ### Call to Action
-iOS developers in Silicon Valley make 6 figures yet bootcamps are still expensive over $1,000 - $3000 depending on the region. This course is only $50. Let me put you in a perspective, let say you earn $3,000. But if you are able to code more effectively with fewer bugs and fast production speed by taking this course by 50%, the price you pay for this course is nothing compared what you will gain after.
+iOS developers in Silicon Valley make 6 figures yet bootcamps are still expensive over $1,000 - $3000 depending on the region. This course is only $50. Let me put you in a perspective, let say you earn $3,000. But if you are able to code more effectively with fewer bugs and fast production speed by taking this course by 50%, the price you pay for this course is nothing compared what you will gain after. Based on my record, you can trust on me that.
 
-There is be no discount unless you are a student from third world countries. If you are not satisfied with the material, of course, there is 30-day money back guaranteed.
+There is be no discount unless you are a student from third world countries.  I understand it can be a a a lot burden because I grew up there. If you are not satisfied with the material, of course, there is 30-day money back guaranteed.
 
 Here is the last statement. I'm 20 years old. I dropped out of college instead of  getting a degree to be a chemical engineer for my purpose. I dropped out to teach and provide global education. If you want to grow and learn together and provide great impact on the humanity, I will you there.
 
