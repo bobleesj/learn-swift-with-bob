@@ -8,7 +8,6 @@
 * [Resources Page](RESOURCES.md)
 
 ### Learn Swift with Bob
- * [Promotion Video](/course/introduction/course-promo.md)
  * [Course Overview](/course/introduction/course-overview.md)
  * [Resources](/course/introduction/course-resources.md)
  * [Table of Content](/course/introduction/table-of-content.md)
