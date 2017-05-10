@@ -75,3 +75,5 @@ if let myBlog = blog {
 First, you've learned how design an init method that may return `nil` or an optional object by putting a `?` right to the `init` keyword. As we've discussed many times, anything that has to do with `?` in the Swift Programming Language will give you an optional value. Second, you reviewed the Swift `error handling` approach. Remember, the `throw` keyword is not only used within an `else-if` or `guard` block, but also within an `init` method.
 
 In the following lesson, you will learn how to override everything while subclassing.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

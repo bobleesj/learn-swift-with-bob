@@ -74,3 +74,5 @@ let family = LeeFamily(familyMembers: ["Bob", "Bobby", "Lee"])
 You've learned how to override pre-defined associated types in protocols. Yet, it's ironic that you set the type as defined within protocols because it goes against the meaning of `generics`. Just don't do it.
 
 In the following lesson, you will discover that Protocol Oriented Programming is not the ultimate savior in all cases.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

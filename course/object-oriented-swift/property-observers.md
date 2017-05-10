@@ -100,3 +100,5 @@ userLoginInfo = true
 The purpose of using property observers is not only to write less code but also to provide greater readability through the distinctive keywords. You no longer have to create unnecessary functions filled with `switch` or `else-if` statements. No need.
 
 In the next lesson, you will design init methods that may return `nil` through failable initializations.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

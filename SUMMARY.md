@@ -1,6 +1,5 @@
 # Summary
-
-* [Swift Korea](swiftkorea.md)
+<!-- * [Swift Korea](swiftkorea.md) -->
 
 ### Prologue
 * [Introduction](README.md)

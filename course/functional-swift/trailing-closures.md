@@ -76,3 +76,5 @@ trailingClosures(number: 400) { $0 * $0 }
 You've learned how to beautify a function whose last parameter contains a closure block. Trailing closures improve readability and zenness. You will see its beauty throughout the course.
 
 In the following lesson, you will learn one of the most dreaded topics of all time: Completion handlers. You will learn how to design on your own. It's time to level up.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

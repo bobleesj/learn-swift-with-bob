@@ -211,4 +211,6 @@ Based on the definition of `unowned`, it must have a non-`nil` reference to the 
 ## Conclusion
 Let us recap. Like classes, closures are reference types, so you must be aware of retain cycle. To prevent one, you use capture lists to set the reference from the closure to `self` as `weak` or `unowned`. Remember, when you set the reference as `weak`, the closure captures `self` as an optional type because the closure must be able to break the reference. If you use `unowned`, however, the object or variable must have a `non-nil` reference. The relationship can't be broken as you've seen in the Owner and Credit card example. You may use `unowned` if you are certain that the referenced object will not deallocated before the referencing object. If not, it will cause a run-time error.
 
-In the following lesson, you will learn one of the dreaded topics in closures: `escaping` and `auotoclosures`. 
+In the following lesson, you will learn one of the dreaded topics in closures: `escaping` and `auotoclosures`.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

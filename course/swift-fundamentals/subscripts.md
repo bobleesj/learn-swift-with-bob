@@ -96,3 +96,5 @@ No context means = ☠️
 Now you understand the meaning of creating a shortcut. However, `subscripts` often leads to confusion due to no explicit name. Swift engineers recommend that brevity is not the ultimate goal. Effective communication trumps everything else.
 
 In the next lesson, you will learn the fundamental difference between `structs` and `classes`. In other words, you will learn the meaning of reference types and value types.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

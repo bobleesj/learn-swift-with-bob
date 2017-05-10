@@ -142,3 +142,6 @@ func enterNumberReturnString(index: Int) -> String {
 
 ## Conclusion
 You've completed the objectives. You've learned the three ways to compile Swift files. You've learned how to make your program crash so that you are able to guarantee that the entire app should work if it passes. However, as the title indicates, this is an intro to test driven development. You may join my mailing list to sign up for the upcoming courses. See you in the final video of Learn Swift with Bob.
+
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

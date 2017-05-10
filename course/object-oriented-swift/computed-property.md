@@ -109,6 +109,8 @@ side // 31.6
 [2002_computed_property.playground](https://www.dropbox.com/sh/sunfww1daece1fe/AAB31bu-Q-_V_ZF2-AOaUdc9a?dl=0)
 
 ## Conclusion
- You've learned what it means to create a gettable property that can be only read. You've also learned how to create a settable property which allows you to modify its value as well as those of others. The UIKIt framework often utilizes gettable properties to prevent us, developers, from modifying them. 
+ You've learned what it means to create a gettable property that can be only read. You've also learned how to create a settable property which allows you to modify its value as well as those of others. The UIKIt framework often utilizes gettable properties to prevent us, developers, from modifying them.
 
 In the lesson lesson, you will learn how to add an observer to a property.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

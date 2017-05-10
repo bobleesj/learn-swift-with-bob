@@ -238,4 +238,7 @@ evaluateTree(tree: tree3) // 6
 ## Conclusion
 There were two objectives. First, you've learned how to design beautiful code with nested generics. Second, you've learned the difference between normal enums and `indirect` enums when it comes to associated value. Remember, `indirect` enums point rather than store. Some may be baffled by the recursive function to add the value of all nodes. Well, I can't help you much. I recommend you to start with one node and move up.
 
-In the following lesson, finally, you will learn how to create custom operators. 
+In the following lesson, finally, you will learn how to create custom operators.
+
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

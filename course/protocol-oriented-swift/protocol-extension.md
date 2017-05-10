@@ -87,4 +87,6 @@ If you are interested in how you may apply `Protocols` to UIKit, you may read [P
 [4002_protocol_extension.playground](https://www.dropbox.com/sh/zjn5tytza7yycwp/AADSzYya-HOgr0UDaOfj6H46a?dl=0)
 
 ## Conclusion
-Protocol Oriented Swift is only limited by your imagination. 
+Protocol Oriented Swift is only limited by your imagination.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

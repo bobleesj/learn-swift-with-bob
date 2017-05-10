@@ -1,8 +1,8 @@
 # Course Overview
-Welcome to Learn Swift with Bob. You've made the right choice. You won't regret the decision to embark the journey with me. Before you and I jump into the lessons, let us go through the prerequisites, table of content, and course expectation.
+Welcome to [Learn Swift with Bob](https://udemy.com/learn-swift-with-bob/). You've made the right choice. You won't regret the decision to embark the journey with me. Before you and I jump into the lessons, let us go through the prerequisites, table of content, and course expectation.
 
 ## Prerequisites
-This course is designed for Swift intermediate. So, I won't cover the basics. Please visit learnSwiftwithBob.com and go to prerequisites. You will find a list of items you are expected to know. There is a YouTube video for each concept, so if you ever get stuck, you can always learn and come back. In a nutshell, you should be already be familiar with `switch`, `else-if`, basic `enums`, `function`, and what it means to initialize properties. So, please go through the list first.
+This course is designed for Swift intermediate. So, I won't cover the basics. Please visit [learnSwiftwithBob.com](https://learnSwiftwithBob.com) and go to prerequisites. You will find a list of items you are expected to know. There is a YouTube video for each concept, so if you ever get stuck, you can always learn and come back. In a nutshell, you should be already be familiar with `switch`, `else-if`, basic `enums`, `function`, and what it means to initialize properties.
 
 #### Variables and Constants
 ```swift
@@ -108,7 +108,7 @@ You should be familiar with initialization, property, method, and inheritance
 
 
 ## Table of Content
-There are 8 chapters in this course. From Chapter 1 to 4, you will get a firm understanding of both Intro to Functional, and protocol, and Object Oriented Programming. In Chapter 5, you will fully understand how objects are created and removed. In Chapter 6 and 7, you will learn how to create value oriented swift code along with protocol generics and enums. In the last Chapter, you will acquire various advanced and hidden tips and secrets about the Swift programming language.
+There are 8 chapters in this course. From Chapter 1 to 4, you will get a firm understanding of Intro to Functional, and Protocol, and Object Oriented Programming. In Chapter 5, you will fully understand how objects are created and removed. In Chapter 6 and 7, you will learn how to create value oriented swift code along with protocols, generics, and enums. In the last chapter, you will acquire various advanced and hidden tips about the Swift programming language.
 
 ## Course Expectation
 Based on the Stack Overflow survey in 2016, Swift is considered as the second most loved language out of thousands. However, don't let its readability and hype fool you. It's a complex language inspired by many. Let us through the course expectation.
@@ -127,12 +127,9 @@ Let us through an ideal learning stage for the students.
 
 
 | Step | Detail |
-|: --- :| --- |
-| The Why | Each lesson should flow like a story. In the beginning, I start off with a problem statement. It consists of doubts and questions I personally encountered. For example, I would ask, what's the purpose of using optionals? A problem statement organically leads to why we learn.
+| --- | --- |
+| The Why | Each lesson should flow like a story. In the beginning, I start off with a problem statement. It consists of doubts and questions I personally encountered. For example, I would ask, what's the purpose of using `optionals`? A problem statement organically leads to why we learn.
 | Application | After having gone through the specific problem statement by showing new features and how to use them, I present how it applies to real-life situations.
-| Resources | I attach additional resources for you to study more. You may go further on your own.
+| Resources | With additional resources and references, you may go further study on your own. | 
 | Visualization | It's your turn. I don't believe in practice problems. We no longer live in a world where there are fixed answers. You visualize how the feature you've learned can be applicable for your future endeavor. Albert Einstein said, "Imagination is more important than knowledge". Practice problems turn you into a machine. We have more than enough by the current education system designed to reduce cost for testing.
-| Test |  It's time to put your visualization into practice. You should fail. That's good. You are trying something new. "Failure is an option here. If things are not failing, you are not innovating enough" - Elon Musk
-
-#### Source code
-[0002_Prerequisites](https://www.dropbox.com/sh/33thop7ornp9u90/AACA-JPFoW3ie4EAW56-WZH2a?dl=0)
+| Test |  It's time to put your visualization into practice. You should fail. That's good. You are trying something new. "Failure is an option here. If things are not failing, you are not innovating enough" - Elon Musk |

@@ -136,6 +136,7 @@ With `structs`, when an instance is created with a constant, `let`, it's not pos
 
 [Stack Overflow]: http://stackoverflow.com/questions/24232799/why-choose-struct-over-class/24232845
 
+
 ### Resources
 To learn more about cons of Object Oriented Programming, you may read the beginning of [Intro to Protocol Oriented Programming].
 
@@ -153,7 +154,10 @@ To learn more about cons of Object Oriented Programming, you may read the beginn
 
 [1008_class_struct_difference.playground]:https://www.dropbox.com/sh/der2imu4z41c7nr/AAAaLyZhh4jJLe-_oQFPFGmxa?dl=0
 
+
 ## Conclusion
 You've learned the distinction between`classes` and `structs` when it comes to creating objects. Instances with `classes` have references to the object while with`structs` store. As a result, `classes` are called reference types while `structs` and `enums`, are value types.
 
  At this point, you may find no incentive to learn the difference. You are right. For small apps, it doesn't matter. But, once you start implementing `closures` and `delegates`, and other reference related tasks,  you would soon discover a little more complexity which you will learn how to solve in Chapter 5. You will appreciate value types along with Protocol Oriented Programming soon.
+
+ > **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

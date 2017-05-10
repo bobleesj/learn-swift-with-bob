@@ -150,4 +150,6 @@ The best.
 ## Conclusion
 One of the code smells is "needless complexity". You don't need to be fancy. Remember, protocols and enums are double edged swords. If you don't know how handle them well, it may hurt or even kill you. In Chapter 8, you will learn in-detail about how an `indirect` enum works using a binary tree data structure.
 
-In the following lesson, you will learn how to combine enums with generics. 
+In the following lesson, you will learn how to combine enums with generics.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

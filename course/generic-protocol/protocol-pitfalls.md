@@ -88,4 +88,6 @@ let cell: Listable = arc4random() * 2 == 0 ? FolderCell() : ListCell()
 [6004_protocol_pitfalls](https://www.dropbox.com/sh/taxydi2cxionzxp/AAD7aKreX1i1wDwJKL1Q-yVEa?dl=0)
 
 ## Conclusion
-This is frustrating. In the following lesson, you will learn how to use the brain to circumvent the problem. 
+This is frustrating. In the following lesson, you will learn how to use the brain to circumvent the problem.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

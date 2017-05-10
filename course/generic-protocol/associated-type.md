@@ -87,4 +87,6 @@ struct ExplicitStruct: GenericProtocol {
 ## Conclusion
 You've learned how to create generic protocols by implementing `associatedtype`. Like generic structs, the type of `associatedType` must be defined by the structs, classes, or enums that conform to the protocol. There are two ways to specify the type of `associatedType`. You may implicitly define it based on the value you assign. Second, or you may explicitly create a `typealias` that define the type upfront.
 
-In the following lesson, you will learn how to add limitation/constraints to protocol `extension` like generic constraints. 
+In the following lesson, you will learn how to add limitation/constraints to protocol `extension` like generic constraints.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

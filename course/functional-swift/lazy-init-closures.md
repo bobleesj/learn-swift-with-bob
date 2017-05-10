@@ -191,3 +191,5 @@ class CompressionManager {
 You've learned how to initialize an object using closures instead of the tedious method above. I do not use `Storyboard`. In fact, I have a "library" of UI Components so that I don't waste time typing all day. I just copy the closure block from the library and modify a little. Second, you've learned to use the `lazy` keyword in front of a property that requires heavy computing.
 
 In the following lesson, you will discover a unique behavior of closures.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

@@ -164,3 +164,5 @@ smartClosureArray[4]() // 4 🎅
 You've learned the default behavior of a closure block which is identical to that of instances created with class objects. In fact, closures are reference types. In Chapter 5, however, you will discover some of problems that may arise due to the default behavior. Stay tuned.
 
 In the following lesson, you will learn how to beautify closures.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

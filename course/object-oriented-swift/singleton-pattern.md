@@ -57,4 +57,6 @@ The iOS ecosystem often use the singleton pattern for developers to access the u
 ## Conclusion
 You've learned the definition of `Singleton`. Again, think of me. There is only one Bob the Developer.
 
-Often developers avoid the singleton pattern at all cost. It exists everywhere, and when you have a number of them, it becomes difficult to track. So, I'd recommend not to overuse the pattern. If you wish to know how to work with `UIApplication`, `UserDefault`, and `NSNotification` along with `Protocols`, you may sign up for the upcoming course and receive updates from me. 
+Often developers avoid the singleton pattern at all cost. It exists everywhere, and when you have a number of them, it becomes difficult to track. So, I'd recommend not to overuse the pattern. If you wish to know how to work with `UIApplication`, `UserDefault`, and `NSNotification` along with `Protocols`, you may sign up for the upcoming course and receive updates from me.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

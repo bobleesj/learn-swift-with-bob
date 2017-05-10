@@ -169,4 +169,6 @@ case let .qrCode(productCode):
 ## Conclusion
 You've reviewed the three types of enums in the Swift Programming Language. If you are not comfortable with any, make sure you review and watch this video multiple times to get used to the syntax. Upcoming lessons will get more complex.
 
-In the following lesson, you will learn how to use Swift enums to type less but produce more using practical examples in iOS development. 
+In the following lesson, you will learn how to use Swift enums to type less but produce more using practical examples in iOS development.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

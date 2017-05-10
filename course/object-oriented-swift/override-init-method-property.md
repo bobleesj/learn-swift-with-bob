@@ -146,3 +146,5 @@ ModelS(enterWheelNumber: 50) // Wow, you've got a nice car
 From now on, you no longer have to fear `super.init`, `super.viewDidLoad`, and `override`. If you feel stuck, I recommend you to watch the lecture multiple times and then ask questions if necessary. You've got to understand every piece of information from here. If not, you will suffer. A lot.
 
 In the following lesson, you will learn how one init method can initialize the other.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

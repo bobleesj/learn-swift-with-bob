@@ -89,3 +89,5 @@ struct NumberFamily: FamilyProtocol {
 Like generic constraints, you've learned how to limit the scope of protocol extensions by implementing `where` clauses. What a powerful tool. It prevents you from creating bloated objects filled with unnecessary methods and properties.
 
 In the following lesson, you will learn how to override pre-defined associated type.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

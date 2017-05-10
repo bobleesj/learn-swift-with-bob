@@ -108,3 +108,5 @@ You don't have to create structs/classes for every design.
 You've learned how nested enums may be useful for replacing classic structs and classes. I recommend you use both of them. When you design APIs for your teammates or open source libraries, attempt to use enums for anything has to do with choosing options because the user of your code doesn't' have to type or go through multiple properties and methods all mixed together. Instead, enums allows him/her to pick and choose available cases for the particular enum. The skill that requires you to code in a different league is deploying enums in the right context.
 
 In the following lesson, you will learn how to combine enums with protocols.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

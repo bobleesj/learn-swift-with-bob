@@ -113,3 +113,5 @@ You've learned how to pass and return a closure block directly and indirectly wi
 We've covered the basics of closures in Swift. From now on, difficulty of this chapter will dramatically increase. Before you step onto the arena, I recommend you to read my articles and practice on your own until you become well-versed with the closure syntax. If not, you will suffer.
 
 In the following lesson, you will learn how to initialize an object using a closure block and the meaning of `lazy` in the Swift Programming Language.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

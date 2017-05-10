@@ -84,3 +84,5 @@ When the the `passData` method is called from the `firstVC`, `secondVC` contains
 The delegate pattern is tough to describe how it exactly works because it's a tool provided by Apple engineers. As I said, it works because smart individuals have designed the feature for us so we just have to read manual and implement. If you feel uncomfortable with the setup, I recommend you to watch this video multiple times and practice on your own. You may use a real app to pass data between view controllers.
 
 There is one more thing called, `data source`. If you wish to learn more how to create custom delegate and data source, you may join the next course, The UIKIt Fundamentals with Bob.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

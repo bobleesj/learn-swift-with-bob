@@ -151,3 +151,5 @@ bobGreet = nil // "I'm gone, bruh 🙆‍"
 
 ## Conclusion
 You've learned 3 concepts. First, a function requires the `@escaping` keyword if the closure block in the parameter is executed after the function returns. Second, the `@auotoclosure` keyword is used to enter a closure block without brackets. However, the closure must have no parameters. Lastly, there is no retain cycle in `lazy` properties.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

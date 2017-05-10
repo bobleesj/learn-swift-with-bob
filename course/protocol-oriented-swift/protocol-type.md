@@ -114,4 +114,6 @@ stateThePrice(enterGem: Ruby())
 ## Conclusion
 You've learned how to combine objects created with structs and classes into a single array without type casting. It works because a protocol is used as a type. A true magic.
 
-In the following lesson, you will learn how to pass data between classes using `delegate`. 
+In the following lesson, you will learn how to pass data between classes using `delegate`.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

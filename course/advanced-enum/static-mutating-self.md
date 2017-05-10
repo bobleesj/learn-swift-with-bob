@@ -286,3 +286,5 @@ let currentColor = NavigationTheme(numberOfTasks: 10).barTintColor
 You've tasted the power of enums. Again, no more typing. In your head, you should be thinking how to deploy enums to beautify your previous projects. If the iOS engineers have not used enums for any APIs,  for instance, `UIColor`, we, developers, have to memorize and type all day while checking the documentation unlimited times. Use it for your advantage as well.
 
 In the following lesson, you will learn how to add multiple enums within a single enum.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

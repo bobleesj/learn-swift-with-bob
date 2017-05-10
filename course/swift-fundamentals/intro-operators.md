@@ -106,3 +106,5 @@ The above states that if `age` contains `nil`, use `defaultAge` instead. Nice an
 You've only scratched the surface. In Chapter 8, you will learn how to create your own operators. I know you are excited. Stay consistent and you will get there, hopefully soon.
 
 In the next lesson, you will learn how to create fake names for types. Keep marching forward.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

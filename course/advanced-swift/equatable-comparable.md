@@ -148,3 +148,5 @@ let android = OS.android
 We've taken a look at two popular protocols: `equatable` and `comparable`. You've learned that native Swift types such as `Int`, `Double`, conform to them and have required operators. After, you've learned how to create your own types that conform to `equatable` and `comparable` to provide the same effect with the native types.
 
 In the following lesson, you will learn protocols that make a `for-in` loop possible.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

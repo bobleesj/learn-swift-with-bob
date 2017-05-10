@@ -150,3 +150,5 @@ for count in threeTwoOne {
 First, you've learned the hidden implementation by the Swift `for-in` loop. To make types eligible for the magic, it has to conform to the `Sequence` protocol and has the required method that returns an object that conforms to `IteratorProtocol`. The iterator object also has the required method of `next()` to get the next element. The word `sequence` sounds as if types must look like a dictionary, array, or set. It doesn't have to. Again, the purpose of this lesson was not introduce you to various protocols. It was to let you know how native types conform to pre-written protocols and has added features like a `for-in` loop. If you wish to study, I recommend you to take a look at the references and read the documentation.
 
 In the following lesson, you will learn how to execute swift files using Terminal and how Xcode sends error messages, a.k.a, the red marks.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

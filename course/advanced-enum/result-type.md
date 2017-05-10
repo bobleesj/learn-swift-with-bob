@@ -90,3 +90,5 @@ No need to get fancy with `try`, `catch`, and `throw`
 It's up to you which method you prefer, the old or the new. The iOS platform itself uses the new syntax since it provides higher readability due to the explicit keywords such as `try`, `catch`, and `throws`. However, you still need to know how to send and handle errors using a `ResultType` enum because some developers still prefer the earlier method. You've got to know all.
 
 In the following chapter, you will have one more lesson about The Swift error handling. There is one keyword you've got to know.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

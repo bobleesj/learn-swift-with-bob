@@ -125,3 +125,5 @@ struct Human: Breathable {
 For stored properties, it does not matter whether you use `{ get }` or `{ get set }`. For computed properties, however, if you define the requirement as `{ get set }`, the property must be settable. If it is `{ get }` alone, the property can be gettable or settable. Remember, protocol is like a basketball coach. structs, enums, classes, are like players.
 
 In the following lesson, you will learn how to create a scalable architecture with protocol `extension`, a.k.a, the magic.    
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

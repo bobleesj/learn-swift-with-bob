@@ -260,3 +260,6 @@ func +(left: [Double], right: [Double]) -> [Double] {
 First, you've learned that `inout` parameters can be modified within the function. Second, you've learned how to create `prefix` and `postfix` operators by defining them first and adding the logic second. Lastly, you've learned the old way of creating `infix` operators with the definite precedence value.  Now, however, you define the precedence value relative to default operator groups. However, be careful not to overuse custom operators. Once you use them, you should create documents for your teammates and for yourself.
 
 In the following lesson, you will the final aspect of Swift Error Handling.
+
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

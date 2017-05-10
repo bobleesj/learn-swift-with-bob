@@ -128,3 +128,5 @@ To recap, you've learned functions and closures are identical. However, you may 
 You may feel uncomfortable. You should be. In fact, if you are not struggling, you are not learning. Accumulating knowledge goes against the Second Law of Thermodynamics that the universe wants to remain scattered. When you defy the law as a human being, you face consequences. Embrace the pain and it's a natural phenomenon.
 
 In the following lesson, you will how learn how to pass and return a closure block within a function.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

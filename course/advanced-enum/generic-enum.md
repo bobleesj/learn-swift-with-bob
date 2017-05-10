@@ -76,4 +76,6 @@ if let value = MyOptional {
 ## Conclusion
 You've learned how to create generic enums with associated value which allows enums like `Optional` to convert any type into its own optional type. If you have two or more non-concrete types such as `T` and `U`, make sure you explicitly define them.
 
-In the following lesson, you will learn how error handling was done in the past with generic enums. 
+In the following lesson, you will learn how error handling was done in the past with generic enums.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

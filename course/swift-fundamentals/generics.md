@@ -198,3 +198,5 @@ addLOLClassOnly(array: [1, 2, 3, 4, 5]) // Error
 You now understand how to maintain yourself dry through generic functions and structs. In later chapters, you will more about advanced generics along with `enums` and `protocols`. If you wish to review generic the syntax, I recommend you to watch the lecture again or refer to the article I've attached.
 
 In the next lesson, you will learn how to provide shortcuts within classes and structs instead of calling methods and properties.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

@@ -65,3 +65,5 @@ var optionalTwo: Optional<String> // Generic Enum
 
 ## Conclusion
 That's it. You've learned how fake.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

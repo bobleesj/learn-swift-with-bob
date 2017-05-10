@@ -105,8 +105,8 @@ As mentioned, `extension` allows developers to implement all kinds of features.
 ## Conclusion
 You've learned the meaning of `self`.  I use `extension` to modularize view controller to prevent MVC, a.k.a, Massive View Controller.
 
-In Chapter 4, you will learn the sheer power of `extension` along with `protocols` If you are interested in learning how to build apps with `Protocols` and best practices that I know of, you may join the [waiting list] for the upcoming course: [The UIKIt Fundamentals with Bob].
+In Chapter 4, you will learn the sheer power of `extension` along with `protocols` If you are interested in learning how to build apps with `Protocols` and best practices that I know of, you may join the VIP list for the upcoming course: [The UIKIt Fundamentals with Bob].
 
 [The UIKIt Fundamentals with Bob]: /ABOUT.md/#course
 
-[waiting list]: https://boblee.typeform.com/to/oR9Nt2
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

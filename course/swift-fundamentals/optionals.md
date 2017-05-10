@@ -125,3 +125,5 @@ Now `normalImage` contains a normal type of `String`. You may use the `normalIma
 You've learned two fundamental concepts in the Swift Programming Language. The rule number one states, every type, even if `optionals`, has to be defined explicitly or implicitly for safety. Second, there are two ways to unwrap `optionals` to normal types.  You may force unwrap with `!` or safety unwrap with `if-let`.
 
 In the next lesson, you will learn why `?` and `!` automatically appear when you create an object and access its properties and methods.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

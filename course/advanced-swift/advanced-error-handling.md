@@ -79,4 +79,7 @@ rethrowableFuncWithErrorHandling(function: nonThrowableFunc)
 ## Conclusion
 Congratulations, you've mastered the Swift Error Handling. To recap, you may add the `rethrows` keyword to a function whose  parameter also can throws an error. However, you may still pass a non-throwable function since the original is identified as `rethrows`. This is the reason why we developers use APIs created Apple engineering without realizing that the original function may also throw an error.
 
-In the following lesson, you will finally understand the statement, "Swift is a protocol oriented language". 
+In the following lesson, you will finally understand the statement, "Swift is a protocol oriented language".
+
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

@@ -105,3 +105,5 @@ Notice that the `SendingVC` object also has been deallocated since it no longer 
 You've learned how to spot a retain cycle within the delegate pattern. You may wonder which variable should be set as `weak`. The #1 rule is, a `weak` property has a reference to a class object which more likely to stays longer, and eventually has greater importance. For example, if the `SendingVC` object has a weak reference from the `recevingVC` property, the object will be deallocated immediately since the reference count is zero.
 
 In the following lesson, you will discover the pitfall of using closures due to the unique behavior you've learned in Chapter 3, [3004_capture_lists](course/functional-swift/capture-lists.md)
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

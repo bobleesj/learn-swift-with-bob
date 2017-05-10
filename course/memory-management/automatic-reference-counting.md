@@ -187,3 +187,5 @@ myPassport = nil
 First, you've learned the definition of Memory Management in the concept of the Swift Programming Language. Always think about the fridge as well as the sour milk. You only want foods that are nice and fresh. Second, when you set the variable as `nil`, it does not mean destroying the object. It means removing the reference.  Last, it's all about the reference count. Make it zero if you wish to deallocate.
 
 In the following lesson, you will learn a possible retain cycle that might occur when you use the delegate pattern. Make sure you review the [previous lesson](/course/protocol-oriented-swift/delegate.md) before proceed.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

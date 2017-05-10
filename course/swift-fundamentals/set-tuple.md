@@ -235,3 +235,5 @@ for (index, value) in shoppingList.enumerated() {
 To recap, `Set` is used to group non-duplicate items with no order. `Tuple` is used to group all kinds of types with the order you define.  Second, you've learned how to identify mutating vs non-mutating methods based on the naming guide. Make sure you follow the same principle in your codebase as well. Don't get too caught up with Functional Programming. I know it sounds cool. You will get a taste of it in chapter 3, Intro to Functional Swift.
 
 In the next lesson, you will learn how to write modular and beautiful code with `extension`.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

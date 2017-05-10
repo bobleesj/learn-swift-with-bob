@@ -95,4 +95,6 @@ print(fileTypeWithCells[1].getFileType())
 [Beyond Crusty: Real-World Protocols by Rob Napier](http://www.thedotpost.com/2016/01/rob-napier-beyond-crusty-real-world-protocols)
 
 ## Conclusion
-The lesson could have been tough since it assumes you've mastered generics and closures. If you are stuck, I recommend you to get the fundamentals of them and then come back after. If you wish to study more, I recommend you to take a look at the references I've attached. They focus on why Protocol Oriented Programming is not the ultimate savior for all cases. Often, it is recommended you use pure structs or enums which you will learn in-detail in the following chapter. Anyhow, the person who came up with the solution is definitely smarter than I'm. 
+The lesson could have been tough since it assumes you've mastered generics and closures. If you are stuck, I recommend you to get the fundamentals of them and then come back after. If you wish to study more, I recommend you to take a look at the references I've attached. They focus on why Protocol Oriented Programming is not the ultimate savior for all cases. Often, it is recommended you use pure structs or enums which you will learn in-detail in the following chapter. Anyhow, the person who came up with the solution is definitely smarter than I'm.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

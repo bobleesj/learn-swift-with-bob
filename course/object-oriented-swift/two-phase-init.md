@@ -53,3 +53,5 @@ newRocket.meters // 91.4
 In 1998, The NASA launched The Mars Climate robot to study the Mars. However, a year later, it went out of the orbit. It was due to the computer software which produced non-SI units. The program returned units of pound instead of the SI units of newton. $327.6 million evaporated. They could have potentially used  two phase initializations in Swift.
 
 In the following lesson, you will learn how to use methods and properties without creating an actual object.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

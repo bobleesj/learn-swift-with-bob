@@ -83,4 +83,6 @@ downloanAnImage { (isSuccess: Bool) in
 
 
 ## Conclusion
-You've learned how to notify the user when the download has been completed. Some may feel uncomfortable with the syntax. I recommend you to read the article I've attached. When you enroll the UIKIt Fundamentals with Bob, you will learn how to pass data between classes, structs, and enums. You will use  callbacks asynchronously with multi-threads to network with server. 
+You've learned how to notify the user when the download has been completed. Some may feel uncomfortable with the syntax. I recommend you to read the article I've attached. When you enroll the UIKIt Fundamentals with Bob, you will learn how to pass data between classes, structs, and enums. You will use  callbacks asynchronously with multi-threads to network with server.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

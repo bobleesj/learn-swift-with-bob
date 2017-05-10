@@ -189,3 +189,5 @@ I lied. I said type casting allowed to convert types in classes. However, you ma
 Unnecessary type casting is not recommended among iOS developers because it causes a massive headache from casting back and forth. There is an alternative to go about. You will learn how to group objects together through Protocol Oriented Swift in Chapter 3. I know you are excited. Learn fast, but stay patient and consistent.
 
 In the next lesson, you will learn how to design reusable code through `generics`. You will come out dry, not wet, a.k.a we enjoy typing.  
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

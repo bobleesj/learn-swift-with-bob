@@ -221,3 +221,5 @@ for i in 1...3 {
 
 ## Conclusion
 In this lesson, you've learned the power of `guard` over typical `else-if`.  First, it provides an early exit. Second, no one has to read the entire function to spot the error messages. You use a `guard` statement not just to please yourself, but for the sake of your teammates' falling hair when he/she reads your code. Keep guarding, everyone. Don't defer your learning, however.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

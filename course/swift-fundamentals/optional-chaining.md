@@ -95,3 +95,5 @@ You've learned `optional chaingins` provide shortcuts to nested properties and m
 In the next lesson, you will learn how to use a `guard` statement to implicitly unwrap multiple `optionals` instead of classic `if let` statements.
 
 Again, if you wish to increase your coding productivity, feel free to check my articles posted.
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).
