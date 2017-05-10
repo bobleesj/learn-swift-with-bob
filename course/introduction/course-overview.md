@@ -1,6 +1,8 @@
 # Course Overview
 Welcome to [Learn Swift with Bob](https://udemy.com/learn-swift-with-bob/). You've made the right choice. You won't regret the decision to embark the journey with me. Before you and I jump into the lessons, let us go through the prerequisites, table of content, and course expectation.
 
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).
+
 ## Prerequisites
 This course is designed for Swift intermediate. So, I won't cover the basics. Please visit [learnSwiftwithBob.com](https://learnSwiftwithBob.com) and go to prerequisites. You will find a list of items you are expected to know. There is a YouTube video for each concept, so if you ever get stuck, you can always learn and come back. In a nutshell, you should be already be familiar with `switch`, `else-if`, basic `enums`, `function`, and what it means to initialize properties.
 
@@ -130,6 +132,6 @@ Let us through an ideal learning stage for the students.
 | --- | --- |
 | The Why | Each lesson should flow like a story. In the beginning, I start off with a problem statement. It consists of doubts and questions I personally encountered. For example, I would ask, what's the purpose of using `optionals`? A problem statement organically leads to why we learn.
 | Application | After having gone through the specific problem statement by showing new features and how to use them, I present how it applies to real-life situations.
-| Resources | With additional resources and references, you may go further study on your own. | 
+| Resources | With additional resources and references, you may go further study on your own. |
 | Visualization | It's your turn. I don't believe in practice problems. We no longer live in a world where there are fixed answers. You visualize how the feature you've learned can be applicable for your future endeavor. Albert Einstein said, "Imagination is more important than knowledge". Practice problems turn you into a machine. We have more than enough by the current education system designed to reduce cost for testing.
 | Test |  It's time to put your visualization into practice. You should fail. That's good. You are trying something new. "Failure is an option here. If things are not failing, you are not innovating enough" - Elon Musk |

@@ -16,6 +16,8 @@
 ## Purpose
 As a developer whose first programming language is Swift, I've taken online courses from major platforms. However, I have been frustrated by a lack of detailed explanations from instructors. They tend to focus on final products, thus missing out the fundamentals. I was confused by which design principles to follow, and why. After I've been blogging for the last 5 months, I've discovered this isn't the only problem of mine. I've received hundreds of emails and questions regarding how to write code that does not violate principles such as DRY, modularity, and readability. As a result, I've decided to create this course dedicated for my younger self. I believe it all comes down to the fundamentals which I lacked in the beginning.
 
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).
+
 ## Reference
 This is a platform for my students to download the source code, lecture notes, and scripts. As a life-long student, I've always wanted to have a complete overview of what I've learned. Most instructors avoid documenting since it takes effort besides making videos alone. I chose the road less traveled to help my students and differentiate myself from the competitive marketplace.
 

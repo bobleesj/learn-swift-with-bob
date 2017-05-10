@@ -130,3 +130,5 @@
 [Lesson 4: Equatable and Comparable Protocol]: /course/advanced-swift/equatable-comparable.md
 [Lesson 5: Sequence and Iterator Protocol]: /course/advanced-swift/sequence-iterator.md
 [Lesson 6: Intro to Test Driven Swift]: /course/advanced-swift/intro-test-driven.md
+
+> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).
