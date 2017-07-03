@@ -99,7 +99,7 @@ Notice that the `SendingVC` object also has been deallocated since it no longer 
  - Based on the rule above, the referencing object/variable must be `optional`
 
 ### Source Code
-[5002_delegate_retention_cycle.playground](https://www.dropbox.com/sh/wv9chke74n6r9du/AAD6AWxxCCdtH10674b96oIoa?dl=0)
+[5002_delegate_retention_cycle.playground](https://www.dropbox.com/sh/g2qi1hqrl0deevp/AADBpG8VWQkRdLd7-2REuHuTa?dl=0)
 
 ## Conclusion
 You've learned how to spot a retain cycle within the delegate pattern. You may wonder which variable should be set as `weak`. The #1 rule is, a `weak` property has a reference to a class object which more likely to stays longer, and eventually has greater importance. For example, if the `SendingVC` object has a weak reference from the `recevingVC` property, the object will be deallocated immediately since the reference count is zero.

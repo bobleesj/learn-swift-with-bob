@@ -144,7 +144,7 @@ bobGreet = nil // "I'm gone, bruh 🙆‍"
 > **Important:** a closure block with a `lazy` property is `@noescape` by default.
 
 ### Source Code
-[5004_escaping_autoclosures.playground](https://www.dropbox.com/sh/6vk04zbv1ifajc0/AABQhPhB3yYUF0qa8s8YXWdka?dl=0)
+[5004_escaping_autoclosures.playground](https://www.dropbox.com/sh/9qhlmvrbv4rjzum/AACq-MMUDUADBw7y-ENhpakpa?dl=0)
 
 ### Resources
 [Intro to Grand Central Dispatch in Swift 3 with Bob](https://blog.bobthedeveloper.io/intro-to-grand-central-dispatch-in-swift-3-with-bob-lee-1d4b56f731b3)

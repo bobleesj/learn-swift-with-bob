@@ -203,7 +203,7 @@ Based on the definition of `unowned`, it must have a non-`nil` reference to the 
 > If `self` will never be deallocated before the closure block, use `unowned`. If you try to access the value of an unowned reference after that instance has been deallocated, you’ll get a runtime error.
 
 ### Source Code
-[5003_closure_retention_cycle.playground](https://www.dropbox.com/sh/qjxei16os00pqdh/AAD7SKIBxStQ4AzUwR6X0T4ba?dl=0)
+[5003_closure_retention_cycle.playground](https://www.dropbox.com/sh/ycalimxbtuvh0xv/AADTrjDqnG0BOP64TejvaiEca?dl=0)
 
 ### Resources
 [Swift Retention Cycle in Closures and Delegate](https://blog.bobthedeveloper.io/swift-retention-cycle-in-closures-and-delegate-836c469ef128)
