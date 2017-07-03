@@ -280,7 +280,7 @@ let currentColor = NavigationTheme(numberOfTasks: 10).barTintColor
 ```
 
 ### Source Code
-[7002_stating_mutating_self.playground](https://www.dropbox.com/sh/8hqaxles0b9fcdv/AABbjQSsukVkVjBwzSJBxaMHa?dl=0)
+[7002_stating_mutating_self.playground](https://www.dropbox.com/sh/kaaawvsj28h2iwv/AABX4nlkdIU3m1n0nx02i259a?dl=0)
 
 ## Conclusion
 You've tasted the power of enums. Again, no more typing. In your head, you should be thinking how to deploy enums to beautify your previous projects. If the iOS engineers have not used enums for any APIs,  for instance, `UIColor`, we, developers, have to memorize and type all day while checking the documentation unlimited times. Use it for your advantage as well.

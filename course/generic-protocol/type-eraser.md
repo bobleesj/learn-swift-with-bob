@@ -87,7 +87,7 @@ print(fileTypeWithCells[1].getFileType())
 
 
 ### Source Code
-[6005_type_erasing.playground](https://www.dropbox.com/sh/molxejcbknq8vrd/AAC4aSMkFc5w8ckHnkZmah2Ba?dl=0)
+[6005_type_erasing.playground](https://www.dropbox.com/sh/8ls4inssx7bx1fv/AACuRkfNNwXknVQiAtjLU6sta?dl=0)
 
 ### References
 [Protocol Oriented Programming is Not a Silver Bullet by Chris Eidhof](http://chris.eidhof.nl/post/protocol-oriented-programming)

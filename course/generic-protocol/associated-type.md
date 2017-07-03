@@ -82,7 +82,7 @@ struct ExplicitStruct: GenericProtocol {
 ```
 
 ### Source Code
-[6001_intro_associated_type.playground](https://www.dropbox.com/sh/45dd9m5lsm4hwj1/AAA1PGWk72J0CZRPGzQ2kntGa?dl=0)
+[6001_intro_associated_type.playground](https://www.dropbox.com/sh/9xwzd2nhzamr2vo/AAC7pGPgwPFTF5v583hAzdGYa?dl=0)
 
 ## Conclusion
 You've learned how to create generic protocols by implementing `associatedtype`. Like generic structs, the type of `associatedType` must be defined by the structs, classes, or enums that conform to the protocol. There are two ways to specify the type of `associatedType`. You may implicitly define it based on the value you assign. Second, or you may explicitly create a `typealias` that define the type upfront.

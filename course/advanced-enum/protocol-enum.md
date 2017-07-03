@@ -112,7 +112,7 @@ GameAction.Restart(delay: 10) == GameAction.Restart(delay: 10) // true
 
 
 ### Source Code
-[7004_protocol_enum.playground](https://www.dropbox.com/sh/ptksoqsu5c0fnqm/AABm-0gtKqxkNyMyjRkSEXCqa?dl=0)
+[7004_protocol_enum.playground](https://www.dropbox.com/sh/9ulbr7d2g9fh4e4/AAAARtuTcNVuE3Vp0lIDLaiSa?dl=0)
 
 ## Conclusion
 Some may feel uncomfortable with the excessive usage of enums. That is good. You are challenged by new ways of thinking. However, you are right. You may not need to use enums. Just like protocols, it could be an overkill for certain implementations. In the following lesson, you will learn a recursive enum structure to add and multiply numbers. After, I will show you alternatives that are much simpler and more zen. Just like protocols, enums are not the ultimate savior. You have to learn and study every tool to a point you are able to calculate tradeoffs and benefits by foreseeing the future.

@@ -83,7 +83,7 @@ struct NumberFamily: FamilyProtocol {
 ```
 
 ### Source Code
-[6002_Protocol Extension and Type Constraints.playground](https://www.dropbox.com/sh/sq2q45bjzd9jm97/AABvbJhAlu7WGr97u3SpW85la?dl=0)
+[6002_Protocol Extension and Type Constraints.playground](https://www.dropbox.com/sh/ntf6ihf5ltpf8f1/AADSqimYJjoMB59xplWGr0aoa?dl=0)
 
 ## Conclusion
 Like generic constraints, you've learned how to limit the scope of protocol extensions by implementing `where` clauses. What a powerful tool. It prevents you from creating bloated objects filled with unnecessary methods and properties.

@@ -139,7 +139,7 @@ let android = OS.android
 > **Important:** iOS can not be equal to Android. It can be only greater.
 
 ### Source Code
-[8004_equatable_comparable.playground](https://www.dropbox.com/sh/zusz6m5vrynqj8i/AADpeaEYRIgh5jPODZtTefD0a?dl=0)
+[8004_equatable_comparable.playground](https://www.dropbox.com/sh/5oyv85naibmgmx0/AAAYThUXFVfeAVBZaqeBKZ0_a?dl=0)
 
 ### Resources
 [swiftdoct.org/Array](http://swiftdoc.org/v3.0/type/Array/hierarchy/)

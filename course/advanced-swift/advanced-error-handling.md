@@ -73,7 +73,7 @@ rethrowableFuncWithErrorHandling(function: nonThrowableFunc)
 > **Important:** Since the function, `rethrowableFuncWithErrorHandling`.is marked with `rethrows`, you may also enter a non-throwable function even though the parameter requires a throwable function. This is the why we, developers, do not even question the existence of the `rethrows` keyword.
 
 ### Source Code
-[8003_advanced_error_handling](https://www.dropbox.com/sh/1bg3nlm5e3dvkzv/AAB4U2NHCaVvmjLYeDp3wRO3a?dl=0)
+[8003_advanced_error_handling](https://www.dropbox.com/sh/ma7w837r9983fqb/AABv_-w-49LWFii25mgSHl99a?dl=0)
 
 
 ## Conclusion

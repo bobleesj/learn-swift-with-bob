@@ -64,7 +64,7 @@ let family = LeeFamily(familyMembers: ["Bob", "Bobby", "Lee"])
 2. `familyType` becomes `String` based on `T`
 
 ### Source Code
-[6003_override_associated_type](https://www.dropbox.com/sh/fglol4vr7ixozjp/AABwWMDh1XnVo8Lr__YjcO5Ua?dl=0)
+[6003_override_associated_type](https://www.dropbox.com/sh/jnno9yv7ef6mthc/AAC1HiiK4oY_3vovNJwnM2wUa?dl=0)
 
 ### Resources
 [Generic Protocols with Associated Type](https://blog.bobthedeveloper.io/generic-protocols-with-associated-type-7e2b6e079ee2)

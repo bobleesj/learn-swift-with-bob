@@ -84,7 +84,7 @@ case let .failure(errorType):
 No need to get fancy with `try`, `catch`, and `throw`
 
 ### Source Code
-[7007_result_type_error_handling](https://www.dropbox.com/sh/qif4q2x1x5ltj0f/AAAcCOW4tTO5ftO5VGy1eJi6a?dl=0)
+[7007_result_type_error_handling](https://www.dropbox.com/sh/x3bfjb6dxbv3qoa/AABOsRG7FSNt_9KlssX4iN96a?dl=0)
 
 ## Conclusion
 It's up to you which method you prefer, the old or the new. The iOS platform itself uses the new syntax since it provides higher readability due to the explicit keywords such as `try`, `catch`, and `throws`. However, you still need to know how to send and handle errors using a `ResultType` enum because some developers still prefer the earlier method. You've got to know all.

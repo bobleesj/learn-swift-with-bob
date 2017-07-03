@@ -126,7 +126,7 @@ for count in threeTwoOne {
 }
 ```
 ### Source Code
-[8005_sequence_iterator.playground](https://www.dropbox.com/sh/zusz6m5vrynqj8i/AADpeaEYRIgh5jPODZtTefD0a?dl=0)
+[8005_sequence_iterator.playground](https://www.dropbox.com/sh/v2wzlgdch6ht5u1/AADwD_4kUKxf4SF47DZi87jSa?dl=0)
 
 
 ### Resources
