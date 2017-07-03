@@ -158,7 +158,7 @@ smartClosureArray[4]() // 4 🎅
 [Capture List in Closures]: https://blog.bobthedeveloper.io/swift-capture-list-in-closures-e28282c71b95
 
 ### Source Code
-[3004_capture_lists.playground](https://www.dropbox.com/sh/4gn1y6if86aeciw/AABVwstQZJCqGnNfKPfRo76ja?dl=0)
+[3004_capture_lists.playground](https://www.dropbox.com/sh/ickz77fu1d6bwzo/AAC8YOA56o09C8OT7IRujOoma?dl=0)
 
 ## Conclusion
 You've learned the default behavior of a closure block which is identical to that of instances created with class objects. In fact, closures are reference types. In Chapter 5, however, you will discover some of problems that may arise due to the default behavior. Stay tuned.

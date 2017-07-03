@@ -185,7 +185,7 @@ class CompressionManager {
 
 
 ### Source Code
-[3003_lazy_init_closures.playground](https://www.dropbox.com/sh/tdmnhesaeqlwox4/AAA1aCtKuhI1V1YXJkaV2L05a?dl=0)
+[3003_lazy_init_closures.playground](https://www.dropbox.com/sh/3oghlxujs8doq1t/AAB6rcaEstTpO0tbxYCveMC9a?dl=0)
 
 ## Conclusion
 You've learned how to initialize an object using closures instead of the tedious method above. I do not use `Storyboard`. In fact, I have a "library" of UI Components so that I don't waste time typing all day. I just copy the closure block from the library and modify a little. Second, you've learned to use the `lazy` keyword in front of a property that requires heavy computing.

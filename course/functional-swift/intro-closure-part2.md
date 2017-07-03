@@ -105,7 +105,7 @@ insertClosureBlock(closureBlock: { "hello" })
 No Fear Closures with Bob [Part 1](https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jppz) and [Part 2](https://medium.com/ios-geek-community/no-fear-closure-in-swift-3-with-bob-72a10577c564#.m832h4jpp).
 
 ### Source Code
-[3002_intro_closures_part2.playground](https://www.dropbox.com/sh/dws40juw0rrx9mn/AACQjdv5oVoqNrB8ar2skfXva?dl=0)
+[3002_intro_closures_part2.playground](https://www.dropbox.com/sh/9otg5tvwsu6v4tu/AACZbraHNlnvc39Vppz7Rcdsa?dl=0)
 
 ## Conclusion
 You've learned how to pass and return a closure block directly and indirectly within a function. The is the fundamental root of functional programming which I'm not going to dive much into in this course. You may sign up for my mailing list if you are interested in learning about reactive programming with RxSwift and MVVM.

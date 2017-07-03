@@ -72,7 +72,7 @@ When the the `passData` method is called from the `firstVC`, `secondVC` contains
 
 ### Source code
 
-[4004_delegate.playground](https://www.dropbox.com/sh/j7xreau3y2kq8bo/AACG17ayoM8W8JMM3O6jbB5ya?dl=0)
+[4004_delegate.playground](https://www.dropbox.com/sh/s2ttgjx7yhucyyu/AAC9ROxz-_X8yKy2wxJK_QLfa?dl=0)
 
 ### Resources
 [Introduction to Delegate in Swift]

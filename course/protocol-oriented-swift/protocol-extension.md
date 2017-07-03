@@ -84,7 +84,7 @@ Hexagon.init().calculateArea(side: 6, length: 10)
 If you are interested in how you may apply `Protocols` to UIKit, you may read [Protocol Oriented View with Bob (Blog)](https://medium.com/ios-geek-community/protocol-oriented-programming-view-in-swift-3-8bcb3305c427#.u3rr936vm).
 
 ### Source Code
-[4002_protocol_extension.playground](https://www.dropbox.com/sh/zjn5tytza7yycwp/AADSzYya-HOgr0UDaOfj6H46a?dl=0)
+[4002_protocol_extension.playground](https://www.dropbox.com/sh/u7sp5fmgbf5l3p4/AABfXD34FO40GiQjDkhcXAN7a?dl=0)
 
 ## Conclusion
 Protocol Oriented Swift is only limited by your imagination.

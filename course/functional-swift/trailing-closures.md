@@ -69,7 +69,7 @@ trailingClosures(number: 400) { $0 * $0 }
 ```
 
 ### Source Code
-[3005_trailing_closures.playground](https://www.dropbox.com/sh/ahn75farmnscvxy/AADFWLKiwFwJoyMjd2dTFbwCa?dl=0)
+[3005_trailing_closures.playground](https://www.dropbox.com/sh/7nbfv0i4csk6spu/AACDhF28dvxKK-FdzviNWDWTa?dl=0)
 
 
 ## Conclusion

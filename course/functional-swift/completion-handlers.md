@@ -74,8 +74,7 @@ downloanAnImage { (isSuccess: Bool) in
 ```
 
 ### Source Code
-[3006_completion_handlers.playground](https://www.dropbox.com/sh/t47kpcnzuhtgni9/AAA1Yvq52s6XVOFgMLRjOPRka?dl=0)
-
+[3006_completion_handlers.playground](https://www.dropbox.com/sh/0ymk6l2ot39grhw/AADKAm7r7OmKbTpBKyNh25Lpa?dl=0)
 ### Resources
 [Completion Handlers in Swift with Bob]
 

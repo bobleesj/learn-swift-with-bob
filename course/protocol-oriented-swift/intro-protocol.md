@@ -113,7 +113,7 @@ struct Human: Breathable {
 | Computed Property --> Gettable, Settable (Optional) | Computed Property --> Gettable, Settable (Must) |
 
 ### Source Code
-[4001_intro_protocols.playground](https://www.dropbox.com/sh/yk5uq09o8y4ob61/AABd3FKbRtI0mi4j77jAYrtma?dl=0)
+[4001_intro_protocols.playground](https://www.dropbox.com/sh/33ps05ocvmtwiy4/AAC7oBX0z3Omt01J0lHHkhNpa?dl=0)
 
 ### References
 [All evidence points to OOP being bullshit by John Barker ](https://content.pivotal.io/blog/all-evidence-points-to-oop-being-bullshit)
