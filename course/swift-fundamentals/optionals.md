@@ -116,7 +116,7 @@ if let normalImage = imageFromFaceBook {
 Now `normalImage` contains a normal type of `String`. You may use the `normalImage` constant within the `if` block. On the contrary, if `imageFromFaceBook` contains `nil`, Swift executes the `else` block instead.
 
 ### Source Code
-[1001_optionals.playground](https://www.dropbox.com/sh/0u7dqz6e84zst9y/AAA90TqRvoX7Gf4oCpCBrEPya?dl=0)
+[1001_optionals.playground](https://www.dropbox.com/sh/wmnw7tpa16v8emo/AADjm-MP8lZOKZM0P6kPA4rea?dl=0)
 
 ### Resources {#google_slide}
 <iframe src="https://docs.google.com/presentation/d/1DDhLcBX6kBheVXlQNxMCrJp_OP0mXC82NgJHCPnW-OY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="460" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

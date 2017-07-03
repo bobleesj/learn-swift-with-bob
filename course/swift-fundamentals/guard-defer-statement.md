@@ -217,7 +217,7 @@ for i in 1...3 {
   - Any code you want to explicitly inform your team without requiring them to read the entire function
 
 ### Source Code
-[1003_guard_defer_statement.playground](https://www.dropbox.com/sh/n0kb3mv5unyhj5w/AADzn2E55lnMbi2d39pVjS6aa?dl=0)
+[1003_guard_defer_statement.playground](https://www.dropbox.com/sh/s3zztv3o6h3xv6v/AABWT2Le9T9SXJegSq9pr19pa?dl=0)
 
 ## Conclusion
 In this lesson, you've learned the power of `guard` over typical `else-if`.  First, it provides an early exit. Second, no one has to read the entire function to spot the error messages. You use a `guard` statement not just to please yourself, but for the sake of your teammates' falling hair when he/she reads your code. Keep guarding, everyone. Don't defer your learning, however.

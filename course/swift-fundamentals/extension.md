@@ -100,7 +100,7 @@ As mentioned, `extension` allows developers to implement all kinds of features.
 
 
 ### Source Code
-[1010_extension.playground](https://www.dropbox.com/sh/nom0467cql4yt1g/AAB4UmnnlpCE1c36qbXZKAiOa?dl=0)
+[1010_extension.playground]https://www.dropbox.com/sh/dq1288vcb77fzk6/AADgJhq0idPwIFTOTbysAxW7a?dl=0)
 
 ## Conclusion
 You've learned the meaning of `self`.  I use `extension` to modularize view controller to prevent MVC, a.k.a, Massive View Controller.

@@ -192,7 +192,7 @@ addLOLClassOnly(array: [1, 2, 3, 4, 5]) // Error
 [Intro to Generics in Swift with Bob](https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.fkmmjqnwd)
 
 ### Source Code
-[1006_generics.playground](https://www.dropbox.com/sh/wuf65widfors50d/AABCJF-aojTJLPGdA79Vc78Ma?dl=0)
+[1006_generics.playground](https://www.dropbox.com/sh/p8i8134nmljh0js/AADR4Gi-RyEfyc_AwtA9H4aEa?dl=0)
 
 ## Conclusion
 You now understand how to maintain yourself dry through generic functions and structs. In later chapters, you will more about advanced generics along with `enums` and `protocols`. If you wish to review generic the syntax, I recommend you to watch the lecture again or refer to the article I've attached.

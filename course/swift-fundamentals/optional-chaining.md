@@ -78,7 +78,7 @@ let NYCResident = NYCApartment.human!.name // Error: No value for human
 ```
 
 ### Source Code
-[1002_optional_chainings.playground](https://www.dropbox.com/sh/t809vje5icodnvz/AACWWIxjan6RlEfvgCuT87uVa?dl=0)
+[1002_optional_chainings.playground](https://www.dropbox.com/sh/czde6dm36navhtj/AABVk37REgAS4eZL8WTuJs7Ga?dl=0)
 
 ### Resources
 My Favorite Xcode Shortcuts [Part 1], [Part 2], [Part 3]

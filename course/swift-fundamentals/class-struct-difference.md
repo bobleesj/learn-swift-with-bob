@@ -152,7 +152,7 @@ To learn more about cons of Object Oriented Programming, you may read the beginn
 ### Source Code
 [1008_class_struct_difference.playground]
 
-[1008_class_struct_difference.playground]:https://www.dropbox.com/sh/der2imu4z41c7nr/AAAaLyZhh4jJLe-_oQFPFGmxa?dl=0
+[1008_class_struct_difference.playground]:https://www.dropbox.com/sh/8996uqzt2334y4p/AACCyGZNVNoJC-7MzHo0ywn8a?dl=0
 
 
 ## Conclusion

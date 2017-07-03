@@ -144,7 +144,7 @@ let myDopeNewCourse = try! Course(name: "") // ☠️
 ```
 
 ### Source Code
-[1004_intro_error_handling.playground](https://www.dropbox.com/sh/kiib6lgy1xa7lww/AAANnWweDDT_KB4-hFJEB9taa?dl=0)
+[1004_intro_error_handling.playground](https://www.dropbox.com/sh/9ywof00ryj3s12k/AAAcowGDCfFYCxQW_J5hhidYa?dl=0)
 
 ### Resources
 [Intro to Error Handling by Bob the Developer](https://goo.gl/EaepCa)
