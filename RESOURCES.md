@@ -5,25 +5,22 @@ disqus: false
 # iOS Development {#ios}
 I try to stay consistent and provide as much as value for my students and readers.
 
-> **Note:** If you wish to join the VIP list, you may email me at `bob@bobthedeveloper.io`. You will receive a sign-up form. I care about building long-term relationships over short-term sales.
-
-### Swift Complete Series
+### Complete Series
 If you are new to Swift, I'd recommend you to get started with these tutorials first.
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
-| [Xcode 8 Auto Layout] | Dec 4, 2016 | YouTube |
-| [Swift Protocol Oriented Programming with Bob] | Nov 27, 2016 | YouTube |
-| [Swift Advanced Object Oriented Programming] | Nov 21, 2016 | YouTube |
-| [The Complete Swift 3 Tutorial with Bob] | Nov 21, 2016 | YouTube |
+| [Learn Swift with Bob: Intermediate Swift Course] | May 10, 2017 | Udemy |
+| [The Beginner's Swift 3 Tutorial with Bob] | Nov 21, 2016 | YouTube |
 
-[The Complete Swift 3 Tutorial with Bob]: https://www.youtube.com/playlist?list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx
+[Learn Swift with Bob: Intermediate Swift Course]: https://udemy.com/learn-swift-with-bob/
+[The Beginner's Swift 3 Tutorial with Bob]: https://www.youtube.com/playlist?list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx
 [Swift Advanced Object Oriented Programming]: https://www.youtube.com/playlist?list=PL8btZwalbjYmZwMwqeeAZKHsQ81GxiuaD
 [Swift Protocol Oriented Programming with Bob]: https://www.youtube.com/playlist?list=PL8btZwalbjYm5xDXDURW9u86vCtRKaHML
 [Xcode 8 Auto Layout]: https://www.youtube.com/playlist?list=PL8btZwalbjYnH-IbqQlT1NIa0iNOlHcXh
 
 
-### iOS 10
+### iOS
 If you want to learn how to use certain APIs created provided by Apple
 
 |      Name     |       Date      |     Source    |
@@ -40,6 +37,7 @@ If you want to learn how to use certain APIs created provided by Apple
 | [Introduction to Delegate in Swift] | Nov 26, 2016 | Blog |
 
 [Swift Retention Cycle in Closures and Delegate]: https://blog.bobthedeveloper.io/swift-retention-cycle-in-closures-and-delegate-836c469ef128
+
 
 
 ### Protocol Oriented Programming
@@ -81,6 +79,7 @@ What makes Swift unique and ranked as the second most loved language based on th
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
+| [The Complete Understanding of Delegate and Data Source] | May 20, 2017 | Blog |
 | [Intro to Generics in Swift with Bob] | Feb 18, 2017 | Blog |
 | [The Complete Understanding of Access Control in Swift 3] |  Jan 25, 2017 | Blog |
 | [Intro to Error Handling in Swift 3] | Jan 22, 2017 | Blog |
@@ -89,12 +88,15 @@ What makes Swift unique and ranked as the second most loved language based on th
 
 [Intro to Generics in Swift with Bob]: https://medium.com/ios-geek-community/intro-to-generics-in-swift-with-bob-df58118a5001#.ylx1w3ai4
 
+[The Complete Understanding of Delegate and Data Source]: https://blog.bobthedeveloper.io/the-complete-understanding-of-swift-delegate-and-data-source-9c91ecd7f1
+
 ### Productivity
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [My Favorite Xcode 8 Shortcuts (Part 1)] | Dec 7, 2016 | Blog |
 | [My Favorite Xcode 8 Shortcuts (Part 2)] | Dec 7, 2016 | Blog |
 | [My Favorite Xcode 8 Shortcuts (Part 3)] | Dec 7, 2016 | Blog |
+
 
 [My Favorite Xcode 8 Shortcuts (Part 1)]: https://medium.com/ios-geek-community/bobs-favorite-xcode-8-shortcuts-part-1-3-36381e07284d#.opbcbdae2
 
@@ -188,241 +190,3 @@ If you would like to work as a freelancer, you might find these articles useful.
 [Intro to Grand Central Dispatch in Swift 3 with Bob]: https://medium.com/ios-geek-community/intro-to-grand-central-dispatch-in-swift-3-with-bob-lee-1d4b56f731b3#.zf727d11v
 
 [Introduction to Delegate in Swift]: https://medium.com/ios-geek-community/the-meaning-of-delegate-in-swift-347eaa9674d#.hatglcuzg
-
-<br>
-<br>
-
-
-# Gadgets {#gadgets}
-These are products that I use to increase my productivity along with [keyboard shortcuts](productivity/keyboard_shortcuts.md). You don't have to have these products, but they save time in the long run. I'd pay any money to preserve and save my limited time. I rather work smart and hard.
-
-<img src="resources/my_desk.jpg" alt="My current workspace"/>
-
-> **If you do not see the product images, please reload :)**
-
-### iOS Development Tools
-| Gadget | My Usage | Category |
-| --- | --- | --- |
-| [Portable 15.6 Inch Full HD Monitor] | I carry it when I travel. This monitor doesn't require a power cord. It only needs a USB port. It's useful for client meetings as well. | Monitor |
-| [Acer 23.8 Inch Monitor] | It's affordable, and I use it to record tutorials and any other activities.  An extra monitor is a must for anyone who is serious about programming. | Monitor |
-| [Apple's Magic Keyboard] | It prevents a neck-strain because I no longer have to turn my next to see the side monitor. There is no delay time between input and output. Also, there is a rechargeable battery so I get to save time.  | Keyboard |
-| [Apple's Magic Mouse 2] | It looks aesthetic, and I love the fact that it is so thin that I can carry it in my pocket otherwise I had to carry a small bag. Similar to the keyboard above, it doesn't require any extra battery cells, so there is no recurring fee or time spent on going to the supermarket. | Mouse |
-| [2013 MacBook Pro 15 Inch] | I don't think I have to explain. The link provides the cheapest offer for now. It is around $800 which is pretty good deal considering I can probably use it for another 3 year. So, you'd only pay like $250 per year which is affordable. | Laptop |
-
-
-> The cheaper ones are refurbished. I'd recommend you to get a new one since it just feels better and you are going to use them for another 2-3 years. If you spot anything cheaper, make sure it is not the first generation. The second generation contains rechargeable battery: Magic Keyboard 2(MLA22LL) and Magic Mouse 2(MLA02LL)
-
-
-
-[Acer 23.8 Inch Monitor]:http://amzn.to/2mFk75V
-
-[Portable 15.6 Inch Full HD Monitor]: http://amzn.to/2nAkinW
-
-[2013 MacBook Pro 15 Inch]: http://amzn.to/2nl1E2A
-
-[Apple's Magic Keyboard]: http://amzn.to/2mh8bfw
-
-[Apple's Magic Mouse 2]: http://amzn.to/2mh7537
-
-[HDMI Cable]: http://amzn.to/2nGiGJC
-
-### Blogging and Course Production
-| Gadget | My Usage | Category |
-| --- | --- | --- |
-| [Canon EOS 700D] | I've noticed an iPhone 7 Plus just can't beat the depth that the DSLR camera offers. I use my camera to record all of my introduction and conclusion videos. It's affordable and great for those who want to get started and make videos. | Camera |
-| [Bluetooth Selfie Stick] | Instead of extending my arm, I like to use it to show background and take pictures with my friends. | Camera Tool |
-| [Toshiba 1TB Portable Hard Drive] | I can't store everything on my mac. So, this is just great even as a backup as well. If you are serious about making online courses or you have a lot images, it's just a must. | Storage |
-| [Samsung 64GB SD Card] | I used to record videos with a normal SD card but its writing speed was so slow that the recording stopped after a couple seconds. I had no issue with the SD card. | Storage |
-| [Blue Snowball USB Microphone] | All of my YouTube tutorials and Udemy course videos are recorded with this microphone. I love it. Since I've lost its stand, I've been using a pizza box as you can see in my recent videos. | Microphone |
-| [Sony Camera Microphone] | I use it along with my camera since the Blue Snow Microphone is too big to carry it all the time. | Microphone |
-
-
-[Canon EOS 700D]: http://amzn.to/2n3DBDg
-[Toshiba 1TB Portable Hard Drive]: http://amzn.to/2ni5bhV
-[Bluetooth Selfie Stick]: http://amzn.to/2ni6HAF
-[Blue Snowball USB Microphone]: http://amzn.to/2ni7S3o
-[Samsung 64GB SD Card]: http://amzn.to/2ni97iT
-[Cobra Tech Tripod Stand]: http://amzn.to/2n3EHih
-[Sony Camera Microphone]: http://amzn.to/2n9oCt9
-
-### Productive Home Office
-Currently, I work at home and having the right work environment allows me to stay focused and spend less than on doing tasks that don't add much value to my production. Unlike the [iOS Development Tools](RESOURCES.md/#gadgets) mentioned above, these are non-tech related gadgets that I crave.
-
-| Gadget | Why I Would Get | Category |
-| --- | --- | --- |
-  | [3-Piece Corner Desk] | I just need a long desk. I care about how things look because the environment influence my mind subconsciously. It's affordable as well. | Desk |
-| [Leather Chair] | Similar to the phone stand and the desk, it just looks visually appealing. I tend to grab products that look good because I feel good. | Chair |
-| [iPhone Stand] | Not only it is visually aesthetic, but also it allows me to use my app instantly because I don't even need to grab, but just scroll with my finger comfortably. | Phone Stand |
-| [Phone Ring Stand] | I think it's just a must because it allows me to watch YouTube videos while eating food and right before I go to bed. | Stand |
-| [Silver Laptop Stand] | If I use a double monitor, it's essential for me to get a laptop stand  so that my next does not have to move up and down and stay align with the height of the monitor. It puts less stress. Also, the color matches with the laptop so it looks aesthetic.  | Laptop Stand |
-
-[iPhone Stand]: http://amzn.to/2moITMg
-[3-Piece Corner Desk]: http://amzn.to/2nGf6iw
-[Leather Chair]: http://amzn.to/2ni9ytG
-[Phone Ring Stand]: http://amzn.to/2nZT4n1
-[Silver Laptop Stand]: http://amzn.to/2n9jGEk
-
-
-### Wish List
-| Gadget | Why I wish | Category |
-| --- | --- | --- |
-| [MacBook Pro 15.4-inch with Touch Bar] | I just want to take my laptop to the next level. I've been using my laptop but I just want it a little bit better so that I can render videos faster | Computer |
-| [Samsung 27-Inch Curved Monitor] | I have a descent monitor, but again, I've never had curved one before. So, I just want to try it out | Monitor |
-| [Apple Airpods] | Currently, I use [Samsung's bluetooth earphone], but Airpods is just classy. I got hooked by Apple's [video](https://www.youtube.com/watch?v=RdtHX15sXiU). | Headphones |
-| [C Shape 4-in-1 Stabilizer] | Although I'm not a film maker, I'd love to watch one of these when I travel during summer breaks. | Camera |
-
-> I'm going to buy these whenever I have a chance. These are just amazing.
-
-
-
-[MacBook Pro 15.4-inch with Touch Bar]: http://amzn.to/2n3F50i
-[Samsung 27-Inch Curved Monitor]: http://amzn.to/2n9nN3b
-[Apple Airpods]: http://amzn.to/2n9qDFt
-[C Shape 4-in-1 Stabilizer]: http://amzn.to/2moGem2
-[Samsung's bluetooth earphone]: http://amzn.to/2niotUy
-
-
-
-### Travel
-I travel quite often because my family has been living in different parts of the world. Therefore, I always carry these products below so that I can stay productive even if I travel.
-
-| Travel | Usage | Category |
-| --- | --- | --- |
-| [Xiaomi 10000mAH] | I carry it everywhere because I blog and make tutorials with my phone. I also do a lot of social media and communication with my phone. It is indispensable. | Charger |
-| [Travel Universal Adapter Charger] | I hate wires and chargers because they take up a lot of space and wires cause massive headaches. But, the universal charger takes care of all the hassle for me | Charger |
-
-[Xiaomi 10000mAH]: http://amzn.to/2mhmCQz
-[Travel Universal Adapter Charger]: http://amzn.to/2nibGSb
-
-<br>
-<br>
-
-# Software {#software}
-
-### Hosting and Cloud Computing
-
-| SaaS | Purpose |
-| --- | --- |
-| [Digital Ocean] | I use it to run virtual servers. It's more affordable than Google's |
-| [Bluehost] | I use it to host my website and purchase my domain name |  
-
-[Digital Ocean]: https://m.do.co/c/bb7f34dbec72
-[Bluehost]: https://www.bluehost.com/track/bobthedev
-
-
-### Finance
-| Platform | Purpose |
-| --- | --- |
-| [TransferWise] | It disrupts the way banks send money. It's decentralized so the international wire transfer occurs within a day or two and it's cheap if you are dealing with money less than $10,000. Get started with sending £500 for free with the link  |
-| [Quickbooks] | It creates invoice, track all my expenses, employee payrolls. It helps me prepare for my upcoming tax returns.  |
-
-
-[TransferWise]: https://transferwise.com/u/217271
-[Quickbooks]: https://qbo.intuit.com/
-
-### Schedule & Events
-| Platform | Purpose |
-| --- | --- |
-| [Calendly] | This is my favorite scheduling tool. You don't need to buy a premium account. It's free to use. It allows you to set date and time blocks when you are available, when you send your profile link to someone else, the person can choose the time based on their time zone. I use it all the time for scheduling. You can see my schedule [here](https://calendly.com/boblee).  
-| [Tito] | I've used Evenbrite to organize and schedule events. But, Tito provides a seamless experience for me. The landing page looks great. I recently purchased a ticket for the upcoming Swift conference. |
-
-[Tito]: https://ti.to/home
-[Calendly]: https://calendly.com
-
-### Documentation
-| Platform | Purpose |
-| --- | --- |
-| [Gitbook] | I'm currently using Gitbook to document. It allows me to allow Markdown seamlessly with my favorite Text Editor and Github. If you want to get started, feel free to watch this [tutorial](https://toolchain.gitbook.com). I also use it to share my lecture notes for [The UIKIt Fundamentals with Bob] |
-
-[Gitbook]: https://gitbook.com
-[The UIKIt Fundamentals with Bob]: https://bobleesj.gitbooks.io/udemy_uikit_fundamentals_notes/content/
-
-### Website
-| Template | Purpose |
-| --- | --- |
-| [Jupiter Wordpress Theme] | I recently bought this theme to create my own [personal website](http://bobthedeveloper.io) without having to write a single line of code because it provides pre-made and highly customizable drag and drop elements. You can find out what you could possibly create this theme [here](http://preview.themeforest.net/item/jupiter-multipurpose-responsive-theme/full_screen_preview/5177775).  |
-
-[Jupiter Wordpress Theme]: https://themeforest.net/item/jupiter-multipurpose-responsive-theme/5177775?s_rank=1&ref=bobthedeveloper
-
-### Communication
-| Apps | Purpose |
-| --- | --- |
-| [Inbox by Gmail] |  I love using this app instead of relying on iPhone's default mail or Gmail. The app automatically organizes items into separate groups through machine learning, and I may archive or read the entire group with a single swipe. As a person who receives a number of comments on social media, this app is just perfect for me |
-| [Discord] | Although Slack is okay, I use Discord because it's free for unlimited users. It's loved by gamers since it provides channels for voice calls. But, it also provides syntax and markdown highlighting. In fact, I have a group for my students to interact with each other. |
-
-[Inbox by Gmail]: https://www.google.com/inbox/
-[Discord]: https://discord.gg/
-
-
-### Feedback and Survey
-| Platform | Purpose |
-| --- | --- |
-| [Typeform] | I used to use Google Form, but Type form looks a little more engaging because it provides interactive experience and you can also add payment |
-
-[Typeform]:https://www.typeform.com
-
-
-### Video Editing
-[Adobe Premier Pro and Aftereffect](http://www.adobe.com)
-
-### Project Management
-
-
-| Platform | Purpose |
-| --- | --- |
-| [Wrike] | Wrike is an ideal project management solution for teams and businesses of all sizes: from solopreneurs and small startups to Fortune 500 firms. |
-| [Trello] | Trello provides an overview. I use it to organize my weekly work. |
-
-[Wrike]: https://www.wrike.com/?r=R4w9e0Hw
-[Trello]: https://trello.com/bobleesj/recommend
-
- <br>
- <br>
-
-# Books {#books}
-I read 80-100 books a year. Although I'm 20, books allow me to gain insights and allow me to process any situation.
-
-### Software Development
-Although I spend a majority of time learning iOS, I also attempt to learn design patterns, interview questions, and algorithms so that I can stay on top of the game.
-
-| Book | Author | Category |
-| --- | --- | --- |
-| [Cracking the Code Interview: 189 Programming Questions and Solutions] | Gayle McDowell | Algorithm & Data Structure |
-| [iOS Programming: The Big Nerd Ranch Guide] | Christian Keur | iOS Development |
-
-
-[Cracking the Code Interview: 189 Programming Questions and Solutions]: http://amzn.to/2nol338
-[iOS Programming: The Big Nerd Ranch Guide]: http://amzn.to/2nAlszX
-
-
-### Startup
-Although my first startup failed, I incorporated and grew the team with close to a dozen employees. The books below are the one I've read and learned so much from these resources that allowed me build a great community and blog.
-
-| Book | Author | What I've Learned | Category |
-| --- | --- | --- | --- |
-| [Exponential Organizations: Why new organizations are ten times better, faster, and cheaper than yours] | Salim Ismail | What it takes to create a scalable startup with two acronyms: IDEAS and SCALE | Strategy |
-| [Hooked: How to Build Habit-Forming Products] | Nir Eyal | Elements that lead us to use Instagram, Facebook, YouTube, and so on. | Strategy |
-| [The Fourth Industrial Revolution] | Klaus Schwab | New rising technology that would disrupt governments and our lives | Future |
-| [The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses] | Eric Ries | How to test the market before investing a lot of money | Strategy |
-| [#AskGaryVee: One Entrepreneur's Take on Leadership, Social Media, and Self-Awareness] | Gary Vayerchuck | He is the one who tought me everything about building community and focus on long-term relationships over short-term sales. I watch his content daily on his YouTube channel. | Marketing |
-
-
-[Hooked: How to Build Habit-Forming Products]: http://amzn.to/2o0tRbX
-
-[Exponential Organizations: Why new organizations are ten times better, faster, and cheaper than yours]: http://amzn.to/2noiFtf
-
-[The Fourth Industrial Revolution]: http://amzn.to/2mGIlwx
-
-[#AskGaryVee: One Entrepreneur's Take on Leadership, Social Media, and Self-Awareness]: http://amzn.to/2moZrDO
-
-[The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses]: http://amzn.to/2n3I9cQ
-
-[Outliers: The Story of Success]: http://amzn.to/2nTESM4
-
-[Drive: The Surprising Truth About What Motivates Us]: http://amzn.to/2mGIpMN
-
-[The Definitive Book of Body Language]: http://amzn.to/2mGu5Eh
-
-[The Man's Search for Meaning]: http://amzn.to/2nFLkas
-
-[The Power of Habit: Why We Do What We Do in Life and Business]: http://amzn.to/2nU09W5
