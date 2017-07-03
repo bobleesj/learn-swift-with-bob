@@ -58,7 +58,7 @@ let myFavoriteColor = UIColor(r: 255, g: 80, b: 85)
  2. Custom `convenience` inits with `UIKit`
 
 ### Source Code
-[2001_convenience_init.playground](https://www.dropbox.com/sh/s8huk2ugoeawb1c/AABvP4MipSe4CSypX7QEgZmZa?dl=0)
+[2001_convenience_init.playground](https://www.dropbox.com/sh/gg0vl09ki85j5hz/AAAqLOU8t5tWkIcMCCVJBuAUa?dl=0)
 
 ## Conclusion
 You've learned how to become lazy and effective at the same time. Imagine, you are the owner of a library for your teammates. They no longer have to use the bloated designated init method. Instead, you may provide multiple `convenience` init methods so that their lives become easier. It is similar to how the Apple engineers have provided us with convenience init methods for `UIColor`. It's a win-win situation.

@@ -69,7 +69,7 @@ if let myBlog = blog {
 
 
 ### Source Code
-[2004_failable_init.playground](https://www.dropbox.com/sh/zduzf0flqdly0st/AAAkq8tFl8vfQ4FGoRoccLRla?dl=0)
+[2004_failable_init.playground](https://www.dropbox.com/sh/na78xmuv8x73du9/AABeGi4-9I36k54_zIum9mb3a?dl=0)
 
 ## Conclusion
 First, you've learned how design an init method that may return `nil` or an optional object by putting a `?` right to the `init` keyword. As we've discussed many times, anything that has to do with `?` in the Swift Programming Language will give you an optional value. Second, you reviewed the Swift `error handling` approach. Remember, the `throw` keyword is not only used within an `else-if` or `guard` block, but also within an `init` method.

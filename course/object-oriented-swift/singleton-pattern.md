@@ -49,7 +49,7 @@ In each view controller, you have access to only one `AccountManager()`.
 The iOS ecosystem often use the singleton pattern for developers to access the universal object. A few examples include, `UIApplication`, `UserDefault`, `NSNotification`. If you wish to learn more about these classes, you may sign up for the upcoming course: [The UIKit Fundamentals with Bob](/ABOUT.md#course).
 
 ### Source Code
-[2008_singleton_pattern.playground](https://www.dropbox.com/sh/skwlaur16yxwgsf/AADHj1oFxXUovanhnIX6M86Qa?dl=0)
+[2008_singleton_pattern.playground](https://www.dropbox.com/sh/dtbnd48v6b4fwah/AAC4JDS6WNe22U4qG3begJioa?dl=0)
 
 ### Resources
 [The Complete Understanding of Access Control in Swift 3](https://blog.bobthedeveloper.io/the-complete-understanding-of-access-control-in-swift-3-c1c71f2add0b)

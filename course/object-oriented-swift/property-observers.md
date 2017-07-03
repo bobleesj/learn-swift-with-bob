@@ -94,7 +94,7 @@ userLoginInfo = true
  - `willSet` and `didSet` will not get called when you initialize it.
 
 ### Source Code
-[2003_property_observers.playground](https://www.dropbox.com/sh/tfvmjjrppvy0g01/AABB5kYVgf6ImcptnOvQ53VGa?dl=0)
+[2003_property_observers.playground](https://www.dropbox.com/sh/py4uqf01b8m5xcx/AADFHYjIWJEu_LmLGmf7NaoDa?dl=0)
 
 ## Conclusion
 The purpose of using property observers is not only to write less code but also to provide greater readability through the distinctive keywords. You no longer have to create unnecessary functions filled with `switch` or `else-if` statements. No need.
