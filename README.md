@@ -38,8 +38,6 @@ I feel grateful for what learning offers in my life. It would have been impossib
 | April 15th, 2017 | Source code added for Ch 5, 6, 7, 8 | Prep and record Ch 8 and document |
 | April 8th, 2017 | Source code added for Ch 1, 2, 3, 4 |  Prep and record Ch 5 and document Ch 2, 3, 4, 5 |
 
-<div class="fb-post" data-href="https://business.facebook.com/bobthedeveloper/photos/a.176842679436111.1073741827.172659529854426/316938168759894/?type=3&amp;theater" data-width="700" data-show-text="true"><blockquote cite="https://www.facebook.com/bobthedeveloper/posts/316938168759894:0" class="fb-xfbml-parse-ignore"><p>I can&#039;t even...  This is a bit too much for me to bear at this point of my life. All I can say is, I appreciate each one...</p>Posted by <a href="https://www.facebook.com/bobthedeveloper/">Bob the Developer</a> on&nbsp;<a href="https://www.facebook.com/bobthedeveloper/posts/316938168759894:0">Friday, June 30, 2017</a></blockquote></div>
-
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
