@@ -2,37 +2,34 @@
 disqus: false
 ---
 
-# iOS Development {#ios}
-I try to stay consistent and provide as much as value for my students and readers.
+# iOS Development
 
 ### Complete Series
-If you are new to Swift, I'd recommend you to get started with these tutorials first.
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [Learn Swift with Bob: Intermediate Swift Course] | May 10, 2017 | Udemy |
-| [The Beginner's Swift 3 Tutorial with Bob] | Nov 21, 2016 | YouTube |
+| [The Beginner's Swift Tutorial with Bob] | Nov 21, 2016 | YouTube |
 
 [Learn Swift with Bob: Intermediate Swift Course]: https://udemy.com/learn-swift-with-bob/
-[The Beginner's Swift 3 Tutorial with Bob]: https://www.youtube.com/playlist?list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx
+[The Beginner's Swift Tutorial with Bob]: https://www.youtube.com/playlist?list=PL8btZwalbjYlRZh8Q1VK80Ly0YsZ7PZxx
 [Swift Advanced Object Oriented Programming]: https://www.youtube.com/playlist?list=PL8btZwalbjYmZwMwqeeAZKHsQ81GxiuaD
 [Swift Protocol Oriented Programming with Bob]: https://www.youtube.com/playlist?list=PL8btZwalbjYm5xDXDURW9u86vCtRKaHML
 [Xcode 8 Auto Layout]: https://www.youtube.com/playlist?list=PL8btZwalbjYnH-IbqQlT1NIa0iNOlHcXh
 
 
 ### iOS
-If you want to learn how to use certain APIs created provided by Apple
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [Swift Retention Cycle in Closures and Delegate] | Mar 25, 2017 | Blog |
 | [The Life Cycle of an App] |  Feb 6, 2017  | YouTube |
 | [Make Memory Management Great Again] |  Feb 2, 2017  | Blog |
-| [Beginner's Guide to Core Data in Swift 3] | Dec 29, 2016 | Blog |
-| [Store UIColor with UserDefaults in Swift 3] | Dec 22, 2016 | Blog |
-| [Pass Data with NSNotification in Swift 3] | Dec 17, 2016 | Blog |
-| [UI & Networking Like a Boss in Swift 3] | Dec 10, 2016 | Blog |
-| [Intro to Grand Central Dispatch in Swift 3 with Bob] | Dec 3, 2016 | Blog |
+| [Beginner's Guide to Core Data in Swift] | Dec 29, 2016 | Blog |
+| [Store UIColor with UserDefaults in Swift] | Dec 22, 2016 | Blog |
+| [Pass Data with NSNotification in Swift] | Dec 17, 2016 | Blog |
+| [UI & Networking Like a Boss in Swift] | Dec 10, 2016 | Blog |
+| [Intro to Grand Central Dispatch in Swift with Bob] | Dec 3, 2016 | Blog |
 | [The Meaning of tableView.delegate = self] | Nov 30, 2016 | Blog |
 | [Introduction to Delegate in Swift] | Nov 26, 2016 | Blog |
 
@@ -63,8 +60,8 @@ If you want to get your closure game strong and you are waiting for my RxSwift a
 | [Swift Capture List in Closures] | Mar 18, 2017 | Blog |
 | [Intro to Functional Programming with Bob] | Feb 27, 2017 | Blog |
 | [Completion Handlers in Swift with Bob] | March 4, 2017 | Blog |
-| [No Fear Closure in Swift 3 with Bob (Part 2)][Closure Part 2] | Jan 13, 2017 | Blog |
-| [No Fear Closure in Swift 3 with Bob][Closure Part 1] | Dec 31, 2016 | Blog |
+| [No Fear Closure in Swift with Bob (Part 2)][Closure Part 2] | Jan 13, 2017 | Blog |
+| [No Fear Closure in Swift with Bob][Closure Part 1] | Dec 31, 2016 | Blog |
 
 [Swift Lazy Initialization with Closures]: (https://blog.bobthedeveloper.io/swift-lazy-initialization-with-closures-a9ef6f6312c)
 
@@ -75,14 +72,13 @@ If you want to get your closure game strong and you are waiting for my RxSwift a
 [Intro to Functional Programming with Bob]: https://medium.com/ios-geek-community/intro-to-swift-functional-programming-with-bob-9c503ca14f13#.k65nrzgi0
 
 ### Swift
-What makes Swift unique and ranked as the second most loved language based on the Stack Overflow survey in 2016.
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
 | [The Complete Understanding of Delegate and Data Source] | May 20, 2017 | Blog |
 | [Intro to Generics in Swift with Bob] | Feb 18, 2017 | Blog |
-| [The Complete Understanding of Access Control in Swift 3] |  Jan 25, 2017 | Blog |
-| [Intro to Error Handling in Swift 3] | Jan 22, 2017 | Blog |
+| [The Complete Understanding of Access Control in Swift] |  Jan 25, 2017 | Blog |
+| [Intro to Error Handling in Swift] | Jan 22, 2017 | Blog |
 | [10 Tips to become a better Swift Ninja] | Nov 19, 2016 | Blog |
 | [10 Tips to become a better Swift Developer] | Nov 16, 2016 | Blog |
 
@@ -106,7 +102,6 @@ What makes Swift unique and ranked as the second most loved language based on th
 
 
 ### Opinions
-I share my biased perspectives on the iOS ecosystem.
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
@@ -118,7 +113,6 @@ I share my biased perspectives on the iOS ecosystem.
 | [5 Reasons I Fell in Love with Swift] | Oc 22, 2016 | Blog |
 
 ### Soft Skills
-If you would like to work as a freelancer, you might find these articles useful. I talk about how I received a number of job offers even though I didn't have much experience.
 
 |      Name     |       Date      |     Source    |
 |---------------|---------------|---------------|
@@ -149,9 +143,9 @@ If you would like to work as a freelancer, you might find these articles useful.
 
 [Make Memory Management Great Again]: https://medium.com/ios-geek-community/make-memory-management-great-again-f781fb29cea1#.x20vj2bqu
 
-[The Complete Understanding of Access Control in Swift 3]: https://medium.com/ios-geek-community/the-complete-understanding-of-access-control-in-swift-3-c1c71f2add0b#.kv63a8y69
+[The Complete Understanding of Access Control in Swift]: https://medium.com/ios-geek-community/the-complete-understanding-of-access-control-in-swift-3-c1c71f2add0b#.kv63a8y69
 
-[Intro to Error Handling in Swift 3]: https://medium.com/ios-geek-community/intro-to-error-handling-in-swift-3-edb2ce6a6668#.o04kg8kz6
+[Intro to Error Handling in Swift]: https://medium.com/ios-geek-community/intro-to-error-handling-in-swift-3-edb2ce6a6668#.o04kg8kz6
 
 [Protocol Oriented Programming View in Swift]: https://medium.com/ios-geek-community/protocol-oriented-programming-view-in-swift-3-8bcb3305c427#.ocfn79olx
 
@@ -177,16 +171,16 @@ If you would like to work as a freelancer, you might find these articles useful.
 
  [Introduction to Grand Central Dispatch]: https://medium.com/ios-geek-community/intro-to-grand-central-dispatch-in-swift-3-with-bob-lee-1d4b56f731b3#.rimhl5aza
 
- [Beginner's Guide to Core Data in Swift 3]: https://medium.com/ios-geek-community/beginners-guide-to-core-data-in-swift-3-85292ef4edd#.upinbkym9
+ [Beginner's Guide to Core Data in Swift]: https://medium.com/ios-geek-community/beginners-guide-to-core-data-in-swift-3-85292ef4edd#.upinbkym9
 
-[Store UIColor with UserDefaults in Swift 3]: https://medium.com/ios-geek-community/store-uicolor-with-userdefaults-in-swift-3-e41195c29147#.li6vh2fbr
+[Store UIColor with UserDefaults in Swift]: https://medium.com/ios-geek-community/store-uicolor-with-userdefaults-in-swift-3-e41195c29147#.li6vh2fbr
 
-[Pass Data with NSNotification in Swift 3]: https://medium.com/ios-geek-community/pass-data-with-nsnotification-in-swift-3-73743723c84b
+[Pass Data with NSNotification in Swift]: https://medium.com/ios-geek-community/pass-data-with-nsnotification-in-swift-3-73743723c84b
 
 [Top 10 Ground Rules for iOS Developers]: https://medium.com/ios-geek-community/top-10-ground-rules-for-ios-developers-fb3f25eda3d3#.umq0hjs8t
 
-[UI & Networking Like a Boss in Swift 3]: https://medium.com/ios-geek-community/ui-networking-like-a-boss-in-swift-3-b4607dadfcea#.u6jkr5hkc
+[UI & Networking Like a Boss in Swift]: https://medium.com/ios-geek-community/ui-networking-like-a-boss-in-swift-3-b4607dadfcea#.u6jkr5hkc
 
-[Intro to Grand Central Dispatch in Swift 3 with Bob]: https://medium.com/ios-geek-community/intro-to-grand-central-dispatch-in-swift-3-with-bob-lee-1d4b56f731b3#.zf727d11v
+[Intro to Grand Central Dispatch in Swift with Bob]: https://medium.com/ios-geek-community/intro-to-grand-central-dispatch-in-swift-3-with-bob-lee-1d4b56f731b3#.zf727d11v
 
 [Introduction to Delegate in Swift]: https://medium.com/ios-geek-community/the-meaning-of-delegate-in-swift-347eaa9674d#.hatglcuzg

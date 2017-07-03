@@ -11,9 +11,6 @@ I'm a 20 year old male born in South Korea, raised in Malaysia, Vietnam, and liv
 | Test Driven Development   | Learn how to create safe apps and open source library using CocoaPod with continuous integration |
 | Server Side Programming | Learn how to become a full-stack developer with Vapor, Realm, and Amazon Web Service |
 
-
-> **Note:** If you wish to join the VIP list, you may email me at `bob@bobthedeveloper.io`. You will receive a sign-up form. I care about building long-term relationships over short-term sales.
-
 ## The Why
 My dream is to provide affordable education channels for all people regardless of gender, religion, sex, race, color, and wealth. Since Sept 17, 2016, I've left college in NYC to pursue the vision. I have started off with teaching iOS Development with the Swift programming language. In 2017, I attempt to raise as much as funds through teaching to a startup which provides a learning platform. If you wish to join my journey, you may follow my daily story on [Instagram](https://instagram.com/bobthedev/).
 
