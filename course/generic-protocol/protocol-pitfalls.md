@@ -85,7 +85,7 @@ let cell: Listable = arc4random() * 2 == 0 ? FolderCell() : ListCell()
 `FileType` could be `Folder` or `Cell`. It is only known when you execute the `arc4Random()` method. By the time it is called, it is already compiled
 
 ### Source Code
-[6004_protocol_pitfalls](https://www.dropbox.com/sh/taxydi2cxionzxp/AAD7aKreX1i1wDwJKL1Q-yVEa?dl=0)
+[6004_protocol_pitfalls](https://www.dropbox.com/sh/b5wxh5lhhmqdphr/AACGBi7I9IO7jswwBgyk7fp2a?dl=0)
 
 ## Conclusion
 This is frustrating. In the following lesson, you will learn how to use the brain to circumvent the problem.

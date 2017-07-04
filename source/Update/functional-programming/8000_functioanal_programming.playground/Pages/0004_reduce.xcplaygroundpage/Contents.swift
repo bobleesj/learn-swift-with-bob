@@ -4,7 +4,7 @@
  ### Functional Programming
  ### Reduce
  
- **Problem:** Reduce
+ **Problem:** Convert big numbers to one or more
  */
 
 

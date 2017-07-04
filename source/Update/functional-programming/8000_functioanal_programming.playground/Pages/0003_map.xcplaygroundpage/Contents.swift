@@ -1,7 +1,7 @@
 
 //: ## Map
 
-extension Array { // # ,$ ,% ,&
+extension Array {
   func  myMap<T>(_ transform: (Element) -> T) -> [T] {
     var result: [T] = []
     for x in self {
@@ -18,5 +18,7 @@ Array(1...10).myMap { (Number) -> Int in
 
 let suits = ["♠", "♥", "♣", "♦"]
 let ranks = ["J","Q","K","A"]
-let result = suits.flatMap { suit in ranks.map { rank in  (suit, rank) }
+let result = suits.flatMap { suit in ranks.map {
+  rank in  (suit, rank)
+  }
 }

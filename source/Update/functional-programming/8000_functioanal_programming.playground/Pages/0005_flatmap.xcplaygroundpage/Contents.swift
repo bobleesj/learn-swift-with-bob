@@ -1,9 +1,9 @@
 /*:
  ## Learn Swift with Bob
  ### Functional Programming
- ### Intro to Functional Paradigm
+ ### Flatmap
  
- **Problem:** What's functional?
+ **Problem:** Make it nice and plain
  */
 
 
