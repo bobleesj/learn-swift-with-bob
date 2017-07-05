@@ -3,7 +3,6 @@
 ## Introduction
 Welcome to Lesson 11 of The Swift Fundamentals. In Lesson 9, You've tasted the power of Swift operators for replacing a traditional `else-if` statement with a tertiary operator. In this lesson, you will be able be recognize a number of operators and use them when appropriate.
 
-
 ## Problem
 Write less, produce more
 
@@ -103,8 +102,6 @@ The above states that if `age` contains `nil`, use `defaultAge` instead. Nice an
 [1011_operators.playground](https://www.dropbox.com/sh/pbsgi6bt9p35k9k/AADx8qk44wOpMC5hgmd2DYrna?dl=0)
 
 ## Conclusion
-You've only scratched the surface. In Chapter 8, you will learn how to create your own operators. I know you are excited. Stay consistent and you will get there, hopefully soon.
+You've only scratched the surface. In Chapter 10, you will learn how to create your own operators. I know you are excited. Stay consistent and you will get there, hopefully soon.
 
 In the next lesson, you will learn how to create fake names for types. Keep marching forward.
-
-> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

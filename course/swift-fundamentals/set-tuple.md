@@ -1,7 +1,7 @@
 # Set and Tuple
 
 ## Introduction
-Welcome to Lesson 9 of The Swift Fundamentals. There are two objects. The first is to learn how to group a list of items with `sets`. The second is to work with various types within a single variable/constant with `tuples`.
+Welcome to Lesson 9 of The Swift Fundamentals. There are two objectives. The first is to learn how to group a list of items with `sets`. The second is to work with various types within a single variable/constant with `tuples`.
 
 ## Problem
  1. I'd love to eliminate duplicated items: `sets`
@@ -146,7 +146,7 @@ let sortedArrayFromHighToLow = evenNumberSet.sorted { $0 > $1 }
 print(sortedArrayFromHighToLow) // [100, 98, 96, ...]
 ```
 
-In this course, you are not going to learn how `sorted()` is constructed. However, if you are interested in learning more about Functional Programming with MVVM, you can be on the mailing list for my [upcoming courses](/ABOUT.md#course).
+In this course, you are not going to learn how `sorted()` is constructed. However, if you are interested in learning more about Functional/Reactive Programming with RxSwift and MVVM, you can be on the mailing list for my [upcoming courses](/ABOUT.md#course).
 
 ###  Practical Usage of Set
  - Finding unique letters and unique visitors
@@ -155,7 +155,7 @@ In this course, you are not going to learn how `sorted()` is constructed. Howeve
 ## Introducing Tuples
 You may combine multiple types of value in a single `let` or `var`.
 
-```swif
+```swift
 let firstScore = (name: "Bob", score: 9)
 ```
 
@@ -231,6 +231,7 @@ for (index, value) in shoppingList.enumerated() {
 
 ### Reference
 [Swift API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
+
 ## Conclusion
 To recap, `Set` is used to group non-duplicate items with no order. `Tuple` is used to group all kinds of types with the order you define.  Second, you've learned how to identify mutating vs non-mutating methods based on the naming guide. Make sure you follow the same principle in your codebase as well. Don't get too caught up with Functional Programming. I know it sounds cool. You will get a taste of it in chapter 3, Intro to Functional Swift.
 

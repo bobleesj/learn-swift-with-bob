@@ -7,6 +7,7 @@ Welcome to the last lesson of The Swift Fundamentals. You've come a long way. Yo
 The parameters are unreadable and boring
 
 > **Typealias:** A false or assumed identity. - [Oxford Dictionary]
+
 [Oxford Dictionary]: https://en.oxforddictionaries.com/definition/alias
 
 ### Typealias for String
@@ -58,12 +59,10 @@ var optionalOne: String?
 var optionalTwo: Optional<String> // Generic Enum
 ```
 
-> You will learn more about `Optionals` in Chapter 7.
+> You will learn more about `optionals` in Chapter 8: Advanced Enums.
 
 ### Source Code
 [1012_typealias.playground](https://www.dropbox.com/sh/14785va0a9oor2x/AADwfnJXD17kyB36ch0LA8A4a?dl=0)
 
 ## Conclusion
 That's it. You've learned how fake.
-
-> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).
