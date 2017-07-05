@@ -38,7 +38,7 @@ for newNumber in numbers {
 //: > **Bob's Definition:** Functional programming is nothing more than using functions to derive results
 
 
-//: ### Functional Programming 
+//: ### Functional Programming
 func saveMeFromMadness(elements: [Int]) -> Int {
   var sum = 0
   for element in elements {
@@ -58,3 +58,23 @@ saveMeFromMadness(elements: [1, 2, 3])
 saveMeFromMadness(elements: [4, 5, 6])
 
 
+/*:
+ ### Declarative vs Imperative
+ Functional programming is called, *declarative*
+ 
+ Ex) Climb the Mt.Everest. Jump off from an airplane vs Climb
+ 
+ Non-functional programming is called, *imperative*. It tells you how you got the answer from A → B.
+ 
+ */
+
+
+/*: 
+ ### Benefits of Functional Programming
+ A functional paradigm ensures no mutability or no change in state when used.
+ - Modularity
+ - No explict state management 
+ - Fewer lines 
+ - Conventional communication
+ */
+ 
