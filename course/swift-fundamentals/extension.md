@@ -18,7 +18,7 @@ struct Bob {
 }
 ```
 
-## Extend Class
+## Extend Struct
 You may "extend" the `Bob` struct and add all kinds of work.
 
 ```swift

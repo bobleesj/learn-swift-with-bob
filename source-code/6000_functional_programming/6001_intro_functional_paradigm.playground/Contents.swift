@@ -4,61 +4,57 @@
  ### Functional Programming
  ### Intro to Functional Paradigm
  
- **Problem:** A closure is too long to pass through a function
+ **Problem:** What is a functional programming
  
  ---
  */
-//: Design Function
-func trailingClosure(number: Int, closure: () -> Void) {
-  print("You've entered \(number)")
-  closure()
+
+
+// Show Giff File intro to functional programming
+
+//: > “Functional Programming is a paradigm that allows you to make your code explicit. There is no state and no mutuality”
+
+
+
+//: ### Non-functional Programming
+
+// Somewhere in ViewController
+let numbers = [1, 2, 3]
+var sum = 0
+for number in numbers {
+  sum += number
 }
 
 
-//: Design Closure block
-func helloFunc() -> Void {
-  print("Hello, Function!")
-}
-helloFunc
-
-
-let helloClosure = {
-  print("Hello, Closure!")
-}
-
-//: Execute Function
-
-trailingClosure(number: 100, closure: helloFunc)
-trailingClosure(number: 100, closure: helloClosure)
-
-trailingClosure(number: 100, closure: { print("Hello!!!") })
-trailingClosure(number: 100) { print("Hello!!!!!") }
-
-
-
-//: When to use trailng closure
-//: - A single closure block at the end
-
-//: Another Example
-func trailingClosures(number: Int, closure: (Int) -> Int) {
-  let newNumber = closure(number)
-  print(newNumber)
+// // Somewhere in NextViewController
+let newNumbers = [4, 5, 6]
+var newSum = 0
+for newNumber in numbers {
+  newSum += newNumber
 }
 
 
-trailingClosures(number: 1000, closure: { number in number * number })
 
-trailingClosures(number: 500) { number in number * number }
-trailingClosures(number: 400) { $0 * $0 }
+//: > **Bob's Definition:** Functional programming is nothing more than using functions to derive results
 
 
+//: ### Functional Programming 
+func saveMeFromMadness(elements: [Int]) -> Int {
+  var sum = 0
+  for element in elements {
+    sum += element
+  }
+  
+  return sum
+}
 
 
+saveMeFromMadness(elements: [1, 2, 3, 4, 5, 6])
 
 
-
-
-
-
+// Somewhere in ViewController
+saveMeFromMadness(elements: [1, 2, 3])
+// Somewhere in NextViewController
+saveMeFromMadness(elements: [4, 5, 6])
 
 

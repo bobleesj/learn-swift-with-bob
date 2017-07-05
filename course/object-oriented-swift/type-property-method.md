@@ -83,7 +83,7 @@ Parent.introducing() // "I'm married for 5 years"
 You may store a list of items.
 
 ```swift
-class BluetoothID {
+struct BluetoothID {
  struct iPhone {
    static let iPhone4 = "4234-1232-1232-5465"
    static let iPhone5 = "7867-5676-4535-1235"

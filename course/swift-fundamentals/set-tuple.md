@@ -62,8 +62,8 @@ for number in 1...50 {
 }
 ```
 
-### Tertiary Operator
-You may use tertiary operator as an alternative to achieve the same result above. You will learn more in [1011_intro_operators](/course/swift-fundamentals/intro-operators.md)  
+### Ternary Operator
+You may use ternary operator as an alternative to achieve the same result above. You will learn more in [1011_intro_operators](/course/swift-fundamentals/intro-operators.md)  
 
 ```swift
 for number in 1...50 {
