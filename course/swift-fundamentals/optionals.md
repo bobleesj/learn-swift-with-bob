@@ -1,5 +1,6 @@
-# Optionals
+> **Note:** Learn Swift with Bob is available on Udemy. If you wish to receive a 30% discount link, you may use the coupon link [here](https://www.udemy.com/learn-swift-with-bob/?couponCode=LECTURENOTES).
 
+# Optionals
 ## Introduction
 Welcome to the first lesson of The Swift Fundamentals. When I first started programming in Swift, I took courses from Udemy, Treehouse, Lynda, and many more. Yet, I could not understand what those `?` and `!` stood for.  Xcode kept telling me what to do on the left side, causing more problems. It seemed like no instructor could explain the reasoning behind how to use optionals, and most importantly, why Swift engineers have implemented such feature that is so unique compared to other programming languages. Today, You will discover the **why** with me.
 
@@ -125,5 +126,3 @@ Now `normalImage` contains a normal type of `String`. You may use the `normalIma
 You've learned two fundamental concepts in the Swift Programming Language. The rule number one states, every type, even if `optionals`, has to be defined explicitly or implicitly for safety. Second, there are two ways to unwrap `optionals` to normal types.  You may force unwrap with `!` or safety unwrap with `if-let`.
 
 In the next lesson, you will learn why `?` and `!` automatically appear when you create an object and access its properties and methods.
-
-> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).
