@@ -1,17 +1,3 @@
-/*:
- ## Learn Swift with Bob
- ### Chapter 1: The Swift Fundamentals
- ### Type Casting
- 
- **Problem:**
- 1. How do you distinguish between `as`, `as?`, `as!` ?
- 2. Why does Xcode keep telling me what to do?
- 
- Rule:
- 1. Understand, Never Memorize
- 
- ---
- */
 
 //: Type Casting in UIKit
 import UIKit
