@@ -2,63 +2,44 @@
  
  ## Learn Swift with Bob
  ### Functional Programming
- ### Intro to Functional Paradigm
+ ### Filter
  
- **Problem:** A closure is too long to pass through a function
+ **Problem:**
  
  ---
  */
-//: Design Function
-func trailingClosure(number: Int, closure: () -> Void) {
-  print("You've entered \(number)")
-  closure()
+
+
+var evens = [Int]()
+for i in 1...10 {
+  if i % 2 == 0 {
+    evens.append(i)
+  }
 }
+print(evens)
 
 
-//: Design Closure block
-func helloFunc() -> Void {
-  print("Hello, Function!")
+
+func isEven(number: Int) -> Bool {
+  return number % 2 == 0
 }
-helloFunc
+evens = Array(1...10).filter(isEven)
+print(evens)
+
+evens = Array(1...10).filter { (number) in number % 2 == 0 }
+print(evens)
 
 
-let helloClosure = {
-  print("Hello, Closure!")
+evens = Array(1...10).filter { $0 % 2 == 0 }
+print(evens)
+
+
+func myFilter<T>(source: [T], predicate:(T) -> Bool) -> [T] {
+  var result = [T]()
+  for i in source {
+    if predicate(i) {
+      result.append(i)
+    }
+  }
+  return result
 }
-
-//: Execute Function
-
-trailingClosure(number: 100, closure: helloFunc)
-trailingClosure(number: 100, closure: helloClosure)
-
-trailingClosure(number: 100, closure: { print("Hello!!!") })
-trailingClosure(number: 100) { print("Hello!!!!!") }
-
-
-
-//: When to use trailng closure
-//: - A single closure block at the end
-
-//: Another Example
-func trailingClosures(number: Int, closure: (Int) -> Int) {
-  let newNumber = closure(number)
-  print(newNumber)
-}
-
-
-trailingClosures(number: 1000, closure: { number in number * number })
-
-trailingClosures(number: 500) { number in number * number }
-trailingClosures(number: 400) { $0 * $0 }
-
-
-
-
-
-
-
-
-
-
-
-

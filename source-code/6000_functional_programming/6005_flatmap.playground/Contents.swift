@@ -2,61 +2,36 @@
  
  ## Learn Swift with Bob
  ### Functional Programming
- ### Intro to Functional Paradigm
+ ### Flatmap
  
  **Problem:** A closure is too long to pass through a function
  
  ---
  */
-//: Design Function
-func trailingClosure(number: Int, closure: () -> Void) {
-  print("You've entered \(number)")
-  closure()
+
+
+
+
+extension Array {
+  func flatMap<U>(transform: (Element) -> U?) -> [U] {
+    var result = [U]()
+    for item in map(transform) {
+      if let nonOptional = item {
+        result.append(nonOptional)
+      }
+    }
+    return result
+  }
 }
 
 
-//: Design Closure block
-func helloFunc() -> Void {
-  print("Hello, Function!")
-}
-helloFunc
+
+let collections = [[5,2,7],[4,8],[9,1,3]]
+let flat = collections.flatMap { $0 }
+print(flat)
 
 
-let helloClosure = {
-  print("Hello, Closure!")
-}
-
-//: Execute Function
-
-trailingClosure(number: 100, closure: helloFunc)
-trailingClosure(number: 100, closure: helloClosure)
-
-trailingClosure(number: 100, closure: { print("Hello!!!") })
-trailingClosure(number: 100) { print("Hello!!!!!") }
-
-
-
-//: When to use trailng closure
-//: - A single closure block at the end
-
-//: Another Example
-func trailingClosures(number: Int, closure: (Int) -> Int) {
-  let newNumber = closure(number)
-  print(newNumber)
-}
-
-
-trailingClosures(number: 1000, closure: { number in number * number })
-
-trailingClosures(number: 500) { number in number * number }
-trailingClosures(number: 400) { $0 * $0 }
-
-
-
-
-
-
-
+let onlyEvenSimpler = collections.flatMap { $0.filter { $0 % 2 == 0 } }
 
 
 
