@@ -117,7 +117,7 @@ Create an object using `try` within a `do-catch` block.
 do {
   let myCourse = try Course(name: "")
 } catch NameError.noName {
-  print("Please make sure put something")
+  print("Error: please make sure enter name!")
   // Logic
 }
 ```
@@ -153,5 +153,3 @@ let myDopeNewCourse = try! Course(name: "") // ☠️
 You've learned the Swift Error Handling syntax such as `catch`, `do`, and `try`. To recap, you may only use `try` within a `do-catch` block to execute a throwable method. However, you may also use `try?` and `try!` alone. Again, avoid using`!` in most cases since it will break your program. If you wish to review or feel stuck, I've attached an additional article for you to study as well.
 
 In the next lesson, you will learn the final usage of `!` and `?` in the Swift Programming Language through `type casting`which allows you to convert types that are made up of classes and possibly with structs. 🤔
-
-> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).

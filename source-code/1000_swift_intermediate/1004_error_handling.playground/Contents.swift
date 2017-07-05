@@ -90,11 +90,9 @@ class Course {
 do {
   let myCourse = try Course(name: "")
 } catch NameError.noName {
-  print("Please make sure put something")
+  print("ERROR: Please make sure enter name")
   // more code
 }
-
-
 
 //: Distinguish `try?`, `try!`, and `try`
 
