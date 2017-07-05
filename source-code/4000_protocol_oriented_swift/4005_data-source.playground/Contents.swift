@@ -4,13 +4,13 @@
  ### Protocol Oriented Swift
  ### Data Source
  
- **Problem:** Communicate backward
+ **Problem:** Communicate Backward
  
  ---
  */
-//: Delegate
-//: 1. A gift from Apple engineers
-//: 2. microwave analogy
+
+
+//: > **Goal:** Communicate (Backward) from SecondVC(delegate) to FirstVC(delegator)
 
 //: Design Protocol
 protocol PassDataDelegate {
@@ -18,19 +18,19 @@ protocol PassDataDelegate {
 }
 
 
-//: Design Delegator (Sender)
+//: Design Delegator (Sender/CEO)
 class FirstVC {
   var delegate: PassDataDelegate?
 }
 
-FirstVC().delegate?.passData(data: "Bob")
+FirstVC().delegate?.passData(data: "A bunch of contracts")
 
 
-//: Design Delegate (Receiver)
+//: Design Delegate (Receiver/Secretary)
 class SecondVC: PassDataDelegate {
   func passData(data: String) -> String {
-    print("Something happened")
-    return "You've entered \(data)"
+    print("The CEO gave me \(data)")
+    return "I'm too tired..."
   }
 }
 
@@ -42,7 +42,8 @@ let secondVC = SecondVC()
 
 //: Assign Delegate
 firstVC.delegate = secondVC
-firstVC.delegate?.passData(data: "Hello, 1231231")  
+let message = firstVC.delegate?.passData(data: "A bunch of contracts!")
+print(message!)
 
 
 //: Practical Examples
@@ -50,7 +51,23 @@ firstVC.delegate?.passData(data: "Hello, 1231231")
 // UITableView
 // UICollectionView
 
+import UIKit
 
+class BobViewController: UIViewController, UITableViewDataSource {
+  var tableView = UITableView()
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    tableView.dataSource = self
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 2000
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    return UITableViewCell(style: .default, reuseIdentifier: "cell")
+  }
+}
 
 
 
