@@ -64,5 +64,3 @@ let myFavoriteColor = UIColor(r: 255, g: 80, b: 85)
 You've learned how to become lazy and effective at the same time. Imagine, you are the owner of a library for your teammates. They no longer have to use the bloated designated init method. Instead, you may provide multiple `convenience` init methods so that their lives become easier. It is similar to how the Apple engineers have provided us with convenience init methods for `UIColor`. It's a win-win situation.
 
 In the next lesson, you will learn how to fail initializations.
-
-> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).
