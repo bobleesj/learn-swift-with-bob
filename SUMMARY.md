@@ -1,15 +1,11 @@
 # Summary
-<!-- * [Swift Korea](swiftkorea.md) -->
 
 ### Prologue
 * [Introduction](README.md)
 * [Bob Lee](ABOUT.md)
-* [Resources Page](RESOURCES.md)
-
-### Learn Swift with Bob
- * [Course Overview](/course/introduction/course-overview.md)
- * [Resources](/course/introduction/course-resources.md)
- * [Table of Content](/course/introduction/table-of-content.md)
+* [Course Overview](/course/introduction/course-overview.md)
+* [Resources](/course/introduction/course-resources.md)
+* [Table of Content](/course/introduction/table-of-content.md)
 
 ### Chapter 1: The Swift Fundamentals
 * [Introduction](/course/swift-fundamentals/introduction.md)
@@ -99,7 +95,7 @@
 * [Introduction](/course/swift4/introduction.md)
   * [Access Control](/course/swift4/access-control.md)
   * [Key Paths](/course/swift4/keypaths.md)
-  * [Generic Subscripts](/course/swif4/generic-subscripts.md)
+  * [Generic Subscripts](/course/swift4/generic-subscripts.md)
   * [Codable and JSON Serialiazation](/course/swift4/codable-json.md)
   * [Advanced Dictionary](/course/swift4/advanced-dictionary.md)
   * [Conclusion](/course/swift4/conclusion.md)
@@ -119,20 +115,15 @@
  * [The UIKIt Fundamentals with Bob](/course/conclusion/whats-next.md)
 
 ### Extra
- <!-- * [Swift Styling Guide](/content/swift/swift-styling-guide.md) -->
- <!-- * [Better Swift Developer](/content/swift/better-developer.md) -->
  * [Swift External Resources](/content/swift/swift-resources.md)
  * [Coding Principles](/content/software-engineering/coding-principles.md)
- <!-- * [Agile Development](/content/software-engineering/agile-development.md) -->
- <!-- * [Github Flow](/content/software-engineering/github-flow.md) -->
-
-* [Shortcuts](/content/productivity/keyboard-shortcuts.md#shortcuts)
-  * [Atom](/content/productivity/keyboard-shortcuts.md#atom)
-  * [Gmail](/content/productivity/keyboard-shortcuts.md#gmail)
-  * [Google Spreadsheet](/content/productivity/keyboard-shortcuts.md#google-spreadsheet)
-  * [Google Chrome](/content/productivity/keyboard-shortcuts.md#google-chrome)
-  * [Xcode](/content/productivity/keyboard-shortcuts.md#xcode)
-  * [MacOS](/content/productivity/keyboard-shortcuts.md#mac-os)
+ * [Shortcuts](/content/productivity/keyboard-shortcuts.md#shortcuts)
+   * [Atom](/content/productivity/keyboard-shortcuts.md#atom)
+   * [Gmail](/content/productivity/keyboard-shortcuts.md#gmail)
+   * [Google Spreadsheet](/content/productivity/keyboard-shortcuts.md#google-spreadsheet)
+   * [Google Chrome](/content/productivity/keyboard-shortcuts.md#google-chrome)
+   * [Xcode](/content/productivity/keyboard-shortcuts.md#xcode)
+   * [MacOS](/content/productivity/keyboard-shortcuts.md#mac-os)
 
 ### Development Tools   
 * [Software](/content/development-tools/software.md)
