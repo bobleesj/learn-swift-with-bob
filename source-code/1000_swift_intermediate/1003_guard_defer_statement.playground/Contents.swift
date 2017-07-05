@@ -11,6 +11,8 @@
  ---
  */
 
+//: > **Zenness:** A trait where peace, calmness, and inner awesomeness are all intertwined - [Urban Dictionary](http://www.urbandictionary.com/define.php?term=Zenness)
+
 func checkDrinkingAge() {
   let canDrink = true
   
