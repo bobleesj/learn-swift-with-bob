@@ -1,4 +1,5 @@
-# New Update to Swift 4
+# Learn Swift with Bob: The Intermediate to Advanced Swift Course
+
 ### Chapter 1: The Swift Fundamentals
 - 1001_Optionals
 - 1002_Optional Chainings

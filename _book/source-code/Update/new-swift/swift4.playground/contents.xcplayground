@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw'>
-    <pages>
-        <page name='0001_key_path'/>
-        <page name='0002_access_control'/>
-        <page name='0003_class_protocol_generic'/>
-        <page name='004_codable'/>
-    </pages>
-</playground>
