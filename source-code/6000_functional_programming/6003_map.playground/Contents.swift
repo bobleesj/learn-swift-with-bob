@@ -23,6 +23,10 @@ squares = values.map { $0 * $0 }
 // [4.0, 16.0, 25.0, 49.0]
 
 
+
+
+
+
 func myMap<T, U>(_ items: [T], _ f: (T) -> U) -> [U] {
   var result = [U]()
   for item in items {
