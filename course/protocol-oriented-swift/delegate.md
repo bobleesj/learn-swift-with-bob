@@ -1,19 +1,23 @@
 # Delegate
 
 ## Introduction
-Welcome to the last lesson of Protocol Oriented Swift. Passing data between classes using the delegate pattern is the fundamental way we, developers, receive information from the operating system. For instance, the user opens your app through a push notification, the iOS notifies and send information about the launch method to a class called, `AppDelegate` in which we have access to. This lesson is not about protocol oriented programming. Instead, you will utilize `protocols` to send data between classes or structs.
+Welcome to one of the most confusing topics of all time. You might have heard about the delegate pattern. Perhaps, you've seen, `tableView.delegate = self`. I've discovered a lot of developers have no idea how to explain what goes underneath. They just simply copy and paste as if it just works. In fact, I was one of them for solid 6 months when I first started learning iOS. Today, however, you are with me, Bob the Developer.
+
+Do not worry about its vague terminology, called "delegate".  This is a pattern that is used to communicate or send data between objects that are created with classes and structs. That's it. With that in mind, let me explain this magic for you.
 
 ## Problem
-Pass data between classes
+How does delegate even work?
 
-> **Advice:** You just have to memorize it. It's a gift from Apple engineers. Take it. Do not question why it works. But, find out why it is useful. You might have to watch this video multiple times to get yourself comfortable.
+> **Purpose of Delegate:** Communicate/Pass Data between objects
+
+In this tutorial, you will learn how to send data from `FirstVC` to `SecondVC` using the delegate pattern.
 
 ### Design Protocol
-Create a protocol called, `PassDataDelegate`. It contains a method that takes `data` whose type is in `String` and returns `String`.
+Create a protocol called, `PassDataDelegate`. It contains a method that takes `data` whose type is in `String`.
 
 ```swift
 protocol PassDataDelegate {
-  func passData(data: String) -> String
+  func passData(data: String)
 }
 ```
 
@@ -33,13 +37,12 @@ FirstVC().delegate?.passData(data: "Bob") // nil
 ```
 
 ### Design Delegate (Receiver)
-Create `SecondVC` that conforms to `PassDataDelegate`.  `SecondVC` must contain `passData(data: String)`.
+Create `SecondVC` that conforms to `PassDataDelegate`.  `SecondVC` must contain `passData(data: String)` due to the protocol.
 
 ```swift
 class SecondVC: PassDataDelegate {
-  func passData(data: String) -> String {
-    print("Something happened")
-    return "You've entered \(data)"
+  func passData(data: String) {
+    print("The CEO gave me \(data)")
   }
 }
 ```
@@ -50,39 +53,56 @@ let firstVC = FirstVC()
 let secondVC = SecondVC()
 ```
 
-Set `firstVC.delegate` to `secondVC`. It is possible since `secondVC` conforms to `PassDataDelegate`.
+Set `firstVC.delegate` to `secondVC`. It is possible since `secondVC` conforms to `PassDataDelegate` because Swift Protocol can be used as one's type.
 
 ```swift
-firstVC.delegate = secondVC // you are sending data to classTwo
-```
-
-When you set the relationship as above, you may call a method from `firstVC` along with its custom data. You may use the data in `secondVC`.
-
-```swift
-//: Assign Delegate
 firstVC.delegate = secondVC
-firstVC.delegate?.passData(data: "Hello, 1231231")  
-// "You've entered Hello, 1231231"
 ```
 
-When the the `passData` method is called from the `firstVC`, `secondVC` contains now receives the data and may execute any lines of code.
+When you set the relationship as above, you may call the `passData` method that resides in the `secondVC` object from the `firstVC`object.
 
+### Assign Delegate
+```swift
+firstVC.delegate = secondVC
+firstVC.delegate?.passData(data: "A bunch of contracts")  
+// "The CEO gave me a bunch of contracts"
+```
 
-> **Analogy:** Imagine `firstVC` is an operating system (delegator) while `secondVC` is the class (delegate) that receives information from the OS.
+In the example above, `firstVC` is calling the `passData` method and it passes `data`, called, "A bunch of contracts". When it occurs, the full implementation of the method that resides in `secondVC` get called. Thus, the `print` function is also get executed.
+
+### UITableView in ViewController
+```swift
+import UIKit
+
+class BobViewController: UIViewController, UITableViewDelegate {
+  let tableView = UITableView()
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    tableView.delegate = self
+  }
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    print(tableView)
+    // Hey BobViewController/Delegate, do something with the data I've given you
+    // Download Image...
+    // ...
+  }
+}
+```
+
+In the example above, `tableView` is the delegator/sender/CEO, while the object of  `BobViewController` is the delegate/receiver/Secretary. The method, `func tableView(_talbeView: UITableView, didSelectRowAt indexPath: IndexPath)`, is called by the `tableView`. Yet, the full implementation is executed within the `BobViewController` object.
 
 ### Source code
-
 [4004_delegate.playground](https://www.dropbox.com/sh/s2ttgjx7yhucyyu/AAC9ROxz-_X8yKy2wxJK_QLfa?dl=0)
 
 ### Resources
-[Introduction to Delegate in Swift]
+[The Complete Understanding of Delegate and DataSource](https://blog.bobthedeveloper.io/the-complete-understanding-of-swift-delegate-and-data-source-9c91ecd7f1)
 
-[Introduction to Delegate in Swift]: https://blog.bobthedeveloper.io/the-meaning-of-delegate-in-swift-347eaa9674d
+[Introduction to Delegate in Swift](https://blog.bobthedeveloper.io/the-meaning-of-delegate-in-swift-347eaa9674d)
 
 
 ## Conclusion
-The delegate pattern is tough to describe how it exactly works because it's a tool provided by Apple engineers. As I said, it works because smart individuals have designed the feature for us so we just have to read manual and implement. If you feel uncomfortable with the setup, I recommend you to watch this video multiple times and practice on your own. You may use a real app to pass data between view controllers.
+You've learned the delegate pattern is used to pass data between objects. In fact, you've learned how to pass data from`FirstVC` to `SecondVC` in one direction. Simply put, you've learned passing data from the CEO to the secretary. In the following lesson, you will learn that you can also send data backward, the secretary to the CEO using `data source`. You will find out.
 
-There is one more thing called, `data source`. If you wish to learn more how to create custom delegate and data source, you may join the next course, The UIKIt Fundamentals with Bob.
-
-> **Note:** Learn Swift with Bob is available on [Udemy](https://udemy.com/learn-swift-with-bob/). If you wish to receive a discount link, you may sign up [here](https://goo.gl/RR4K27).
+If you have not grasped the concept of delegate, I recommend you to ask questions on Udemy, Slack, or any other platforms. I've also attached additional articles for you to take a look at. You've got to know the principle because in the next course, you will learn how this pattern is to communicate between iOS, the operating system, and us, developers.
