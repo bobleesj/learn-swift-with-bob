@@ -1,0 +1,5 @@
+# Chapter 6
+## Functional Programming
+Welcome to Chapter 6, Functional Programming. In Chapter 3, you've learned how to use closures to derive quick and accurate results. However, Chapter 3 was more like a playground for you to get used to the distinct syntax of closures and how it can be used for various purposes including making objects. In this chapter, however, you will learn what it means to execute tasks using a functional paradigm and why it is such a trending topic among every other platform including front web development, Android, and even iOS with RxSwift.
+
+I'm not going to tell you what it is right now, but you will understand fully in the following lessons. Before you proceed, however, there is one thing you need to consider. Be aware that this chapter is tough.  You need to have a perfect understanding of closures, completion handlers, and generics. If you are not confident with them, I do not recommend you to proceed. You will only suffer. If you are ready, let's continue.

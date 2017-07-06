@@ -1,4 +1,4 @@
-# Chapter 8
+# Chapter 10
 ## Advanced Swift
 Welcome to the last chapter, Advanced Swift. First, if you've come this far with consistent effort and struggle, you've already won. It tells you that you have the heart to improve yourself. Had I not carried the mindset, it would have been not possible for me to this course. So, I recommend you to give your a gentle pat on your back.
 
