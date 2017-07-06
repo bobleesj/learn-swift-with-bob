@@ -1,31 +1,17 @@
-/*:
- 
- ## Learn Swift with Bob
- ### Protocol Oriented Swift
- ### Data Source
- 
- **Problem:** Communicate Backward
- 
- ---
- */
 
+//: > **Purpose of Data Source:** Communicate (Backward) from SecondVC(delegate) to FirstVC(delegator)
 
-//: > **Goal:** Communicate (Backward) from SecondVC(delegate) to FirstVC(delegator)
-
+//: ### CEO and Secretary Relationship
 //: Design Protocol
 protocol PassDataDelegate {
   func passData(data: String) -> String
 }
-
-
 //: Design Delegator (Sender/CEO)
 class FirstVC {
   var delegate: PassDataDelegate?
 }
 
-FirstVC().delegate?.passData(data: "A bunch of contracts")
-
-
+FirstVC().delegate?.passData(data: "a bunch of contracts")
 //: Design Delegate (Receiver/Secretary)
 class SecondVC: PassDataDelegate {
   func passData(data: String) -> String {
@@ -33,24 +19,14 @@ class SecondVC: PassDataDelegate {
     return "I'm too tired..."
   }
 }
-
-
 //: Create Objects
 let firstVC = FirstVC()
 let secondVC = SecondVC()
-
-
 //: Assign Delegate
 firstVC.delegate = secondVC
-let message = firstVC.delegate?.passData(data: "A bunch of contracts!")
+let message = firstVC.delegate?.passData(data: "a bunch of contracts!")
 print(message!)
-
-
-//: Practical Examples
-// UIApplication
-// UITableView
-// UICollectionView
-
+//: Practical Examples in iOS
 import UIKit
 
 class BobViewController: UIViewController, UITableViewDataSource {
@@ -68,7 +44,9 @@ class BobViewController: UIViewController, UITableViewDataSource {
     return UITableViewCell(style: .default, reuseIdentifier: "cell")
   }
 }
-
-
-
-
+/*:
+ ### UIKIt Examples
+ - `UIApplication`
+ - `UITableView`
+ - `UICollectionView`
+ */
