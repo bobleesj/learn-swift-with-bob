@@ -4,17 +4,35 @@
  ### Functional Programming
  ### Reduce
  
- **Problem:** A closure is too long to pass through a function
+ **Problem:** Combine all elements into one
  
  ---
  */
 
 
+let result = Array(1...10).reduce(0) { $0 + $1 }
+print(result)
+
+
+func myReduce(seed: Int, numbers: [Int], operation: (Int, Int) -> Int) {
+  var current = seed
+  for number in numbers {
+    current = operation(current, number)
+  }
+  print("The number is \(current)")
+}
+
+myReduce(seed: -100, numbers: Array(1...4), operation: { $0 + $1 })
+
+// seed 없이 보여준다 초반에는
+
+
+
 extension Array {
-  func myReduce<T, U>(seed:U, combiner:(U, T) -> U) -> U {
+  func myReduce<T, U>(seed:U, operation:(U, T) -> U) -> U {
     var current = seed
     for item in self {
-      current = combiner(current, item as! T)
+      current = operation(current, item as! T)
     }
     return current
   }
