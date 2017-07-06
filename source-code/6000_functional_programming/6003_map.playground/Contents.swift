@@ -1,41 +1,51 @@
-/*:
- 
- ## Learn Swift with Bob
- ### Functional Programming
- ### Map
- 
- **Problem:** A closure is too long to pass through a function
- 
- ---
- */
 
+//: Imperative/Non-functional
+var squaredNumbers: [Double] = []
 
-
-var values = [2.0,4.0,5.0,7.0]
-var squares: [Double] = []
-for value in values {
-  squares.append(value*value)
+var numbers = [1.0, 2.0, 3.0, 4.0, 5.0]
+for number in numbers {
+  squaredNumbers.append(number * number)
 }
 
+numbers.map { $0 * $0 } // [1, 4, 9, 16, 25]
+let cast = ["Vivien", "Marlon", "Kim", "Karl"]
+let lowercaseNames = cast.map { $0.lowercased() }
 
-values = [2.0,4.0,5.0,7.0]
-squares = values.map { $0 * $0 }
-// [4.0, 16.0, 25.0, 49.0]
-
-
-
-
-
-
-func myMap<T, U>(_ items: [T], _ f: (T) -> U) -> [U] {
-  var result = [U]()
-  for item in items {
-    result.append(f(item))
+func myMap(numbers: [Double], logic: (Double) -> Double) -> [Double] {
+  var result: [Double] = []
+  for number in numbers {
+   let transformedValue = logic(number)
+    result.append(transformedValue)
   }
   return result
 }
 
+myMap(numbers: [1, 2, 3, 4, 5]) { (number) -> Double in  number * 10 }
+myMap(numbers: [1, 2, 3, 4, 5]) { $0 * 10 }
+//: Generics 
+func myMap<T, U>(_ items: [T], _ operation: (T) -> U) -> [U] {
+  var result = [U]()
+  for item in items {
+    result.append(operation(item))
+  }
+  return result
+}
 
-print(myMap([1, 2, 3, 4 , 5, 6]) { $0 * $0 })
+myMap([1, 2, 3, 4 , 5, 6]) { String($0 * $0) }
+//: The Purest Form
+extension Array {
+  func myMap<U>(_ operation: (Element) -> U) -> [U] {
+    var result = [U]()
+    for item in self {
+      result.append(operation(item))
+    }
+    return result
+  }
+}
+
+
+let result = Array(1...10).myMap { $0 * 10 }
+print(result)
+
 
 
