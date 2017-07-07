@@ -187,4 +187,4 @@ let result = Array(1...10).myMap { $0 * 10 }
 [6003_map.playground]()
 
 ## Conclusion
-By now, you should be grasping the concept of functional programming in Swift. Once you learn functional programming, you will never code the same way as you did in the past. Congratulations. Let's continue and move forward. In the you in the next lesson. 
+By now, you should be grasping the concept of functional programming in Swift. Once you learn functional programming, you will never code the same way as you did in the past. Congratulations. Let's continue and move forward. In the you in the next lesson.
