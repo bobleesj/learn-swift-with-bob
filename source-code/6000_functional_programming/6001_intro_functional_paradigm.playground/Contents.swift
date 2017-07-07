@@ -1,20 +1,12 @@
 /*:
- 
  ## Learn Swift with Bob
  ### Functional Programming
  ### Intro to Functional Paradigm
  
- **Problem:** What is a functional programming
+ **Problem:** What is functional programming
  
- ---
  */
-
-
-// Show Giff File intro to functional programming
-
 //: > “Functional Programming is a paradigm that allows you to make your code explicit. There is no state and no mutuality”
-
-
 
 //: ### Non-functional Programming
 
@@ -26,7 +18,7 @@ for number in numbers {
 }
 
 
-// // Somewhere in NextViewController
+// Somewhere in NextViewController
 let newNumbers = [4, 5, 6]
 var newSum = 0
 for newNumber in numbers {
@@ -48,10 +40,6 @@ func saveMeFromMadness(elements: [Int]) -> Int {
   return sum
 }
 
-
-saveMeFromMadness(elements: [1, 2, 3, 4, 5, 6])
-
-
 // Somewhere in ViewController
 saveMeFromMadness(elements: [1, 2, 3])
 // Somewhere in NextViewController
@@ -59,13 +47,16 @@ saveMeFromMadness(elements: [4, 5, 6])
 
 
 /*:
- ### Declarative vs Imperative
- Functional programming is called, *declarative*
+ ### Declarative: Functional
+ The user does not care about the process
  
- Ex) Climb the Mt.Everest. Jump off from an airplane vs Climb
+ Ex) Jump off from an airplane vs climb
  
- Non-functional programming is called, *imperative*. It tells you how you got the answer from A → B.
  
+ ### Imperative:  Non-Functional
+ It tells you how you got the answer from A → B.
+ 
+ Ex) The `for-in` loop
  */
 
 
@@ -73,7 +64,7 @@ saveMeFromMadness(elements: [4, 5, 6])
  ### Benefits of Functional Programming
  A functional paradigm ensures no mutability or no change in state when used.
  - Modularity
- - No explict state management 
+ - No explicit state management
  - Fewer lines 
  - Conventional communication
  */

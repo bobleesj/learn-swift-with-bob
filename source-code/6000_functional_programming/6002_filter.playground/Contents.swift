@@ -9,10 +9,10 @@
  ---
  */
 
-//: > Examples people use without knowing the behind implementation
-
+//: > Most people use Swift functions without knowing the behind implementation
 
 //: Imperative/Non-functional
+// Get even numbers
 var evens = [Int]()
 
 for i in 1...10 {
@@ -45,10 +45,22 @@ isMomHappy = { $0 == "A" }
 isMomHappy("A") // true
 isMomHappy("B") // true
 
-func stringFilter(grades: [String], returnBool: (String) -> Bool) -> [String] {
+
+
+//: Create function that takes the closure
+func simpleStringFilter(grades: [String], operation: (String) -> Bool) {
   var happyGrade: [String] = []
   for grade in grades {
-    if returnBool(grade) {
+    if operation(grade) {
+      happyGrade.append(grade)
+    }
+  }
+}
+
+func stringFilter(grades: [String], operation: (String) -> Bool) -> [String] {
+  var happyGrade: [String] = []
+  for grade in grades {
+    if operation(grade) {
       happyGrade.append(grade)
     }
   }
@@ -57,46 +69,65 @@ func stringFilter(grades: [String], returnBool: (String) -> Bool) -> [String] {
 
 
 let myGrade = ["A", "A", "A", "A", "B", "D"]
-let lovelyGrade = stringFilter(grades: myGrade, returnBool: isMomHappy)
 
-stringFilter(grades: myGrade, returnBool: { $0 == "A" })
+//: Pass the closure block indirectly
+let lovelyGrade = stringFilter(grades: myGrade, operation: isMomHappy)
 
-func myFilter<Bob>(array: [Bob], logic: (Bob) -> Bool) -> [Bob] {
+//: Pass the closure block directly
+stringFilter(grades: myGrade, operation: { element in return element == "A" })
+stringFilter(grades: myGrade, operation: { $0 == "A" })
+
+//: Generic Functions
+func bobFilter<Bob>(array: [Bob], operation: (Bob) -> Bool) -> [Bob] {
   var result: [Bob] = []
   for element in array {
-    if logic(element) {
+    if operation(element) {
       result.append(element)
     }
   }
   return result
 }
 
-let AStudent = myFilter(array: Array(1...100), logic: { $0 >= 93 && $0 <= 100 })
+func myFilter<T>(array: [T], operation: (T) -> Bool) -> [T] {
+  var result: [T] = []
+  for element in array {
+    if operation(element) {
+      result.append(element)
+    }
+  }
+  return result
+}
+
+//: Ex 1) Filter Numbers
+let AStudent = myFilter(array: Array(1...100), operation: { $0 >= 93 && $0 <= 100 })
 print(AStudent) // [93, 94, 95, ... 100]
 
-
+//: Ex 2) Vote Counting
 let answer = [true, false, true, false, false, false, false]
-let trueAnswer = myFilter(array: answer, logic: { $0 == true })
-// Trailing Closure
+let trueAnswer = myFilter(array: answer, operation: { $0 == true })
+
+//: Trailing Closure
 let falseAnswer = myFilter(array: answer) { $0 == false }
 
+
+
+//: The Built-in Filter Functionl
 let zeroToHund = Array(1...100)
 zeroToHund.filter{ $0 % 2 == 0 }.filter { $0 <= 50 }
 // [2, 4, 6, 8, 10, 12, 14, ..., 50]
 
 //: The Purest Form
 extension Array {
-  func myFilter(_ logic: (Element) -> Bool) -> [Element] {
+  func myFilter(_ operation: (Element) -> Bool) -> [Element] {
     var result: [Element] = []
     for item in self {
-      if logic(item) {
+      if operation(item) {
         result.append(item)
       }
     }
     return result
   }
 }
-
 
 let result = Array(1...100).myFilter { $0 % 2 == 0 }
 
