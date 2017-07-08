@@ -17,13 +17,9 @@ class BobController: UIViewController {}
 import RandomLibraryFromGithub
 ```
 
-
 > **Definition:** A module is a single unit of code distribution — a framework or application that is built and shipped as a single unit and that can be imported by another module with Swift’s import keyword.
 
-
-
 ### Summary of Access Control (low to high)
-
 | Control | Purpose | Example |
 | --- | --- | --- |
 | Open | Available every where, override possible | `UICollectionView`, `UIViewController` |
