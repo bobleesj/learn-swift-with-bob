@@ -50,7 +50,6 @@
 - 6002_Filter
 - 6003_Map
 - 6004_Reduce
-- 6005_Flatmap
 
 ### Chapter 7:  Generic Protocol
 - 7001_Intro Protocol Associated Type

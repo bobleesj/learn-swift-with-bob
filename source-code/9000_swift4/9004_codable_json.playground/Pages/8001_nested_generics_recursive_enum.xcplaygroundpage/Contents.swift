@@ -1,15 +1,13 @@
 /*:
  ## Learn Swift with Bob
  ### What's New in Swift 4
- ### Codable and JSON Serialization
+ ### 9004_Codable and JSON Serialization
  
  **Problem:** Map JSON to Object in one line of code
  
  ---
  
  */
-//: Import Foundation
-import Foundation
 
 //: Your Past
 /*
@@ -23,6 +21,10 @@ let koreaCaital: String? = republicOfKorea["capital"]
 let koreaName: String? = republicOfKorea["name"]
 let koreaPopulation: Int? = republicOfKorea["population"]
  */
+
+
+//: Import Foundation
+import Foundation
 
 
 //: Design Model
