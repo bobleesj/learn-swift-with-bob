@@ -74,6 +74,7 @@
 - 9003_Generic Subscripts
 - 9004_JSON Serialization with Codable
 - 9005_Advanced Swift Dictionary
+- 9006_Extra in Swift 4
 
 ### Chapter 10: Advanced Swift
 - 10001_Nested Generics with Recursive Enum

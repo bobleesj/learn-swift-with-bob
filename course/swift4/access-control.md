@@ -215,9 +215,8 @@ override func B(){} // success
 | Private | Only available within the scope | `private` initialization in the singleton pattern |
 
 
-
 ### Resources
 [9001_access_control]()
 
 ## Conclusion
-In this lesson, you've learned the 5 basic levels in Access Control in Swift. Again, remember that it provides quicker compilation/indexing time, less overwhelming of your teammates, and mostly you feel nice and safe. Access control is the fundamental way Apple Engineers protect their source code that we, developers, continue to follow their way. Well, you can do the same for your teammates as well. Keep it simple and stupid. 
+In this lesson, you've learned the 5 basic levels in Access Control in Swift. Again, remember that it provides quicker compilation/indexing time, less overwhelming of your teammates, and mostly you feel nice and safe. Access control is the fundamental way Apple Engineers protect their source code that we, developers, continue to follow their way. Well, you can do the same for your teammates as well. Keep it simple and stupid.
