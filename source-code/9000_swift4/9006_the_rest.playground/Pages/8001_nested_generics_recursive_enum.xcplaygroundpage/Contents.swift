@@ -1,46 +1,46 @@
 /*:
  ## Learn Swift with Bob
  ### What's New in Swift 4
- ### Advanced Dictionary
+ ### 9006_The Rest
  
- **Problem:** Functional programming met Swift dictionary
+ **Problem:** What Else?
  
  ---
  
  */
 
-
 //: ### Multi-Line
-let longString = """
-When you write a string that spans multiple
-lines make sure you start its content on a
-line all of its own, and end it with three
-quotes also on a line of their own.
-Multi-line strings also let you write "quote marks"
-freely inside your strings, which is great!
+//: Your Past
+let multiLines = "Sentence 1\n Sentence 2\n Sentence 3\n"
+print(multiLines)
+
+//: Swift 4
+let swift4Lines = """
+Boom
+Boom Boom
+Boom Boom Boom
 """
+print(swift4Lines)
 
 //: ### One-Sided Ranges
-let characters = ["Dr Horrible", "Captain Hammer", "Penny", "Bad Horse", "Moist"]
-let bigParts = characters[..<3]
-let smallParts = characters[3...]
-print(bigParts)
-print(smallParts)
+let stringArray = ["One", "Two", "Thee", "Four", "Five"]
+let lessThanIndexThree = stringArray[..<3]
+print(lessThanIndexThree)
+let lessThanIndexFour = stringArray[...3]
+print(lessThanIndexFour)
 
+let greaterThanIndexFour = stringArray[3...]
+print(greaterThanIndexFour)
 
-print("hello")
-func hello() {
-  print("Hello!")
+//: Apply to `Switch Statement`
+let age = 400
+switch age {
+case 0...10:
+  print("Child")
+case 11...:
+  print("Adult")
+default:
+  print("?")
 }
-
-hello()
-
-
-let name = "Bob Lee the Bob the Developer"
-
-print("hello")
-print("Bob Lee the Bob the Developer")
-print("1 + 1 : 3")
-
 
 
