@@ -73,6 +73,6 @@ rob[keyPath: nameKeyPath] // "Rob"
 [Smart KeyPaths: Better Key-Value Coding for Swift - Apple](https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md)
 
 ## Conclusion
-Congratulations. Remember, even if you are chaining through, you may make a single mistake that leads to catastrophic result. Although it is a brand new feature, if you need to access Property or Method through many chainings, I recommend you to utilize the keypath feature provided in Swift 4.
+Congratulations. Remember, even if you are chaining through, you may make a single auto-completion mistake that leads to catastrophic result. Although it is a brand new feature, if you need to access Property or Method through many chainings, I recommend you to utilize the keypath API provided in Swift 4. If you want to learn much deeper, feel free to take a look at the Apple's proposal documentation in the lecture notes.
 
-In the following lesson, you will learn how to make subscripts generic. 
+In the following lesson, you will learn how to make subscripts generic, which isn't that important but at least you can brag from what you've learned.
