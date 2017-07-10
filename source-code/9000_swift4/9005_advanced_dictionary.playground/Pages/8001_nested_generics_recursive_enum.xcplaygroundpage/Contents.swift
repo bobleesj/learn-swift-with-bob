@@ -1,7 +1,7 @@
 /*:
  ## Learn Swift with Bob
  ### What's New in Swift 4
- ### Advanced Dictionary
+ ### 9005_Advanced Dictionary
  
  **Problem:** Functional programming met Swift dictionary
  
@@ -9,17 +9,14 @@
  
  */
 
-
 //: ### Default Value
 //: Your Past
 var myInfo = ["name": "Bob Lee", "age": "14"]
-let name = myInfo["name"] // Optional(Name)
+let name = myInfo["name"] // Optional("Bob Lee")
 
 //: Default Value for Dictionary
 let footSize = myInfo["footsize", default: "No Value"]
-print(footSize)
-let myName = myInfo["name", default: "No Value"] // Non-optional
-print(myName)
+let myName = myInfo["name", default: "No Value"] // "Name"
 
 //: **Practical Usage**: Everywhere for accessing dictionary value
 
@@ -46,11 +43,11 @@ for (word, number) in zip(words, numbers) {
 // Prints "three: 3"
 // Prints "four: 4"
 
+//: Zip to Dictionary
 let friends = ["Hoy", "Dan", "Huy"]
 let friendsWithValue = Dictionary(uniqueKeysWithValues: zip(1..., friends))
-print(친구들번호)
 
-//: ### Functiona Programming to Set
+//: ### Functional Programming with Set
 let set: Set = [1,2,3,4,5]
 let filteredSet = set.filter { $0 % 2 == 0 } // Returns Set
 type(of: filteredSet)
