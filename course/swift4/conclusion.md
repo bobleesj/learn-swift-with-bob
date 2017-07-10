@@ -1,0 +1,7 @@
+# Conclusion
+Congratulations, you've successfully completed What's New in Swift 4. How was it? Again, all I want to emphasize is that, you don't need to memorize any. You just have to be aware that things exist and there are many alternatives to go about. For example, you do not need to use the `keypath` API for your new project unless you feel tired of chainings. Also, if you decide to implement new features all of a sudden, it may cause a significant communication problem with your teammates. Please every other option, and choose accordingly. Since it is your project, you know the best as long as you know things exist out there.
+
+The same principle applies to `Codable` for json parsing and mapping. You do not have to but it's a good feature if you know when to use it. Lastly, you can't go wrong with functional programming with dictionary. I think this is something that every developer should become familiar with and there should be no compromise among your teammates. If they don't know a functional paradigm, you teach them or simply let them take this course. Educate them because declarative programming improves not readability but also conventions among your teams. Nobody wants to read your "i" when you do a `for-in` loop.
+
+You've come a long. Well, I'm happy to introduce you to the very last chapter, `Advanced Swift`. In that chapter, you will the statement, Swift is a protocol oriented programming. Let's get started.
+ 
