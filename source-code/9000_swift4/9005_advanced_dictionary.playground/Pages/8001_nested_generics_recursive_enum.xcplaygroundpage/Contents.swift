@@ -27,13 +27,13 @@ let grouped = Dictionary(grouping: contacts, by: { $0.first! })
 print(grouped)
 
 
-let duplicates = [("a", 1), ("b", 7), ("a", 3), ("b", 4)]
-let myLetter = Dictionary(duplicates, uniquingKeysWith: { (first, _) in first })
+let duplicates = [("a", 1), ("b", 7), ("a", 3), ("b", 10)]
+let myLetter = Dictionary(duplicates, uniquingKeysWith: { (letter, number) in letter })
 print(myLetter)
 
 //: ### Zip: (Dictionary Like)
 let words = ["one", "two", "three", "four"]
-let numbers = 1...4
+let numbers = 1...words.count
 
 for (word, number) in zip(words, numbers) {
   print("\(word): \(number)")
