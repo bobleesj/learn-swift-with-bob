@@ -33,6 +33,7 @@ let greaterThanIndexFour = stringArray[3...]
 print(greaterThanIndexFour)
 
 //: Apply to `Switch Statement`
+
 let age = 400
 switch age {
 case 0...10:
@@ -42,5 +43,3 @@ case 11...:
 default:
   print("?")
 }
-
-
