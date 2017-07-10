@@ -3,7 +3,7 @@
  ### What's New in Swift 4
  ### 9004_Codable and JSON Serialization
  
- **Problem:** Map JSON to Object in one line of code
+ **Problem:** Map JSON to Object in one line of code and the opposite
  
  ---
  
@@ -16,11 +16,10 @@ let republicOfKorea = JSON(dictionary: [
   "name": "Republic of Korea",
   "population": 50000000
   ])
-
-let koreaCaital: String? = republicOfKorea["capital"]
-let koreaName: String? = republicOfKorea["name"]
-let koreaPopulation: Int? = republicOfKorea["population"]
  */
+
+// Itunes API Doc: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#overview
+// API Call: https://itunes.apple.com/lookup?id=909253
 
 
 //: Import Foundation
