@@ -1,0 +1,21 @@
+
+figure {
+    margin: 1.5em 0px;
+    padding:10px 0;
+    text-align: center;
+}
+
+figcaption {
+    clear: left;
+    margin: 0.75em 0px;
+    text-align: center;
+    font-style: normal;
+    line-height: 1.0em;
+    font-size: 6px;
+    color: #808080;
+}
+
+
+img {
+  algin: cetner
+}
