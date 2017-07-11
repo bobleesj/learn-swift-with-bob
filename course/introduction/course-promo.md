@@ -1,56 +1,38 @@
 # Promotion Video
 
-### Course Image Placeholder
-> The basic Learn to Contribute Animation with Music
-
 ### Instructor Introduction
-You probably know who I'm as Bob the Developer. I'm the editor of the largest iOS [Facebook Page](https://www.facebook.com/apple.ios.developers), and a [blogger](https://blog.bobthedeveloper.io) over thousands of daily visitors from students and iOS developers all around the world (Social Proof).
+I'm the editor of the largest iOS [Facebook Page](https://www.facebook.com/apple.ios.developers), and running one of the most visited iOS [blog](https://blog.bobthedeveloper.io).
 
-Less than half a year, I became one of the top bloggers standing right next to big named brands. You don't have to question my quality of content. The growth and reputation speak for themselves. (Authority).
-
-People love my tutorials. I started learning Swift as the first programming language. Unlike other instructors, I understand what you are exactly going through because I'm been in your shoes and I struggled. (Liking)
-
-> **Focus:** Social Proof, Authority, Liking
+### Why
+I created this course because I couldn't find any intermediate to advanced course in the current marketplace.
 
 ### Student Benefits
-Let me ask you a couple questions. Do you know why `optionals` were invented? Do you know what completion handlers and how to design one for your project? Do you know retain cycle within closures and delegates? Do you know the difference between `autoclosures`, `trailing` closures, and `escaping` closures? Do you know every usage case of `?` and `!` in` type casting` and `error handling`? Do you know how to create custom operators. Do you truly understand the statement, "Swift is a protocol oriented programming language", and know how to use default protocols such as `Equatable`, `Comparable`, `Sequence`, and `Iterator Protocol`. Lastly, do you know the difference between normal and recursive enums?
+You will learn the staement, "Swift is a protocol oriented programming language" such as `Sequence`, `Equatable`. You will learn every case of `?` and `!` from intro to advanced error handling. You will learn how memory is managed in closures, functions, and the difference between weak and strong.  I've conducted close to thousands of surveys. I understand how you feel.
 
-These are just a few topics from the course. Yet, I already know many of you don't know these topics because I've conducted close to thousands of surveys (Social Proof, Screen). I know the iOS learning environment more than anyone else.
+In fact, this course isn't just about Swift. You will shift how you apporach code so that you are able to create the next iOS application. Every course that I produce in the future, you are expected to every lesson here including functional proramming which was newly added in the course.
 
-Here is the problem. Most students lack fundamentals because many courses and books focus on the final products. You've probably heard or taken, "Be a paid developer and build 21 apps just by taking one course." Give me a break. You know what happens. They end up being code monkeys, copying and pasting. I'm speaking from my experience and hundreds of personal emails before I launched this course with close to thousand people on the waiting list.  
+Here is the problem. Most students lack fundamentals because many courses and books focus on the final products. You've probably heard or taken, "Be a paid developer and build 21 apps just by taking one course." Give me a break. You know what happens. They end up being code monkeys, copying and pasting. I'm speaking from my experience and hundreds of personal emails before.
 
-> **Focus:** Social proof, Fear of missing out, Scarcity
-
-### What Makes the Course Unique
-In this course, you will learn the four major paradigms in Swift: Functional, Object Oriented, and Protocol Oriented, and lastly value oriented with structs and enums.
-
-Here are a list of weapons that distinguish this course from the rest.
-
-- I focus on every detail. My default font is 28px. I also have a pointer and zooming effect so that you have no problem watching my course on your phone. (Screen)
-- The entire lecture note is available with source code, explanations, resources, and references. You may use the entire book a reference even when you take a shower since phones nowadays are water proof. (Screen)
-- You can see my face while learning although it takes more editing effort and preparation since I have to look presentable at all times. (Screen)
-- My lessons are prepared from top to bottom. There is no unexpected error and you won't waste time me trying to figure out what's going on. (Screen)
-- Lastly, you may join the group chat and ask questions at any time (Screen)
-
-> **Focus:** Fear of missing out, Scarcity
+### What Should You Take
+- I focus on every detail. My default font is 28px. No problem watching it on your smartphone.
+- Your questions willl be answered at 100%
+- The entire lecture note is available with source code, explanations, resources, and references as a review when you are done with the course.
+- You can see my face while learning although it takes more editing effort and preparation since I have to look presentable at all times.
+- My lessons are prepared from top to bottom. There is no unexpected error and you won't waste time me trying to figure out what's going on.
+- You will be invited to the Slack group.
+- 4.9 ratings, the highest rating.
+- The best seller. Udemy approves.
 
 ### What the Students Will Do
-Making a software is similar to writing a novel. You may still be able to publish your first ebook even if it is filled with wrong grammar and wrong words.
-
-You may have questioned yourself whether you are writing decent lines of code. You may have felt embarrassed to show your code to someone else. Well, you've come to the right place. You've got to know every expression and find out pros and cons. I haven't seen single course that attempts what I try to accomplish. If you take the journey with me, you will come out coding in a different league.
-
-Every lesson is filled with practical examples. After each lesson, you probably get an urge to fix your pre-existing code base. You don't learn something just for the sake of learning. You will and you must apply. This will only happen when you take this course with me.
-
- >**Focus:**  Focus on possibility and hope.
+Making a software is similar to writing a novel. You may still be able to publish your first ebook even if it is filled with wrong grammar and wrong words. Every lesson is filled with practical examples. After each lesson, you probably get an urge to fix your pre-existing code base. You don't learn something just for the sake of learning. You will and you must apply. This will only happen when you take this course with me.
 
 ### Ideal Students
-This course is designed for anyone who has been programming with Swift or other similar languages such as Javascript and understand the basic concept of `Object Oriented Programming`, `else-if` and `switch` statement. If you've never programmed before, don't worry. I've attached  videos for you to catch up and join the course later when you are ready.
+This course is designed for anyone who has been programming with Swift or other similar languages such as Javascript and understand the basic concept of `Object Oriented Programming`, `else-if` and `switch` statement. If you've never programmed before, don't worry. I've attached free introductory videos for you in the lecture notes.  
 
 ### Call to Action
-iOS developers in Silicon Valley make 6 figures yet bootcamps are still expensive over $1,000 - $3000 depending on the region. This course is only $50. Let me put you in a perspective, let say you earn $3,000. But if you are able to code more effectively with fewer bugs and fast production speed by taking this course by 50%, the price you pay for this course is nothing compared what you will gain after. Based on my record, you can trust on me that.
+Unlike many other courses, the course is at $50 with no discount since I have not signed up for the Udemy marketing plan. However, if you are a student or you are an aspriring iOS developer from third-world countries, feel free to send me an email bob@bobthedeveloper.io. I will provide you with private coupon links.
 
-There is be no discount unless you are a student from third world countries.  I understand it can be a a a lot burden because I grew up there. If you are not satisfied with the material, of course, there is 30-day money back guaranteed.
+You will get an invite to my private Slack group. Lastly, there is a 30-day money back guarantee so just give it a try. You have nothing to lose. If you are not convinced yet, feel free to read through the reviews, and decide.
 
-Here is the last statement. I'm 20 years old. I dropped out of college instead of  getting a degree to be a chemical engineer for my purpose. I dropped out to teach and provide global education. If you want to grow and learn together and provide great impact on the humanity, I will you there.
 
->**Focus:**  Commitment and Consistency, Anchorism,
+**90 Seconds**
