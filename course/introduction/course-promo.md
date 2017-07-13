@@ -1,33 +1,25 @@
 # Promotion Video
 
 ### Instructor Introduction
-Welcome to the only intermediate to Advanced Swift 4 course. My name is Bob. I love being an iOS blogger and instructor as [Bob the Developer](https://blog.bobthedeveloper.io) with over thousands of daily visitors. I've spoken at various Swift conferences. I also work as the content distributor of the largest [iOS Facebook Page](https://www.facebook.com/apple.ios.developers) with over 100,000 weekly reach.
-
-### The Why
-If you've been learning Swift from other sources and you felt like you are missing out the fundamentals while building iOS apps and you feel overwhelmed by the complexity of Swift, you've come to the right place. I understand because I have conducted over thousands of personal surveys. Many wanted to write beautiful code that doesn't violate the DRY principle and clean architecture.
-
-In the course, you will not just learn how to use certain Swift features. You will why those features have been adopted and how you can apply the behind principles in your current projects.
+Welcome to the Intermediate to Advanced Swift 4 course. My name is Bob Lee, a best selling iOS instructor with the highest rating of all time with over thousands of daily visitors to my [blog](https://blog.bobthedeveloper.io). I've spoken at various Swift conferences. I also work as the content distributor of the largest [iOS Facebook Page](https://www.facebook.com/apple.ios.developers) with over 100,000 weekly reach.
 
 ### What the Students Would Learn
-The course covers 4 pillars of the Swift programming including object-oriented, protocol-oriented, value-oriented programming with structs and enums, and lastly functional programming. You will also fully understand how memory is managed in delegates, closures, and the difference between `weak`, `strong`, and `unowned`.
-In the last chapter, you will default protocols such as `Sequence`, `Equatable`.
+The course covers the 4 pillars of the Swift Programming Language. Object-oriented, protocol-oriented with type erasers and associated type, value-oriented programming with structs and enums, and lastly functional-oriented programming with generics and closures. You will also fully understand how memory is managed in iOS development and learn the difference between `weak`, `strong`, and `unowned`. In the last chapter called. "Advanced Swift",  you will learn what makes a `for-in` loop possible by studying the `Sequence`, `Equatable` protocols. The course covers a lot more including intro to test-driven-development and how the delegate and singleton pattern works.
 
-In fact, this course isn't just about Swift. You will shift entire framework how you approach coding. Most students lack fundamentals because many courses and books focus on the final products. You've probably heard or taken, "Be a paid developer and build 21 apps just by taking one course." Give me a break. You know what happens. They end up being code monkeys, copying and pasting. I'm speaking from my experience.
+This course isn't just about learning the unique features of Swift 4. I made this course to shift your framework how you approach coding. Most students lack the fundamentals because they buy into the courses that focus on the final products, They say, "Be a paid developer by building 21 apps." We had enough of those savvy marketing tactics. It simply doesn't work. If that was the case, iOS developers would not get paid that much. When you the take this course with me, I promise It's not going to be an easy path, but you will certainly enjoy the process of becoming better and 5 times more confident with your code.
 
-### Why Should You Take
-- The user experience matters. My default font is 28px along with zooming and pointer effects. No problem watching it on your smartphone.
-- Your questions will be answered at 100%
-- The entire eBook is available for your lifetime with source code, explanations, resources, and references. You may use it as a review even when you are done with the course.
-- My presence matters. You can see my face while learning.
-- My lessons are prepared from top to bottom. There is no unexpected error and you won't waste time looking me trying to figure out what's going on.
+### What the Students Get Which Other Courses Do Not Offer
+- The student experience matters.  Along with the 28px font size and zooming and pointer effects, you have no problem watching the lecture even on iPhone SE.
+- Your questions will be answered at 100%.
+- You will have life-time access to the eBook which contains source code, explanations, resources, and references for your own studies. You don't need to memorize anything. You may use it as a review while learning and when you are done with the course.
+- You can see my face while learning. Feel my energy.
+- My lessons are prepared from top to bottom. There is no unexpected error and you won't waste any time. I respect your time.
 - You will be invited to the private Slack group.
+- I'm from South Korea. For non-native English speakers subtitles are finally available for every video including this one.
 - Lastly, the best seller. Udemy approves.
-- Subtitles are availble :)
 
 ### Ideal Students
-This course is designed for anyone who has been programming with Swift or other similar languages such as Javascript and understand the basic concept of `Object Oriented Programming`, `else-if` and `switch` statement. If you've never programmed before, don't worry. I've attached free introductory videos for you in the lecture notes.  
+This course is designed for those who have a prior experience with Swift or other languages such as Javascript and Objective-C and understand the minimum basic concept of `Object Oriented Programming`, `else-if` and `switch` statement. If that's not the case, don't worry. I've attached entire free beginner's lectures for you on my Youtube channel.
 
 ### Call to Action
-Unlike many other courses, I have not signed up for the Udemy marketing plan. The course priced at $50 which I believe its the appropriate for the value you receive in return. However, if you are a student or you are an aspiring iOS developer from third-world countries, feel free to send me an email at bob@bobthedeveloper.io. I will provide you with private coupon links. I understand at one point in my life, I grew up one of those places.
-
-Lastly, there is a 30-day money back guarantee so just give it a try. You have nothing to lose. If you are not convinced yet, feel free to read through the reviews, and decide after.
+Unlike many other courses, I have not signed up for the Udemy's marketing plan. The course is priced at $50 which I believe its the appropriate price for the value you receive in return. However, if you are a student or an aspiring iOS developer from third-world countries, feel free to send me a message. I will provide you with the private coupon link. Lastly, there is a 30-day money back guarantee. If the course isn't the right fit, I will pay you back. If you are not convinced yet, feel free to read through the entire reviews to decide whether the course worths the price. If you want to become an advanced Swift developer building scalable and maintainable codebase, enroll the course right now.
