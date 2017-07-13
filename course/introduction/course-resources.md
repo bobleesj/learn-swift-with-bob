@@ -11,6 +11,6 @@ You may join Bob the Developer Slack Group and help one another. If you wish to 
 I have attached  articles and references that I use to prepare for this course. Feel free to use them to further study on your own which I expect.
 
 ### Updates
-I share detailed updates with my readers and students on the [Facebook Page](https://facebook.com/bobthedeveloper). To get to know me as a personal level, you can follow my story on Instagram [@bobthedev](https://instagram.com/bobthedev).
+Lastly, I share detailed updates with my readers and students on the [Facebook Page](https://facebook.com/bobthedeveloper). To get to know me as a personal level, you can follow my story on Instagram [@bobthedev](https://instagram.com/bobthedev).
 
 Let's move on to what's covered in this course.
