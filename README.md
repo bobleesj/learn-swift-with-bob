@@ -6,7 +6,7 @@
 <p align="center">
 <a href="https://www.bobthedeveloper.io"><img src="https://img.shields.io/badge/Instructor-Bob Lee-CE1312.svg"</a>
 <a href="https://udemy.com/learn-swift-with-bob/"><img src="https://img.shields.io/badge/Platform-Udemy-00A202.svg"/></a>
- <a><img src="https://img.shields.io/badge/Langauge-Swift_4.0-E73A05.svg?style=flat"></a>
+ <a><img src="https://img.shields.io/badge/Language-Swift_4.0-E73A05.svg?style=flat"></a>
  <a><img src="https://img.shields.io/badge/iOS-11-1E8CFD.svg?style=flat"></a>
  <a href="https://linkedin.com/in/bobthedev"><img src= "https://img.shields.io/badge/LinkedIn-Connect-233642.svg"></a>
 <a href="https://blog.bobthedeveloper.io"><img src="https://img.shields.io/badge/Blog-Read-19AA6E.svg"/></a>
